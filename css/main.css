@@ -60,6 +60,40 @@ h1.hideHeader, h2.hideHeader{
 
 
 
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Header section
+---------------------------------------------------------------------------*/
+
+.headerSection{
+      position:fixed;
+}
+
+.headerSection #nav{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------------------------------------------------
 heroSection Styles
 ---------------------------------------------------------------------------*/
@@ -69,6 +103,14 @@ section.heroImage{
       width:100%;
       height:120vh;
       background: pink;
+}
+
+.heroImage .banner{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
 }
 
 
@@ -121,7 +163,6 @@ Why us section
 What we offer section
 ---------------------------------------------------------------------------*/
 .whatWeOfferSection{
-
 }
 
 .featureBox{
@@ -205,8 +246,9 @@ Testimonial Section
 
 h2.testimonialTitle{
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       top: -70px;
-
 }
 
 
@@ -231,41 +273,42 @@ Client section
 
 
 .clientSection{
-      position:relative;
+      position: relative;
       background: springgreen;
-      width:100%;
-      height:86.25px;
-      margin-top:172px;
+      width: 100%;
+      height: 172px;
+      margin-top: 172px;
 }
 
 h2.clientTitle{
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       top: -70px;
-
 }
 
 .clientLogo{
       border: 2px solid #333;
-      height:86.25px;
+      height: 172px;
 }
 
 .clientNav{
-      position:relative;
+      position: relative;
 }
 
 .clientNavBox{
-      height:86.25px;
+      height: 172px;
 }
 
 .clientNavLeft{
-      position:absolute;
-      left:0;
+      position: absolute;
+      left: 0;
       background: peru;
 }
 
 .clientNavRight{
-      position:absolute;
-      right:0;
+      position: absolute;
+      right: 0;
       background: plum;
 }
 
@@ -287,21 +330,23 @@ Social Media Section
 
 
 .socialSection{
-      position:relative;
+      position: relative;
       background: springgreen;
-      width:100%;
-      height:690px;
-      margin-top:172px;
+      width: 100%;
+      height: 690px;
+      margin-top: 172px;
 }
 
 h2.socialTitle{
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       top: -70px;
 }
 
 .socialBox{
       border: 2px solid #333;
-      height:690px;
+      height: 690px;
 }
 
 
@@ -314,16 +359,25 @@ Contact Section
 
 
 .contactSection{
-      position:relative;
+      position: relative;
       background: springgreen;
-      width:100%;
-      height:345px;
-      margin-top:172px;
+      width: 100%;
+      height: 345px;
+      margin-top: 172px;
+
 }
 
 h2.contactTitle{
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       top: -70px;
+}
+
+.contactForm{
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
 }
 
 
