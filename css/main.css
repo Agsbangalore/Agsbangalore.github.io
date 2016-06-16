@@ -74,13 +74,48 @@ Header section
 
 .headerSection{
       position:fixed;
+      display: block;
+      width:100%;
+      height:60px;
+      background: rgba(0, 0, 0, 0.8);;
+      z-index: 1;
 }
 
-.headerSection #nav{}
+.headerSection #nav{
+      position: absolute;
+      top:0;
+      right:0;
+}
+
+.logo{
+      position: absolute;
+      width:170px;
+      height:50px;
+      margin:10px 40px;
+      background: url("../images/adventLogoWhite.png") no-repeat;
+      background-size: contain;
+      text-indent: -9999%;
+}
 
 
 
 
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Navigation section
+---------------------------------------------------------------------------*/
+
+#nav ul li {
+      display:inline-block;
+      padding-right: 20px;
+      padding-top: 10px;
+}
 
 
 
@@ -101,8 +136,9 @@ heroSection Styles
 section.heroImage{
       display: block;
       width:100%;
-      height:120vh;
-      background: pink;
+      height:110vh;
+      background: url("../images/bg.jpg") no-repeat;
+      background-size: cover;
 }
 
 .heroImage .banner{
@@ -129,7 +165,9 @@ section.heroImage{
 Why us section
 ---------------------------------------------------------------------------*/
 
-.whyUsSection{}
+.whyUsSection{
+
+}
 
 .whyUsBox{
       display: block;
@@ -331,7 +369,7 @@ Social Media Section
 
 .socialSection{
       position: relative;
-      background: springgreen;
+      background: salmon;
       width: 100%;
       height: 690px;
       margin-top: 172px;
@@ -360,7 +398,7 @@ Contact Section
 
 .contactSection{
       position: relative;
-      background: springgreen;
+      background: orchid;
       width: 100%;
       height: 345px;
       margin-top: 172px;
