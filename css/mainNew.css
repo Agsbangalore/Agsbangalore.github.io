@@ -87,7 +87,7 @@ Head Section
       font-size: 2em;
 }
 
-#navToggle
+
 
 
 
@@ -394,6 +394,10 @@ Footer Section
       width:220px;
       height:80px;
       text-indent: -999%;
+}
+
+.corpHQ{
+      text-align: center;
 }
 
 .info ul{
