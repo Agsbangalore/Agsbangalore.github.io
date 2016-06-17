@@ -43,6 +43,17 @@ Skeleton mod
 
 
 
+  /* Self Clearing Goodness */
+  .container:after,
+  .row:after,
+  .u-cf {
+    content: "";
+    display: table;
+    clear: both; }
+
+
+
+
 
 
 
@@ -645,7 +656,7 @@ Tablet styles
 
 
 .row.whyUsHead{
-      width: 100% !important; 
+      width: 100% !important;
 }
 
 .row.whyUsButton{
