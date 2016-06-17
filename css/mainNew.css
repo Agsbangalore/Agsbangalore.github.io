@@ -54,27 +54,40 @@ ul,ol{
 Head Section
 ---------------------------------------------------------------------------*/
 .headerSection{
-      background: #333;
+      background: rgba(0,0,0,0.8);
       color:white;
       position: fixed;
       z-index: 1;
+      padding: 10px;
 }
 
-.headerSection a{
-      color:white;
-      text-decoration: none;
-      list-style: none;
+.logo{
+      display: block;
+      background: url("../images/adventLogoWhite.png") no-repeat;
+      background-size: contain;
+      width:160px;
+      height:35px;
+      text-indent: -999%;
 }
 
 #nav{
       display: none;
 }
 
+#nav a{
+      color:white;
+      text-decoration: none;
+      list-style: none;
+}
+
 .headerSection #navToggle{
       position: absolute;
-      top:0;
-      right:0;
+      top:10px;
+      right:17px;
+      font-size: 2em;
 }
+
+#navToggle
 
 
 
@@ -364,14 +377,43 @@ Footer Section
       display: block;
 }
 
+.info{
+      text-align: center;
+      float:left;
+      width:100%;
+}
+
+.adventLogo{
+      padding: 30px
+}
+
+.adventLogo a{
+      display: block;
+      background: url("../images/adventLogoWhite.png") no-repeat;
+      background-size: contain;
+      width:220px;
+      height:80px;
+      text-indent: -999%;
+}
+
+.info ul{
+      padding: 0px;
+}
 
 .info li{
       display: inline-block;
-      padding: 0 10px;
+      padding:10px;
+}
+
+.info li a{
+      color: white;
+      text-decoration: none;
 }
 
 .copyright{
-      text-align:right;
+      text-align: center;
+      float: left;
+      width: 100%;
       padding:10px;
 }
 
@@ -408,7 +450,7 @@ Tablet Styles Section
 -------------------------------------------------------------------------*/
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
       /* For tablets: */
 
 
@@ -511,8 +553,15 @@ What we Offer  Section
 }
 
 .corpHQ{
+      width: 100%;
+}
 
+.offUSA{
+      width: 50%;
+}
 
+.offIndia{
+      width: 50%;
 }
 
 
@@ -725,7 +774,17 @@ What we Offer  Section
 }
 
 
-
+.info{
+      text-align: left;
+      float:left;
+      width:50%;
+}
+.copyright{
+      text-align: right;
+      float: left;
+      width: 50%;
+      padding:10px;
+}
 
 
 
