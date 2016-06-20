@@ -92,13 +92,9 @@ Hero Image Section
 
 .heroImage{
       display: block;
-<<<<<<< HEAD
       background:url("../images/bg.jpg") top right no-repeat;
-=======
       width:100%;
       height:110vh;
-      background: url("../images/bg.jpg") no-repeat top right;
->>>>>>> master
       background-size: cover;
       height:100vh;
       width:100%;
