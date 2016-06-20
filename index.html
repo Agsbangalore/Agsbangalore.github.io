@@ -26,11 +26,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/ionicons.css">
-
-  <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/ionicons.css">
+      <link rel="stylesheet" href="css/mainNew.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -44,7 +42,7 @@
 
 
 
-<header class="headerSection">
+<header class="headerSection container">
       <hgroup>
             <h1 class="hideHeader">header section</h1>
             <a href="#" class="logo">Advent Global</a>
@@ -58,13 +56,14 @@
                   <li class="searchGlass"><a href=""><i class="icon ion-ios-search-strong"></i></a></li>
             </ul>
       </nav>
+      <div id="navToggle">≡</div>
 </header>
 
 <section class="heroImage container">
       <h2 class="hideHeader">Hero Section</h2>
       <div class="row banner">
             <div class="ctaText">Right Talent, Right Now!!</div>
-            <button class="ctaButton">See More!!</button>
+            <button class="ctaButton">Know More</button>
       </div>
 </section>
 
@@ -87,31 +86,29 @@
                </p>
             </div>
             <div class="whyUsButton whyUsBox three columns">
-                  <div class="whyUsBtn">
-                        <p>Know More</p>
-                  </div>
+                  <button class="whyUsBtn">Know<br> More</button>
             </div>
       </div>
 </section>
 
-<section class="whatWeOfferSection">
+<section class="whatWeOfferSection container">
       <div class="row">
-            <div class="featureTitle featureBox three columns">What we offer</div>
-            <div class="feature1 featureBox three columns">feature1</div>
-            <div class="feature2 featureBox three columns">feature2</div>
-            <div class="feature3 featureBox three columns">feature3</div>
-            <div class="feature4 featureBox three columns">feature4</div>
-            <div class="feature5 featureBox three columns">feature5</div>
-            <div class="feature6 featureBox three columns">feature6</div>
-            <div class="feature7 featureBox three columns">feature7</div>
-            <div class="feature8 featureBox three columns">feature8</div>
-            <div class="feature9 featureBox three columns">feature9</div>
-            <div class="feature10 featureBox three columns">feature10</div>
-            <div class="feature11 featureBox three columns">feature11</div>
+            <div class="featureTitle featureBox">What we offer</div>
+            <div class="feature1 featureBox">feature1</div>
+            <div class="feature2 featureBox">feature2</div>
+            <div class="feature3 featureBox">feature3</div>
+            <div class="feature4 featureBox">feature4</div>
+            <div class="feature5 featureBox">feature5</div>
+            <div class="feature6 featureBox">feature6</div>
+            <div class="feature7 featureBox">feature7</div>
+            <div class="feature8 featureBox">feature8</div>
+            <div class="feature9 featureBox">feature9</div>
+            <div class="feature10 featureBox">feature10</div>
+            <div class="feature11 featureBox">feature11</div>
       </div>
 </section>
 
-<section class="testimonialSection">
+<section class="testimonialSection container">
       <h2 class="testimonialTitle">Testimonial</h2>
       <div class="quoteBox">
             <div class="quoteText1">
@@ -189,6 +186,14 @@
                   <a href="">See More!!!</a>
             </div>
       </div>
+      <div class="socialMediaIcons">
+            <ul>
+                  <li class="socialLogo1"><a href="">social Media 1</a></li>
+                  <li class="socialLogo2"><a href="">social Media 2</a></li>
+                  <li class="socialLogo3"><a href="">social Media 3</a></li>
+                  <li class="socialLogo4"><a href="">social Media 4</a></li>
+            </ul>
+      </div>
 </section>
 
 
@@ -207,14 +212,17 @@
 <footer class="footerSection container">
       <h2 class="hideHeader">footer Section</h2>
       <div class="row">
-            <div class="corpHQ three columns">
-                  <h3>Corporate Headquarters</h3>
-                  <p>
-                        12777 Jones Road, Suite 445<br> Houston, TX 77070<br>  Phone: +1-281-970-3000<br>
-                        Fax: +1-832-678-3889<br>
-                  </p>
+            <div class="footerCol1 row">
+                  <div class="adventLogo"><a href="">Advent Logo</a></div>
+                  <div class="corpHQ">
+                        <h3>Corporate Headquarters</h3>
+                        <p>
+                              12777 Jones Road, Suite 445<br> Houston, TX 77070<br>  Phone: +1-281-970-3000<br>
+                              Fax: +1-832-678-3889<br>
+                        </p>
+                  </div>
             </div>
-            <div class="offUSA three columns">
+            <div class="offUSA footerCol2">
                   <h3>Offices In USA</h3>
                   <p>
                         California <br> 42808 Christy Street, Suite 230<br> Fremont, CA 94538<br>
@@ -229,7 +237,7 @@
                         Phone:+1-609-631-0050<br> Fax: +1-609-631-0054<br>
                   </p>
             </div>
-            <div class="offIndia three columns">
+            <div class="offIndia footerCol2">
                   <h3>Offices In India</h3>
                   <p>
                         Hyderabad<br>  Plot No 172,Kavuri Hills Phase II,<br>  Madhapur, Hyderabad 500 081<br>
@@ -245,7 +253,7 @@
                         +91-40-6733 2345<br>
                   </p>
             </div>
-            <div class="AboutUS three columns">
+            <div class="AboutUs footerCol2">
                   <h3>About Us</h3>
                   <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in congue lorem.
@@ -268,7 +276,6 @@
                         <li><a href="">Disclaim</a></li>
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Terms & Conditions</a></li>
-                        <li><a href="">link4</a></li>
                   </ul>
             </div>
             <div class="copyright six columns">
