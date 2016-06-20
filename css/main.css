@@ -58,7 +58,7 @@ Head Section
       color:white;
       position: fixed;
       z-index: 1;
-      padding: 10px;
+      padding: 10px 20px;
 }
 
 .logo{
@@ -74,11 +74,6 @@ Head Section
       display: none;
 }
 
-#nav a{
-      color:white;
-      text-decoration: none;
-      list-style: none;
-}
 
 .headerSection #navToggle{
       position: absolute;
@@ -97,12 +92,37 @@ Hero Image Section
 
 .heroImage{
       display: block;
-      background:pink;
+      background:url("../images/bg.jpg") top right no-repeat;
+      background-size: cover;
       height:100vh;
       width:100%;
 }
 
+.heroImage .banner{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+}
 
+.ctaText{
+      font-family: 'Dancing Script', cursive;
+      font-weight:700;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+}
+
+.ctaButton{
+      padding: 10px 35px;
+      border: 1px solid black;
+      /*border-radius: 5px;*/
+      background: none;
+      font-family:'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.2em;
+}
 
 
 
@@ -128,28 +148,72 @@ Why Us Secion
 
 .whyUsHead{
       height: 100px;
-      background: teal;
+      background: white;
+      white-space: nowrap;
+      position: relative;
+}
+
+.whyUsHead h2{
+      position: absolute;
+      margin: 0;
+      margin-top: 30px;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 1.8em;
+      text-transform: uppercase;
 }
 
 .whyUsText{
-      padding: 20px 20px;
-      height:300px;
-      background: salmon;
+      background: white;
+      text-align: center;
 }
 
 .whyUsText p {
-      max-width:600px;
-      margin: 0 auto 20px;
+      padding: 20px 20px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;    /*1.5em*/
+      line-height: 1.7rem;     /*1.3em*/
+      color:#444;
 }
 
-.whyUsButton{
-      height: 100px;
-      background: plum;
+.whyUsButton {
+      height: 50px;
+      background: white;
+      position: relative;
+      margin-bottom: 80px;
 }
 
 
+.whyUsButton .whyUsBtn {
+      display: block;
+      padding: 10px 35px;
+      margin: 0 auto 30px;
+      max-width: 600px;
+      /*top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);*/
+      border: 1px solid rgba(31, 170, 235, 1);
+      background: none;
+      color:rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1em;
+}
 
-
+.whyUsButton br{
+      display: none;
+}
 
 
 
@@ -613,7 +677,36 @@ Desktop Styles Section
 Header Section
 ---------------------------------------------------------------------------*/
 
+#nav{
+      display: block;
+      position: absolute;
+      top:10px;
+      right:17px;
+}
 
+#nav a{
+      color:white;
+      text-decoration: none;
+      list-style: none;
+}
+
+#nav ul{
+      margin: 0px;
+}
+
+#nav li{
+      display: inline-block;
+      padding-right: 30px;
+      padding-top: 10px;
+}
+
+#nav ul li.searchGlass{
+      padding-right: 10px;
+}
+
+#navToggle{
+      display: none;
+}
 
 
 /*-------------------------------------------------------------------------
@@ -636,9 +729,42 @@ Why Us Section
       height: 25vw;
 }
 
+.whyUsText p {
+      padding: 50px 20px;
+}
+
+.whyUsHead h2 {
+      margin: 0;
+      font-size: 3.8em;
+}
+
 .whyUsButton{
       width: 25%;
       height: 25vw;
+      margin-bottom: 0px;
+      text-align: center;
+}
+
+.whyUsButton .whyUsBtn {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      padding: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border: 1px solid rgba(31, 170, 235, 1);
+      background: none;
+      color:rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.03em;
+      line-height: 1.1em;
+}
+
+.whyUsButton br{
+      display: block;
 }
 
 
