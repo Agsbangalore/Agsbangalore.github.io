@@ -28,11 +28,27 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/ionicons.css">
+      <link rel="stylesheet" href="css/flexslider.css" type="text/css">
       <link rel="stylesheet" href="css/main.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/adventFavi.png">
+      <link rel="icon" type="image/png" href="images/adventFavi.png">
+
+  <!-- Flexslider
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <script src="js/jquery.flexslider.js"></script>
+
+
+  <!-- Place in the <head>, after the three links -->
+
+      <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider();
+        });
+      </script>
 
 </head>
 <body>
@@ -118,6 +134,23 @@
 
 <section class="testimonialSection container">
       <h2 class="testimonialTitle">Testimonial</h2>
+      <div class="quoteBox flexslider">
+            <ul class="slides">
+                  <li class="qouteText1">
+                        <p>one dgasgjahnjkn akjnkd ajsnz </p>
+                  </li>
+                  <li class="qouteText2">
+                        <p>two dsgf asfha asdfha sdfh </p>
+                  </li>
+                  <li class="qouteText3">
+                        <p>three djh sidfhbusd fhbs diufh </p>
+                  </li>
+                  <li class="qouteText4">
+                        <p>four dfhau uusd u sdufasdfua dsfdfd</p>
+                  </li>
+            </ul>
+      </div>
+<!--
       <div class="quoteBox">
             <div class="quoteText1">
                   <p class="1bhvbvbvbjhvbv">sdfvggfszg g  ag azsggfg - Donald Trump</p>
@@ -132,7 +165,9 @@
                   <p class="4bhvbvbvbjhvbv"></p>
             </div>
       </div>
-      <div class="quoteNav">
+-->
+
+<!--      <div class="quoteNav">
             <ul>
                   <li><a href="">1</a></li>
                   <li><a href="">2</a></li>
@@ -140,6 +175,7 @@
                   <li><a href="">4</a></li>
             </ul>
       </div>
+-->
 </section>
 
 <section class="clientSection">
