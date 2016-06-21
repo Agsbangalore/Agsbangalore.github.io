@@ -100,6 +100,7 @@ Hero Image Section
       width:100%;
       height:110vh;
       width:100%;
+      overflow: hidden;
 }
 
 
@@ -283,47 +284,58 @@ what we offer Section
 }
 
 .feature1{
-      background: burlywood;
+      background: url("../images/feature1.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature2{
-      background: coral;
+      background: url("../images/feature2.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature3{
-      background: crimson;
+      background: url("../images/feature3.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature4{
-      background: honeydew;
+      background: url("../images/feature4.png") no-repeat;
+      background-size: cover;
 }
 
 .feature5{
-      background: khaki;
+      background: url("../images/feature5.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature6{
-      background: lightgreen;
+      background: url("../images/feature6.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature7{
-      background: orchid;
+      background: url("../images/feature7.jpeg") no-repeat;
+      background-size: cover;
 }
 
 .feature8{
-      background: plum;
+      background: url("../images/feature8.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature9{
-      background: salmon;
+      background: url("../images/feature9.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature10{
-      background: turquoise;
+      background: url("../images/feature10.jpg") no-repeat;
+      background-size: cover;
 }
 
 .feature11{
-      background: tomato;
+      background: url("../images/feature11.jpg") no-repeat;
+      background-size: cover;
 }
 
 
@@ -479,7 +491,7 @@ Contact Section
       background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
       background-size: cover;
       width: 100%;
-      height: 345px;
+      height: 360px;
       margin-top: 172px;
 }
 
@@ -494,33 +506,53 @@ h2.contactTitle{
 
 
 .contactForm{
-      background: pink;
+      background: none;
       position: absolute;
+      width: 80%;
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
-      text-align: center;
+}
+
+.contactForm p {
+      margin-left: 1%;
+      color:white;
 }
 
 .inputFloat{
       float: left;
+      padding: 10px;
 }
 
 #name, #email {
       width: 98%;
-      margin: 1%;
+      margin:5px 1%;
+      background: none;
+      border: 2px solid white;
+      color: white;
 }
 
 .contactForm textarea{
       width: 98%;
-      margin: 1%;
+      height: 100px;
+      margin: 5px 1% 10px;
+      background: none;
+      border: 2px solid white;
+      color: white;
 }
 
 #formSubmit {
-      text-align: center;
+      display: block;
       width: 100px;
-      margin:0 auto;
+      margin: 0 auto;
+      margin-top: 15px;
+      padding: 10px;
+      background: none;
+      border: 2px solid white;
+      color: white;
 }
+
+
 
 
 
@@ -608,6 +640,7 @@ Footer Section
 /*-------------------------------------------------------------------------
 Social Section
 ---------------------------------------------------------------------------*/
+
 
 
 
