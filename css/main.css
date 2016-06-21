@@ -260,10 +260,25 @@ what we offer Section
       width:50%;
       float: left;
       height:50vw;
+      position: relative;
 }
 
+.featureBox a{
+      position: absolute;
+      text-align: center;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-decoration: none;
+      color: white;
+}
+
+
 .featureTitle{
-      background: white;
+      width:50%;
+      float: left;
+      height:50vw;
+      background: rgba(231,76,60,1);
       position: relative;
 }
 
@@ -274,7 +289,7 @@ what we offer Section
       top:50%;
       left:50%;
       transform: translate(-50%,-50%);
-      color: rgba(31, 170, 235, 1);
+      color: white;
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
@@ -284,57 +299,57 @@ what we offer Section
 }
 
 .feature1{
-      background: url("../images/feature1.jpg") no-repeat;
+      background: linear-gradient( rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ), url("../images/feature1.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature2{
-      background: url("../images/feature2.jpg") no-repeat;
+      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature3{
-      background: url("../images/feature3.jpg") no-repeat;
+      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature3.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature4{
-      background: url("../images/feature4.png") no-repeat;
+      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
       background-size: cover;
 }
 
 .feature5{
-      background: url("../images/feature5.jpg") no-repeat;
+      background: linear-gradient( rgba(67,160,71,0.75), rgba(67,160,71,0.75) ),url("../images/feature5.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature6{
-      background: url("../images/feature6.jpg") no-repeat;
+      background: linear-gradient( rgba(2,136,209,0.75), rgba(2,136,209,0.75) ),url("../images/feature6.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature7{
-      background: url("../images/feature7.jpeg") no-repeat;
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background-size: cover;
 }
 
 .feature8{
-      background: url("../images/feature8.jpg") no-repeat;
+      background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature9{
-      background: url("../images/feature9.jpg") no-repeat;
+      background: linear-gradient( rgba(124,197,118,0.75), rgba(124,197,118,0.75) ),url("../images/feature9.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature10{
-      background: url("../images/feature10.jpg") no-repeat;
+      background: linear-gradient( rgba(245,152,157,0.75), rgba(245,152,157,0.75) ),url("../images/feature10.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature11{
-      background: url("../images/feature11.jpg") no-repeat;
+      background: linear-gradient( rgba(94,53,177,0.75), rgba(94,53,177,0.75) ),url("../images/feature11.jpg") center top no-repeat;
       background-size: cover;
 }
 
@@ -697,6 +712,12 @@ Why Us Section
 What we Offer  Section
 ---------------------------------------------------------------------------*/
 
+.featureTitle{
+      width:33.333333333%;
+      float: left;
+      height:30vw;
+}
+
 .featureBox{
       width:33.333333333%;
       float: left;
@@ -911,6 +932,12 @@ Why Us Section
 /*-------------------------------------------------------------------------
 What we Offer  Section
 ---------------------------------------------------------------------------*/
+
+.featureTitle{
+      width:25%;
+      float: left;
+      height:25vw;
+}
 
 .featureBox{
       width:25%;
