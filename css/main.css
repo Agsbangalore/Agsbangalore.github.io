@@ -416,6 +416,22 @@ h2.testimonialTitle{
 */
 
 
+/*changes in flexslider css....ionicons used instead of flexslider icons*/
+
+.flex-direction-nav a:before {
+  font-family: "Ionicons";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f361';
+  color: white;
+  text-shadow: none;
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: '\f363';
+}
+
+/*-------------------------------------------------------------------------*/
 
 
 
@@ -532,7 +548,32 @@ h2.contactTitle{
 .contactForm p {
       margin-left: 1%;
       color:white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1em;
 }
+
+/*styling of placeholder text*/
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+/*-----------------------------------------*/
+
 
 .inputFloat{
       float: left;
