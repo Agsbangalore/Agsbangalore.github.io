@@ -40,15 +40,20 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
       <script src="js/jquery.flexslider.js"></script>
+      <script src="js/functions.js"></script>
+
 
 
   <!-- Place in the <head>, after the three links -->
 
+<!--
       <script type="text/javascript" charset="utf-8">
         $(window).load(function() {
           $('.flexslider').flexslider();
         });
       </script>
+-->
+
 
 </head>
 <body>
@@ -114,6 +119,7 @@
             </div>
       </div>
 </section>
+
 
 <section class="whatWeOfferSection container">
       <div class="row">
@@ -200,6 +206,8 @@
 
 <section class="clientSection">
       <h2 class="clientTitle">Clients</h2>
+
+<!--
       <div class="clientBox">
             <div class="clientLogo client1 onepfive columns">dsfasdf</div>
             <div class="clientLogo client2 onepfive columns">dsfasdf</div>
@@ -209,18 +217,86 @@
             <div class="clientLogo client6 onepfive columns">dsfasdf</div>
             <div class="clientLogo client7 onepfive columns">dsfasdf</div>
             <div class="clientLogo client8 onepfive columns">dsfasdf</div>
-<!--
             <div class="clientLogo client9 onepfive columns">dsfasdf</div>
             <div class="clientLogo client10 onepfive columns">dsfasdf</div>
             <div class="clientLogo client11 onepfive columns">dsfasdf</div>
             <div class="clientLogo client12 onepfive columns">dsfasdf</div>
--->
       </div>
       <div class="clientNav">
             <div class="clientNavLeft clientNavBox onepfive columns"><i>dsgsfg</i></div>
             <div class="clientNavRight clientNavBox onepfive columns"><i>sdfgsg</i></div>
       </div>
+-->
+<div class="flexslider clientBox carousel">
+ <ul class="slides">
+          <li>
+             <img src="images/feature1.jpg" />
+          </li>
+          <li>
+             <img src="images/feature2.jpg" />
+          </li>
+          <li>
+             <img src="images/feature3.jpg" />
+          </li>
+          <li>
+             <img src="images/feature4.png" />
+          </li>
+          <li>
+             <img src="images/feature5.jpg" />
+          </li>
+          <li>
+             <img src="images/feature6.jpg" />
+          </li>
+          <li>
+             <img src="images/feature1.jpg" />
+          </li>
+          <li>
+             <img src="images/feature2.jpg" />
+          </li>
+          <li>
+             <img src="images/feature3.jpg" />
+          </li>
+          <li>
+             <img src="images/feature4.png" />
+          </li>
+          <li>
+             <img src="images/feature5.jpg" />
+          </li>
+          <li>
+             <img src="images/feature6.jpg" />
+          </li>
+          <li>
+             <img src="images/feature1.jpg" />
+          </li>
+          <li>
+             <img src="images/feature2.jpg" />
+          </li>
+          <li>
+             <img src="images/feature3.jpg" />
+          </li>
+          <li>
+             <img src="images/feature4.png" />
+          </li>
+          <li>
+             <img src="images/feature5.jpg" />
+          </li>
+          <li>
+             <img src="images/feature6.jpg" />
+          </li>
+ </ul>
+</div>
+
+
+
+
+
 </section>
+
+
+
+
+
+
 
 <section class="socialSection container">
       <h2 class="socialTitle">Connect With Us</h2>
@@ -350,6 +426,96 @@
       </div>
 </footer>
 
+
+
+<!--
+====================================================== -->
+
+
+<!-- jQuery -->
+<!--
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+-->
+<!-- FlexSlider -->
+
+<!--
+<script defer src="js/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+
+ (function() {
+
+    // store the slider in a local variable
+    var $window = $(window),
+   flexslider = { vars:{} };
+
+    // tiny helper function to add breakpoints
+    function getGridSize() {
+ return (window.innerWidth < 600) ? 2 :
+        (window.innerWidth < 900) ? 3 : 4;
+    }
+/*
+    $(function() {
+ SyntaxHighlighter.all();
+    });
+*/
+    $window.load(function() {
+ $('.flexslider.clientBox').flexslider({
+   animation: "slide",
+   animationSpeed: 400,
+   animationLoop: false,
+   itemWidth: 210,
+   itemMargin: 5,
+   minItems: getGridSize(), // use function to pull in initial value
+   maxItems: getGridSize(), // use function to pull in initial value
+   start: function(slider){
+     $('body').removeClass('loading');
+     flexslider = slider;
+   }
+ });
+    });
+
+    // check grid size on resize event
+    $window.resize(function() {
+ var gridSize = getGridSize();
+
+ flexslider.vars.minItems = gridSize;
+ flexslider.vars.maxItems = gridSize;
+    });
+ }());
+
+</script>
+-->
+
+<!-- ============================================== -->
+
+
+
+
+
+
+
+
+<!-- ============================================== -->
+
+<!--
+      <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+      $('.flexslider').flexslider();
+      });
+      </script>
+
+-->
+
+
+
+
+
+
+
+<!--
+====================================================== -->
 
 
 
