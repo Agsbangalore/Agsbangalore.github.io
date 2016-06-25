@@ -626,6 +626,7 @@ h2.contactTitle{
       background: none;
       border: 2px solid white;
       color: white;
+      resize: none;
 }
 
 #formSubmit {
@@ -1119,6 +1120,13 @@ What we Offer  Section
  Contact Section
 ---------------------------------------------------------------------------*/
 
+#name, #email {
+      width: 48%;
+      margin:5px 1%;
+      background: none;
+      border: 2px solid white;
+      color: white;
+}
 
 
 
