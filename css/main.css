@@ -496,9 +496,145 @@ h2.clientTitle{
       margin-right: 0px: !important
 }
 
-.flexslider{
-      border: none;
+div.clientBox{
+      border: 0px;
+      border-radius: 0px;
+      height:100%;
 }
+
+.clientBox .flex-viewport, .clientBox .slides{
+      display: block;
+      height:100%;
+}
+
+
+.clientBox .slides li{
+      display:block;
+      position: relative;
+      height:100%;
+}
+
+.clientBox .slides li div{
+      display: block;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+}
+
+
+.abb {
+      background: url("../images/abb.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.abbott {
+      background: url("../images/abbott.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bectonDickson {
+      background: url("../images/bectonDickson.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bmw {
+      background: url("../images/bmw.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.caterpillar {
+      background: url("../images/caterpillar.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.celgene {
+      background: url("../images/celgene.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.citizens {
+      background: url("../images/citizens.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.datalogic {
+      background: url("../images/datalogic.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.henkel {
+      background: url("../images/henkel.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.humana {
+      background: url("../images/humana.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mercedes {
+      background: url("../images/mercedes.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mtbank {
+      background: url("../images/mtbank.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.philips {
+      background: url("../images/philips.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.ricoh {
+      background: url("../images/ricoh.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.symantec {
+      background: url("../images/symantec.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.unisys {
+      background: url("../images/unisys.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
 
 
 
