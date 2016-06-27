@@ -152,6 +152,13 @@ Hero Image Section
       font-size: 1.2em;
 }
 
+.ctaButton:hover{
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.9);
+}
+
+
 
 
 
@@ -243,6 +250,11 @@ Why Us Secion
       display: none;
 }
 
+.whyUsButton .whyUsBtn:hover{
+      background: rgba(31, 170, 235, 1);
+      color: white;
+}
+
 
 
 
@@ -265,12 +277,24 @@ what we offer Section
 
 .featureBox a{
       position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+}
+
+.featureBox a h4{
+      margin:0;
+      position: absolute;
       text-align: center;
       top:50%;
       left:50%;
       transform: translate(-50%,-50%);
       text-decoration: none;
       color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 0.9rem;
 }
 
 
@@ -293,7 +317,7 @@ what we offer Section
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
-      font-size: 3.5rem;
+      font-size: 1.8rem;
       text-transform: uppercase;
       white-space: nowrap;
 }
@@ -354,9 +378,15 @@ what we offer Section
 }
 
 
-
-
-
+.featureBox:hover a:before{
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      width:100%;
+      background: rgba(0,0,0,0.3);
+}
 
 
 
@@ -376,7 +406,7 @@ Testimonial section
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
       background-size: cover;
       width:100%;
-      height:100vw;
+      height:80vh;
       margin-top:172px;
 }
 
@@ -408,6 +438,11 @@ h2.testimonialTitle{
       display: block;
       text-align: right;
 }
+
+.quoteBox .flex-direction-nav{
+      display: none;
+}
+
 
 /*
 .flex-direction-nav, .flex-control-nav{
@@ -477,7 +512,7 @@ Client Section
       position: relative;
       background: white ;
       width: 100%;
-      height: 50vw;
+      height: 33.3333333333333vw;
       margin-top: 172px;
       border-top: 0.5px solid #999;
       border-bottom: 0.5px solid #999;
@@ -491,7 +526,7 @@ h2.clientTitle{
 }
 
 .navBoxLeft{
-      display: block;
+      display: none;
       position: absolute;
       height:100%;
       width: 12.5%;
@@ -502,7 +537,7 @@ h2.clientTitle{
 }
 
 .navBoxRight{
-      display: block;
+      display: none;
       position: absolute;
       height:100%;
       width: 12.5%;
@@ -513,16 +548,21 @@ h2.clientTitle{
 }
 
 .clientBox{
-      margin:0 12.5%;
-
+      margin:0px;
 }
+
+
+.clientBox .flex-direction-nav{
+      display: none;
+}
+
 
 
 
 .clientBox .flex-direction-nav {
-
   *height: 0;
 }
+
 .clientBox .flex-direction-nav a {
   text-decoration: none;
   display: block;
@@ -1029,6 +1069,18 @@ What we Offer  Section
       height:30vw;
 }
 
+.featureBox a h4{
+      font-size: 1.4rem;
+}
+
+.featureBox a h4 span {
+      white-space: nowrap;
+}
+
+.featureTitle h2{
+      font-size: 3rem;
+}
+
 
 
 /*-------------------------------------------------------------------------
@@ -1041,6 +1093,10 @@ What we Offer  Section
       margin-top:172px;
 }
 
+.quoteBox .flex-direction-nav{
+      display: block;
+}
+
 
 
 
@@ -1050,7 +1106,19 @@ What we Offer  Section
 ---------------------------------------------------------------------------*/
 
 .clientSection{
-      height: 16.6666666667%;
+      height: 16.666666666666667vw;
+}
+
+.navBoxLeft, .navBoxRight{
+      display: block;
+}
+
+.clientBox .flex-direction-nav{
+      display: block;
+}
+
+.clientBox{
+      margin:0 12.5%;
 }
 
 
@@ -1253,6 +1321,15 @@ What we Offer  Section
       height:25vw;
 }
 
+.featureBox a h4{
+      font-size: 1.4rem;
+}
+
+.featureTitle h2{
+      font-size: 3.3rem;
+}
+
+
 
 
 
@@ -1266,6 +1343,7 @@ What we Offer  Section
       height:25vw;
       margin-top:172px;
 }
+
 
 
 
@@ -1289,7 +1367,7 @@ What we Offer  Section
 
 .socialSection{
       width: 100%;
-      height: 50vw;
+      height: 40vw;
 }
 
 .socialContainer{

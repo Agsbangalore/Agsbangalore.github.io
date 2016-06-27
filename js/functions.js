@@ -11,8 +11,8 @@ $(function() {
 
          // tiny helper function to add breakpoints
          function getGridSize() {
-      return (window.innerWidth < 600) ? 3 :       //default (2) no. of columns below 600px window width *******
-             (window.innerWidth < 900) ? 4 : 6;   //default (3:4) no. of columns below 900px window width *******
+      return (window.innerWidth < 700) ? 3 :       //default (2) no. of columns below 600px window width *******
+             (window.innerWidth < 1000) ? 4 : 6;   //default (3:4) no. of columns below 900px window width *******
          }
 
 
