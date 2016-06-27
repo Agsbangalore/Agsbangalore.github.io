@@ -14,6 +14,25 @@ global styles
 ---------------------------------------------------------------------------*/
 
 
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/Preloader_1.gif) center no-repeat #fff;
+}
+
+
+
+
+
+
 .container {
       position:relative;
       width: 100%;
@@ -44,6 +63,10 @@ h1.hideHeader, h2.hideHeader{
 ul,ol{
       list-style: none;
 }
+
+
+
+
 
 
 
@@ -799,16 +822,31 @@ h2.socialTitle{
       display: none;
 }
 
+.socialMediaIcons ul{
+      margin: 0;
+      padding: 0;
+      display: block;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      white-space: nowrap;
+
+}
+
 .socialMediaIcons ul li{
       display: inline-block;
       width: 20px;
       height:20px;
-      padding: 0 10px;
+      padding: 0 43px 0 25px;
 }
 
 .socialMediaIcons ul li a{
       text-indent: -999%;
+      font-size: 2rem;
 }
+
+
 
 
 
@@ -1367,19 +1405,17 @@ What we Offer  Section
 
 .socialSection{
       width: 100%;
-      height: 40vw;
+      height: 50vw;
 }
 
 .socialContainer{
       display: block;
 }
 
-
-
 .socialBox{
       width:25%;
       float: left;
-      height: 690px;
+      height: 50vw;
 }
 
 .social1{
@@ -1412,9 +1448,7 @@ What we Offer  Section
       display: none;
 }
 
-.AboutUs{
-      display:block;
-}
+
 
 
 
@@ -1477,6 +1511,29 @@ What we Offer  Section
       width: 50%;
       padding:10px;
 }
+
+
+.AboutUs{
+      display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
