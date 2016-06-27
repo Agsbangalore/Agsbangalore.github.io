@@ -73,11 +73,205 @@ ul,ol{
 
 
 
+
+/*-------------------------------------------------------------------------
+menu Section
+---------------------------------------------------------------------------*/
+
+
+
+/* Hide nav handler checkbox */
+#navToggle{
+  display: none;
+}
+
+
+/* Header */
+
+
+/* Header menu button */
+label#navButton {
+      position:fixed;
+      top:0;
+      right:0;
+      padding:18px;
+      line-height: 0.6;
+      font-size: 2em;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      z-index: 3;
+      color: white;
+      background: rgba(31, 170, 235, 0.3);
+      /*border: 1px solid rgba(31, 170, 235, 0.3);*/
+}
+
+label#navButton:hover{
+      color: white;
+      background: rgba(31, 170, 235, 1);
+}
+
+
+/* Header active menu button */
+#navToggle:checked + label#navButton{
+	color: white;
+	right:300px;
+}
+
+/* Slide out navigation */
+#nav {
+	position: fixed;
+      text-align: center;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	z-index: 1;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	background: #333;
+}
+
+/* Active slide out navigation */
+#navToggle:checked ~ nav#nav {
+      background: #333;
+      opacity: 1;
+      transition: opacity 0s 0s;
+      -moz-transition: opacity 0s 0s;
+      -webkit-transition: opacity 0s 0s;
+}
+
+/* Slide out navigation list items */
+#nav ul li {
+	display: block;
+	clear: both;
+      color: white;
+}
+
+#nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+      color: white;
+      text-decoration: none;
+}
+
+.pageContent {
+      background: rgba(230,230,230,1);
+	display: block;
+	position: relative;
+	height: 100%;
+	transform: translate3D(0, 0, 0);
+	-moz-transform: translate3D(0, 0, 0);
+	-webkit-transform: translate3D(0, 0, 0);
+	transition: -transform .25s ease-in-out;
+	-moztransition: -moz-transform .25s ease-in-out;
+	transition: -webkit-transform .25s ease-in-out;
+	z-index: 2;
+      -webkit-box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
+      box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
+}
+
+#navToggle:checked ~ .pageContent {
+	transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
+	-moz-transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
+	-webkit-transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
+}
+
+#content-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 75px 0 0 0; /* Top padding must be same as header height*/
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	background: #fff;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+/*menu styling*/
+
+.navList{
+      margin-top: 55px;
+      padding: 0px;
+}
+
+.navList ul{
+      padding: 0px;
+}
+
+.navList:last-child{
+      margin-bottom: 200px;
+}
+
+#nav li a{
+      text-align: left;
+      font-size: 0.9em;
+      padding: 17px 0px 20px 17px;
+      margin-bottom: 2px;
+      border-left: 6px solid cyan;
+      background: #444;
+}
+
+#nav ul ul li a{
+      padding-left: 40px;
+      border-left: 6px solid cyan;
+}
+
+#nav li a:hover{
+      background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------------------------------------------------
 Head Section
 ---------------------------------------------------------------------------*/
 .headerSection{
-      background: rgba(0,0,0,0.8);
+      background:rgba(0,0,0,0.8);
       color:white;
       position: fixed;
       z-index: 1;
@@ -93,12 +287,13 @@ Head Section
       text-indent: -999%;
 }
 
-#nav{
+#navSpread{
       display: none;
 }
 
 
-.headerSection #navToggle{
+.headerSection #navBurger{
+      display: none;                  /*change this*/
       position: absolute;
       top:10px;
       right:17px;
@@ -116,10 +311,8 @@ Hero Image Section
 .heroImage{
       display: block;
       position: relative;
-      /*
-      background:url("..images/In-And-Out.jpg") top right no-repeat;
-      background-size: cover;
-      */
+/*      background:url("..images/In-And-Out.jpg") top right no-repeat;
+      background-size: cover;*/
       width:100%;
       height:110vh;
       width:100%;
@@ -579,9 +772,6 @@ h2.clientTitle{
       display: none;
 }
 
-
-
-
 .clientBox .flex-direction-nav {
   *height: 0;
 }
@@ -1036,6 +1226,42 @@ Footer Section
 
 
 /*-------------------------------------------------------------------------
+Scroll to top Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+.scrollToTop{
+	width:60px;
+	height:60px;
+	padding:10px;
+	text-align:center;
+	background: rgba(255, 255, 255, 0.1);
+      font-size: 2em;
+	font-weight: bold;
+	color: rgba(31, 170, 235, 1);
+	text-decoration: none;
+	position:fixed;
+	bottom:40px;
+	right:0px;
+	display:none;
+      z-index: 200;
+	}
+
+.scrollToTop:hover{
+      background: rgba(31, 170, 235, 1);
+      color: white;
+	text-decoration:none;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
 Social Section
 ---------------------------------------------------------------------------*/
 
@@ -1247,34 +1473,35 @@ Desktop Styles Section
 Header Section
 ---------------------------------------------------------------------------*/
 
-#nav{
-      display: block;
+#navSpread{
+      display: none;    /*change this*/
+
       position: absolute;
       top:10px;
       right:17px;
 }
 
-#nav a{
+#navSpread a{
       color:white;
       text-decoration: none;
       list-style: none;
 }
 
-#nav ul{
+#navSpread ul{
       margin: 0px;
 }
 
-#nav li{
+#navSpread li{
       display: inline-block;
       padding-right: 30px;
       padding-top: 10px;
 }
 
-#nav ul li.searchGlass{
+#navSpread ul li.searchGlass{
       padding-right: 10px;
 }
 
-#navToggle{
+#navBurger{
       display: none;
 }
 
@@ -1516,6 +1743,7 @@ What we Offer  Section
 .AboutUs{
       display:block;
 }
+
 
 
 
