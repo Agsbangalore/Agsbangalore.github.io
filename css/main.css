@@ -418,7 +418,7 @@ h2.testimonialTitle{
 
 /*changes in flexslider css....ionicons used instead of flexslider icons*/
 
-.flex-direction-nav a:before {
+.quoteBox .flex-direction-nav a:before {
   font-family: "Ionicons";
   font-size: 40px;
   display: inline-block;
@@ -427,11 +427,11 @@ h2.testimonialTitle{
   text-shadow: none;
 }
 
-.flex-direction-nav a.flex-next:before {
+.quoteBox .flex-direction-nav a.flex-next:before {
   content: '\f363';
 }
 
-.flex-control-paging li a {
+.quoteBox .flex-control-paging li a {
   width: 13px;
   height: 13px;
   display: block;
@@ -448,12 +448,12 @@ h2.testimonialTitle{
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
-.flex-control-paging li a:hover {
+.quoteBox .flex-control-paging li a:hover {
   background: #333;
   border: 2px solid rgba(255,255,255,0.7);
   background: rgba(255,255,255, 0.7);
 }
-.flex-control-paging li a.flex-active {
+.quoteBox .flex-control-paging li a.flex-active {
   background: #000;
   border: 2px solid rgba(255,255,255,1);
   background: rgba(255,255,255, 1);
@@ -475,10 +475,12 @@ Client Section
 
 .clientSection{
       position: relative;
-      background: springgreen;
+      background: white ;
       width: 100%;
       height: 50vw;
       margin-top: 172px;
+      border-top: 0.5px solid #999;
+      border-bottom: 0.5px solid #999;
 }
 
 h2.clientTitle{
@@ -488,9 +490,100 @@ h2.clientTitle{
       top: -70px;
 }
 
+.navBoxLeft{
+      display: block;
+      position: absolute;
+      height:100%;
+      width: 12.5%;
+      top:0;
+      left:0;
+      background: white;
+      border-right: 0.1px solid #999;
+}
+
+.navBoxRight{
+      display: block;
+      position: absolute;
+      height:100%;
+      width: 12.5%;
+      top:0;
+      right:0;
+      background: white;
+      border-left: 1px solid #999;
+}
+
 .clientBox{
       margin:0 12.5%;
+
 }
+
+
+
+.clientBox .flex-direction-nav {
+
+  *height: 0;
+}
+.clientBox .flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.clientBox .flex-direction-nav a:before {
+  font-family: "Ionicons";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f361';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.clientBox .flex-direction-nav a.flex-next:before {
+  content: '\f363';
+}
+.clientBox .flex-direction-nav .flex-prev {
+  left: -9%;
+}
+.clientBox .flex-direction-nav .flex-next {
+  right: -9%;
+  text-align: right;
+}
+.clientBox:hover .flex-direction-nav .flex-prev {
+  opacity: 1;
+  left: -9%;
+}
+.clientBox:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.clientBox:hover .flex-direction-nav .flex-next {
+  opacity: 1;
+  right: -9%;
+}
+.clientBox:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 1!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+
+
+
 
 .clientBox .slides li {
       margin-right: 0px: !important
@@ -509,9 +602,12 @@ div.clientBox{
 
 
 .clientBox .slides li{
+      box-sizing:content-box;
       display:block;
       position: relative;
       height:100%;
+      border-left: 0.5px solid #999;
+
 }
 
 .clientBox .slides li div{
@@ -526,8 +622,8 @@ div.clientBox{
 .abb {
       background: url("../images/abb.png") center center no-repeat;
       background-size: contain;
-      height:80%;
-      width:80%;
+      height:70%;
+      width:70%;
 }
 
 .abbott {
@@ -547,8 +643,8 @@ div.clientBox{
 .bmw {
       background: url("../images/bmw.png") center center no-repeat;
       background-size: contain;
-      height:80%;
-      width:80%;
+      height:60%;
+      width:60%;
 }
 
 .caterpillar {
@@ -561,8 +657,8 @@ div.clientBox{
 .celgene {
       background: url("../images/celgene.png") center center no-repeat;
       background-size: contain;
-      height:80%;
-      width:80%;
+      height:70%;
+      width:70%;
 }
 
 .citizens {
@@ -575,15 +671,15 @@ div.clientBox{
 .datalogic {
       background: url("../images/datalogic.jpg") center center no-repeat;
       background-size: contain;
-      height:80%;
-      width:80%;
+      height:90%;
+      width:90%;
 }
 
 .henkel {
       background: url("../images/henkel.png") center center no-repeat;
       background-size: contain;
-      height:80%;
-      width:80%;
+      height:70%;
+      width:70%;
 }
 
 .humana {
@@ -610,8 +706,8 @@ div.clientBox{
 .philips {
       background: url("../images/philips.png") center center no-repeat;
       background-size: contain;
-      height:80%;
-      width:80%;
+      height:50%;
+      width:50%;
 }
 
 .ricoh {
