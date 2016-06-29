@@ -9,8 +9,6 @@
 $(function() {
 
 
-
-
       (function() {
 
          // store the slider in a local variable
@@ -55,21 +53,9 @@ $(function() {
 
 
 
-
-
-
-
       $(window).load(function() {
       $('.flexslider').flexslider();
       });
-
-
-
-
-
-
-
-
 
 
 
@@ -91,18 +77,6 @@ $(function() {
       		$('html, body').animate({scrollTop : 0},800);
       		return false;
       	});
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });

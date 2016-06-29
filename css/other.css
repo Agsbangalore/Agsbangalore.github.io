@@ -1,0 +1,1749 @@
+/*-------------------------------------------------------------------------
+Fonts style    ----------------remove later
+---------------------------------------------------------------------------*/
+/*
+      font-family: 'Lato', sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Muli', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+*/
+
+
+/*-------------------------------------------------------------------------
+global styles
+---------------------------------------------------------------------------*/
+
+
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/Preloader_1.gif) center no-repeat #fff;
+}
+
+
+
+.container {
+      position:relative;
+      width: 100%;
+      padding: 0;
+  }
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+/*box sizing*/
+*{
+	box-sizing: border-box;
+}
+
+
+/*Makes headers disappear*/
+h1.hideHeader, h2.hideHeader{
+	display: none;
+}
+
+/*Remove bullets of all list items*/
+ul,ol{
+      list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+menu Section
+---------------------------------------------------------------------------*/
+
+
+
+/* Hide nav handler checkbox */
+#navToggle{
+  display: none;
+}
+
+
+/* Header */
+
+
+/* Header menu button */
+label#navButton {
+      position:fixed;
+      top:0;
+      right:0;
+      padding:18px;
+      line-height: 0.6;
+      font-size: 2em;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      z-index: 3;
+      color: white;
+      background: rgba(31, 170, 235, 0.3);
+      /*border: 1px solid rgba(31, 170, 235, 0.3);*/
+}
+
+label#navButton:hover{
+      color: white;
+      background: rgba(31, 170, 235, 1);
+}
+
+
+/* Header active menu button */
+#navToggle:checked + label#navButton{
+	color: white;
+	right:300px;
+}
+
+/* Slide out navigation */
+#nav {
+	position: fixed;
+      text-align: center;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	z-index: 1;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	background: #333;
+}
+
+/* Active slide out navigation */
+#navToggle:checked ~ nav#nav {
+      background: #333;
+      opacity: 1;
+      transition: opacity 0s 0s;
+      -moz-transition: opacity 0s 0s;
+      -webkit-transition: opacity 0s 0s;
+}
+
+/* Slide out navigation list items */
+#nav ul li {
+	display: block;
+	clear: both;
+      color: white;
+}
+
+#nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+      color: white;
+      text-decoration: none;
+}
+
+.pageContent {
+      background: rgba(230,230,230,1);
+	display: block;
+	position: relative;
+	height: 100%;
+	transform: translate3D(0, 0, 0);
+	-moz-transform: translate3D(0, 0, 0);
+	-webkit-transform: translate3D(0, 0, 0);
+	transition: -transform .25s ease-in-out;
+	-moztransition: -moz-transform .25s ease-in-out;
+	transition: -webkit-transform .25s ease-in-out;
+	z-index: 2;
+      -webkit-box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
+      box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
+}
+
+#navToggle:checked ~ .pageContent {
+	transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
+	-moz-transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
+	-webkit-transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
+}
+
+#content-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 75px 0 0 0; /* Top padding must be same as header height*/
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	background: #fff;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+/*menu styling*/
+
+.navList{
+      margin-top: 55px;
+      padding: 0px;
+}
+
+.navList ul{
+      padding: 0px;
+}
+
+.navList:last-child{
+      margin-bottom: 200px;
+}
+
+#nav li a{
+      text-align: left;
+      font-size: 0.9em;
+      padding: 17px 0px 20px 17px;
+      margin-bottom: 2px;
+      border-left: 6px solid cyan;
+      background: #444;
+}
+
+#nav ul ul li a{
+      padding-left: 40px;
+      border-left: 6px solid cyan;
+}
+
+#nav li a:hover{
+      background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Head Section
+---------------------------------------------------------------------------*/
+.headerSection{
+      background:rgba(0,0,0,0.8);
+      color:white;
+      position: fixed;
+      z-index: 1;
+      padding: 10px 20px;
+}
+
+.logo{
+      display: block;
+      background: url("../images/adventLogoWhite.png") no-repeat;
+      background-size: contain;
+      width:160px;
+      height:35px;
+      text-indent: -999%;
+}
+
+#navSpread{
+      display: none;
+}
+
+
+.headerSection #navBurger{
+      display: none;                  /*change this*/
+      position: absolute;
+      top:10px;
+      right:17px;
+      font-size: 2em;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Hero Image Section
+---------------------------------------------------------------------------*/
+
+.heroImage{
+      display: block;
+      position: relative;
+      background:url("../images/In-And-Out.jpg") center center no-repeat;
+      background-size: cover;
+      width:100%;
+      height:50vh;
+      width:100%;
+      overflow: hidden;
+}
+
+
+
+.heroImage .banner{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      z-index: 1;
+      color: white;
+}
+
+.ctaText{
+      font-family: 'Dancing Script', cursive;
+      font-weight:700;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+}
+
+.ctaButton{
+      padding: 10px 35px;
+      border: 1px solid white;
+      /*border-radius: 5px;*/
+      background: none;
+      font-family:'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.2em;
+}
+
+.ctaButton:hover{
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.9);
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Why Us Secion
+---------------------------------------------------------------------------*/
+
+.whyUsSection{
+
+}
+
+.whyUsSection h2,.whyUsSection h2{
+
+}
+
+.whyUsBox{
+      width:100%;
+      float: left;
+}
+
+.whyUsHead{
+      height: 100px;
+      background: white;
+      white-space: nowrap;
+      position: relative;
+}
+
+.whyUsHead h2{
+      position: absolute;
+      margin: 0;
+      margin-top: 30px;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 1.8em;
+      text-transform: uppercase;
+}
+
+.whyUsText{
+      background: white;
+      text-align: center;
+}
+
+.whyUsText p {
+      padding: 20px 20px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;    /*1.5em*/
+      line-height: 1.7rem;     /*1.3em*/
+      color:#444;
+}
+
+.whyUsButton {
+      height: 50px;
+      background: white;
+      position: relative;
+      margin-bottom: 80px;
+}
+
+
+.whyUsButton .whyUsBtn {
+      display: block;
+      padding: 10px 35px;
+      margin: 0 auto 30px;
+      max-width: 600px;
+      /*top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);*/
+      border: 1px solid rgba(31, 170, 235, 1);
+      background: none;
+      color:rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1em;
+}
+
+.whyUsButton br{
+      display: none;
+}
+
+.whyUsButton .whyUsBtn:hover{
+      background: rgba(31, 170, 235, 1);
+      color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+what we offer Section
+---------------------------------------------------------------------------*/
+
+.featureBox{
+      width:50%;
+      float: left;
+      height:50vw;
+      position: relative;
+}
+
+.featureBox a{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+}
+
+.featureBox a h4{
+      margin:0;
+      position: absolute;
+      text-align: center;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-decoration: none;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 0.9rem;
+}
+
+
+.featureTitle{
+      width:50%;
+      float: left;
+      height:50vw;
+      background: rgba(231,76,60,1);
+      position: relative;
+}
+
+.featureTitle h2{
+      position: absolute;
+      margin: 0px;
+      text-align: right;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+}
+
+.feature1{
+      background: linear-gradient( rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ), url("../images/feature1.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature2{
+      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature3{
+      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature3.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature4{
+      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
+      background-size: cover;
+}
+
+.feature5{
+      background: linear-gradient( rgba(67,160,71,0.75), rgba(67,160,71,0.75) ),url("../images/feature5.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature6{
+      background: linear-gradient( rgba(2,136,209,0.75), rgba(2,136,209,0.75) ),url("../images/feature6.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature7{
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature8{
+      background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature9{
+      background: linear-gradient( rgba(124,197,118,0.75), rgba(124,197,118,0.75) ),url("../images/feature9.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature10{
+      background: linear-gradient( rgba(245,152,157,0.75), rgba(245,152,157,0.75) ),url("../images/feature10.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature11{
+      background: linear-gradient( rgba(94,53,177,0.75), rgba(94,53,177,0.75) ),url("../images/feature11.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+
+.featureBox:hover a:before{
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      width:100%;
+      background: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Testimonial section
+---------------------------------------------------------------------------*/
+
+.testimonialSection{
+      position:relative;
+      background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
+      background-size: cover;
+      width:100%;
+      height:80vh;
+      margin-top:172px;
+}
+
+h2.testimonialTitle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+}
+
+.quoteBox{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width: 80%;
+      background: none;
+      border: none;
+      color: white;
+}
+
+.quoteBox p{
+      margin: 0 auto;
+      text-align: center;
+      max-width: 50%;
+}
+
+.quoteBox p span{
+      display: block;
+      text-align: right;
+}
+
+.quoteBox .flex-direction-nav{
+      display: none;
+}
+
+
+/*
+.flex-direction-nav, .flex-control-nav{
+      color:white;
+}
+*/
+
+
+/*changes in flexslider css....ionicons used instead of flexslider icons*/
+
+.quoteBox .flex-direction-nav a:before {
+  font-family: "Ionicons";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f361';
+  color: white;
+  text-shadow: none;
+}
+
+.quoteBox .flex-direction-nav a.flex-next:before {
+  content: '\f363';
+}
+
+.quoteBox .flex-control-paging li a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: #666;
+  background: rgba(255,255,255, 0);
+  border: 2px solid rgba(255,255,255,0.9);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.quoteBox .flex-control-paging li a:hover {
+  background: #333;
+  border: 2px solid rgba(255,255,255,0.7);
+  background: rgba(255,255,255, 0.7);
+}
+.quoteBox .flex-control-paging li a.flex-active {
+  background: #000;
+  border: 2px solid rgba(255,255,255,1);
+  background: rgba(255,255,255, 1);
+  cursor: default;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Client Section
+---------------------------------------------------------------------------*/
+
+.clientSection{
+      position: relative;
+      background: white ;
+      width: 100%;
+      height: 33.3333333333333vw;
+      margin-top: 172px;
+      border-top: 0.5px solid #999;
+      border-bottom: 0.5px solid #999;
+}
+
+h2.clientTitle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+}
+
+.navBoxLeft{
+      display: none;
+      position: absolute;
+      height:100%;
+      width: 12.5%;
+      top:0;
+      left:0;
+      background: white;
+      border-right: 0.1px solid #999;
+}
+
+.navBoxRight{
+      display: none;
+      position: absolute;
+      height:100%;
+      width: 12.5%;
+      top:0;
+      right:0;
+      background: white;
+      border-left: 1px solid #999;
+}
+
+.clientBox{
+      margin:0px;
+}
+
+
+.clientBox .flex-direction-nav{
+      display: none;
+}
+
+.clientBox .flex-direction-nav {
+  *height: 0;
+}
+
+.clientBox .flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.clientBox .flex-direction-nav a:before {
+  font-family: "Ionicons";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f361';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.clientBox .flex-direction-nav a.flex-next:before {
+  content: '\f363';
+}
+.clientBox .flex-direction-nav .flex-prev {
+  left: -9%;
+}
+.clientBox .flex-direction-nav .flex-next {
+  right: -9%;
+  text-align: right;
+}
+.clientBox:hover .flex-direction-nav .flex-prev {
+  opacity: 1;
+  left: -9%;
+}
+.clientBox:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.clientBox:hover .flex-direction-nav .flex-next {
+  opacity: 1;
+  right: -9%;
+}
+.clientBox:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 1!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+
+
+
+
+.clientBox .slides li {
+      margin-right: 0px: !important
+}
+
+div.clientBox{
+      border: 0px;
+      border-radius: 0px;
+      height:100%;
+}
+
+.clientBox .flex-viewport, .clientBox .slides{
+      display: block;
+      height:100%;
+}
+
+
+.clientBox .slides li{
+      box-sizing:content-box;
+      display:block;
+      position: relative;
+      height:100%;
+      border-left: 0.5px solid #999;
+
+}
+
+.clientBox .slides li div{
+      display: block;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+}
+
+
+.abb {
+      background: url("../images/abb.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.abbott {
+      background: url("../images/abbott.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bectonDickson {
+      background: url("../images/bectonDickson.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bmw {
+      background: url("../images/bmw.png") center center no-repeat;
+      background-size: contain;
+      height:60%;
+      width:60%;
+}
+
+.caterpillar {
+      background: url("../images/caterpillar.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.celgene {
+      background: url("../images/celgene.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.citizens {
+      background: url("../images/citizens.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.datalogic {
+      background: url("../images/datalogic.jpg") center center no-repeat;
+      background-size: contain;
+      height:90%;
+      width:90%;
+}
+
+.henkel {
+      background: url("../images/henkel.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.humana {
+      background: url("../images/humana.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mercedes {
+      background: url("../images/mercedes.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mtbank {
+      background: url("../images/mtBank.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.philips {
+      background: url("../images/philips.png") center center no-repeat;
+      background-size: contain;
+      height:50%;
+      width:50%;
+}
+
+.ricoh {
+      background: url("../images/ricoh.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.symantec {
+      background: url("../images/symantec.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.unisys {
+      background: url("../images/unisys.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Social Section
+---------------------------------------------------------------------------*/
+.socialSection{
+      position: relative;
+      background: salmon;
+      width: 100%;
+      height: 50vw;
+      margin-top: 172px;
+}
+
+h2.socialTitle{
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+}
+
+.socialContainer{
+      display: none;
+}
+
+.socialMediaIcons ul{
+      margin: 0;
+      padding: 0;
+      display: block;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      white-space: nowrap;
+
+}
+
+.socialMediaIcons ul li{
+      display: inline-block;
+      width: 20px;
+      height:20px;
+      padding: 0 43px 0 25px;
+}
+
+.socialMediaIcons ul li a{
+      text-indent: -999%;
+      font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Contact Section
+---------------------------------------------------------------------------*/
+
+.contactSection{
+      position: relative;
+      background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
+      background-size: cover;
+      width: 100%;
+      height: 360px;
+      margin-top: 172px;
+}
+
+
+
+h2.contactTitle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+}
+
+
+.contactForm{
+      background: none;
+      position: absolute;
+      width: 80%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+}
+
+.contactForm p {
+      margin-left: 1%;
+      color:white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1em;
+}
+
+/*styling of placeholder text*/
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+/*-----------------------------------------*/
+
+
+.inputFloat{
+      float: left;
+      padding: 10px;
+}
+
+#name, #email {
+      width: 98%;
+      margin:5px 1%;
+      background: none;
+      border: 2px solid white;
+      color: white;
+}
+
+.contactForm textarea{
+      width: 98%;
+      height: 100px;
+      margin: 5px 1% 10px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      resize: none;
+}
+
+#formSubmit {
+      display: block;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 15px;
+      padding: 10px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Footer Section
+---------------------------------------------------------------------------*/
+
+
+.footerSection{
+      background: #333;
+      color:white;
+}
+
+.footerSection p{
+      font-size: 16px;
+}
+
+.AboutUs{
+      display:none;
+}
+
+.siteInfo{
+      display: block;
+}
+
+.info{
+      text-align: center;
+      float:left;
+      width:100%;
+}
+
+.adventLogo{
+      padding: 20px
+}
+
+.adventLogo a{
+      display: block;
+      margin: 0 auto;
+      background: url("../images/adventLogoWhite.png") no-repeat top center;
+      background-size: contain;
+      max-width: 300px;
+      height:43px;
+      text-indent: -999%;
+}
+
+.corpHQ{
+      text-align: center;
+}
+
+.footerCol2{
+      text-align: center;
+}
+.footerCol2, .footerCol1{
+      padding: 30px;
+}
+
+
+.info ul{
+      padding: 0px;
+}
+
+.info li{
+      display: inline-block;
+      padding:10px;
+}
+
+.info li a{
+      color: white;
+      text-decoration: none;
+}
+
+.copyright{
+      text-align: center;
+      float: left;
+      width: 100%;
+      padding:10px;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Scroll to top Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+.scrollToTop{
+	width:60px;
+	height:60px;
+	padding:10px;
+	text-align:center;
+	background: rgba(255, 255, 255, 0.1);
+      font-size: 2em;
+	font-weight: bold;
+	color: rgba(31, 170, 235, 1);
+	text-decoration: none;
+	position:fixed;
+	bottom:40px;
+	right:0px;
+	display:none;
+      z-index: 200;
+	}
+
+.scrollToTop:hover{
+      background: rgba(31, 170, 235, 1);
+      color: white;
+	text-decoration:none;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Social Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+Tablet Styles Section
+---------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 700px) {
+      /* For tablets: */
+
+
+
+/*-------------------------------------------------------------------------
+Header Section
+---------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------------
+Hero Image Section
+---------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------------
+Why Us Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------------------------------------
+What we Offer  Section
+---------------------------------------------------------------------------*/
+
+.featureTitle{
+      width:33.333333333%;
+      float: left;
+      height:30vw;
+}
+
+.featureBox{
+      width:33.333333333%;
+      float: left;
+      height:30vw;
+}
+
+.featureBox a h4{
+      font-size: 1.4rem;
+}
+
+.featureBox a h4 span {
+      white-space: nowrap;
+}
+
+.featureTitle h2{
+      font-size: 3rem;
+}
+
+
+
+/*-------------------------------------------------------------------------
+ Testimonial Section
+---------------------------------------------------------------------------*/
+
+.testimonialSection{
+      width:100%;
+      height:50vw;
+      margin-top:172px;
+}
+
+.quoteBox .flex-direction-nav{
+      display: block;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Client Section
+---------------------------------------------------------------------------*/
+
+.clientSection{
+      height: 16.666666666666667vw;
+}
+
+.navBoxLeft, .navBoxRight{
+      display: block;
+}
+
+.clientBox .flex-direction-nav{
+      display: block;
+}
+
+.clientBox{
+      margin:0 12.5%;
+}
+
+
+
+
+/*-------------------------------------------------------------------------
+ Testimonial Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Social Section Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Contact Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Footer Section
+---------------------------------------------------------------------------*/
+
+.adventLogo{
+
+}
+
+.footerCol1{
+      width:33.33333333333%;
+      float:left;
+}
+
+.corpHQ{
+      width: 100%;
+}
+
+.footerCol2{
+      width:33.33333333333%;
+      float:left;
+      text-align: left;
+}
+
+
+
+
+
+}
+
+
+/*-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+Desktop Styles Section
+---------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+
+
+@media only screen and (min-width: 1000px) {
+      /* For tablets: */
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Header Section
+---------------------------------------------------------------------------*/
+
+#navSpread{
+      display: none;    /*change this*/
+
+      position: absolute;
+      top:10px;
+      right:17px;
+}
+
+#navSpread a{
+      color:white;
+      text-decoration: none;
+      list-style: none;
+}
+
+#navSpread ul{
+      margin: 0px;
+}
+
+#navSpread li{
+      display: inline-block;
+      padding-right: 30px;
+      padding-top: 10px;
+}
+
+#navSpread ul li.searchGlass{
+      padding-right: 10px;
+}
+
+#navBurger{
+      display: none;
+}
+
+
+/*-------------------------------------------------------------------------
+Hero Image Section
+---------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------------
+Why Us Section
+---------------------------------------------------------------------------*/
+
+.whyUsHead{
+      width: 25%;
+      height: 25vw;
+}
+
+.whyUsText{
+      width: 50%;
+      height: 25vw;
+}
+
+.whyUsText p {
+      padding: 50px 20px;
+}
+
+.whyUsHead h2 {
+      margin: 0;
+      font-size: 3.5em;
+}
+
+.whyUsButton{
+      width: 25%;
+      height: 25vw;
+      margin-bottom: 0px;
+      text-align: center;
+}
+
+.whyUsButton .whyUsBtn {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      padding: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border: 1px solid rgba(31, 170, 235, 1);
+      background: none;
+      color:rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.03em;
+      line-height: 1.1em;
+}
+
+.whyUsButton br{
+      display: block;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+What we Offer  Section
+---------------------------------------------------------------------------*/
+
+.featureTitle{
+      width:25%;
+      float: left;
+      height:25vw;
+}
+
+.featureBox{
+      width:25%;
+      float: left;
+      height:25vw;
+}
+
+.featureBox a h4{
+      font-size: 1.4rem;
+}
+
+.featureTitle h2{
+      font-size: 3.3rem;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Testimonial Section
+---------------------------------------------------------------------------*/
+
+.testimonialSection{
+      width:100%;
+      height:25vw;
+      margin-top:172px;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Client Section
+---------------------------------------------------------------------------*/
+
+.clientSection{
+      height: 12.5vw;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Social Section Section
+---------------------------------------------------------------------------*/
+
+.socialSection{
+      width: 100%;
+      height: 50vw;
+}
+
+.socialContainer{
+      display: block;
+}
+
+.socialBox{
+      width:25%;
+      float: left;
+      height: 50vw;
+}
+
+.social1{
+      background: teal;
+}
+
+.social2{
+      background: salmon;
+}
+
+.social3{
+      background: aquamarine;
+}
+
+.social4{
+      background: blueviolet;
+}
+
+
+.socialImg1,.socialImg2,.socialImg3,.socialImg4{
+      width:100%;
+      height:345px;
+      border: 0.5px solid #222;
+      border-top: 2px solid #222;
+      border-bottom: 2px solid #222;
+
+}
+
+.socialMediaIcons{
+      display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Contact Section
+---------------------------------------------------------------------------*/
+
+#name, #email {
+      width: 48%;
+      margin:5px 1%;
+      background: none;
+      border: 2px solid white;
+      color: white;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Footer Section
+---------------------------------------------------------------------------*/
+
+.adventLogo{
+
+}
+.footerCol1{
+      width:25%;
+      float:left;
+}
+
+.corpHQ{
+      width:100%;
+      float:left;
+}
+
+.footerCol2{
+      width:25%;
+      float:left;
+}
+
+
+.info{
+      text-align: left;
+      float:left;
+      width:50%;
+}
+.copyright{
+      text-align: right;
+      float: left;
+      width: 50%;
+      padding:10px;
+}
+
+
+.AboutUs{
+      display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
