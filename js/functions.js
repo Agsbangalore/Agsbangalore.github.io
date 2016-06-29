@@ -75,57 +75,40 @@ $(function() {
 
 
 
-
+if($(window).width()>1000){
 
 /*child pages title animation*/
 
-$(window).scroll(function(){
-      var wScroll = $(this).scrollTop(),
-      introTop = $('.introSection').offset().top,
-      windowHeight = $(window).height(),
-      introHeadHeight = $('.introHead').height(),
-      introHead = $('.introHead').offset().top,
-      introHeadBottom = $('.introHeadFloat').offset().top + $('.introHeadFloat').height();
+            $(window).scroll(function(){
+                  var wScroll = $(this).scrollTop(),
+                  introTop = $('.introSection').offset().top,
+                  windowHeight = $(window).height(),
+                  introHeadHeight = $('.introHead').height(),
+                  introHead = $('.introHead').offset().top,
+                  introHeadBottom = $('.introHeadFloat').offset().top + $('.introHeadFloat').height();
 
-      /*console.log('windowHeight' + windowHeight);
-      console.log('introHeadBottom' + introHeadBottom);
-      console.log(wScroll+windowHeight);*/
+                  /*console.log('windowHeight' + windowHeight);
+                  console.log('introHeadBottom' + introHeadBottom);
+                  console.log(wScroll+windowHeight);*/
+                  
 
-      if(((wScroll+windowHeight)>=introHeadBottom)&&
-      ((wScroll+windowHeight)<=introHeadBottom+($('.introHeadFloat').height()-145))){
-            /*console.log((wScroll+windowHeight)-introHeadBottom);*/
+                  if(((wScroll+windowHeight)>=introHeadBottom)&&
+                  ((wScroll+windowHeight)<=introHeadBottom+($('.introHeadFloat').height()-145))){
 
-            $('.introHead').css({
-            'transform' : 'translate(0px, '+ (-50+((wScroll+windowHeight)-introHeadBottom)) +'px)'
+                        $('.introHead').css({
+                        'transform' : 'translate(0px, '+ (-50+((wScroll+windowHeight)-introHeadBottom)) +'px)'
+                        });
+
+                  }else if ((wScroll+windowHeight)>introHeadBottom) {
+
+                        $('.introHead').css({
+                        'transform' : 'translate(0px, 150px)'
+                        });
+                  }
+
             });
 
-      }else if ((wScroll+windowHeight)>introHeadBottom) {
-
-            $('.introHead').css({
-            'transform' : 'translate(0px, 150px)'
-            });
-      }
-/*
-            $('.introHead').animate({
-            'top' : '0px'
-            });
-
-
-      }*/
-
-
-      /*var diff = (introTop-20) - wScroll;
-
-      console.log(introTop);
-      if (wScroll > (introTop-introHeadHeight)) {
-            console.log('hahahaha');
-            $('.introHead').css({
-            'top' : '-'+ diff +'%'
-            });
-      }*/
-});
-
-
+}
 
 
 

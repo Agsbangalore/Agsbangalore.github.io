@@ -70,7 +70,6 @@ ul,ol{
 
 
 
-
 /*-------------------------------------------------------------------------
 menu Section
 ---------------------------------------------------------------------------*/
@@ -95,6 +94,7 @@ label#navButton {
       line-height: 0.6;
       font-size: 2em;
       cursor: pointer;
+      -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       z-index: 3;
       color: white;
@@ -169,8 +169,6 @@ label#navButton:hover{
 	-moztransition: -moz-transform .25s ease-in-out;
 	transition: -webkit-transform .25s ease-in-out;
 	z-index: 2;
-      -webkit-box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
-      -moz-box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
       box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
 }
 
@@ -337,7 +335,7 @@ Intro Section
 
 .introHeadFloat{
       display: block;
-      width:25%;
+      width:100%;
       height:25vw;
       float: left;
       background: white;
@@ -352,29 +350,27 @@ Intro Section
       height:100%;
       background: salmon;
       position: absolute;
-      top: -150px;
+      top: 0px;
+	text-align: center;
 }
 
 .introHead h2{
-      position: absolute;
-      margin: 0;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
+      margin: 12px auto;
+	display: block;
       color: white;
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
-      font-size: 3.5em;
-      text-align: right;
+      font-size: 2.5em;
+      text-align: center;
       text-transform: uppercase;
 }
 
 .textHigh{
       display: block;
       position: relative;
-      width:25%;
-      height:25vw;
+      width:100%;
+      height:70vw;
       float: right;
       clear: both;
       background: transparent;
@@ -394,14 +390,11 @@ Intro Section
       position: absolute;
       margin: 0;
       padding: 20px 70px 0 20px;
-      /*top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);*/
       color: rgba(31, 170, 235, 1);
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       font-style: italic;
-      font-size: 2.0em;
+      font-size: 1.5em;
       text-align: left;
 }
 
@@ -410,7 +403,7 @@ Intro Section
 
 .introText p{
       margin: 0;
-      padding: 20px 140px;
+      padding: 20px 20px;
       margin: 0 auto;
       text-align: center;
       text-align: justify;
@@ -443,14 +436,16 @@ Also See Section
 h2.alsoSeeTitle{
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
       top: -70px;
+	white-space: nowrap;
 }
 
 .linkBox{
-      width:25%;
+      width:50%;
       float: left;
-      height:25vw;
+      height:50vw;
       position: relative;
 }
 
@@ -468,32 +463,37 @@ h2.alsoSeeTitle{
       text-align: center;
       top:50%;
       left:50%;
-      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
       text-decoration: none;
       color: white;
       font-family: 'Lato', sans-serif;
       font-weight: 900;
-      font-size: 1.9rem;
+      font-size: 1.3rem;
 }
 
 
 
 .link1{
+      background: -webkit-linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .link2{
+      background: -webkit-linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
       background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
       background-size: cover;
 }
 
 .link3{
+      background: -webkit-linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background-size: cover;
 }
 
 .link4{
+      background: -webkit-linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background-size: cover;
 }
@@ -522,25 +522,30 @@ Contact Section
 
 .contactSection{
       position: relative;
+      background: -webkit-linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;
       background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
       background-size: cover;
       width: 100%;
-      height: 360px;
+      height: auto;
       margin-top: 172px;
 }
 
 h2.contactTitle{
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
       top: -70px;
 }
 
 .contactFlex{
 	display: flex;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	height: 100%;
 }
 
@@ -549,22 +554,27 @@ h2.contactTitle{
 }
 
 .contactForm{
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	display: flex;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
-	/*border: 1px solid white;*/
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	padding: 20px 20px 20px 80px;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	padding: 20px 20px 50px 20px;
 	color:white;
 }
 
 .contactForm p{
 	width:100%;
 	margin:5px 1%;
+	text-align: center;
 }
 
 .inputFlex{
@@ -575,7 +585,7 @@ h2.contactTitle{
 }
 
 .contactForm input[type=text]{
-	width: 48%;
+	width: 98%;
 }
 
 .contactForm textarea{
@@ -585,42 +595,48 @@ h2.contactTitle{
 }
 
 .contactForm button{
-	width: 15%;
+	width:25%;
 }
 
 .socialMediaIcons{
-	width:25%;
-	height:100%;
+	width:100%;
+	height:25%;
 	display: flex;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
-	/*border: 1px solid white;*/
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .socialMediaIcons p{
 	margin:0px;
 	margin-bottom:10px;
-	margin-right: 40px;
+
 }
 
 .mediaBox{
 	padding: 0;
 	margin: 0;
 	margin-bottom: 36px;
-	margin-right: 40px;
-	height: 150px;
-	width: 150px;
+	/*margin-right: 40px;*/
+	height: 80px;
+	width: 300px;
 	border: 2px solid white;
 	display: flex;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .socialLogo{
@@ -628,10 +644,13 @@ h2.contactTitle{
 	width:73px;
 	display: flex;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .socialLogo a i{
@@ -865,45 +884,11 @@ Why Us Section
 What we Offer  Section
 ---------------------------------------------------------------------------*/
 
-.featureTitle{
-      width:33.333333333%;
-      float: left;
-      height:30vw;
-}
-
-.featureBox{
-      width:33.333333333%;
-      float: left;
-      height:30vw;
-}
-
-.featureBox a h4{
-      font-size: 1.4rem;
-}
-
-.featureBox a h4 span {
-      white-space: nowrap;
-}
-
-.featureTitle h2{
-      font-size: 3rem;
-}
-
 
 
 /*-------------------------------------------------------------------------
  Testimonial Section
 ---------------------------------------------------------------------------*/
-
-.testimonialSection{
-      width:100%;
-      height:50vw;
-      margin-top:172px;
-}
-
-.quoteBox .flex-direction-nav{
-      display: block;
-}
 
 
 
@@ -912,22 +897,6 @@ What we Offer  Section
 /*-------------------------------------------------------------------------
  Client Section
 ---------------------------------------------------------------------------*/
-
-.clientSection{
-      height: 16.666666666666667vw;
-}
-
-.navBoxLeft, .navBoxRight{
-      display: block;
-}
-
-.clientBox .flex-direction-nav{
-      display: block;
-}
-
-.clientBox{
-      margin:0 12.5%;
-}
 
 
 
@@ -1057,56 +1026,108 @@ Hero Image Section
 
 
 /*-------------------------------------------------------------------------
-Why Us Section
+Intro Section
 ---------------------------------------------------------------------------*/
 
-.whyUsHead{
-      width: 25%;
-      height: 25vw;
+
+
+
+.introSection{
+      position: relative;
 }
 
-.whyUsText{
-      width: 50%;
-      height: 25vw;
-}
 
-.whyUsText p {
-      padding: 50px 20px;
-}
-
-.whyUsHead h2 {
-      margin: 0;
-      font-size: 3.5em;
-}
-
-.whyUsButton{
-      width: 25%;
-      height: 25vw;
-      margin-bottom: 0px;
-      text-align: center;
-}
-
-.whyUsButton .whyUsBtn {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      padding: 0;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      border: 1px solid rgba(31, 170, 235, 1);
-      background: none;
-      color:rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 1.03em;
-      line-height: 1.1em;
-}
-
-.whyUsButton br{
+.introHeadFloat{
       display: block;
+      width:25%;
+      height:25vw;
+      float: left;
+      background: white;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      position: relative;
 }
+
+.introSection .introHead{
+      display: block;
+      width:100%;
+      height:100%;
+      background: salmon;
+      position: absolute;
+      top: -150px;
+}
+
+.introHead h2{
+      position: absolute;
+      margin: 0;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 3.5em;
+      text-align: right;
+      text-transform: uppercase;
+}
+
+.textHigh{
+      display: block;
+      position: relative;
+      width:25%;
+      height:25vw;
+      float: right;
+      clear: both;
+      background: transparent;
+      border-left: 5px solid orange;
+      margin-left: 30px;
+      margin-bottom: 10px;
+}
+
+.textHighFloat:before{
+      content: '' ;
+      display:block;
+      float: right;
+      height: 500px;
+}
+
+.textHigh h5{
+      position: absolute;
+      margin: 0;
+      padding: 20px 70px 0 20px;
+      /*top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);*/
+      color: rgba(31, 170, 235, 1);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 2.0em;
+      text-align: left;
+}
+
+
+
+
+.introText p{
+      margin: 0;
+      padding: 20px 140px;
+      margin: 0 auto;
+      text-align: center;
+      text-align: justify;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;    /*1.5em*/
+      line-height: 1.7rem;     /*1.3em*/
+      color:#444;
+}
+
+
+
+
+
 
 
 
@@ -1115,27 +1136,91 @@ Why Us Section
 
 
 /*-------------------------------------------------------------------------
-What we Offer  Section
+Also See Section
 ---------------------------------------------------------------------------*/
 
-.featureTitle{
+
+
+
+.alsoSeeSection{
+      margin-top: 172px;
+      position: relative;
+}
+
+h2.alsoSeeTitle{
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: -70px;
+}
+
+.linkBox{
       width:25%;
       float: left;
       height:25vw;
+      position: relative;
 }
 
-.featureBox{
-      width:25%;
-      float: left;
-      height:25vw;
+.linkBox a{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
 }
 
-.featureBox a h4{
-      font-size: 1.4rem;
+.linkBox a h4{
+      margin:0;
+      position: absolute;
+      text-align: center;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+      text-decoration: none;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 1.9rem;
 }
 
-.featureTitle h2{
-      font-size: 3.3rem;
+
+
+.link1{
+      background: -webkit-linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
+      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.link2{
+      background: -webkit-linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
+      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
+      background-size: cover;
+}
+
+.link3{
+      background: -webkit-linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
+      background-size: cover;
+}
+
+.link4{
+      background: -webkit-linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
+      background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+
+
+.linkBox:hover a:before{
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      width:100%;
+      background: rgba(0,0,0,0.3);
 }
 
 
@@ -1147,11 +1232,6 @@ What we Offer  Section
  Testimonial Section
 ---------------------------------------------------------------------------*/
 
-.testimonialSection{
-      width:100%;
-      height:25vw;
-      margin-top:172px;
-}
 
 
 
@@ -1161,10 +1241,6 @@ What we Offer  Section
 /*-------------------------------------------------------------------------
  Client Section
 ---------------------------------------------------------------------------*/
-
-.clientSection{
-      height: 12.5vw;
-}
 
 
 
@@ -1191,6 +1267,143 @@ What we Offer  Section
 /*-------------------------------------------------------------------------
  Contact Section
 ---------------------------------------------------------------------------*/
+
+
+
+
+.contactSection{
+      position: relative;
+      background: -webkit-linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;
+      background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
+      background-size: cover;
+      width: 100%;
+      height: 360px;
+      margin-top: 172px;
+}
+
+h2.contactTitle{
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: -70px;
+}
+
+.contactFlex{
+	display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+	height: 100%;
+}
+
+.contactFlex p{
+	color: white;
+}
+
+.contactForm{
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	padding: 20px 20px 20px 80px;
+	color:white;
+}
+
+.contactForm p{
+	width:100%;
+	margin:5px 1%;
+}
+
+.inputFlex{
+	padding: 10px;
+	margin:5px 1%;
+	background: none;
+	border: 2px solid white;
+}
+
+.contactForm input[type=text]{
+	width: 48%;
+}
+
+.contactForm textarea{
+	width:98%;
+	resize: none;
+	height:80px
+}
+
+.contactForm button{
+	width: 15%;
+}
+
+.socialMediaIcons{
+	width:25%;
+	height:100%;
+	display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.socialMediaIcons p{
+	margin:0px;
+	margin-bottom:10px;
+	margin-right: 40px;
+}
+
+.mediaBox{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 36px;
+	margin-right: 40px;
+	height: 150px;
+	width: 150px;
+	border: 2px solid white;
+	display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.socialLogo{
+	height:73px;
+	width:73px;
+	display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.socialLogo a i{
+	font-size: 2em;
+	color: white;
+}
+
 
 
 
