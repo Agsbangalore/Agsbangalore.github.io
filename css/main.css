@@ -825,18 +825,17 @@ h2.clientTitle{
   opacity: 1;
   right: -9%;
 }
+
 .clientBox:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
 }
+
 .flex-direction-nav .flex-disabled {
   opacity: 1!important;
   filter: alpha(opacity=0);
   cursor: default;
   z-index: -1;
 }
-
-
-
 
 .clientBox .slides li {
       margin-right: 0px: !important
@@ -1021,7 +1020,6 @@ h2.socialTitle{
       left:50%;
       transform: translate(-50%,-50%);
       white-space: nowrap;
-
 }
 
 .socialMediaIcons ul li{
