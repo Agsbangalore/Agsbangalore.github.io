@@ -90,7 +90,7 @@ if($(window).width()>1000){
                   /*console.log('windowHeight' + windowHeight);
                   console.log('introHeadBottom' + introHeadBottom);
                   console.log(wScroll+windowHeight);*/
-                  
+
 
                   if(((wScroll+windowHeight)>=introHeadBottom)&&
                   ((wScroll+windowHeight)<=introHeadBottom+($('.introHeadFloat').height()-145))){

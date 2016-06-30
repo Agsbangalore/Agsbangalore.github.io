@@ -158,7 +158,7 @@ label#navButton:hover{
 
 
 .pageContent {
-      background: rgba(230,230,230,1);
+      background: rgba(240,240,240,1);
 	display: block;
 	position: relative;
 	height: 100%;
@@ -172,7 +172,7 @@ label#navButton:hover{
       box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
 }
 
-.aboutUs .pageContent {
+.aboutUs .pageContent, .clients .pageContent{
       background: white;
 }
 
@@ -191,7 +191,6 @@ label#navButton:hover{
 	height: 100%;
 	padding: 75px 0 0 0; /* Top padding must be same as header height*/
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
 	background: #fff;
 	z-index: -1;
 }
@@ -336,7 +335,7 @@ Intro Section
 .introHeadFloat{
       display: block;
       width:100%;
-      height:25vw;
+      height:80px;
       float: left;
       background: white;
       margin-right: 30px;
@@ -344,14 +343,30 @@ Intro Section
       position: relative;
 }
 
-.introSection .introHead{
+.introHead{
       display: block;
       width:100%;
       height:100%;
-      background: salmon;
       position: absolute;
       top: 0px;
 	text-align: center;
+      padding: 0px 20px;
+}
+
+.aboutUs .introHead {
+      background: salmon;
+}
+
+.clients .introHead {
+      background: teal;
+}
+
+.csr .introHead {
+      background: cadetblue;
+}
+
+.news .introHead {
+      background: rgba(60,184,120,1);
 }
 
 .introHead h2{
@@ -366,11 +381,15 @@ Intro Section
       text-transform: uppercase;
 }
 
+.csr .introHead h2 {
+      font-size: 1.7em;
+}
+
 .textHigh{
       display: block;
       position: relative;
       width:100%;
-      height:70vw;
+      height:40vw;
       float: right;
       clear: both;
       background: transparent;
@@ -386,22 +405,20 @@ Intro Section
       height: 500px;
 }
 
-.textHigh h5{
+.textHigh h5 {
       position: absolute;
       margin: 0;
-      padding: 20px 70px 0 20px;
+      padding: 10px 70px 0 20px;
       color: rgba(31, 170, 235, 1);
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       font-style: italic;
-      font-size: 1.5em;
+      font-size: 6.5vw;
       text-align: left;
 }
 
 
-
-
-.introText p{
+.introText p {
       margin: 0;
       padding: 20px 20px;
       margin: 0 auto;
@@ -414,6 +431,506 @@ Intro Section
       color:#444;
 }
 
+
+/*-------------------------------------------------------------------------
+News Section - News
+---------------------------------------------------------------------------*/
+
+
+.newsSection {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+
+}
+
+.newsSidebar {
+      width: 100%;
+      padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+/*news sidebar styling*/
+
+input.newsSearch {
+      width: 100%;
+      padding: 20px;
+      background: none;
+      color: rgba(31, 170, 235, 1);
+      border: 2px solid rgba(31, 170, 235, 1);
+}
+
+.newsFeatured {
+      width: 100%;
+      background: white;
+      padding: 0px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+      -webkit-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      -moz-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+}
+
+.newsFeatured li{
+      padding: 20px 20px;
+      border-bottom: 1px solid rgba(230,230,230,1);
+}
+
+.newsFeatured li:last-child {
+      border-bottom: none;
+}
+
+.newsFeatured li a {
+      color: rgba(31, 170, 235, 1);
+      text-decoration: none;
+}
+
+.news .socialMediaIcons {
+	width:100%;
+	height:25%;
+	display: flex;
+      flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.news .socialMediaIcons p {
+      margin-right: 0px;
+}
+
+.news .socialMediaIcons .mediaBox {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 36px;
+	height: auto;
+	width: 100%;
+      border: 2px solid rgba(31, 170, 235, 1);
+	display: flex;
+      flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.news .socialMediaIcons .mediaBox li a i{
+      color: rgba(31, 170, 235, 1);
+}
+
+.news .socialMediaIcons .mediaBox .socialLogo{
+	height:53px;
+	width:53px;
+	display: flex;
+      align-items: center;
+	justify-content: center;
+}
+
+
+/*news Content styling*/
+
+.newsContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+}
+
+.newsBox {
+      background: white;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-bottom: 2px;
+      -webkit-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      -moz-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+}
+
+.newsText {
+      padding: 10px 20px 10px 20px;
+      height: 100%;
+      text-align: right;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+.newsText h3 {
+      font-size: 2.5vw;
+      margin-bottom: 0px;
+}
+
+.newsText p.date {
+      margin:5px;
+}
+
+.newsText p.newsPara {
+      font-size: 3vw;
+      margin: 0px;
+}
+
+.newsText p span {
+      display: block;
+      color: red;
+}
+
+.newsImg {
+      flex-shrink: 0;
+      width:40%;
+      height:60vw;
+      background: pink;
+}
+
+.news1{
+      border-left: 5px solid rgba(225,122,36,1);
+}
+
+.news2{
+      border-left: 5px solid rgba(161,134,190,1);
+}
+
+.news3{
+      border-left: 5px solid rgba(0,174,239,1);
+}
+
+.news4{
+      border-left: 5px solid rgba(60,184,120,1);
+}
+
+.news1 .newsImg {
+      background: url("../images/news1.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.news2 .newsImg {
+      background: url("../images/news2.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.news3 .newsImg {
+      background: url("../images/news3.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.news4 .newsImg {
+      background: url("../images/news4.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+CSR Section - CSR
+---------------------------------------------------------------------------*/
+
+.csrGallerySection {
+      margin-top: 100px;
+      position: relative;
+}
+
+h2.csrTitle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+}
+
+.csrGallery{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+}
+
+.csrImgBox{
+      height:50vw;
+      width:50%;
+      background: purple;
+      border: 1px solid grey;
+      box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Client and Testimonial Section - clients
+---------------------------------------------------------------------------*/
+
+.clientNTestSection{
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+}
+
+.clientGridSection{
+      width:100%;
+      height:100vw;
+      background: white;
+      padding: 0px;
+      /*border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);*/
+}
+
+.clientGridBox{
+      display: block;
+      width:100%;
+      height:100%;
+      background: rgba(0, 0, 0, 0.03);
+      margin:0px;
+}
+
+.clientGridBox ul{
+      margin:0;
+      height:100%;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;;
+      align-content: space-between;;
+}
+
+.clientGridBox ul li{
+      width:22%;
+      height:22%;
+      background: white;
+      border: 0.5px solid rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.clients .testimonialSection{
+      position:relative;
+      background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
+      background-size: cover;
+      width:100%;
+      height:400px;
+}
+
+.quoteBox{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width: 80%;
+      background: none;
+      border: none;
+      color: white;
+}
+
+.quoteBox p{
+      margin: 0 auto;
+      text-align: center;
+      max-width: 50%;
+}
+
+.quoteBox p span{
+      display: block;
+      text-align: right;
+}
+
+.quoteBox .flex-direction-nav{
+      display: none;
+}
+
+
+
+/*changes in flexslider css....ionicons used instead of flexslider icons*/
+
+.quoteBox .flex-direction-nav a:before {
+  font-family: "Ionicons";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f361';
+  color: white;
+  text-shadow: none;
+}
+
+.quoteBox .flex-direction-nav a.flex-next:before {
+  content: '\f363';
+}
+
+.quoteBox .flex-control-paging li a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: #666;
+  background: rgba(255,255,255, 0);
+  border: 2px solid rgba(255,255,255,0.9);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.quoteBox .flex-control-paging li a:hover {
+  background: #333;
+  border: 2px solid rgba(255,255,255,0.7);
+  background: rgba(255,255,255, 0.7);
+}
+
+.quoteBox .flex-control-paging li a.flex-active {
+  background: #000;
+  border: 2px solid rgba(255,255,255,1);
+  background: rgba(255,255,255, 1);
+  cursor: default;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+.abb {
+      background: url("../images/abb.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.abbott {
+      background: url("../images/abbott.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bectonDickson {
+      background: url("../images/bectonDickson.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bmw {
+      background: url("../images/bmw.png") center center no-repeat;
+      background-size: contain;
+      height:60%;
+      width:60%;
+}
+
+.caterpillar {
+      background: url("../images/caterpillar.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.celgene {
+      background: url("../images/celgene.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.citizens {
+      background: url("../images/citizens.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.datalogic {
+      background: url("../images/datalogic.jpg") center center no-repeat;
+      background-size: contain;
+      height:90%;
+      width:90%;
+}
+
+.henkel {
+      background: url("../images/henkel.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.humana {
+      background: url("../images/humana.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mercedes {
+      background: url("../images/mercedes.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mtbank {
+      background: url("../images/mtBank.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.philips {
+      background: url("../images/philips.png") center center no-repeat;
+      background-size: contain;
+      height:50%;
+      width:50%;
+}
+
+.ricoh {
+      background: url("../images/ricoh.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.symantec {
+      background: url("../images/symantec.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.unisys {
+      background: url("../images/unisys.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
 
 
 
@@ -436,8 +953,7 @@ Also See Section
 h2.alsoSeeTitle{
       position: absolute;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+      transform: translateX(-50%);
       top: -70px;
 	white-space: nowrap;
 }
@@ -463,8 +979,7 @@ h2.alsoSeeTitle{
       text-align: center;
       top:50%;
       left:50%;
-      -webkit-transform: translate(-50%,-50%);
-              transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
       text-decoration: none;
       color: white;
       font-family: 'Lato', sans-serif;
@@ -475,25 +990,21 @@ h2.alsoSeeTitle{
 
 
 .link1{
-      background: -webkit-linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .link2{
-      background: -webkit-linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
       background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
       background-size: cover;
 }
 
 .link3{
-      background: -webkit-linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background-size: cover;
 }
 
 .link4{
-      background: -webkit-linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background-size: cover;
 }
@@ -522,7 +1033,6 @@ Contact Section
 
 .contactSection{
       position: relative;
-      background: -webkit-linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;
       background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
       background-size: cover;
       width: 100%;
@@ -533,19 +1043,13 @@ Contact Section
 h2.contactTitle{
       position: absolute;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+      transform: translateX(-50%);
       top: -70px;
 }
 
 .contactFlex{
 	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+      flex-direction: column;
 	height: 100%;
 }
 
@@ -554,19 +1058,11 @@ h2.contactTitle{
 }
 
 .contactForm{
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	flex-grow: 1;
 	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-ms-flex-line-pack: center;
-	    align-content: center;
+      flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 	padding: 20px 20px 50px 20px;
 	color:white;
 }
@@ -602,20 +1098,10 @@ h2.contactTitle{
 	width:100%;
 	height:25%;
 	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+      flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .socialMediaIcons p{
@@ -628,29 +1114,19 @@ h2.contactTitle{
 	padding: 0;
 	margin: 0;
 	margin-bottom: 36px;
-	/*margin-right: 40px;*/
 	height: 80px;
 	width: 300px;
 	border: 2px solid white;
 	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .socialLogo{
 	height:73px;
 	width:73px;
 	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+      align-items: center;
+	justify-content: center;
 }
 
 .socialLogo a i{
@@ -873,16 +1349,104 @@ Hero Image Section
 
 
 /*-------------------------------------------------------------------------
-Why Us Section
+Intro Section
 ---------------------------------------------------------------------------*/
+
+.textHigh {
+      width:50%;
+      height:30vw;
+}
+
+.textHigh h5 {
+      font-size: 4.0vw;
+}
+
+
+
+
+
 
 
 
 
 
 /*-------------------------------------------------------------------------
-What we Offer  Section
+News Section
 ---------------------------------------------------------------------------*/
+
+
+
+
+.newsContent {
+      width:100%;
+      display: flex;
+      flex-direction: column;
+}
+
+.newsText {
+      padding: 10px 20px 10px 60px;
+}
+
+.newsText p.newsPara {
+      font-size: 2.5vw;
+}
+
+
+.newsImg {
+	width:33.3333333333%;
+	height:33.3333333333vw;
+}
+
+
+
+/*-------------------------------------------------------------------------
+CSR Section - CSR
+---------------------------------------------------------------------------*/
+
+
+.csrImgBox{
+      height:33.3333333vw;
+      width:33.333333333333%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Client and Testimonial Section - clients
+---------------------------------------------------------------------------*/
+
+
+
+.quoteBox .flex-direction-nav{
+      display: block;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Also see section Section
+---------------------------------------------------------------------------*/
+
+
+.linkBox{
+      width:25%;
+      height:25vw;
+}
+
+
 
 
 
@@ -933,9 +1497,6 @@ What we Offer  Section
  Footer Section
 ---------------------------------------------------------------------------*/
 
-.adventLogo{
-
-}
 
 .footerCol1{
       width:33.33333333333%;
@@ -988,7 +1549,6 @@ Header Section
 
 #navSpread{
       display: none;    /*change this*/
-
       position: absolute;
       top:10px;
       right:17px;
@@ -1032,97 +1592,98 @@ Intro Section
 
 
 
-.introSection{
-      position: relative;
-}
-
-
 .introHeadFloat{
-      display: block;
       width:25%;
       height:25vw;
-      float: left;
-      background: white;
-      margin-right: 30px;
-      margin-bottom: 20px;
-      position: relative;
 }
 
 .introSection .introHead{
-      display: block;
-      width:100%;
-      height:100%;
-      background: salmon;
-      position: absolute;
       top: -150px;
 }
+
+
 
 .introHead h2{
       position: absolute;
       margin: 0;
       top:50%;
       left:50%;
-      -webkit-transform: translate(-50%,-50%);
-              transform: translate(-50%,-50%);
-      color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
+      transform: translate(-50%,-50%);
       font-size: 3.5em;
       text-align: right;
-      text-transform: uppercase;
+}
+
+.csr .introHead h2 {
+      font-size: 2.8vw;
 }
 
 .textHigh{
-      display: block;
-      position: relative;
       width:25%;
       height:25vw;
-      float: right;
-      clear: both;
-      background: transparent;
-      border-left: 5px solid orange;
-      margin-left: 30px;
-      margin-bottom: 10px;
-}
-
-.textHighFloat:before{
-      content: '' ;
-      display:block;
-      float: right;
-      height: 500px;
 }
 
 .textHigh h5{
-      position: absolute;
-      margin: 0;
       padding: 20px 70px 0 20px;
-      /*top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);*/
-      color: rgba(31, 170, 235, 1);
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      font-size: 2.0em;
-      text-align: left;
+      font-size: 2.4vw;
 }
-
-
-
 
 .introText p{
-      margin: 0;
-      padding: 20px 140px;
-      margin: 0 auto;
-      text-align: center;
-      text-align: justify;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      font-size: 1.2rem;    /*1.5em*/
-      line-height: 1.7rem;     /*1.3em*/
-      color:#444;
+      padding: 60px 180px;
 }
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+NEWS Section - CSR
+---------------------------------------------------------------------------*/
+
+.newsSection {
+      flex-direction: row;
+}
+
+.newsSidebar {
+	width:25%;
+	flex-direction: column;
+}
+
+
+.news .socialMediaIcons {
+	display: flex;
+      flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.newsContent {
+      width:75%;
+}
+
+.newsText p.newsPara {
+      font-size: 1.5vw;
+}
+
+.newsImg {
+	height:25vw;
+}
+
+
+/*-------------------------------------------------------------------------
+CSR Section - CSR
+---------------------------------------------------------------------------*/
+
+
+.csrImgBox {
+      height:25vw;
+      width:25%;
+}
+
+
+
 
 
 
@@ -1136,92 +1697,49 @@ Intro Section
 
 
 /*-------------------------------------------------------------------------
+Client and Testimonial Section - clients
+---------------------------------------------------------------------------*/
+
+
+.clientNTestSection{
+      flex-direction: row;
+}
+
+.clientGridSection{
+      width:50%;
+      height:50vw;
+}
+
+
+.clients .testimonialSection{
+      width:50%;
+      height:50vw;
+}
+
+
+
+
+/*-------------------------------------------------------------------------
 Also See Section
 ---------------------------------------------------------------------------*/
 
 
 
 
-.alsoSeeSection{
-      margin-top: 172px;
-      position: relative;
-}
 
 h2.alsoSeeTitle{
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      top: -70px;
+      white-space: normal;
 }
 
 .linkBox{
       width:25%;
-      float: left;
       height:25vw;
-      position: relative;
-}
-
-.linkBox a{
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
 }
 
 .linkBox a h4{
-      margin:0;
-      position: absolute;
-      text-align: center;
-      top:50%;
-      left:50%;
-      -webkit-transform: translate(-50%,-50%);
-              transform: translate(-50%,-50%);
-      text-decoration: none;
-      color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
       font-size: 1.9rem;
 }
 
-
-
-.link1{
-      background: -webkit-linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
-      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
-      background-size: cover;
-}
-
-.link2{
-      background: -webkit-linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
-      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
-      background-size: cover;
-}
-
-.link3{
-      background: -webkit-linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
-      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
-      background-size: cover;
-}
-
-.link4{
-      background: -webkit-linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
-      background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
-      background-size: cover;
-}
-
-
-
-.linkBox:hover a:before{
-      content: "";
-      position: absolute;
-      top:0;
-      left:0;
-      height: 100%;
-      width:100%;
-      background: rgba(0,0,0,0.3);
-}
 
 
 
@@ -1272,141 +1790,44 @@ h2.alsoSeeTitle{
 
 
 .contactSection{
-      position: relative;
-      background: -webkit-linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;
-      background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
-      background-size: cover;
-      width: 100%;
       height: 360px;
-      margin-top: 172px;
-}
-
-h2.contactTitle{
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      top: -70px;
 }
 
 .contactFlex{
-	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	height: 100%;
-}
-
-.contactFlex p{
-	color: white;
+      flex-direction: row;
 }
 
 .contactForm{
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
-	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-ms-flex-line-pack: center;
-	    align-content: center;
 	padding: 20px 20px 20px 80px;
-	color:white;
 }
 
 .contactForm p{
-	width:100%;
 	margin:5px 1%;
-}
-
-.inputFlex{
-	padding: 10px;
-	margin:5px 1%;
-	background: none;
-	border: 2px solid white;
+      text-align: left;
 }
 
 .contactForm input[type=text]{
 	width: 48%;
 }
 
-.contactForm textarea{
-	width:98%;
-	resize: none;
-	height:80px
-}
-
-.contactForm button{
+.contactForm button {
 	width: 15%;
 }
 
-.socialMediaIcons{
+.socialMediaIcons {
 	width:25%;
 	height:100%;
-	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
 }
 
-.socialMediaIcons p{
-	margin:0px;
-	margin-bottom:10px;
+.socialMediaIcons p {
 	margin-right: 40px;
 }
 
-.mediaBox{
-	padding: 0;
-	margin: 0;
-	margin-bottom: 36px;
+.mediaBox {
 	margin-right: 40px;
 	height: 150px;
 	width: 150px;
-	border: 2px solid white;
-	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
 }
-
-.socialLogo{
-	height:73px;
-	width:73px;
-	display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-}
-
-.socialLogo a i{
-	font-size: 2em;
-	color: white;
-}
-
-
-
-
 
 
 
@@ -1415,40 +1836,35 @@ h2.contactTitle{
  Footer Section
 ---------------------------------------------------------------------------*/
 
-.adventLogo{
-
-}
-.footerCol1{
+.footerCol1 {
       width:25%;
       float:left;
 }
 
-.corpHQ{
+.corpHQ {
       width:100%;
       float:left;
 }
 
-.footerCol2{
+.footerCol2 {
       width:25%;
       float:left;
 }
 
-
-.info{
+.info {
       text-align: left;
       float:left;
       width:50%;
 }
-.copyright{
+.copyright {
       text-align: right;
       float: left;
       width: 50%;
-      padding:10px;
+      padding: 10px;
 }
 
-
-.AboutUs{
-      display:block;
+.AboutUs {
+      display: block;
 }
 
 
