@@ -369,6 +369,66 @@ Intro Section
       background: rgba(60,184,120,1);
 }
 
+.ourHiringMethodology .introHead {
+	background: yellow;
+}
+
+.meetTheTeam .introHead {
+	background: pink;
+}
+
+.diversityAndInclusion .introHead {
+	background: coral;
+}
+
+.coreCompetencies .introHead {
+	background: orchid;
+}
+
+.industriesAndCategories .introHead {
+	background: royalblue;
+}
+
+.ourBusinessModel .introHead {
+	background: springgreen;
+}
+
+.whyUs .introHead {
+	background: turquoise;
+}
+
+.career .introHead {
+	background: slateblue;
+}
+
+.adventCulture .introHead {
+	background: powderblue;
+}
+
+.submitResume .introHead {
+	background: MediumTurquoise;
+}
+
+.lookingForAJob .introHead {
+	background: lightcoral;
+}
+
+.contactUs .introHead {
+	background: indianRed  ;
+}
+
+.company .introHead {
+	background: oliveDrab ;
+}
+
+.ourServices .introHead {
+	background: RebeccaPurple;
+}
+
+
+
+
+
 .introHead h2{
       margin: 12px auto;
 	display: block;
@@ -381,7 +441,13 @@ Intro Section
       text-transform: uppercase;
 }
 
-.csr .introHead h2 {
+.csr .introHead h2, .ourHiringMethodology .introHead h2,
+.meetTheTeam .introHead h2, .diversityAndInclusion .introHead h2,
+.coreCompetencies .introHead h2, .industriesAndCategories .introHead h2,
+.ourBusinessModel .introHead h2,.adventCulture .introHead h2,
+.submitResume .introHead h2, .lookingForAJob .introHead h2,
+.ourServices .introHead h2
+ {
       font-size: 1.7em;
 }
 
@@ -1613,7 +1679,12 @@ Intro Section
       text-align: right;
 }
 
-.csr .introHead h2 {
+.csr .introHead h2, .ourHiringMethodology .introHead h2,
+.meetTheTeam .introHead h2, .diversityAndInclusion .introHead h2,
+.coreCompetencies .introHead h2, .industriesAndCategories .introHead h2,
+.ourBusinessModel .introHead h2, .adventCulture .introHead h2,
+.submitResume .introHead h2, .lookingForAJob .introHead h2,
+.ourServices .introHead h2 {
       font-size: 2.8vw;
 }
 
