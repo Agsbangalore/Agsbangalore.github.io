@@ -265,7 +265,7 @@ label#navButton:hover{
 
 
 /*-------------------------------------------------------------------------
-Head Section
+Head Section - all pages
 ---------------------------------------------------------------------------*/
 .headerSection{
       background:rgba(0,0,0,0.8);
@@ -302,7 +302,7 @@ Head Section
 
 
 /*-------------------------------------------------------------------------
-Hero Image Section
+Hero Image Section - All pages
 ---------------------------------------------------------------------------*/
 
 .heroImage{
@@ -320,13 +320,12 @@ Hero Image Section
 
 
 /*-------------------------------------------------------------------------
-Intro Section
+Intro Section - except home , all pages
 ---------------------------------------------------------------------------*/
 
 .introSection{
       position: relative;
 }
-
 
 .introHeadFloat{
       display: block;
@@ -338,7 +337,6 @@ Intro Section
       margin-bottom: 20px;
       position: relative;
 }
-
 
 .introHead{
       display: block;
@@ -422,10 +420,6 @@ Intro Section
 	background: RebeccaPurple;
 }
 
-
-
-
-
 .introHead h2{
       margin: 12px auto;
 	display: block;
@@ -443,8 +437,7 @@ Intro Section
 .coreCompetencies .introHead h2, .industriesAndCategories .introHead h2,
 .ourBusinessModel .introHead h2,.adventCulture .introHead h2,
 .submitResume .introHead h2, .lookingForAJob .introHead h2,
-.ourServices .introHead h2
- {
+.ourServices .introHead h2 {
       font-size: 1.7em;
 }
 
@@ -500,30 +493,60 @@ Intro Section
 
 
 /*-------------------------------------------------------------------------
-Submit Resume Form - Submit Resume
+Submit Resume Form - Submit Resume page
 ---------------------------------------------------------------------------*/
+
+#resumeForm {
+
+}
 
 .formSet {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .formSet h4{
-	width:25%;
+	width:100%;
+	flex-shrink: 0;
+	padding-left: 10px;
 }
 
 .formSet .inputBox {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
+	width: 100%;
 }
 
 .formSet .inputSet {
 	display: flex;
 	flex-direction: column-reverse;
+	width:100%;
+	margin: 1%;
+}
+
+.fullName .inputSet {
+	width: 98%;
+}
+
+.address .input{}
+
+
+
+.pLocation .inputSet {
+	flex-direction: row-reverse;
+	justify-content:  flex-end;
+	width:48%;
 }
 
 
+.cLetterClass .inputBox{
+	padding: 1%;
+}
 
+.cLetterClass textarea{
+	resize: none;
+}
 
 
 
@@ -539,7 +562,7 @@ Submit Resume Form - Submit Resume
 
 
 /*-------------------------------------------------------------------------
-Map Section - Contact Us
+Map Section - Contact Us page
 ---------------------------------------------------------------------------*/
 
 
@@ -576,7 +599,7 @@ Map Section - Contact Us
 
 
 /*-------------------------------------------------------------------------
-Our Hiring Method Section - Our Hiring Methodology
+Our Hiring Method Section - Our Hiring Methodology page
 ---------------------------------------------------------------------------*/
 
 .hiringMethodSection {
@@ -635,7 +658,7 @@ Our Hiring Method Section - Our Hiring Methodology
 
 
 /*-------------------------------------------------------------------------
-industries And Categories Section - industries And Categories
+industries And Categories Section - industries And Categories page
 ---------------------------------------------------------------------------*/
 
 
@@ -724,7 +747,7 @@ industries And Categories Section - industries And Categories
 
 
 /*-------------------------------------------------------------------------
-Core Competencies  Section - core Competencies
+Core Competencies  Section - core Competencies page
 ---------------------------------------------------------------------------*/
 
 .competencySection {
@@ -802,7 +825,7 @@ Core Competencies  Section - core Competencies
 
 
 /*-------------------------------------------------------------------------
-News Section - News
+News Section - News page
 ---------------------------------------------------------------------------*/
 
 
@@ -1008,7 +1031,7 @@ input.newsSearch {
 
 
 /*-------------------------------------------------------------------------
-CSR Section - CSR
+CSR Section - CSR page
 ---------------------------------------------------------------------------*/
 
 .csrGallerySection {
@@ -1052,7 +1075,7 @@ h2.csrTitle{
 
 
 /*-------------------------------------------------------------------------
-Client and Testimonial Section - clients
+Client and Testimonial Section - clients page
 ---------------------------------------------------------------------------*/
 
 .clientNTestSection{
@@ -1311,7 +1334,7 @@ Client and Testimonial Section - clients
 
 
 /*-------------------------------------------------------------------------
-Also See Section
+Also See Section - except home page all pages
 ---------------------------------------------------------------------------*/
 
 .alsoSeeSection{
@@ -1397,7 +1420,7 @@ h2.alsoSeeTitle{
 
 
 /*-------------------------------------------------------------------------
-Contact Section
+Contact Section - except home and news all pages
 ---------------------------------------------------------------------------*/
 
 .contactSection{
@@ -1539,7 +1562,7 @@ h2.contactTitle{
 
 
 /*-------------------------------------------------------------------------
-Footer Section
+Footer Section - All pages
 ---------------------------------------------------------------------------*/
 
 
@@ -1637,7 +1660,7 @@ Footer Section
 
 
 /*-------------------------------------------------------------------------
-Scroll to top Section
+Scroll to top Section - All pages
 ---------------------------------------------------------------------------*/
 
 
@@ -1732,6 +1755,61 @@ Intro Section
 .textHigh h5 {
       font-size: 4.0vw;
 }
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Submit Resume Form - Submit Resume page
+---------------------------------------------------------------------------*/
+
+
+#resumeForm {
+	margin-right: 180px;
+}
+
+.formSet {
+	flex-direction: row;
+}
+
+.formSet h4{
+	width:25%;
+	flex-shrink: 0;
+	padding-left: 50px;
+}
+
+
+.formSet .inputBox{
+	width: 75%;
+}
+
+.formSet .inputSet {
+	display: flex;
+	flex-direction: column-reverse;
+	width:23%;
+	margin: 1%;
+}
+
+
+.fullName .inputSet {
+	width: 48%;
+}
+
+.cLetterClass .inputBox{
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
