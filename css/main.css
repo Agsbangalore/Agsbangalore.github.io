@@ -336,8 +336,6 @@ Hero Image Section - All pages
 .homePage .heroImage {
       display: block;
       position: relative;
-/*      background:url("..images/In-And-Out.jpg") top right no-repeat;
-      background-size: cover;*/
       width:100%;
       height:110vh;
       width:100%;
@@ -452,7 +450,7 @@ Why Us Secion - Home page only
 	position: relative;
 }
 
-.whyUsText::after {
+.whyUsText::after, .whyUsHead::after {
 	position: absolute;
 	right:0;
 	bottom: 10%;
@@ -527,7 +525,7 @@ Why Us Secion - Home page only
 what we offer Section - For home page only
 ---------------------------------------------------------------------------*/
 
-.featureBox{
+.featureBox {
       width:50%;
       float: left;
       height:50vw;
@@ -535,7 +533,7 @@ what we offer Section - For home page only
 	overflow: hidden;
 }
 
-.featureBox a{
+.featureBox a {
       position: absolute;
       top:0;
       left:0;
@@ -543,22 +541,9 @@ what we offer Section - For home page only
       height:100%;
 }
 
-.featureBox a h4{
-      margin:0;
-      position: absolute;
-      text-align: center;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      text-decoration: none;
-      color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-size: 1.2rem;
-}
 
 
-.featureTitle{
+.featureTitle {
       width:50%;
       float: left;
       height:50vw;
@@ -566,7 +551,7 @@ what we offer Section - For home page only
       position: relative;
 }
 
-.featureTitle h2{
+.featureTitle h2 {
       position: absolute;
       margin: 0px;
       text-align: right;
@@ -582,49 +567,22 @@ what we offer Section - For home page only
       white-space: nowrap;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-figure {
+.tileEffect {
 	margin: 0px;
 }
 
-figure img {
-	height:100%;
+.tileEffect img {
+	height: 100%;
 	width: 100%;
 }
 
-.featureBox figure, .featureBox .img {
+.tileEffect, .tileEffect .img {
 	display: block;
 	height:100%;
 	width:100%;
 }
 
-.feature1 .img {
-      background: linear-gradient( rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ), url("../images/feature1.jpg") center top no-repeat;
-      background-size: cover;
-}
-
-
-
-figure.effect figcaption::before {
+.tileEffect figcaption::before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -636,7 +594,7 @@ figure.effect figcaption::before {
 	transform: translate3d(0,50%,0);
 }
 
-figure.effect h4 {
+.tileEffect h4 {
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -647,28 +605,28 @@ figure.effect h4 {
 	text-align: center;
       font-family: 'Lato', sans-serif;
       font-weight: 900;
-      font-size: 1.2rem;
 	transition: transform 0.35s, color 0.35s;
-	/*transform: translate3d(0,-50%,0);*/
 }
 
+.featureBox h4 {
+	font-size: 1.2rem;
+}
 
-figure.effect p {
+.tileEffect p {
 	color: white;
 }
 
-figure.effect p span {
+.tileEffect p span {
 	padding: 10px;
 	border: 1px solid white;
 }
 
-
-figure.effect figcaption::before,
-figure.effect p {
+.tileEffect figcaption::before,
+.tileEffect p {
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect p {
+.tileEffect p {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -679,33 +637,17 @@ figure.effect p {
 	text-align: center;
 }
 
-figure.effect:hover h4 {
+.tileEffect:hover h4 {
 	color: #fff;
 	transform: translate3d(-50%,-70%,0);/*translate3d(0,-50%,0) translate3d(0,-40px,0)*/
 }
 
-figure.effect:hover figcaption::before,
-figure.effect:hover p
+.tileEffect:hover figcaption::before,
+.tileEffect:hover p
 {
 	opacity: 1;
 	transform: translate3d(0,0,0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .feature1 .img {
       background: linear-gradient( rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ), url("../images/feature1.jpg") center top no-repeat;
@@ -1388,7 +1330,6 @@ Footer Section
 	content: '\f35f';
 	font-family: "Ionicons";
 	font-size: 25px;
-
 	color: #777;
 	float: right;
 	margin-left: 5px;
@@ -1401,19 +1342,11 @@ Footer Section
 }
 
 
-.offAddUSA.hide {
-	max-height: 0px;
-	overflow: hidden;
-	color: pink;
+
+.offAdd p {
+	margin:0;
+	padding:1em;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1623,7 +1556,7 @@ Intro Section - except home page, all pages
 	background: RebeccaPurple;
 }
 
-.introHead h2{
+.introHead h2 {
       margin: 12px auto;
 	display: block;
       color: white;
@@ -1643,12 +1576,9 @@ Intro Section - except home page, all pages
 .ourServices .introHead h2 {
       font-size: 1.7em;
 }
-/*
-.meetTheTeam .introHead h2 {
-	font-size: 2.5em;
-}*/
 
-.textHigh{
+
+.textHigh {
       display: block;
       position: relative;
       width:100%;
@@ -1661,7 +1591,7 @@ Intro Section - except home page, all pages
       margin-bottom: 10px;
 }
 
-.textHighFloat:before{
+.textHighFloat:before {
       content: '' ;
       display:block;
       float: right;
@@ -1711,7 +1641,7 @@ Submit Resume Form - Submit Resume page
 	flex-direction: column;
 }
 
-.formSet h4{
+.formSet h4 {
 	width:100%;
 	flex-shrink: 0;
 	padding-left: 10px;
@@ -1735,7 +1665,7 @@ Submit Resume Form - Submit Resume page
 	width: 98%;
 }
 
-.address .input{}
+.address .input {}
 
 
 
@@ -1746,11 +1676,11 @@ Submit Resume Form - Submit Resume page
 }
 
 
-.cLetterClass .inputBox{
+.cLetterClass .inputBox {
 	padding: 1%;
 }
 
-.cLetterClass textarea{
+.cLetterClass textarea {
 	resize: none;
 }
 
@@ -1776,7 +1706,7 @@ Map Section - Contact Us page
 	margin: 20px;
 }
 
-.mapOverlay{
+.mapOverlay {
 	display: block;
 	position: absolute;
 	top:0;
@@ -1882,7 +1812,7 @@ industries And Categories Section - industries And Categories page
 	background: rgba(230, 230, 230, 0.5);
 }
 
-.industryText, .categoryText{
+.industryText, .categoryText {
 	width:100%;
 }
 
@@ -1939,7 +1869,7 @@ industries And Categories Section - industries And Categories page
 	background-size: cover;
 }
 
-.categoryImg{
+.categoryImg {
 	background: linear-gradient( rgba(0,0,0,0.20), rgba(0,0,0,0.20) ),url('../images/feature12.jpg') top right no-repeat;
 	background-size: cover;
 }
@@ -1979,7 +1909,7 @@ Core Competencies  Section - core Competencies page
 	margin-bottom: 20px;
 }
 
-.competencyText ul{
+.competencyText ul {
 	padding: 0;
 }
 
@@ -2010,22 +1940,6 @@ Core Competencies  Section - core Competencies page
       font-style: italic;
       font-size: 2.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2594,6 +2508,7 @@ h2.alsoSeeTitle{
       float: left;
       height:50vw;
       position: relative;
+	overflow: hidden;
 }
 
 .linkBox a{
@@ -2604,7 +2519,7 @@ h2.alsoSeeTitle{
       height:100%;
 }
 
-.linkBox a h4{
+.linkBox h4 {
       margin:0;
       position: absolute;
       text-align: center;
@@ -2640,17 +2555,6 @@ h2.alsoSeeTitle{
       background-size: cover;
 }
 
-
-
-.linkBox:hover a:before{
-      content: "";
-      position: absolute;
-      top:0;
-      left:0;
-      height: 100%;
-      width:100%;
-      background: rgba(0,0,0,0.3);
-}
 
 
 
@@ -2889,11 +2793,10 @@ What we Offer  Section - only home page
 
 
 
-figure.effect h4 {
+
+.featureBox h4 {
 	font-size: 1.4rem;
 }
-
-
 
 
 
@@ -2978,14 +2881,13 @@ figure.effect h4 {
  Footer Section
 ---------------------------------------------------------------------------*/
 
-.adventLogo{
+.adventLogo {
 
 }
 
 .footerCol2 {
 	padding: 30px;
 }
-
 
 .accord {
 	border-top: none;
@@ -2996,24 +2898,26 @@ figure.effect h4 {
 	display: none;
 }
 
-
-.footerCol1{
+.footerCol1 {
       width:33.33333333333%;
       float:left;
 }
 
-.corpHQ{
+.corpHQ {
       width: 100%;
 }
 
-.footerCol2{
+.footerCol2 {
       width:33.33333333333%;
       float:left;
       text-align: left;
 }
 
 
-
+.offAdd p {
+	margin:1em 0;
+	padding:0;
+}
 
 
 
@@ -3264,7 +3168,9 @@ Also see section Section
       height:25vw;
 }
 
-
+.linkBox h4 {
+	font-size: 1.4rem;
+}
 
 
 
@@ -3444,6 +3350,7 @@ What we Offer  Section
 
 
 
+
 /*-------------------------------------------------------------------------
  Testimonial Section - For home page only
 ---------------------------------------------------------------------------*/
@@ -3474,89 +3381,6 @@ What we Offer  Section
 /*-------------------------------------------------------------------------
  Social Section Section
 ---------------------------------------------------------------------------*/
-
-/*.socialSection{
-      width: 100%;
-      height: 50vw;
-}
-
-.socialContainer{
-      display: block;
-}
-
-
-.socialBox{
-      width:25%;
-      float: left;
-      height: 50vw;
-	padding: 1%;
-	position: relative;
-}
-
-.social1{
-      background: teal;
-}
-
-.social2{
-      background: salmon;
-}
-
-.social3{
-      background: aquamarine;
-}
-
-.social4{
-      background: blueviolet;
-}
-
-
-.socialImg1,.socialImg2,.socialImg3,.socialImg4{
-      width:100%;
-      height:345px;
-      border: 0.5px solid #222;
-      border-top: 2px solid #222;
-      border-bottom: 2px solid #222;
-
-}
-
-.socialImg1 {
-	background: url('../images/social1.jpg') no-repeat;
-	background-size: cover;
-}
-
-.socialImg2 {
-	background: url('../images/social2.jpg') no-repeat;
-	background-size: cover;
-}
-
-.socialImg3 {
-	background: url('../images/social3.jpg') no-repeat;
-	background-size: cover;
-}
-
-.socialImg4 {
-	background: url('../images/social4.jpg') no-repeat;
-	background-size: cover;
-}
-
-.socialDP {
-	position: absolute;
-	top:350px;
-	left:30px;
-	display: block;
-	width: 60px;
-	height: 60px;
-	background: white url('../images/adventdp.png') no-repeat;
-	background-size: cover;
-	z-index: 15;
-}
-
-.socialBox a {
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-	border: 1px solid white;
-}*/
 
 
 
@@ -3707,10 +3531,28 @@ What we Offer  Section
 	bottom:20px;
 	left:50%;
 	transform: translateX(-50%);
-	/*align-self: center;*/
+	transition: all 0.35s ease-in-out;
 }
 
+.social1 a:hover {
+	color: rgba(52,151,217,1);
+	background: rgba(255,255,255,1);
+}
 
+.social2 a:hover {
+	color: rgba(254,194,0,1);
+	background: rgba(255,255,255,1);
+}
+
+.social3 a:hover {
+	color: rgba(46,204,113,1);
+	background: rgba(255,255,255,1);
+}
+
+.social4 a:hover {
+	color: rgba(231,76,60,1);
+	background: rgba(255,255,255,1);
+}
 
 
 
@@ -3850,7 +3692,6 @@ Intro Section
 .diversityAndInclusion .introHead h2,
 .ourBusinessModel .introHead h2,
 .lookingForAJob .introHead h2
-
  {
 	font-size: 3.5vw;
 }
@@ -3865,17 +3706,17 @@ Intro Section
 	font-size: 3vw;
 }
 
-.textHigh{
+.textHigh {
       width:25%;
       height:25vw;
 }
 
-.textHigh h5{
+.textHigh h5 {
       padding: 20px 70px 0 20px;
       font-size: 2.4vw;
 }
 
-.introText p{
+.introText p {
       padding: 60px 180px;
 }
 
@@ -3922,7 +3763,7 @@ industries And Categories Section - industries And Categories
 
 
 
-.industryText, .categoryText{
+.industryText, .categoryText {
 	width:60%;
 	height: 40vw;
 }
@@ -4036,17 +3877,17 @@ Client and Testimonial Section - clients
 ---------------------------------------------------------------------------*/
 
 
-.clientNTestSection{
+.clientNTestSection {
       flex-direction: row;
 }
 
-.clientGridSection{
+.clientGridSection {
       width:50%;
       height:50vw;
 }
 
 
-.clients .testimonialSection{
+.clients .testimonialSection {
       width:50%;
       height:50vw;
 }
@@ -4062,16 +3903,16 @@ Also See Section
 
 
 
-h2.alsoSeeTitle{
+h2.alsoSeeTitle {
       white-space: normal;
 }
 
-.linkBox{
+.linkBox {
       width:25%;
       height:25vw;
 }
 
-.linkBox a h4{
+.linkBox h4 {
       font-size: 1.9rem;
 }
 
@@ -4086,19 +3927,19 @@ h2.alsoSeeTitle{
 
 
 
-.contactSection{
+.contactSection {
       height: 360px;
 }
 
-.contactFlex{
+.contactFlex {
       flex-direction: row;
 }
 
-.contactForm{
+.contactForm {
 	padding: 20px 20px 20px 80px;
 }
 
-.contactForm p{
+.contactForm p {
 	margin:5px 1%;
       text-align: left;
 }
