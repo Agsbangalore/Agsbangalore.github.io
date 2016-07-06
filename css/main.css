@@ -29,10 +29,6 @@ if it's not present, don't show loader */
 }
 
 
-
-
-
-
 .container {
       position:relative;
       width: 100%;
@@ -58,6 +54,18 @@ if it's not present, don't show loader */
 h1.hideHeader, h2.hideHeader{
 	display: none;
 }
+
+h2 {
+	color: rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 1.6em;
+      text-transform: uppercase;
+}
+
+
+
 
 /*Remove bullets of all list items*/
 ul,ol{
@@ -101,6 +109,7 @@ label#navButton {
       transition: all 0.3s ease-in-out;
       z-index: 3;
       color: white;
+	/*background: rgba(255, 255, 255, 0.1);*/
       background: rgba(31, 170, 235, 0.3);
       /*border: 1px solid rgba(31, 170, 235, 0.3);*/
 }
@@ -159,7 +168,7 @@ label#navButton:hover{
 }
 
 .pageContent {
-      background: rgba(230,230,230,1);
+      background: rgba(235,235,235,1);
 	display: block;
 	position: relative;
 	height: 100%;
@@ -174,6 +183,14 @@ label#navButton:hover{
       -moz-box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
       box-shadow: 2px 2px 19px -1px rgba(0,0,0,0.75);
 }
+
+
+.aboutUs .pageContent, .clients .pageContent,
+.coreCompetencies .pageContent,
+.industriesAndCategories .pageContent {
+      background: white;
+}
+
 
 #navToggle:checked ~ .pageContent {
 	transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
@@ -271,18 +288,26 @@ label#navButton:hover{
 Head Section
 ---------------------------------------------------------------------------*/
 .headerSection{
-      background:rgba(0,0,0,0.8);
+      /*background:transparent;*/
+	background:rgba(0,0,0,0.8);
       color:white;
       position: fixed;
       z-index: 1;
-      padding: 10px 20px;
+      padding: 10px 10px;
+	opacity: 1;
 }
+/*
+hgroup {
+	background:rgba(0,0,0,0.7);
+	width: 250px;
+	padding: 10px 0 10px 25px;
+}*/
 
 .logo{
       display: block;
       background: url("../images/adventLogoWhite.png") no-repeat;
       background-size: contain;
-      width:160px;
+      width:220px;
       height:35px;
       text-indent: -999%;
 }
@@ -305,10 +330,10 @@ Head Section
 
 
 /*-------------------------------------------------------------------------
-Hero Image Section
+Hero Image Section - All pages
 ---------------------------------------------------------------------------*/
 
-.heroImage{
+.homePage .heroImage {
       display: block;
       position: relative;
 /*      background:url("..images/In-And-Out.jpg") top right no-repeat;
@@ -380,8 +405,10 @@ Hero Image Section
 
 
 
+
+
 /*-------------------------------------------------------------------------
-Why Us Secion
+Why Us Secion - Home page only
 ---------------------------------------------------------------------------*/
 
 .whyUsSection{
@@ -392,19 +419,19 @@ Why Us Secion
 
 }
 
-.whyUsBox{
+.whyUsBox {
       width:100%;
       float: left;
 }
 
-.whyUsHead{
+.whyUsHead {
       height: 100px;
       background: white;
       white-space: nowrap;
       position: relative;
 }
 
-.whyUsHead h2{
+.whyUsHead h2 {
       position: absolute;
       margin: 0;
       margin-top: 30px;
@@ -419,10 +446,22 @@ Why Us Secion
       text-transform: uppercase;
 }
 
-.whyUsText{
+.whyUsText {
       background: white;
       text-align: center;
+	position: relative;
 }
+
+.whyUsText::after {
+	position: absolute;
+	right:0;
+	bottom: 10%;
+	content: '';
+	height: 80%;
+	display: block;
+	border-left: 1px solid #ddd;
+}
+
 
 .whyUsText p {
       padding: 20px 20px;
@@ -440,18 +479,14 @@ Why Us Secion
       height: 50px;
       background: white;
       position: relative;
-      margin-bottom: 80px;
+      padding-bottom: 150px;
 }
-
 
 .whyUsButton .whyUsBtn {
       display: block;
       padding: 10px 35px;
       margin: 0 auto 30px;
       max-width: 600px;
-      /*top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);*/
       border: 1px solid rgba(31, 170, 235, 1);
       background: none;
       color:rgba(31, 170, 235, 1);
@@ -460,9 +495,10 @@ Why Us Secion
       font-style: italic;
       font-size: 1em;
       line-height: 1em;
+	transition: all .35s ease-in-out;
 }
 
-.whyUsButton br{
+.whyUsButton br {
       display: none;
 }
 
@@ -480,8 +516,15 @@ Why Us Secion
 
 
 
+
+
+
+
+
+
+
 /*-------------------------------------------------------------------------
-what we offer Section
+what we offer Section - For home page only
 ---------------------------------------------------------------------------*/
 
 .featureBox{
@@ -489,6 +532,7 @@ what we offer Section
       float: left;
       height:50vw;
       position: relative;
+	overflow: hidden;
 }
 
 .featureBox a{
@@ -510,7 +554,7 @@ what we offer Section
       color: white;
       font-family: 'Lato', sans-serif;
       font-weight: 900;
-      font-size: 0.9rem;
+      font-size: 1.2rem;
 }
 
 
@@ -533,78 +577,190 @@ what we offer Section
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       text-transform: uppercase;
       white-space: nowrap;
 }
 
-.feature1{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+figure {
+	margin: 0px;
+}
+
+figure img {
+	height:100%;
+	width: 100%;
+}
+
+.featureBox figure, .featureBox .img {
+	display: block;
+	height:100%;
+	width:100%;
+}
+
+.feature1 .img {
       background: linear-gradient( rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ), url("../images/feature1.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature2{
-      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
+
+
+figure.effect figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 75%);/*to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%*/
+	content: '';
+	opacity: 0;
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect h4 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+      text-decoration: none;
+      color: white;
+	text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 1.2rem;
+	transition: transform 0.35s, color 0.35s;
+	/*transform: translate3d(0,-50%,0);*/
+}
+
+
+figure.effect p {
+	color: white;
+}
+
+figure.effect p span {
+	padding: 10px;
+	border: 1px solid white;
+}
+
+
+figure.effect figcaption::before,
+figure.effect p {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	transform: translate3d(0,10px,0);
+	text-align: center;
+}
+
+figure.effect:hover h4 {
+	color: #fff;
+	transform: translate3d(-50%,-70%,0);/*translate3d(0,-50%,0) translate3d(0,-40px,0)*/
+}
+
+figure.effect:hover figcaption::before,
+figure.effect:hover p
+{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feature1 .img {
+      background: linear-gradient( rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ), url("../images/feature1.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature3{
+.feature2 .img {
+      background: linear-gradient(  rgba(67,160,71,0.75), rgba(67,160,71,0.75) ),url("../images/feature2.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature3 .img {
       background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature3.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature4{
+.feature4 .img {
       background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
       background-size: cover;
 }
 
-.feature5{
-      background: linear-gradient( rgba(67,160,71,0.75), rgba(67,160,71,0.75) ),url("../images/feature5.jpg") center top no-repeat;
+.feature5 .img {
+      background: linear-gradient( rgba(245,152,157,0.75), rgba(245,152,157,0.75) ),url("../images/feature5.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature6{
+.feature6 .img {
       background: linear-gradient( rgba(2,136,209,0.75), rgba(2,136,209,0.75) ),url("../images/feature6.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature7{
-      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
+.feature7 .img {
+      background: linear-gradient( rgba(124,197,118,0.75), rgba(124,197,118,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background-size: cover;
 }
 
-.feature8{
+.feature8 .img {
       background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature9{
-      background: linear-gradient( rgba(124,197,118,0.75), rgba(124,197,118,0.75) ),url("../images/feature9.jpg") center top no-repeat;
+.feature9 .img {
+      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75)),url("../images/feature9.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature10{
-      background: linear-gradient( rgba(245,152,157,0.75), rgba(245,152,157,0.75) ),url("../images/feature10.jpg") center top no-repeat;
+.feature10 .img {
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature10.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.feature11{
+.feature11 .img {
       background: linear-gradient( rgba(94,53,177,0.75), rgba(94,53,177,0.75) ),url("../images/feature11.jpg") center top no-repeat;
       background-size: cover;
 }
-
-
-.featureBox:hover a:before{
-      content: "";
-      position: absolute;
-      top:0;
-      left:0;
-      height: 100%;
-      width:100%;
-      background: rgba(0,0,0,0.3);
-}
-
-
 
 
 
@@ -614,16 +770,19 @@ what we offer Section
 
 
 /*-------------------------------------------------------------------------
-Testimonial section
+Testimonial section - For home page only
 ---------------------------------------------------------------------------*/
 
-.testimonialSection{
+.homePage .testimonialSection {
       position:relative;
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
       background-size: cover;
       width:100%;
       height:80vh;
       margin-top:172px;
+	-webkit-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
 }
 
 h2.testimonialTitle{
@@ -648,6 +807,7 @@ h2.testimonialTitle{
       margin: 0 auto;
       text-align: center;
       max-width: 50%;
+	font-size: 1.4em;
 }
 
 .quoteBox p span{
@@ -721,7 +881,7 @@ h2.testimonialTitle{
 
 
 /*-------------------------------------------------------------------------
-Client Section
+Client Section - For home page only
 ---------------------------------------------------------------------------*/
 
 .clientSection{
@@ -988,18 +1148,23 @@ div.clientBox{
 
 
 
+
+
+
+
 /*-------------------------------------------------------------------------
-Social Section
+Social Section - For home page
 ---------------------------------------------------------------------------*/
-.socialSection{
+.homePage .socialSection {
       position: relative;
-      background: salmon;
+      background: teal;
       width: 100%;
-      height: 50vw;
+	height:200px;
       margin-top: 172px;
+
 }
 
-h2.socialTitle{
+.homePage h2.socialTitle {
       position: absolute;
       text-align: center;
       left: 50%;
@@ -1007,11 +1172,11 @@ h2.socialTitle{
       top: -70px;
 }
 
-.socialContainer{
+.homePage .socialContainer {
       display: none;
 }
 
-.socialMediaIcons ul{
+.homePage .socialMediaIcons ul {
       margin: 0;
       padding: 0;
       display: block;
@@ -1020,18 +1185,21 @@ h2.socialTitle{
       left:50%;
       transform: translate(-50%,-50%);
       white-space: nowrap;
+	border: 2px solid white;
+	padding:20px 10px;
 }
 
-.socialMediaIcons ul li{
+.homePage .socialMediaIcons ul li {
       display: inline-block;
       width: 20px;
       height:20px;
       padding: 0 43px 0 25px;
 }
 
-.socialMediaIcons ul li a{
+.homePage .socialMediaIcons ul li a {
       text-indent: -999%;
       font-size: 2rem;
+	color: white;
 }
 
 
@@ -1043,21 +1211,24 @@ h2.socialTitle{
 
 
 /*-------------------------------------------------------------------------
-Contact Section
+Contact Section - Only for page
 ---------------------------------------------------------------------------*/
 
-.contactSection{
+.homePage .contactSection {
       position: relative;
       background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
       background-size: cover;
       width: 100%;
       height: 360px;
       margin-top: 172px;
+	-webkit-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
 }
 
 
 
-h2.contactTitle{
+.homePage h2.contactTitle {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -1065,7 +1236,7 @@ h2.contactTitle{
 }
 
 
-.contactForm{
+.homePage .contactForm {
       background: none;
       position: absolute;
       width: 80%;
@@ -1074,7 +1245,7 @@ h2.contactTitle{
       transform: translate(-50%,-50%);
 }
 
-.contactForm p {
+.homePage .contactForm p {
       margin-left: 1%;
       color:white;
       font-family: 'Lato', sans-serif;
@@ -1104,7 +1275,7 @@ h2.contactTitle{
 /*-----------------------------------------*/
 
 
-.inputFloat{
+.homePage .inputFloat {
       float: left;
       padding: 10px;
 }
@@ -1117,7 +1288,7 @@ h2.contactTitle{
       color: white;
 }
 
-.contactForm textarea{
+.homePage .contactForm textarea {
       width: 98%;
       height: 100px;
       margin: 5px 1% 10px;
@@ -1152,6 +1323,9 @@ Footer Section
 .footerSection{
       background: #333;
       color:white;
+	-webkit-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
 }
 
 .footerSection p{
@@ -1193,9 +1367,58 @@ Footer Section
 .footerCol2{
       text-align: center;
 }
-.footerCol2, .footerCol1{
+.footerCol1{
       padding: 30px;
 }
+
+
+/*accordian styles*/
+/*=========================================*/
+
+
+
+
+.accord {
+	border-top: 0.5px solid rgba(255,255,255,0.3);
+	border-bottom: 0.5px solid rgba(255,255,255,0.3);
+	margin-bottom: 20px;
+}
+
+.accord h3:after {
+	content: '\f35f';
+	font-family: "Ionicons";
+	font-size: 25px;
+
+	color: #777;
+	float: right;
+	margin-left: 5px;
+	margin-right: 20px;
+}
+
+.accord h3.active:after {
+    content: "\f365";
+    font-family: "Ionicons";
+}
+
+
+.offAddUSA.hide {
+	max-height: 0px;
+	overflow: hidden;
+	color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*========================================*/
+
 
 
 .info ul{
@@ -1271,6 +1494,1323 @@ Social Section
 
 
 
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+
+
+
+/*-------------------------------------------------------------------------
+Hero Image Section - except home page, all [ages]
+---------------------------------------------------------------------------*/
+
+
+/*hero image styling for other pages*/
+.heroImage{
+      display: block;
+      position: relative;
+      background:url("../images/bg.jpg") top right no-repeat;
+      background-size: cover;
+      width:100%;
+      height:70vh;
+      width:100%;
+      overflow: hidden;
+}
+
+
+
+/*-------------------------------------------------------------------------
+Intro Section - except home page, all pages
+---------------------------------------------------------------------------*/
+
+.introSection{
+      position: relative;
+}
+
+.introHeadFloat{
+      display: block;
+      width:100%;
+      height:80px;
+      float: left;
+      background: none;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      position: relative;
+}
+
+.introHead{
+      display: block;
+      width:100%;
+      height:100%;
+      position: absolute;
+      top: 0px;
+	text-align: center;
+      padding: 0px 20px;
+}
+
+.aboutUs .introHead {
+      background: salmon;
+}
+
+.clients .introHead {
+      background: teal;
+}
+
+.csr .introHead {
+      background: cadetblue;
+}
+
+.news .introHead {
+      background: rgba(60,184,120,1);
+}
+
+.ourHiringMethodology .introHead {
+	background: indianRed;
+}
+
+.meetTheTeam .introHead {
+	background: rgba(52,151,217,1);
+}
+
+.diversityAndInclusion .introHead {
+	background: coral;
+}
+
+.coreCompetencies .introHead {
+	background: rgba(231,76,60,1);
+}
+
+.industriesAndCategories .introHead {
+	background: rgba(52,151,217,1);
+}
+
+.ourBusinessModel .introHead {
+	background: rgba(46,204,113,1);
+}
+
+.whyUs .introHead {
+	background: turquoise;
+}
+
+.career .introHead {
+	background: slateblue;
+}
+
+.adventCulture .introHead {
+	background: coral;
+}
+
+.submitResume .introHead {
+	background: MediumTurquoise;
+}
+
+.lookingForAJob .introHead {
+	background: lightcoral;
+}
+
+.contactUs .introHead {
+	background: rgba(254,194,0,1)  ;
+}
+
+.company .introHead {
+	background: oliveDrab ;
+}
+
+.ourServices .introHead {
+	background: RebeccaPurple;
+}
+
+.introHead h2{
+      margin: 12px auto;
+	display: block;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.5em;
+      text-align: center;
+      text-transform: uppercase;
+}
+
+.csr .introHead h2, .ourHiringMethodology .introHead h2,
+.diversityAndInclusion .introHead h2,
+.coreCompetencies .introHead h2, .industriesAndCategories .introHead h2,
+.ourBusinessModel .introHead h2,.adventCulture .introHead h2,
+.submitResume .introHead h2, .lookingForAJob .introHead h2,
+.ourServices .introHead h2 {
+      font-size: 1.7em;
+}
+/*
+.meetTheTeam .introHead h2 {
+	font-size: 2.5em;
+}*/
+
+.textHigh{
+      display: block;
+      position: relative;
+      width:100%;
+      height:40vw;
+      float: right;
+      clear: both;
+      background: transparent;
+      border-left: 5px solid orange;
+      margin-left: 30px;
+      margin-bottom: 10px;
+}
+
+.textHighFloat:before{
+      content: '' ;
+      display:block;
+      float: right;
+      height: 500px;
+}
+
+.textHigh h5 {
+      position: absolute;
+      margin: 0;
+      padding: 10px 70px 0 20px;
+      color: rgba(31, 170, 235, 1);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 6.5vw;
+      text-align: left;
+}
+
+
+.introText p {
+      margin: 0;
+      padding: 20px 20px;
+      margin: 0 auto;
+      text-align: center;
+      text-align: justify;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;    /*1.5em*/
+      line-height: 1.7rem;     /*1.3em*/
+      color:#444;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Submit Resume Form - Submit Resume page
+---------------------------------------------------------------------------*/
+
+#resumeForm {
+
+}
+
+.formSet {
+	display: flex;
+	flex-direction: column;
+}
+
+.formSet h4{
+	width:100%;
+	flex-shrink: 0;
+	padding-left: 10px;
+}
+
+.formSet .inputBox {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+}
+
+.formSet .inputSet {
+	display: flex;
+	flex-direction: column-reverse;
+	width:100%;
+	margin: 1%;
+}
+
+.fullName .inputSet {
+	width: 98%;
+}
+
+.address .input{}
+
+
+
+.pLocation .inputSet {
+	flex-direction: row-reverse;
+	justify-content:  flex-end;
+	width:48%;
+}
+
+
+.cLetterClass .inputBox{
+	padding: 1%;
+}
+
+.cLetterClass textarea{
+	resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Map Section - Contact Us page
+---------------------------------------------------------------------------*/
+
+
+.mapBox {
+	position: relative;
+	margin: 20px;
+}
+
+.mapOverlay{
+	display: block;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	-webkit-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Our Hiring Method Section - Our Hiring Methodology page
+---------------------------------------------------------------------------*/
+
+.hiringMethodSection {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+}
+
+.hiringProgressBar {
+	width:30%;
+	align-items: stretch;
+	background: pink url('../images/news1.jpg') no-repeat;
+	background-size: cover;
+}
+
+.hiringText {
+	right:0px;
+	width: 70%;
+ 	display: flex;
+	flex-direction: column;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+	border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.hiringText ul {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.hiringProcess {
+	padding: 10px 30px;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.hiringProcess:last-child {
+	border: none;
+}
+
+
+.hiringProcess h2 {
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+industries And Categories Section - industries And Categories page
+---------------------------------------------------------------------------*/
+
+
+.indnCatSection {
+	margin-top: 100px;
+}
+
+.industrySection, .categorySection {
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 60px;
+	-webkit-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	/*border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);*/
+	background: rgba(230, 230, 230, 0.5);
+}
+
+.industryText, .categoryText{
+	width:100%;
+}
+
+.industryText ul, .categoryText ul {
+	height: 100%;
+	padding: 10px;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.industryText ul li, .categoryText ul li {
+	padding: 10px;
+	margin: 10px;
+	border: 0.5px solid rgba(0, 0, 0, 0.3);
+	width:100%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.industryText ul li i, .categoryText ul li i {
+	font-size: 2.5em;
+}
+
+.industryText ul li h4, .categoryText ul li h4 {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.indnCatImg {
+	width:100%;
+	height:60vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.indnCatImg h4 {
+	max-width: 80%;
+	text-align: center;
+	color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.5em;
+}
+
+.industryImg {
+	background: linear-gradient( rgba(0,0,0,0.20), rgba(0,0,0,0.20) ),url('../images/feature11.jpg') top right no-repeat;
+	background-size: cover;
+}
+
+.categoryImg{
+	background: linear-gradient( rgba(0,0,0,0.20), rgba(0,0,0,0.20) ),url('../images/feature12.jpg') top right no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Core Competencies  Section - core Competencies page
+---------------------------------------------------------------------------*/
+
+.competencySection {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column-reverse;
+	/*border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+	border-top: 0.5px solid rgba(0, 0, 0, 0.3);*/
+	-webkit-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	background: rgba(230, 230, 230, 0.5);
+}
+
+.competencyText {
+	width: 100%;
+	padding: 40px 5%;
+}
+
+.competencyText h2 {
+	font-size: 7vw;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.competencyText ul{
+	padding: 0;
+}
+
+.competencyText ul li {
+	text-align: left;
+	margin-left: 20px;
+	padding-bottom: 5px;
+	list-style:disc;
+	font-size: 5vw;
+}
+
+.competencyImg {
+	width:100%;
+	height: 80vw;
+	background: linear-gradient( rgba(0,0,0,0.20), rgba(0,0,0,0.20) ),url('../images/feature6.jpg') top right no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.competencyImg h4 {
+	max-width: 80%;
+	text-align: center;
+	color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+News Section - News page
+---------------------------------------------------------------------------*/
+
+
+.newsSection {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+
+}
+
+.newsSidebar {
+      width: 100%;
+      padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+/*news sidebar styling*/
+
+input.newsSearch {
+      width: 100%;
+      padding: 20px;
+      background: none;
+      color: rgba(31, 170, 235, 1);
+      border: 2px solid rgba(31, 170, 235, 1);
+}
+
+.newsFeatured {
+      width: 100%;
+      background: white;
+      padding: 0px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+      -webkit-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      -moz-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+}
+
+.newsFeatured li{
+      padding: 20px 20px;
+      border-bottom: 1px solid rgba(230,230,230,1);
+}
+
+.newsFeatured li:last-child {
+      border-bottom: none;
+}
+
+.newsFeatured li a {
+      color: rgba(31, 170, 235, 1);
+      text-decoration: none;
+}
+
+.news .socialMediaIcons {
+	width:100%;
+	height:25%;
+	display: flex;
+      flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.news .socialMediaIcons p {
+      margin-right: 0px;
+}
+
+.news .socialMediaIcons .mediaBox {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 36px;
+	height: auto;
+	width: 100%;
+      border: 2px solid rgba(31, 170, 235, 1);
+	display: flex;
+      flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.news .socialMediaIcons .mediaBox li a i{
+      color: rgba(31, 170, 235, 1);
+}
+
+.news .socialMediaIcons .mediaBox .socialLogo{
+	height:53px;
+	width:53px;
+	display: flex;
+      align-items: center;
+	justify-content: center;
+}
+
+
+/*news Content styling*/
+
+.newsContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+}
+
+.newsBox {
+      background: white;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-bottom: 2px;
+      -webkit-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      -moz-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+      box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
+}
+
+.newsText {
+      padding: 10px 20px 10px 20px;
+      height: 100%;
+      text-align: right;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+.newsText h3 {
+      font-size: 2.5vw;
+      margin-bottom: 0px;
+}
+
+.newsText p.date {
+      margin:5px;
+}
+
+.newsText p.newsPara {
+      font-size: 3vw;
+      margin: 0px;
+}
+
+.newsText p span {
+      display: block;
+      color: red;
+}
+
+.newsImg {
+      flex-shrink: 0;
+      width:40%;
+      height:60vw;
+      background: pink;
+}
+
+.news1{
+      border-left: 5px solid rgba(225,122,36,1);
+}
+
+.news2{
+      border-left: 5px solid rgba(161,134,190,1);
+}
+
+.news3{
+      border-left: 5px solid rgba(0,174,239,1);
+}
+
+.news4{
+      border-left: 5px solid rgba(60,184,120,1);
+}
+
+.news1 .newsImg {
+      background: url("../images/news1.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.news2 .newsImg {
+      background: url("../images/news2.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.news3 .newsImg {
+      background: url("../images/news3.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.news4 .newsImg {
+      background: url("../images/news4.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+CSR Section - CSR page
+---------------------------------------------------------------------------*/
+
+.csrGallerySection {
+      margin-top: 100px;
+      position: relative;
+}
+
+h2.csrTitle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+}
+
+.csrGallery{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+}
+
+.csrImgBox{
+      height:50vw;
+      width:50%;
+      background: purple;
+      border: 1px solid white;
+      box-sizing: border-box;
+}
+
+.csrImg1{
+	background: url('../images/ngo01.jpg') center right no-repeat;
+	background-size: cover;
+}
+
+.csrImg2{
+	background: url('../images/ngo19.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.csrImg3{
+	background: url('../images/ngo03.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.csrImg4{
+	background: url('../images/ngo17.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.csrImg5{
+	background: url('../images/ngo05.jpg') center right no-repeat;
+	background-size: cover;
+}
+
+.csrImg6{
+	background: url('../images/ngo06.jpg') center right no-repeat;
+	background-size: cover;
+}
+
+.csrImg7{
+	background: url('../images/ngo08.jpg') center left no-repeat;
+	background-size: cover;
+}
+
+.csrImg8{
+	background: url('../images/ngo09.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.csrImg9{
+	background: url('../images/ngo14.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.csrImg10{
+	background: url('../images/ngo10.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.csrImg11{
+	background: url('../images/ngo16.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.csrImg12{
+	background: url('../images/ngo12.jpg') center right no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Client and Testimonial Section - clients page
+---------------------------------------------------------------------------*/
+
+.clientNTestSection{
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+}
+
+.clientGridSection{
+      width:100%;
+      height:100vw;
+      background: white;
+      padding: 0px;
+      /*border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);*/
+}
+
+.clientGridBox{
+      display: block;
+      width:100%;
+      height:100%;
+      background: rgba(0, 0, 0, 0.03);
+      margin:0px;
+}
+
+.clientGridBox ul{
+      margin:0;
+      height:100%;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;;
+      align-content: space-between;;
+}
+
+.clientGridBox ul li{
+      width:22%;
+      height:22%;
+      background: white;
+      border: 0.5px solid rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.clients .testimonialSection{
+      position:relative;
+      background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
+      background-size: cover;
+      width:100%;
+      height:400px;
+}
+
+.quoteBox{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width: 80%;
+      background: none;
+      border: none;
+      color: white;
+}
+
+.quoteBox p{
+      margin: 0 auto;
+      text-align: center;
+      max-width: 50%;
+}
+
+.quoteBox p span{
+      display: block;
+      text-align: right;
+}
+
+.quoteBox .flex-direction-nav{
+      display: none;
+}
+
+
+
+/*changes in flexslider css....ionicons used instead of flexslider icons*/
+
+.quoteBox .flex-direction-nav a:before {
+  font-family: "Ionicons";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f361';
+  color: white;
+  text-shadow: none;
+}
+
+.quoteBox .flex-direction-nav a.flex-next:before {
+  content: '\f363';
+}
+
+.quoteBox .flex-control-paging li a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: #666;
+  background: rgba(255,255,255, 0);
+  border: 2px solid rgba(255,255,255,0.9);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.quoteBox .flex-control-paging li a:hover {
+  background: #333;
+  border: 2px solid rgba(255,255,255,0.7);
+  background: rgba(255,255,255, 0.7);
+}
+
+.quoteBox .flex-control-paging li a.flex-active {
+  background: #000;
+  border: 2px solid rgba(255,255,255,1);
+  background: rgba(255,255,255, 1);
+  cursor: default;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+.abb {
+      background: url("../images/abb.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.abbott {
+      background: url("../images/abbott.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bectonDickson {
+      background: url("../images/bectonDickson.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.bmw {
+      background: url("../images/bmw.png") center center no-repeat;
+      background-size: contain;
+      height:60%;
+      width:60%;
+}
+
+.caterpillar {
+      background: url("../images/caterpillar.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.celgene {
+      background: url("../images/celgene.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.citizens {
+      background: url("../images/citizens.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.datalogic {
+      background: url("../images/datalogic.jpg") center center no-repeat;
+      background-size: contain;
+      height:90%;
+      width:90%;
+}
+
+.henkel {
+      background: url("../images/henkel.png") center center no-repeat;
+      background-size: contain;
+      height:70%;
+      width:70%;
+}
+
+.humana {
+      background: url("../images/humana.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mercedes {
+      background: url("../images/mercedes.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.mtbank {
+      background: url("../images/mtBank.jpg") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.philips {
+      background: url("../images/philips.png") center center no-repeat;
+      background-size: contain;
+      height:50%;
+      width:50%;
+}
+
+.ricoh {
+      background: url("../images/ricoh.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.symantec {
+      background: url("../images/symantec.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.unisys {
+      background: url("../images/unisys.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Also See Section - except home page all pages
+---------------------------------------------------------------------------*/
+
+.alsoSeeSection{
+      margin-top: 172px;
+      position: relative;
+}
+
+h2.alsoSeeTitle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+	white-space: nowrap;
+}
+
+.linkBox{
+      width:50%;
+      float: left;
+      height:50vw;
+      position: relative;
+}
+
+.linkBox a{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+}
+
+.linkBox a h4{
+      margin:0;
+      position: absolute;
+      text-align: center;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-decoration: none;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 1.3rem;
+}
+
+
+
+.link1{
+      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.link2{
+      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
+      background-size: cover;
+}
+
+.link3{
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
+      background-size: cover;
+}
+
+.link4{
+      background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+
+
+.linkBox:hover a:before{
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      width:100%;
+      background: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Contact Section - except home and news all pages
+---------------------------------------------------------------------------*/
+
+.contactSection{
+      position: relative;
+      background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      margin-top: 130px;
+	-webkit-box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
+	-moz-box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
+	box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
+}
+
+h2.contactTitle{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+}
+
+.contactFlex{
+	display: flex;
+      flex-direction: column;
+	height: 100%;
+}
+
+.contactFlex p{
+	color: white;
+}
+
+.contactForm{
+	flex-grow: 1;
+	display: flex;
+      flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	padding: 20px 20px 50px 20px;
+	color:white;
+}
+
+.contactForm p{
+	width:100%;
+	margin:5px 1%;
+	text-align: center;
+}
+
+.inputFlex{
+	padding: 10px;
+	margin:5px 1%;
+	background: none;
+	border: 2px solid white;
+}
+
+.contactForm input[type=text]{
+	width: 98%;
+}
+
+.contactForm textarea{
+	width:98%;
+	resize: none;
+	height:80px
+}
+
+.contactForm button{
+	width:25%;
+}
+
+.socialMediaIcons{
+	width:100%;
+	height:25%;
+	display: flex;
+      flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.socialMediaIcons p{
+	margin:0px;
+	margin-bottom:10px;
+
+}
+
+.mediaBox{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 36px;
+	height: 80px;
+	width: 300px;
+	border: 2px solid white;
+	display: flex;
+      flex-wrap: wrap;
+}
+
+.socialLogo{
+	height:73px;
+	width:73px;
+	display: flex;
+      align-items: center;
+	justify-content: center;
+}
+
+.socialLogo a i{
+	font-size: 2em;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*styling of placeholder text*/
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1314,9 +2854,8 @@ Why Us Section
 
 
 
-
 /*-------------------------------------------------------------------------
-What we Offer  Section
+What we Offer  Section - only home page
 ---------------------------------------------------------------------------*/
 
 .featureTitle{
@@ -1345,11 +2884,25 @@ What we Offer  Section
 
 
 
+
+
+
+
+
+figure.effect h4 {
+	font-size: 1.4rem;
+}
+
+
+
+
+
+
 /*-------------------------------------------------------------------------
- Testimonial Section
+ Testimonial Section - only home page
 ---------------------------------------------------------------------------*/
 
-.testimonialSection{
+.homePage .testimonialSection {
       width:100%;
       height:50vw;
       margin-top:172px;
@@ -1363,8 +2916,15 @@ What we Offer  Section
 
 
 
+
+
+
+
+
+
+
 /*-------------------------------------------------------------------------
- Client Section
+ Client Section -Only home page
 ---------------------------------------------------------------------------*/
 
 .clientSection{
@@ -1422,6 +2982,21 @@ What we Offer  Section
 
 }
 
+.footerCol2 {
+	padding: 30px;
+}
+
+
+.accord {
+	border-top: none;
+	border-bottom: none;
+}
+
+.accord h3:after {
+	display: none;
+}
+
+
 .footerCol1{
       width:33.33333333333%;
       float:left;
@@ -1436,6 +3011,269 @@ What we Offer  Section
       float:left;
       text-align: left;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Intro Section -except home page - all pages
+---------------------------------------------------------------------------*/
+
+.textHigh {
+      width:50%;
+      height:30vw;
+}
+
+.textHigh h5 {
+      font-size: 4.0vw;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Submit Resume Form - Submit Resume page
+---------------------------------------------------------------------------*/
+
+
+#resumeForm {
+	margin-right: 180px;
+}
+
+.formSet {
+	flex-direction: row;
+}
+
+.formSet h4{
+	width:25%;
+	flex-shrink: 0;
+	padding-left: 50px;
+}
+
+
+.formSet .inputBox{
+	width: 75%;
+}
+
+.formSet .inputSet {
+	display: flex;
+	flex-direction: column-reverse;
+	width:23%;
+	margin: 1%;
+}
+
+
+.fullName .inputSet {
+	width: 48%;
+}
+
+.cLetterClass .inputBox{
+	padding: 0;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Our Hiring Method Section - Our Hiring Methodology
+---------------------------------------------------------------------------*/
+
+
+.hiringProcess {
+	padding: 20px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+industries And Categories Section - industries And Categories
+---------------------------------------------------------------------------*/
+
+.industrySection {
+	flex-direction:row;
+}
+
+.categorySection {
+	flex-direction: row-reverse;
+}
+
+.industryText, .categoryText{
+	width:60%;
+	height: 80vw;
+}
+
+.industryText ul li, .categoryText ul li {
+	padding: 5px;
+	margin: 5px;
+	flex-direction: column;
+	width: 30%;
+	height: 23%;
+}
+
+.industryText ul li i, .categoryText ul li i {
+	font-size: 3.5em;
+}
+
+.indnCatImg {
+	width:40%;
+	height:80vw;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Core Competencies  Section - core Competencies
+---------------------------------------------------------------------------*/
+
+.competencySection{
+	flex-direction: row;
+}
+
+.competencyText {
+	width: 60%;
+}
+
+.competencyText h2 {
+	font-size: 4vw;
+}
+
+.competencyText ul li {
+	font-size: 2.7vw;
+	padding-bottom: 10px;
+}
+
+.competencyImg {
+	width:40%;
+	height: auto;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+News Section
+---------------------------------------------------------------------------*/
+
+
+
+
+.newsContent {
+      width:100%;
+      display: flex;
+      flex-direction: column;
+}
+
+.newsText {
+      padding: 10px 20px 10px 60px;
+}
+
+.newsText p.newsPara {
+      font-size: 2.5vw;
+}
+
+
+.newsImg {
+	width:33.3333333333%;
+	height:33.3333333333vw;
+}
+
+
+
+/*-------------------------------------------------------------------------
+CSR Section - CSR
+---------------------------------------------------------------------------*/
+
+
+.csrImgBox{
+      height:33.3333333vw;
+      width:33.333333333333%;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Client and Testimonial Section - clients page
+---------------------------------------------------------------------------*/
+
+
+
+.quoteBox .flex-direction-nav{
+      display: block;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Also see section Section
+---------------------------------------------------------------------------*/
+
+
+.linkBox{
+      width:25%;
+      height:25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1471,35 +3309,34 @@ Desktop Styles Section
 Header Section
 ---------------------------------------------------------------------------*/
 
-#navSpread{
+#navSpread {
       display: none;    /*change this*/
-
       position: absolute;
       top:10px;
       right:17px;
 }
 
-#navSpread a{
+#navSpread a {
       color:white;
       text-decoration: none;
       list-style: none;
 }
 
-#navSpread ul{
+#navSpread ul {
       margin: 0px;
 }
 
-#navSpread li{
+#navSpread li {
       display: inline-block;
       padding-right: 30px;
       padding-top: 10px;
 }
 
-#navSpread ul li.searchGlass{
+#navSpread ul li.searchGlass {
       padding-right: 10px;
 }
 
-#navBurger{
+#navBurger {
       display: none;
 }
 
@@ -1510,16 +3347,21 @@ Hero Image Section
 
 
 
+
+
+
+
+
 /*-------------------------------------------------------------------------
-Why Us Section
+Why Us Section - only for home page
 ---------------------------------------------------------------------------*/
 
-.whyUsHead{
+.whyUsHead {
       width: 25%;
       height: 25vw;
 }
 
-.whyUsText{
+.whyUsText {
       width: 50%;
       height: 25vw;
 }
@@ -1533,7 +3375,7 @@ Why Us Section
       font-size: 3.5em;
 }
 
-.whyUsButton{
+.whyUsButton {
       width: 25%;
       height: 25vw;
       margin-bottom: 0px;
@@ -1558,9 +3400,14 @@ Why Us Section
       line-height: 1.1em;
 }
 
-.whyUsButton br{
+.whyUsButton br {
       display: block;
 }
+
+
+
+
+
 
 
 
@@ -1572,23 +3419,23 @@ Why Us Section
 What we Offer  Section
 ---------------------------------------------------------------------------*/
 
-.featureTitle{
+.featureTitle {
       width:25%;
       float: left;
       height:25vw;
 }
 
-.featureBox{
+.featureBox {
       width:25%;
       float: left;
       height:25vw;
 }
 
-.featureBox a h4{
+.featureBox a h4 {
       font-size: 1.4rem;
 }
 
-.featureTitle h2{
+.featureTitle h2 {
       font-size: 3.3rem;
 }
 
@@ -1598,10 +3445,10 @@ What we Offer  Section
 
 
 /*-------------------------------------------------------------------------
- Testimonial Section
+ Testimonial Section - For home page only
 ---------------------------------------------------------------------------*/
 
-.testimonialSection{
+.homePage .testimonialSection {
       width:100%;
       height:25vw;
       margin-top:172px;
@@ -1613,10 +3460,10 @@ What we Offer  Section
 
 
 /*-------------------------------------------------------------------------
- Client Section
+ Client Section - For  home page only
 ---------------------------------------------------------------------------*/
 
-.clientSection{
+.clientSection {
       height: 12.5vw;
 }
 
@@ -1628,7 +3475,7 @@ What we Offer  Section
  Social Section Section
 ---------------------------------------------------------------------------*/
 
-.socialSection{
+/*.socialSection{
       width: 100%;
       height: 50vw;
 }
@@ -1637,10 +3484,13 @@ What we Offer  Section
       display: block;
 }
 
+
 .socialBox{
       width:25%;
       float: left;
       height: 50vw;
+	padding: 1%;
+	position: relative;
 }
 
 .social1{
@@ -1669,7 +3519,209 @@ What we Offer  Section
 
 }
 
-.socialMediaIcons{
+.socialImg1 {
+	background: url('../images/social1.jpg') no-repeat;
+	background-size: cover;
+}
+
+.socialImg2 {
+	background: url('../images/social2.jpg') no-repeat;
+	background-size: cover;
+}
+
+.socialImg3 {
+	background: url('../images/social3.jpg') no-repeat;
+	background-size: cover;
+}
+
+.socialImg4 {
+	background: url('../images/social4.jpg') no-repeat;
+	background-size: cover;
+}
+
+.socialDP {
+	position: absolute;
+	top:350px;
+	left:30px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: white url('../images/adventdp.png') no-repeat;
+	background-size: cover;
+	z-index: 15;
+}
+
+.socialBox a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border: 1px solid white;
+}*/
+
+
+
+.homePage .socialSection {
+	height:auto;
+      width: 100%;
+	background: white;
+}
+
+.homePage .socialContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.homePage .socialBox {
+      width:24.9%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: white;
+	-webkit-box-shadow: 3px 3px 4px 0px rgba(179,179,179,0.89);
+      -moz-box-shadow: 3px 3px 4px 0px rgba(179,179,179,0.89);
+      box-shadow: 3px 3px 4px 0px rgba(179,179,179,0.89);
+}
+
+.homePage .socialWhite {
+	padding: 2% 2% 3% 2%;;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: white;
+}
+
+.homePage .socialColor {
+	padding: 2% 10%;
+}
+
+.homePage .social1 {
+	background: rgba(52,151,217,1);
+      /*border-bottom: 8px solid rgba(52,151,217,1);*/
+}
+
+.homePage .social2 {
+	background:rgba(254,194,0,1);
+      /*border-bottom: 8px solid rgba(254,194,0,1);*/
+}
+
+.homePage .social3 {
+	background:rgba(46,204,113,1);
+      /*border-bottom: 8px solid rgba(46,204,113,1);*/
+}
+
+.homePage .social4 {
+	background:rgba(231,76,60,1);
+      /*border-bottom: 8px solid rgba(231,76,60,1);*/
+}
+
+.homePage .social1 i {
+      color : rgba(68,96,160,1);
+}
+
+.homePage .social2 i {
+      color : rgba(223,74,51,1);
+}
+
+.homePage .social3 i {
+      color : rgba(90,168,223,1);
+}
+
+.homePage .social4 i {
+      color : rgba(39,90,133,1);
+}
+
+
+
+.homePage .socialBox i {
+	font-size: 2em
+}
+
+.homePage .socialImg1,.homePage .socialImg2,
+.homePage .socialImg3,.homePage .socialImg4 {
+      width:100%;
+      height:300px;
+      border: 0.1px solid #222;
+      /*border-top: 2px solid #222;
+      border-bottom: 2px solid #222;*/
+}
+
+.homePage .socialImg1 {
+	background: url('../images/social1.jpg') no-repeat;
+	background-size: cover;
+}
+
+.homePage .socialImg2 {
+	background: url('../images/social2.jpg') no-repeat;
+	background-size: cover;
+}
+
+.homePage .socialImg3 {
+	background: url('../images/social3.jpg') no-repeat;
+	background-size: cover;
+}
+
+.homePage .socialImg4 {
+	background: url('../images/social4.jpg') no-repeat;
+	background-size: cover;
+}
+
+.homePage .socialDP {
+	position: absolute;
+	top:315px;
+	left:30px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: white url('../images/adventdp.png') no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+      box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.3);
+	z-index: 15;
+}
+
+.homePage .socialText {
+	height: auto;
+	padding: 20px 0 70px 0;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.socialText h3, .socialText p {
+	width: 100%;
+	margin: 9px 0;
+}
+
+.socialBox a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	border: 2px solid white;
+	position: absolute;
+	bottom:20px;
+	left:50%;
+	transform: translateX(-50%);
+	/*align-self: center;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.homePage .socialMediaIcons {
       display: none;
 }
 
@@ -1702,35 +3754,36 @@ What we Offer  Section
 
 
 
+
 /*-------------------------------------------------------------------------
  Footer Section
 ---------------------------------------------------------------------------*/
 
-.adventLogo{
+.adventLogo {
 
 }
-.footerCol1{
+.footerCol1 {
       width:25%;
       float:left;
 }
 
-.corpHQ{
+.corpHQ {
       width:100%;
       float:left;
 }
 
-.footerCol2{
+.footerCol2 {
       width:25%;
       float:left;
 }
 
 
-.info{
+.info {
       text-align: left;
       float:left;
       width:50%;
 }
-.copyright{
+.copyright {
       text-align: right;
       float: left;
       width: 50%;
@@ -1738,13 +3791,340 @@ What we Offer  Section
 }
 
 
-.AboutUs{
+.AboutUs {
       display:block;
 }
 
 
 
 
+
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+/*=======================other pages=====================================*/
+
+
+
+/*-------------------------------------------------------------------------
+Intro Section
+---------------------------------------------------------------------------*/
+
+
+
+
+.introHeadFloat {
+      width:25%;
+      height:25vw;
+}
+
+.introSection .introHead {
+      top: -150px;
+}
+
+
+
+.introHead h2 {
+      position: absolute;
+      margin: 0;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      font-size: 3.5em;
+      text-align: right;
+}
+
+.ourHiringMethodology .introHead h2,
+ {
+      font-size: 2.8vw;
+}
+
+.meetTheTeam .introHead h2, .ourServices .introHead h2,
+.adventCulture .introHead h2, .submitResume .introHead h2
+ {
+	font-size: 3.8vw;
+}
+
+.diversityAndInclusion .introHead h2,
+.ourBusinessModel .introHead h2,
+.lookingForAJob .introHead h2
+
+ {
+	font-size: 3.5vw;
+}
+
+.coreCompetencies .introHead h2,
+.industriesAndCategories .introHead h2
+ {
+	font-size: 3.2vw;
+}
+
+.csr .introHead h2 {
+	font-size: 3vw;
+}
+
+.textHigh{
+      width:25%;
+      height:25vw;
+}
+
+.textHigh h5{
+      padding: 20px 70px 0 20px;
+      font-size: 2.4vw;
+}
+
+.introText p{
+      padding: 60px 180px;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Our Hiring Method Section - Our Hiring Methodology
+---------------------------------------------------------------------------*/
+
+.hiringMethodSection {
+	padding:0px 180px;
+}
+
+
+.hiringProgressBar {
+	width:20%;
+}
+
+
+.hiringText {
+	width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+industries And Categories Section - industries And Categories
+---------------------------------------------------------------------------*/
+
+
+
+.industryText, .categoryText{
+	width:60%;
+	height: 40vw;
+}
+
+.industryText ul li, .categoryText ul li {
+	flex-direction: column;
+	width: 12vw;
+	height: 12vw;
+}
+
+.indnCatImg {
+	width:40%;
+	height:40vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Core Competencies  Section - core Competencies
+---------------------------------------------------------------------------*/
+
+
+
+.competencyText h2 {
+	font-size: 2vw;
+}
+
+.competencyText ul li {
+	font-size: 1.7vw;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+NEWS Section - NEWS page
+---------------------------------------------------------------------------*/
+
+.newsSection {
+      flex-direction: row;
+}
+
+.newsSidebar {
+	width:25%;
+	flex-direction: column;
+}
+
+
+.news .socialMediaIcons {
+	display: flex;
+      flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.newsContent {
+      width:75%;
+}
+
+.newsText p.newsPara {
+      font-size: 1.5vw;
+}
+
+.newsImg {
+	height:25vw;
+}
+
+
+/*-------------------------------------------------------------------------
+CSR Section - CSR
+---------------------------------------------------------------------------*/
+
+
+.csrImgBox {
+      height:25vw;
+      width:25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Client and Testimonial Section - clients
+---------------------------------------------------------------------------*/
+
+
+.clientNTestSection{
+      flex-direction: row;
+}
+
+.clientGridSection{
+      width:50%;
+      height:50vw;
+}
+
+
+.clients .testimonialSection{
+      width:50%;
+      height:50vw;
+}
+
+
+
+
+/*-------------------------------------------------------------------------
+Also See Section
+---------------------------------------------------------------------------*/
+
+
+
+
+
+h2.alsoSeeTitle{
+      white-space: normal;
+}
+
+.linkBox{
+      width:25%;
+      height:25vw;
+}
+
+.linkBox a h4{
+      font-size: 1.9rem;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Contact Section - except home page, all other pages
+---------------------------------------------------------------------------*/
+
+
+
+
+.contactSection{
+      height: 360px;
+}
+
+.contactFlex{
+      flex-direction: row;
+}
+
+.contactForm{
+	padding: 20px 20px 20px 80px;
+}
+
+.contactForm p{
+	margin:5px 1%;
+      text-align: left;
+}
+
+.contactForm input[type=text]{
+	width: 48%;
+}
+
+.contactForm button {
+	width: 15%;
+}
+
+.socialMediaIcons {
+	width:25%;
+	height:100%;
+}
+
+.socialMediaIcons p {
+	margin-right: 40px;
+}
+
+.mediaBox {
+	margin-right: 40px;
+	height: 150px;
+	width: 150px;
+}
 
 
 

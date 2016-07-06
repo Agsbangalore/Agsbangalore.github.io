@@ -1,9 +1,9 @@
 //paste this code under the head tag or in a separate js file.
       // Wait for window load
-      $(window).load(function() {
-            // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");;
-      });
+      // $(window).load(function() {
+      //       // Animate loader off screen
+      //       $(".se-pre-con").fadeOut("slow");
+      // });
 
 
 $(function() {
@@ -22,8 +22,8 @@ $(function() {
          }
 
 
-         $window.load(function() {
-      $('.flexslider.clientBox').flexslider({
+         $(window).on('load',function() {
+         $('.flexslider.clientBox').flexslider({
         animation: "slide",
         animationSpeed: 400,
         animationLoop: false,
@@ -50,8 +50,10 @@ $(function() {
 
 
 
-      $(window).load(function() {
-      $('.flexslider').flexslider();
+      $(window).on('load',function() {
+      $('.flexslider').flexslider({
+                  animation: "slide"
+            });
       });
 
 
@@ -74,41 +76,30 @@ $(function() {
 
 
 
+/*ACcordian JavaScript*/
 
-if($(window).width()>1000){
+$(function(){
 
-/*child pages title animation*/
+if($(window).width()<700){
 
-            $(window).scroll(function(){
-                  var wScroll = $(this).scrollTop(),
-                  introTop = $('.introSection').offset().top,
-                  windowHeight = $(window).height(),
-                  introHeadHeight = $('.introHead').height(),
-                  introHead = $('.introHead').offset().top,
-                  introHeadBottom = $('.introHeadFloat').offset().top + $('.introHeadFloat').height();
-
-                  /*console.log('windowHeight' + windowHeight);
-                  console.log('introHeadBottom' + introHeadBottom);
-                  console.log(wScroll+windowHeight);*/
-
-
-                  if(((wScroll+windowHeight)>=introHeadBottom)&&
-                  ((wScroll+windowHeight)<=introHeadBottom+($('.introHeadFloat').height()-145))){
-
-                        $('.introHead').css({
-                        'transform' : 'translate(0px, '+ (-50+((wScroll+windowHeight)-introHeadBottom)) +'px)'
-                        });
-
-                  }else if ((wScroll+windowHeight)>introHeadBottom) {
-
-                        $('.introHead').css({
-                        'transform' : 'translate(0px, 150px)'
-                        });
-                  }
-
-            });
+      $('.offAdd').slideUp();
+      $('.accord > h3').click(function(){
+                  $(this).next().slideToggle(500);
+                  $(this).toggleClass('active');
+                  console.log("hahaha");
+      });
 
 }
+
+
+
+});
+
+
+
+
+
+
 
 
 
