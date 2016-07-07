@@ -97,7 +97,11 @@ if($(window).width()<700){
 
 
 
-
+$('#navButton').click(function(){
+      $('.hamIcon').toggleClass('show');
+      $('.closeIcon').toggleClass('show');
+      console.log('hahahaha');
+});
 
 
 

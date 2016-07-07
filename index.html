@@ -66,7 +66,7 @@
 <input type="checkbox" id="navToggle">           <!--checkbox used to toggle-->
 
 
-<label for="navToggle" id="navButton">≡</label>    <!--label containing the menu icon-->
+<label for="navToggle" id="navButton"><span class="hamIcon show">≡</span><span class="closeIcon">×</span></label>    <!--label containing the menu icon-->
 
 
 <main class="pageContent">
@@ -91,7 +91,7 @@
             <h2 class="hideHeader">Hero Section</h2>
             <div class="row banner">
                   <div class="ctaText">Right Talent, Right Now!!</div>
-                  <button class="ctaButton">Know More</button>
+                  <button class="ctaButton buttonEffect" data-text="Know More"><span>Know More</span></button>
             </div>
             <div class="heroVideoBG">
                   <div class="videoOverlay"></div>
@@ -341,7 +341,6 @@
             </div>
       </section>
 
-
       <section class="socialSection container">
             <h2 class="socialTitle">Connect With Us</h2>
             <div class="socialContainer">
@@ -366,7 +365,6 @@
                                     <a href="">See More</a>
                               </div>
                         </div>
-
                   </div>
                   <div class="social2 socialBox three columns">
                         <div class="socialWhite">
@@ -541,6 +539,10 @@
 
 
 <nav id="nav">
+      <div class="navLogo">
+            <div class="nLogo">
+            </div>
+      </div>
       <ul class="navList">
             <li><a href="index.html">Home</a></li>
             <li><a href="company.html" target="_blank">Company</a>
