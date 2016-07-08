@@ -74,9 +74,10 @@ ul,ol{
 
 
 hr {
-    border: 0;
-    border-top: 0.1px solid rgba(255,255,255,0.3);
-    /*height: 0.5px;*/
+	margin: 0;
+	border: 0;
+	border-top: 0.1px solid rgba(255,255,255,0.3);
+	/*height: 0.5px;*/
 }
 
 
@@ -3576,13 +3577,13 @@ What we Offer  Section
 
 
 .homePage .socialBox i {
-	font-size: 2em
+	font-size: 3em
 }
 
 .homePage .socialImg1,.homePage .socialImg2,
 .homePage .socialImg3,.homePage .socialImg4 {
       width:100%;
-      height:300px;
+      height:200px;
       border: 0.1px solid #222;
       /*border-top: 2px solid #222;
       border-bottom: 2px solid #222;*/
@@ -3610,7 +3611,7 @@ What we Offer  Section
 
 .homePage .socialDP {
 	position: absolute;
-	top:315px;
+	top:235px;
 	left:30px;
 	display: block;
 	width: 60px;
@@ -3720,6 +3721,8 @@ What we Offer  Section
 .adventLogo {
 
 }
+
+
 .footerCol1 {
       width:25%;
       float:left;
@@ -4052,7 +4055,7 @@ h2.alsoSeeTitle {
 }
 
 .contactForm {
-	padding: 20px 20px 20px 80px;
+	padding: 20px 20px 20px 20px;
 }
 
 .contactForm p {
