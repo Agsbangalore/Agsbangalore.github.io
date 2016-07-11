@@ -3029,6 +3029,17 @@ What we Offer  Section - only home page
       width:33.33333333333%;
       float:left;
       text-align: left;
+	position: relative;
+}
+
+.footerCol2::before {
+	content: '';
+	border-left: 0.1px solid rgba(255,255,255,0.3);
+	position: absolute;
+	top: 70px;
+	left: 0;
+	height: 300px;
+
 }
 
 
@@ -3505,7 +3516,7 @@ What we Offer  Section
 .homePage .socialSection {
 	height:auto;
       width: 100%;
-	background: white;
+	background: none;
 }
 
 .homePage .socialContainer {
@@ -3514,7 +3525,7 @@ What we Offer  Section
 }
 
 .homePage .socialBox {
-      width:24.9%;
+      width:24%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -3526,7 +3537,7 @@ What we Offer  Section
 }
 
 .homePage .socialWhite {
-	padding: 2% 2% 3% 2%;;
+	/*padding: 2% 2% 3% 2%;*/
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -3574,8 +3585,6 @@ What we Offer  Section
       color : rgba(39,90,133,1);
 }
 
-
-
 .homePage .socialBox i {
 	font-size: 3em
 }
@@ -3611,7 +3620,7 @@ What we Offer  Section
 
 .homePage .socialDP {
 	position: absolute;
-	top:235px;
+	top:210px;
 	left:30px;
 	display: block;
 	width: 60px;
@@ -3626,7 +3635,7 @@ What we Offer  Section
 
 .homePage .socialText {
 	height: auto;
-	padding: 20px 0 70px 0;
+	padding: 20px 0 40px 0;
 	color: white;
 	display: flex;
 	flex-direction: row;
@@ -3636,15 +3645,24 @@ What we Offer  Section
 
 .socialText h3, .socialText p {
 	width: 100%;
-	margin: 9px 0;
+	margin: 5px 0;
+}
+
+.socialText h3 {
+	margin-bottom: 2px;
+}
+
+.socialText p {
+	font-size: 0.9em;
 }
 
 .socialBox a {
 	color: white;
 	text-decoration: none;
 	text-align: center;
+	font-size: 0.9em;
 	padding: 10px 20px;
-	border: 2px solid white;
+	/*border: 2px solid white;*/
 	position: absolute;
 	bottom:20px;
 	left:50%;
@@ -3672,25 +3690,9 @@ What we Offer  Section
 	background: rgba(255,255,255,1);
 }
 
-
-
-
-
-
-
-
-
-
 .homePage .socialMediaIcons {
       display: none;
 }
-
-
-
-
-
-
-
 
 
 
