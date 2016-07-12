@@ -1584,9 +1584,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .lookingForAJob .heroImage {
-	/*background:url("../resources/backgrounds/city-people-woman-street.jpg") center center no-repeat;*/
-	/*background:url("../resources/backgrounds/pexels-photo.jpeg") center -100px no-repeat;*/
-	background:url("../resources/backgrounds/pexels-photo-25349.jpg") center center no-repeat;
+	background:url("../images/lookinForAJobbg.jpg") center center no-repeat;
       background-size: cover;
 }
 
