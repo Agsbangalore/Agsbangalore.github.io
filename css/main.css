@@ -1734,7 +1734,7 @@ Intro Section - except home page, all pages
       content: '' ;
       display:block;
       float: right;
-      height: 500px;
+      /*height: 400px;*/
 }
 
 .textHigh h5 {
@@ -1749,10 +1749,14 @@ Intro Section - except home page, all pages
       text-align: left;
 }
 
+.introText {
+	padding: 120px 20px 20px;
+}
+
 
 
 .introText p {
-	padding: 20px 20px;
+	padding-top: 20px;
       margin: 0;
       margin: 0 auto;
       text-align: center;
@@ -1764,8 +1768,20 @@ Intro Section - except home page, all pages
       color: #444;
 }
 
+.introText h3 {
+	font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;    /*1.5em*/
+      line-height: 1.7rem;     /*1.3em*/
+	color: rgba(31, 170, 235, 1);
+	padding-left: 5px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
 .introText ul {
 	margin: 0px 0;
+	margin-bottom: 30px;
 }
 
 .introText li {
@@ -3876,22 +3892,14 @@ Intro Section
       font-size: 2.4vw;
 }
 
-.introText p {
-      padding: 60px 180px;
-}
-
-.introText p:first-child {
+.introText {
 	padding: 60px 180px 5px;
 }
 
 
-/*for pages with more than one para */
-.csr .introText p:last-child {
-	padding: 20px 180px 60px;
-}
 
 .introText ul {
-	padding-left: 500px;
+	padding-left: 330px;
 }
 
 
