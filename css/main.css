@@ -523,9 +523,9 @@ Why Us Secion - Home page only
 ---------------------------------------------------------------------------*/
 
 .whyUsSection{
-	-webkit-box-shadow: 0px 12px 11px -9px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px 12px 11px -9px rgba(0,0,0,0.7);
-	box-shadow: 0px 12px 11px -9px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.5);
 	z-index: 10;
 }
 
@@ -1736,9 +1736,10 @@ Intro Section - except home page, all pages
 }
 
 
+
 .introText p {
+	padding: 20px 20px;
       margin: 0;
-      padding: 20px 20px;
       margin: 0 auto;
       text-align: center;
       text-align: justify;
@@ -1746,8 +1747,23 @@ Intro Section - except home page, all pages
       font-weight: 700;
       font-size: 1.2rem;    /*1.5em*/
       line-height: 1.7rem;     /*1.3em*/
-      color:#444;
+      color: #444;
 }
+
+.introText ul {
+	margin: 0px 0;
+}
+
+.introText li {
+	font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;    /*1.5em*/
+      line-height: 1.7rem;     /*1.3em*/
+      color: #444;
+	list-style-type: disc;
+}
+
+
 
 
 
@@ -1790,16 +1806,15 @@ Submit Resume Form - Submit Resume page
 	width: 98%;
 }
 
-.address .input {}
+.address .input {
 
-
+}
 
 .pLocation .inputSet {
 	flex-direction: row-reverse;
 	justify-content:  flex-end;
 	width:48%;
 }
-
 
 .cLetterClass .inputBox {
 	padding: 1%;
@@ -1808,16 +1823,6 @@ Submit Resume Form - Submit Resume page
 .cLetterClass textarea {
 	resize: none;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2913,12 +2918,6 @@ What we Offer  Section - only home page
 
 
 
-
-
-
-
-
-
 .featureBox h4 {
 	font-size: 1.4rem;
 }
@@ -3867,6 +3866,17 @@ Intro Section
       padding: 60px 180px;
 }
 
+.introText p:first-child {
+	padding: 60px 180px 5px;
+}
+
+.introText p:last-child {
+	padding: 20px 180px 60px;
+}
+
+.introText ul {
+	padding-left: 500px;
+}
 
 
 
@@ -3877,14 +3887,12 @@ Our Hiring Method Section - Our Hiring Methodology
 ---------------------------------------------------------------------------*/
 
 .hiringMethodSection {
-	padding:0px 180px;
+	padding: 0px 180px;
 }
-
 
 .hiringProgressBar {
-	width:20%;
+	width: 20%;
 }
-
 
 .hiringText {
 	width: 80%;
