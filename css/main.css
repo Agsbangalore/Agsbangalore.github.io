@@ -1588,6 +1588,11 @@ Hero Image Section - except home page, all [ages]
       background-size: cover;
 }
 
+.company .heroImage {
+	background:url("../images/companybg.jpg") center center no-repeat;
+      background-size: cover;
+}
+
 
 /*-------------------------------------------------------------------------
 Intro Section - except home page, all pages
@@ -1683,7 +1688,7 @@ Intro Section - except home page, all pages
 }
 
 .company .introHead {
-	background: oliveDrab ;
+	background: darkTurquoise;
 }
 
 .ourServices .introHead {
@@ -3833,7 +3838,7 @@ Intro Section
       text-align: right;
 }
 
-.ourHiringMethodology .introHead h2,
+.ourHiringMethodology .introHead h2
  {
       font-size: 2.8vw;
 }
@@ -3879,7 +3884,9 @@ Intro Section
 	padding: 60px 180px 5px;
 }
 
-.introText p:last-child {
+
+/*for pages with more than one para */
+.csr .introText p:last-child {
 	padding: 20px 180px 60px;
 }
 
