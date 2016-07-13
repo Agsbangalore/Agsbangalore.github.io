@@ -1593,6 +1593,16 @@ Hero Image Section - except home page, all [ages]
       background-size: cover;
 }
 
+.coreCompetencies .heroImage {
+	background:url("../images/corecompetenciesbg.jpg") center center no-repeat;
+      background-size: cover;
+}
+
+.ourBusinessModel .heroImage {
+	background:url("../images/businessmodelbg.jpg") center center no-repeat;
+      background-size: cover;
+}
+
 
 /*-------------------------------------------------------------------------
 Intro Section - except home page, all pages
@@ -1756,7 +1766,7 @@ Intro Section - except home page, all pages
 
 
 .introText p {
-	padding-top: 20px;
+	padding-top: 0px;
       margin: 0;
       margin: 0 auto;
       text-align: center;
@@ -1766,6 +1776,10 @@ Intro Section - except home page, all pages
       font-size: 1.2rem;    /*1.5em*/
       line-height: 1.7rem;     /*1.3em*/
       color: #444;
+}
+
+.ourBusinessModel .introText p {
+	padding-bottom: 20px;
 }
 
 .introText h3 {
@@ -1878,14 +1892,6 @@ Map Section - Contact Us page
 	box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
 	pointer-events: none;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -3896,7 +3902,9 @@ Intro Section
 	padding: 60px 180px 5px;
 }
 
-
+.introText p {
+	padding-top: 0px;
+}
 
 .introText ul {
 	padding-left: 330px;
