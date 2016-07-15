@@ -64,14 +64,10 @@ h2 {
       text-transform: uppercase;
 }
 
-
-
-
 /*Remove bullets of all list items*/
 ul,ol{
       list-style: none;
 }
-
 
 hr {
 	margin: 0;
@@ -79,11 +75,6 @@ hr {
 	border-top: 0.1px solid rgba(255,255,255,0.3);
 	/*height: 0.5px;*/
 }
-
-
-
-
-
 
 
 /*-------------------------------------------------------------------------
@@ -286,42 +277,43 @@ label#navButton:hover{
       font-size: 0.9em;
       padding: 17px 0px 20px 17px;
       margin-bottom: 2px;
-      border-left: 6px solid cyan;
+      /*border-left: 6px solid cyan;*/
       background: #444;
 }
 
-#nav ul ul li a{
-      padding-left: 40px;
-      border-left: 6px solid cyan;
+/*#nav ul ul li {
+	list-style: disc;
+}*/
+
+#nav ul ul li a {
+      padding-left: 30px;
+	position: relative;
+}
+
+#nav ul ul ul li a {
+      padding-left: 50px;
+	position: relative;
+}
+
+#nav ul ul li a::before {
+	content: '\f363';
+	font-family: "Ionicons";
+	font-size: 25px;
+	color: #777;
+	margin-left: 5px;
+	margin-right: 20px;
+	position: absolute;
+	top: 12px;
+	left:11px;
+}
+
+#nav ul ul ul li a::before {
+	left:30px;
 }
 
 #nav li a:hover{
       background: #555;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -403,7 +395,7 @@ Hero Image Section - All pages
       min-height: 100%;
 }
 
-.videoOverlay{
+.videoOverlay {
       position: absolute;
       background: rgba(0,0,0,0.1);
       top:0;
@@ -413,7 +405,7 @@ Hero Image Section - All pages
 }
 
 
-.heroImage .banner{
+.heroImage .banner {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -423,15 +415,19 @@ Hero Image Section - All pages
       color: white;
 }
 
-.ctaText{
+.ctaText {
       font-family: 'Dancing Script', cursive;
       font-weight:700;
       font-size: 2.5em;
       margin-bottom: 20px;
 }
 
-.ctaButton{
-      padding: 10px 35px;
+.ctaButton {
+	margin: 0 auto;
+	display: block;
+	width: 170px;
+	height: 50px;
+      text-decoration: none;
       border: 1px solid white;
 	color: #fff;
 	background: none;
@@ -1342,8 +1338,6 @@ Contact Section - Only for page
 	transition: all 0.15s ease-in-out;
 }
 
-
-
 #name, #email {
       width: 98%;
       margin:5px 1%;
@@ -1705,6 +1699,14 @@ Intro Section - except home page, all pages
 	background: RebeccaPurple;
 }
 
+.applicationmanagementservices .introHead {
+	background: rgba(52,151,217,1);
+}
+
+.enterprisemobility .introHead {
+	background: rgba(46,204,113,1);
+}
+
 .introHead h2 {
       margin: 12px auto;
 	display: block;
@@ -1720,12 +1722,13 @@ Intro Section - except home page, all pages
 .csr .introHead h2, .ourHiringMethodology .introHead h2,
 .diversityAndInclusion .introHead h2,
 .coreCompetencies .introHead h2, .industriesAndCategories .introHead h2,
-.ourBusinessModel .introHead h2,.adventCulture .introHead h2,
+.ourBusinessModel .introHead h2, .adventCulture .introHead h2,
 .submitResume .introHead h2, .lookingForAJob .introHead h2,
-.ourServices .introHead h2 {
+.ourServices .introHead h2, .enterprisemobility .introHead h2,
+.applicationmanagementservices .introHead h2
+{
       font-size: 1.7em;
 }
-
 
 .textHigh {
       display: block;
@@ -1763,8 +1766,6 @@ Intro Section - except home page, all pages
 	padding: 120px 20px 20px;
 }
 
-
-
 .introText p {
 	padding-top: 0px;
       margin: 0;
@@ -1772,13 +1773,15 @@ Intro Section - except home page, all pages
       text-align: center;
       text-align: justify;
       font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
+      font-weight: 400;
       font-size: 1.2rem;    /*1.5em*/
       line-height: 1.7rem;     /*1.3em*/
       color: #444;
 }
 
-.ourBusinessModel .introText p {
+.ourBusinessModel .introText p, .adventCulture .introText p,
+.applicationmanagementservices .introText p, .enterprisemobility .introText p,
+.ourHiringMethodology .introText p {
 	padding-bottom: 20px;
 }
 
@@ -1917,7 +1920,7 @@ Our Hiring Method Section - Our Hiring Methodology page
 }
 
 .hiringText {
-	right:0px;
+	right: 0px;
 	width: 70%;
  	display: flex;
 	flex-direction: column;
@@ -1953,11 +1956,6 @@ Our Hiring Method Section - Our Hiring Methodology page
 
 
 
-
-
-
-
-
 /*-------------------------------------------------------------------------
 industries And Categories Section - industries And Categories page
 ---------------------------------------------------------------------------*/
@@ -1970,12 +1968,17 @@ industries And Categories Section - industries And Categories page
 .industrySection, .categorySection {
 	display: flex;
 	flex-direction: column-reverse;
-	margin-bottom: 60px;
+	/*margin-bottom: 60px;*/
+	border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
+	/*background: rgba(230, 230, 230, 0.5);*/
+	background: white;
+}
+
+.industrySection {
 	-webkit-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
 	-moz-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
 	box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
-	/*border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);*/
-	background: rgba(230, 230, 230, 0.5);
+	margin-bottom: 60px;
 }
 
 .industryText, .categoryText {
@@ -1995,11 +1998,11 @@ industries And Categories Section - industries And Categories page
 .industryText ul li, .categoryText ul li {
 	padding: 10px;
 	margin: 10px;
-	border: 0.5px solid rgba(0, 0, 0, 0.3);
-	width:100%;
+	/*border: 0.5px solid rgba(0, 0, 0, 0.3);*/
+	width:40%;/*100%*/
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
+	flex-direction: column;/*row-reverse*/
+	justify-content: flex-start;/*space-between*/
 	align-items: center;
 }
 
@@ -2008,7 +2011,7 @@ industries And Categories Section - industries And Categories page
 }
 
 .industryText ul li h4, .categoryText ul li h4 {
-	font-size: 0.8em;
+	font-size: 1.3em;
 	text-align: center;
 }
 
@@ -2022,12 +2025,18 @@ industries And Categories Section - industries And Categories page
 
 .indnCatImg h4 {
 	max-width: 80%;
+	margin: 0;
+	align-self: center;
 	text-align: center;
 	color: white;
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
       font-size: 2.5em;
+}
+
+.industryText h4, .categoryText h4 {
+	margin: 5px;
 }
 
 .industryImg {
@@ -2040,7 +2049,123 @@ industries And Categories Section - industries And Categories page
 	background-size: cover;
 }
 
+.indnCatSection i {
+	display: block;
+	height: 80px;
+	width: 80px;
+	margin-bottom: 8px;
+}
 
+.indTechnology {
+	background: url("../images/industriesicon/technology.png") no-repeat;
+	background-size: cover;
+}
+
+.indBanking {
+	background: url("../images/industriesicon/bankingnfinance.png") no-repeat;
+	background-size: cover;
+}
+
+.indInsurance {
+	background: url("../images/industriesicon/insurance.png") no-repeat;
+	background-size: cover;
+}
+
+.indHealthcare {
+	background: url("../images/industriesicon/healthcare.png") no-repeat;
+	background-size: cover;
+}
+
+.indTelecom {
+	background: url("../images/industriesicon/telecom.png") no-repeat;
+	background-size: cover;
+}
+
+.indDistribution {
+	background: url("../images/industriesicon/distribution.png") no-repeat;
+	background-size: cover;
+}
+
+.indTransportation {
+	background: url("../images/industriesicon/transportation.png") no-repeat;
+	background-size: cover;
+}
+
+.indAutomotive {
+	background: url("../images/industriesicon/automotive.png") no-repeat;
+	background-size: cover;
+}
+
+.indEnergy {
+	background: url("../images/industriesicon/energynutilities.png") no-repeat;
+	background-size: cover;
+}
+
+.indRetail {
+	background: url("../images/industriesicon/retail.png") no-repeat;
+	background-size: cover;
+}
+
+.indManufacturing {
+	background: url("../images/industriesicon/manufacturing.png") no-repeat;
+	background-size: cover;
+}
+
+.indMedia {
+	background: url("../images/industriesicon/media.png") no-repeat;
+	background-size: cover;
+}
+
+
+.catIT {
+	background: url("../images/categoriesicon/it.png") no-repeat;
+	background-size: cover;
+}
+
+.catFinance {
+	background: url("../images/categoriesicon/financenaccounting.png") no-repeat;
+	background-size: cover;
+}
+
+.catMedical {
+	background: url("../images/categoriesicon/medicalnclinicalnscientific.png") no-repeat;
+	background-size: cover;
+}
+
+.catAdmin {
+	background: url("../images/categoriesicon/adminnclerical.png") no-repeat;
+	background-size: cover;
+}
+
+.catEngineering {
+	background: url("../images/categoriesicon/engineering.png") no-repeat;
+	background-size: cover;
+}
+
+.catCreative {
+	background: url("../images/categoriesicon/creative.png") no-repeat;
+	background-size: cover;
+}
+
+.catCallCenter {
+	background: url("../images/categoriesicon/callcenter.png") no-repeat;
+	background-size: cover;
+}
+
+.catSales {
+	background: url("../images/categoriesicon/salesnmarketing.png") no-repeat;
+	background-size: cover;
+}
+
+.catTechSupport {
+	background: url("../images/categoriesicon/technicalsupport.png") no-repeat;
+	background-size: cover;
+}
+
+.catHR {
+	background: url("../images/categoriesicon/hrnothers.png") no-repeat;
+	background-size: cover;
+}
 
 
 
@@ -2119,7 +2244,6 @@ News Section - News page
       width: 100%;
       display: flex;
       flex-direction: column-reverse;
-
 }
 
 .newsSidebar {
@@ -2191,11 +2315,11 @@ input.newsSearch {
 	justify-content: center;
 }
 
-.news .socialMediaIcons .mediaBox li a i{
+.news .socialMediaIcons .mediaBox li a i {
       color: rgba(31, 170, 235, 1);
 }
 
-.news .socialMediaIcons .mediaBox .socialLogo{
+.news .socialMediaIcons .mediaBox .socialLogo {
 	height:53px;
 	width:53px;
 	display: flex;
@@ -2260,19 +2384,19 @@ input.newsSearch {
       background: pink;
 }
 
-.news1{
+.news1 {
       border-left: 5px solid rgba(225,122,36,1);
 }
 
-.news2{
+.news2 {
       border-left: 5px solid rgba(161,134,190,1);
 }
 
-.news3{
+.news3 {
       border-left: 5px solid rgba(0,174,239,1);
 }
 
-.news4{
+.news4 {
       border-left: 5px solid rgba(60,184,120,1);
 }
 
@@ -2298,15 +2422,11 @@ input.newsSearch {
 
 
 
-
-
-
-
 /*-------------------------------------------------------------------------
 CSR Section - CSR page
 ---------------------------------------------------------------------------*/
 
-.csrGallerySection {
+/*.csrGallerySection {
       margin-top: 100px;
       position: relative;
 }
@@ -2392,7 +2512,7 @@ h2.csrTitle{
 	background: url('../images/ngo12.jpg') center right no-repeat;
 	background-size: cover;
 }
-
+*/
 
 
 
@@ -2402,13 +2522,13 @@ h2.csrTitle{
 Client and Testimonial Section - clients page
 ---------------------------------------------------------------------------*/
 
-.clientNTestSection{
+.clientNTestSection {
       display: flex;
       flex-direction: column;
       margin-top: 60px;
 }
 
-.clientGridSection{
+.clientGridSection {
       width:100%;
       height:100vw;
       background: white;
@@ -2417,7 +2537,7 @@ Client and Testimonial Section - clients page
       border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);*/
 }
 
-.clientGridBox{
+.clientGridBox {
       display: block;
       width:100%;
       height:100%;
@@ -2425,7 +2545,7 @@ Client and Testimonial Section - clients page
       margin:0px;
 }
 
-.clientGridBox ul{
+.clientGridBox ul {
       margin:0;
       height:100%;
       padding: 20px;
@@ -2435,7 +2555,7 @@ Client and Testimonial Section - clients page
       align-content: space-between;;
 }
 
-.clientGridBox ul li{
+.clientGridBox ul li {
       width:22%;
       height:22%;
       background: white;
@@ -2445,7 +2565,7 @@ Client and Testimonial Section - clients page
       justify-content: center;
 }
 
-.clients .testimonialSection{
+.clients .testimonialSection {
       position:relative;
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
       background-size: cover;
@@ -2453,7 +2573,7 @@ Client and Testimonial Section - clients page
       height:400px;
 }
 
-.quoteBox{
+.quoteBox {
       position: absolute;
       top:50%;
       left:50%;
@@ -2464,18 +2584,18 @@ Client and Testimonial Section - clients page
       color: white;
 }
 
-.quoteBox p{
+.quoteBox p {
       margin: 0 auto;
       text-align: center;
       max-width: 50%;
 }
 
-.quoteBox p span{
+.quoteBox p span {
       display: block;
       text-align: right;
 }
 
-.quoteBox .flex-direction-nav{
+.quoteBox .flex-direction-nav {
       display: none;
 }
 
@@ -2656,12 +2776,12 @@ Client and Testimonial Section - clients page
 Also See Section - except home page all pages
 ---------------------------------------------------------------------------*/
 
-.alsoSeeSection{
+.alsoSeeSection {
       margin-top: 172px;
       position: relative;
 }
 
-h2.alsoSeeTitle{
+h2.alsoSeeTitle {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -2669,7 +2789,7 @@ h2.alsoSeeTitle{
 	white-space: nowrap;
 }
 
-.linkBox{
+.linkBox {
       width:50%;
       float: left;
       height:50vw;
@@ -2677,7 +2797,7 @@ h2.alsoSeeTitle{
 	overflow: hidden;
 }
 
-.linkBox a{
+.linkBox a {
       position: absolute;
       top:0;
       left:0;
@@ -2701,22 +2821,22 @@ h2.alsoSeeTitle{
 
 
 
-.link1{
+.link1 {
       background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background-size: cover;
 }
 
-.link2{
+.link2 {
       background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
       background-size: cover;
 }
 
-.link3{
+.link3 {
       background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background-size: cover;
 }
 
-.link4{
+.link4 {
       background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background-size: cover;
 }
@@ -2732,7 +2852,7 @@ h2.alsoSeeTitle{
 Contact Section - except home and news all pages
 ---------------------------------------------------------------------------*/
 
-.contactSection{
+.contactSection {
       position: relative;
       background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
       background-size: cover;
@@ -2744,24 +2864,24 @@ Contact Section - except home and news all pages
 	box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
 }
 
-h2.contactTitle{
+h2.contactTitle {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       top: -70px;
 }
 
-.contactFlex{
+.contactFlex {
 	display: flex;
       flex-direction: column;
 	height: 100%;
 }
 
-.contactFlex p{
+.contactFlex p {
 	color: white;
 }
 
-.contactForm{
+.contactForm {
 	flex-grow: 1;
 	display: flex;
       flex-wrap: wrap;
@@ -2771,34 +2891,34 @@ h2.contactTitle{
 	color:white;
 }
 
-.contactForm p{
+.contactForm p {
 	width:100%;
 	margin:5px 1%;
 	text-align: center;
 }
 
-.inputFlex{
+.inputFlex {
 	padding: 10px;
 	margin:5px 1%;
 	background: none;
 	border: 2px solid white;
 }
 
-.contactForm input[type=text]{
+.contactForm input[type=text] {
 	width: 98%;
 }
 
-.contactForm textarea{
+.contactForm textarea {
 	width:98%;
 	resize: none;
 	height:80px
 }
 
-.contactForm button{
+.contactForm button {
 	width:25%;
 }
 
-.socialMediaIcons{
+.socialMediaIcons {
 	width:100%;
 	height:25%;
 	display: flex;
@@ -2808,13 +2928,13 @@ h2.contactTitle{
 	align-items: center;
 }
 
-.socialMediaIcons p{
+.socialMediaIcons p {
 	margin:0px;
 	margin-bottom:10px;
 
 }
 
-.mediaBox{
+.mediaBox {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 36px;
@@ -2825,7 +2945,7 @@ h2.contactTitle{
       flex-wrap: wrap;
 }
 
-.socialLogo{
+.socialLogo {
 	height:73px;
 	width:73px;
 	display: flex;
@@ -2833,7 +2953,7 @@ h2.contactTitle{
 	justify-content: center;
 }
 
-.socialLogo a i{
+.socialLogo a i {
 	font-size: 2em;
 	color: white;
 }
@@ -3207,16 +3327,17 @@ industries And Categories Section - industries And Categories
 ---------------------------------------------------------------------------*/
 
 .industrySection {
-	flex-direction:row;
+	flex-direction: row;
+	margin-bottom: 0px;
 }
 
 .categorySection {
 	flex-direction: row-reverse;
 }
 
-.industryText, .categoryText{
+.industryText, .categoryText {
 	width:60%;
-	height: 80vw;
+	/*height: 80vw;*/
 }
 
 .industryText ul li, .categoryText ul li {
@@ -3225,15 +3346,22 @@ industries And Categories Section - industries And Categories
 	flex-direction: column;
 	width: 30%;
 	height: 23%;
+	justify-content: flex-start;
 }
 
 .industryText ul li i, .categoryText ul li i {
 	font-size: 3.5em;
 }
 
+.industryText ul li h4, .categoryText ul li h4 {
+	font-size: 0.8em;
+	text-align: center;
+}
+
 .indnCatImg {
 	width:40%;
-	height:80vw;
+	height:auto;
+	align-items: stretch;
 }
 
 
@@ -3246,12 +3374,13 @@ industries And Categories Section - industries And Categories
 Core Competencies  Section - core Competencies
 ---------------------------------------------------------------------------*/
 
-.competencySection{
+.competencySection {
 	flex-direction: row;
 }
 
 .competencyText {
 	width: 60%;
+	padding: 40px 10%;
 }
 
 .competencyText h2 {
@@ -3879,7 +4008,9 @@ Intro Section
 }
 
 .coreCompetencies .introHead h2,
-.industriesAndCategories .introHead h2
+.industriesAndCategories .introHead h2,
+.enterprisemobility .introHead h2,
+.applicationmanagementservices .introHead h2
  {
 	font-size: 3.2vw;
 }
@@ -3952,18 +4083,19 @@ industries And Categories Section - industries And Categories
 
 .industryText, .categoryText {
 	width:60%;
-	height: 40vw;
+	height: 25vw;
+	flex-grow: 1;
 }
 
 .industryText ul li, .categoryText ul li {
 	flex-direction: column;
-	width: 12vw;
-	height: 12vw;
+	width: 10vw;
+	height: 10vw;
 }
 
 .indnCatImg {
-	width:40%;
-	height:40vw;
+	width:25%;
+	height:auto;
 }
 
 
