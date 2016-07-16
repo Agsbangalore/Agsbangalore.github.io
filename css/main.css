@@ -55,7 +55,7 @@ h1.hideHeader, h2.hideHeader{
 	display: none;
 }
 
-h2 {
+h2, h3, h4 {
 	color: rgba(31, 170, 235, 1);
       font-family: 'Lato', sans-serif;
       font-weight: 900;
@@ -69,12 +69,7 @@ ul,ol{
       list-style: none;
 }
 
-hr {
-	margin: 0;
-	border: 0;
-	border-top: 0.1px solid rgba(255,255,255,0.3);
-	/*height: 0.5px;*/
-}
+
 
 
 /*-------------------------------------------------------------------------
@@ -286,7 +281,7 @@ label#navButton:hover{
 }*/
 
 #nav ul ul li a {
-      padding-left: 30px;
+      padding-left: 50px;
 	position: relative;
 }
 
@@ -304,7 +299,7 @@ label#navButton:hover{
 	margin-right: 20px;
 	position: absolute;
 	top: 12px;
-	left:11px;
+	left:24px;
 }
 
 #nav ul ul ul li a::before {
@@ -379,7 +374,7 @@ Hero Image Section - All pages
       display: block;
       position: relative;
       width:100%;
-      height:110vh;
+      height:100vh;
       width:100%;
       overflow: hidden;
 }
@@ -560,6 +555,7 @@ Why Us Secion - Home page only
       background: white;
       text-align: center;
 	position: relative;
+	padding-bottom: 50px;
 }
 
 .whyUsText::after, .whyUsHead::after {
@@ -586,6 +582,7 @@ Why Us Secion - Home page only
 }
 
 .whyUsButton {
+	display: none;
       height: 50px;
       background: white;
       position: relative;
@@ -761,57 +758,62 @@ what we offer Section - For home page only
 }
 
 .feature1 .img {
-      background: linear-gradient( rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ), url("../images/feature1.jpg") center top no-repeat;
+      background: linear-gradient( rgba(239,83,80,0.75), rgba(239,83,80,0.75) ), url("../images/feature1.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature2 .img {
-      background: linear-gradient(  rgba(67,160,71,0.75), rgba(67,160,71,0.75) ),url("../images/feature2.jpg") center top no-repeat;
+      background: linear-gradient(  rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature3 .img {
-      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature3.jpg") center top no-repeat;
+      background: linear-gradient( rgba(67,160,71,0.75), rgba(67,160,71,0.75) ),url("../images/feature3.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature4 .img {
-      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature4.png") center top no-repeat;
+      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature4.png") center top no-repeat;
       background-size: cover;
 }
 
 .feature5 .img {
-      background: linear-gradient( rgba(245,152,157,0.75), rgba(245,152,157,0.75) ),url("../images/feature5.jpg") center top no-repeat;
+      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature5.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature6 .img {
-      background: linear-gradient( rgba(2,136,209,0.75), rgba(2,136,209,0.75) ),url("../images/feature6.jpg") center top no-repeat;
+      background: linear-gradient( rgba(245,152,157,0.75), rgba(245,152,157,0.75) ),url("../images/feature6.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature7 .img {
-      background: linear-gradient( rgba(124,197,118,0.75), rgba(124,197,118,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
+      background: linear-gradient( rgba(2,136,209,0.75), rgba(2,136,209,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
       background-size: cover;
 }
 
 .feature8 .img {
-      background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
+      background: linear-gradient( rgba(124,197,118,0.75), rgba(124,197,118,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature9 .img {
-      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75)),url("../images/feature9.jpg") center top no-repeat;
+      background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature9.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature10 .img {
-      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature10.jpg") center top no-repeat;
+      background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature10.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature11 .img {
-      background: linear-gradient( rgba(94,53,177,0.75), rgba(94,53,177,0.75) ),url("../images/feature11.jpg") center top no-repeat;
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature11.jpg") center top no-repeat;
+      background-size: cover;
+}
+
+.feature12 .img {
+      background: linear-gradient( rgba(94,53,177,0.75), rgba(94,53,177,0.75 ) ),url("../images/feature12.jpg") center top no-repeat;
       background-size: cover;
 }
 
@@ -1393,13 +1395,22 @@ Footer Section
       font-size: 16px;
 }
 
+.footerSection hr {
+	margin: 0;
+	border: 0;
+	border-top: 0.1px solid rgba(255,255,255,0.3);
+}
+
 .AboutUs{
       display:none;
 }
 
-.siteInfo{
+.siteInfo p, .siteInfo li {
       display: block;
+	font-size: 0.9em;
 }
+
+
 
 .info{
       text-align: center;
@@ -1612,8 +1623,8 @@ Intro Section - except home page, all pages
       height:80px;
       float: left;
       background: none;
-      margin-right: 30px;
-      margin-bottom: 20px;
+      margin-right: 70px;
+      margin-bottom: 60px;
       position: relative;
 }
 
@@ -1764,9 +1775,31 @@ Intro Section - except home page, all pages
 
 .introText {
 	padding: 120px 20px 20px;
+
 }
 
-.introText p {
+.subSection {
+	margin-bottom: 10px;
+}
+
+.subSection::after {
+	content: '';
+	display: block;
+	margin: 40px auto;
+	width:73%;
+	border-bottom: 1px solid #777;
+}
+
+.introText h4, .subSection  h4 {
+	margin: 10px 0px 10px;
+	text-transform: none;
+}
+
+.subSectionText {
+	padding: 0px 20px 0px;
+}
+
+.introText p, .subSection p {
 	padding-top: 0px;
       margin: 0;
       margin: 0 auto;
@@ -1777,6 +1810,11 @@ Intro Section - except home page, all pages
       font-size: 1.2rem;    /*1.5em*/
       line-height: 1.7rem;     /*1.3em*/
       color: #444;
+	padding-bottom: 20px;
+}
+
+.introText p:last-child, .subSection p:last-child {
+	padding-bottom: 0px;
 }
 
 .ourBusinessModel .introText p, .adventCulture .introText p,
@@ -1785,28 +1823,41 @@ Intro Section - except home page, all pages
 	padding-bottom: 20px;
 }
 
-.introText h3 {
+/*.introText h3, .subSectionText h3 {
 	font-family: 'Open Sans', sans-serif;
       font-weight: 700;
-      font-size: 1.5rem;    /*1.5em*/
-      line-height: 1.7rem;     /*1.3em*/
+      font-size: 1.5rem;
+      line-height: 1.7rem;
 	color: rgba(31, 170, 235, 1);
 	padding-left: 5px;
 	margin-top: 40px;
 	margin-bottom: 10px;
+}*/
+
+.introText h3, .subSectionText h3 {
+	text-align: right;
+	font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 1.8em;
+	margin: 80px 0px 20px;
+      text-transform: uppercase;
+	padding-right: 20px;
+	border-right: 60px solid orange;
 }
 
-.introText ul {
+.introText ul, .subSectionText ul {
 	margin: 0px 0;
 	margin-bottom: 30px;
 }
 
-.introText li {
+.introText li, .subSection li {
 	font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 1.2rem;    /*1.5em*/
       line-height: 1.7rem;     /*1.3em*/
       color: #444;
+	font-style: italic;
 	list-style-type: disc;
 }
 
@@ -1974,6 +2025,8 @@ industries And Categories Section - industries And Categories page
 	background: white;
 }
 
+
+
 .industrySection {
 	-webkit-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
 	-moz-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
@@ -2024,7 +2077,7 @@ industries And Categories Section - industries And Categories page
 }
 
 .indnCatImg h4 {
-	max-width: 80%;
+	/*max-width: 80%;*/
 	margin: 0;
 	align-self: center;
 	text-align: center;
@@ -2032,7 +2085,8 @@ industries And Categories Section - industries And Categories page
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
-      font-size: 2.5em;
+      font-size: 3.3em;
+	text-transform: uppercase;
 }
 
 .industryText h4, .categoryText h4 {
@@ -2177,27 +2231,24 @@ Core Competencies  Section - core Competencies page
 ---------------------------------------------------------------------------*/
 
 .competencySection {
-	margin-top: 100px;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column-reverse;
 	/*border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 	border-top: 0.5px solid rgba(0, 0, 0, 0.3);*/
-	-webkit-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	/*-webkit-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
 	-moz-box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
-	box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 9px 11px -9px rgba(0,0,0,0.3);*/
 	background: rgba(230, 230, 230, 0.5);
 }
 
 .competencyText {
 	width: 100%;
-	padding: 40px 5%;
+	padding: 10px 5% 20px;
 }
 
-.competencyText h2 {
-	font-size: 7vw;
-	text-align: center;
-	margin: 0;
-	margin-bottom: 20px;
+.competencyText h4 {
+	margin: 20px 0px 10px;
 }
 
 .competencyText ul {
@@ -2214,7 +2265,7 @@ Core Competencies  Section - core Competencies page
 
 .competencyImg {
 	width:100%;
-	height: 80vw;
+	height: 60vw;
 	background: linear-gradient( rgba(0,0,0,0.20), rgba(0,0,0,0.20) ),url('../images/feature6.jpg') top right no-repeat;
 	background-size: cover;
 	display: flex;
@@ -2230,6 +2281,8 @@ Core Competencies  Section - core Competencies page
       font-weight: 900;
       font-style: italic;
       font-size: 2.5em;
+	text-transform: none;
+	margin: 0;
 }
 
 
@@ -3375,16 +3428,22 @@ Core Competencies  Section - core Competencies
 ---------------------------------------------------------------------------*/
 
 .competencySection {
+	margin-top: 0px;
 	flex-direction: row;
 }
 
 .competencyText {
 	width: 60%;
-	padding: 40px 10%;
+	padding: 10px 5% 20px;
 }
 
-.competencyText h2 {
-	font-size: 4vw;
+
+
+
+
+.competencySection .competencyText ul {
+	padding-left: 30px;
+	margin: 0;
 }
 
 .competencyText ul li {
@@ -3397,6 +3456,9 @@ Core Competencies  Section - core Competencies
 	height: auto;
 }
 
+.competencyImg h4 {
+	font-size: 2em;
+}
 
 
 
@@ -3572,7 +3634,7 @@ Why Us Section - only for home page
 }
 
 .whyUsText {
-      width: 50%;
+      width: 75%;
       height: 25vw;
 }
 
@@ -3936,11 +3998,16 @@ What we Offer  Section
       float:left;
       width:50%;
 }
+
+.info li {
+	padding:10px 30px;
+}
+
 .copyright {
       text-align: right;
       float: left;
       width: 50%;
-      padding:10px;
+      padding: 10px 30px;
 }
 
 
@@ -4030,16 +4097,29 @@ Intro Section
 }
 
 .introText {
-	padding: 60px 180px 5px;
+	padding: 80px 180px 5px;
 }
 
-.introText p {
+.subSection {
+	margin-bottom: 80px;
+}
+
+.subSectionText {
+	padding: 0px 180px 0px;
+}
+
+.introText p, .subSectionText p {
 	padding-top: 0px;
 }
 
-.introText ul {
+.introText ul, .subSectionText ul {
+	/*padding-left: 330px;*/
+}
+
+.csr .introText ul {
 	padding-left: 330px;
 }
+
 
 
 
@@ -4115,13 +4195,22 @@ Core Competencies  Section - core Competencies
 ---------------------------------------------------------------------------*/
 
 
+.competencyText {
+	width: 67%;
+	/*padding: 40px 15% 20px;*/
+}
 
-.competencyText h2 {
+.competencyImg {
+    width: 33%;
+
+}
+
+.competencyText h3 {
 	font-size: 2vw;
 }
 
 .competencyText ul li {
-	font-size: 1.7vw;
+	font-size: 1.5vw;
 	padding-bottom: 10px;
 }
 
