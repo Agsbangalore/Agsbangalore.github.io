@@ -709,6 +709,7 @@ what we offer Section - For home page only
 	left: 50%;
 	transform: translate(-50%,-50%);
       text-decoration: none;
+	text-transform: none;
       color: white;
 	text-align: center;
       font-family: 'Lato', sans-serif;
@@ -833,7 +834,7 @@ Testimonial section - For home page only
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
       background-size: cover;
       width:100%;
-      height:80vh;
+      height:50vh;
       margin-top:172px;
 	-webkit-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
 	-moz-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
@@ -858,10 +859,10 @@ h2.testimonialTitle{
       color: white;
 }
 
-.quoteBox p{
+.quoteBox p {
       margin: 0 auto;
       text-align: center;
-      max-width: 70%;
+      max-width: 90%;
 	font-size: 1.4em;
 }
 
@@ -1289,6 +1290,7 @@ Contact Section - Only for page
       left: 50%;
       transform: translateX(-50%);
       top: -70px;
+	white-space: nowrap;
 }
 
 
@@ -1389,6 +1391,9 @@ Footer Section
 
 .footerSection h3 {
 	color: rgba(31, 170, 235, 1);
+	font-style: italic;
+	font-size: 1.4em;
+	text-transform: none;
 }
 
 .footerSection p {
@@ -1617,21 +1622,21 @@ Intro Section - except home page, all pages
       position: relative;
 }
 
-.introHeadFloat{
+.introHeadFloat {
       display: block;
       width:100%;
       height:80px;
       float: left;
       background: none;
-      margin-right: 70px;
-      margin-bottom: 60px;
+      /*margin-right: 70px;
+      margin-bottom: 60px;*/
       position: relative;
 }
 
-.introHead{
+.introHead {
       display: block;
       width:100%;
-      height:100%;
+      height:auto;/*100%*/
       position: absolute;
       top: 0px;
 	text-align: center;
@@ -1774,7 +1779,7 @@ Intro Section - except home page, all pages
 }
 
 .introText {
-	padding: 120px 20px 20px;
+	padding: 100px 20px 20px;
 
 }
 
@@ -2064,8 +2069,11 @@ industries And Categories Section - industries And Categories page
 }
 
 .industryText ul li h4, .categoryText ul li h4 {
+	color: #333;
 	font-size: 1.3em;
 	text-align: center;
+	text-transform: none;
+	font-weight: lighter;
 }
 
 .indnCatImg {
@@ -2640,7 +2648,7 @@ Client and Testimonial Section - clients page
 .quoteBox p {
       margin: 0 auto;
       text-align: center;
-      max-width: 50%;
+      /*max-width: 50%;*/
 }
 
 .quoteBox p span {
@@ -3186,7 +3194,9 @@ What we Offer  Section - only home page
  Testimonial Section
 ---------------------------------------------------------------------------*/
 
-
+.quoteBox p {
+	max-width: 80%;
+}
 
 
 
@@ -3394,7 +3404,7 @@ industries And Categories Section - industries And Categories
 }
 
 .industryText ul li, .categoryText ul li {
-	padding: 5px;
+	padding: 1px 5px 5px;
 	margin: 5px;
 	flex-direction: column;
 	width: 30%;
@@ -3407,7 +3417,7 @@ industries And Categories Section - industries And Categories
 }
 
 .industryText ul li h4, .categoryText ul li h4 {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	text-align: center;
 }
 
@@ -3727,7 +3737,9 @@ What we Offer  Section
       margin-top:172px;
 }
 
-
+.quoteBox p {
+	max-width: 70%;
+}
 
 
 
@@ -3887,6 +3899,9 @@ What we Offer  Section
 }
 
 .socialText h3 {
+	color: white;
+	text-transform: none;
+	font-size: 1.3em;
 	margin-bottom: 2px;
 }
 
@@ -4038,10 +4053,13 @@ Intro Section
 .introHeadFloat {
       width:25%;
       height:25vw;
+	margin-right: 70px;
+      margin-bottom: 60px;
 }
 
 .introSection .introHead {
       top: -150px;
+	height: 100%;
 }
 
 
