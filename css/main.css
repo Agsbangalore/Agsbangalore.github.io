@@ -64,6 +64,10 @@ h2, h3, h4 {
       text-transform: uppercase;
 }
 
+
+
+
+
 /*Remove bullets of all list items*/
 ul,ol{
       list-style: none;
@@ -547,7 +551,7 @@ Why Us Secion - Home page only
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
-      font-size: 1.8em;
+      font-size: 2.5em;/*1.8em*/
       text-transform: uppercase;
 }
 
@@ -2078,7 +2082,7 @@ industries And Categories Section - industries And Categories page
 
 .indnCatImg {
 	width:100%;
-	height:60vw;
+	height:50vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2093,7 +2097,7 @@ industries And Categories Section - industries And Categories page
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
-      font-size: 3.3em;
+      font-size: 2.5em;
 	text-transform: uppercase;
 }
 
@@ -2838,7 +2842,7 @@ Also See Section - except home page all pages
 ---------------------------------------------------------------------------*/
 
 .alsoSeeSection {
-      margin-top: 172px;
+      margin-top: 130px;
       position: relative;
 }
 
@@ -2930,6 +2934,7 @@ h2.contactTitle {
       left: 50%;
       transform: translateX(-50%);
       top: -70px;
+	/*white-space: nowrap;*/
 }
 
 .contactFlex {
@@ -3580,6 +3585,33 @@ Desktop Styles Section
 
 
 
+/*-------------------------------------------------------------------------
+Header Styling
+---------------------------------------------------------------------------*/
+
+
+.whyUsHead h2 {
+      margin: 0;
+      font-size: 3.5em;
+}
+
+.indnCatImg h4 {
+	font-size: 3em;
+}
+
+.testimonialSection h2, .clientSection h2,
+.socialSection h2.socialTitle, .contactSection h2.contactTitle {
+	font-size: 1.5em;
+	top: -70px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -3652,10 +3684,7 @@ Why Us Section - only for home page
       padding: 50px 20px;
 }
 
-.whyUsHead h2 {
-      margin: 0;
-      font-size: 3.5em;
-}
+
 
 .whyUsButton {
       width: 25%;
@@ -3723,6 +3752,14 @@ What we Offer  Section
 
 
 
+/*-------------------------------------------------------------------------
+ Industries and Categories Section - For home page only
+---------------------------------------------------------------------------*/
+
+
+
+
+
 
 
 
@@ -3736,6 +3773,8 @@ What we Offer  Section
       height:25vw;
       margin-top:172px;
 }
+
+
 
 .quoteBox p {
 	max-width: 70%;
