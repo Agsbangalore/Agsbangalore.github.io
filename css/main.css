@@ -244,6 +244,8 @@ label#navButton:hover{
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
+	background: #444;
+	margin-bottom: 2px;
 }
 
 .navLogo:hover {
@@ -263,6 +265,7 @@ label#navButton:hover{
       background-size: contain;
       width:200px;
       height:48px;
+
 }
 
 
@@ -1626,7 +1629,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .company .heroImage {
-	background:url("../images/companybg1.jpeg") center center no-repeat;
+	background:url("../images/companybg2.jpg") center center no-repeat;
       background-size: cover;
 }
 
@@ -1637,6 +1640,31 @@ Hero Image Section - except home page, all [ages]
 
 .ourBusinessModel .heroImage {
 	background:url("../images/businessmodelbg.jpg") center center no-repeat;
+      background-size: cover;
+}
+
+.ourServices .heroImage {
+	background:url("../images/ourservicesbg.jpg") center -60px no-repeat;
+      background-size: cover;
+}
+
+.ourHiringMethodology .heroImage {
+	background:url("../images/hiringmethodologybg1.jpg") center bottom no-repeat;
+      background-size: cover;
+}
+
+.adventCulture .heroImage {
+	background:url("../images/adventculturebg.jpg") center -130px no-repeat;
+      background-size: cover;
+}
+
+.career .heroImage {
+	background:url("../images/careerbg.jpeg") center -190px no-repeat;
+      background-size: cover;
+}
+
+.news .heroImage {
+	background:url("../images/newsbg.jpg") center -400px no-repeat;
       background-size: cover;
 }
 
@@ -1683,11 +1711,11 @@ Intro Section - except home page, all pages
 }
 
 .news .introHead {
-      background: rgba(60,184,120,1);
+      background: teal;
 }
 
 .ourHiringMethodology .introHead {
-	background: indianRed;
+	background: rgba(71,90,204,1);/*152,100,217  rgba(50,50,50,1) */
 }
 
 .meetTheTeam .introHead {
@@ -1719,7 +1747,7 @@ Intro Section - except home page, all pages
 }
 
 .adventCulture .introHead {
-	background: coral;
+	background: rgba(0,178,90,1);
 }
 
 .submitResume .introHead {
@@ -1735,7 +1763,7 @@ Intro Section - except home page, all pages
 }
 
 .company .introHead {
-	background: darkTurquoise;
+	background: rgba(52,151,217,1);
 }
 
 .ourServices .introHead {
