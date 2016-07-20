@@ -1,12 +1,4 @@
-/*-------------------------------------------------------------------------
-Fonts style    ----------------remove later
----------------------------------------------------------------------------*/
-/*
-      font-family: 'Lato', sans-serif;
-      font-family: 'Dancing Script', cursive;
-      font-family: 'Muli', sans-serif;
-      font-family: 'Open Sans', sans-serif;
-*/
+
 
 
 /*-------------------------------------------------------------------------
@@ -72,6 +64,338 @@ h2, h3, h4 {
 ul,ol{
       list-style: none;
 }
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Fonts used   ----------------remove later
+---------------------------------------------------------------------------*/
+/*
+      font-family: 'Lato', sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Muli', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+*/
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Font styles
+---------------------------------------------------------------------------*/
+
+
+#nav li a {
+      text-align: left;
+      padding: 17px 0px 20px 17px;
+      margin-bottom: 2px;
+	font-size: 0.9em;
+      /*border-left: 6px solid cyan;*/
+      background: #444;
+}
+
+.ctaText {
+      font-family: 'Dancing Script', cursive;
+      font-weight:700;
+      font-size: 2.5em;
+	margin-bottom: 20px;
+}
+
+.ctaButton {
+	margin: 0 auto;
+	display: block;
+	width: 170px;
+	height: 50px;
+      text-decoration: none;
+      border: 1px solid white;
+	color: #fff;
+	background: none;
+	color: inherit;
+	font-family:'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.2em;
+	position: relative;
+}
+
+.whyUsHead h2 {
+      position: absolute;
+      margin: 0;
+      margin-top: 30px;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.5em;
+      text-transform: uppercase;
+}
+
+.whyUsText p {
+      padding: 20px 20px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      color:#444;
+}
+
+.whyUsButton .whyUsBtn {
+      display: block;
+      padding: 10px 35px;
+      margin: 0 auto 30px;
+      max-width: 600px;
+      border: 1px solid rgba(31, 170, 235, 1);
+      background: none;
+      color:rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1em;
+	position: relative;
+	text-align: center;
+	transition: all .25s ease-in-out;
+}
+
+.featureTitle h2 {
+      position: absolute;
+      margin: 0px;
+      text-align: right;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+}
+
+.tileEffect h4 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+      text-decoration: none;
+	text-transform: none;
+      color: white;
+	text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+	transition: transform 0.35s, color 0.35s;
+}
+
+.featureBox h4 {
+	font-size: 1.2rem;
+	transition: all 0.35s;
+}
+
+.tileEffect:hover h4 {
+	color: #fff;
+	transform: translate3d(-50%,-50%,0); /*translate3d(0,-50%,0) translate3d(0,-40px,0)*/
+}
+
+.homePage .tileEffect:hover h4 {
+	font-size: 160%;
+}
+
+.quoteBox p {
+	margin: 0 auto;
+      text-align: center;
+      max-width: 90%;
+	font-size: 1.4em;
+}
+
+.homePage .contactForm p {
+      margin-left: 1%;
+      color:white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1em;
+}
+
+.footerSection h3 {
+	color: rgba(31, 170, 235, 1);
+	font-style: italic;
+	font-size: 1.4em;
+	text-transform: none;
+}
+
+.footerSection p {
+      font-size: 16px;
+}
+
+.siteInfo p, .siteInfo li {
+      font-size: 0.9em;
+}
+
+.introHead h2 {
+	margin: 12px auto;
+	display: block;
+      color: white;
+	font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.5em;
+      text-align: center;
+      text-transform: uppercase;
+}
+
+.csr .introHead h2, .ourHiringMethodology .introHead h2,
+.diversityAndInclusion .introHead h2,
+.coreCompetencies .introHead h2, .industriesAndCategories .introHead h2,
+.ourBusinessModel .introHead h2, .adventCulture .introHead h2,
+.submitResume .introHead h2, .lookingForAJob .introHead h2,
+.ourServices .introHead h2, .enterprisemobility .introHead h2,
+.applicationmanagementservices .introHead h2
+{
+      font-size: 1.7em;
+}
+
+.textHigh h5 {
+	position: absolute;
+      margin: 0;
+      padding: 10px 70px 0 20px;
+      color: rgba(31, 170, 235, 1);
+	font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 6.5vw;
+      text-align: left;
+}
+
+.introText p, .subSection p {
+	padding-top: 0px;
+      margin: 0;
+      margin: 0 auto;
+      text-align: center;
+      text-align: justify;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      color: #444;
+	padding-bottom: 20px;
+}
+
+.introText h3, .subSectionText h3 {
+	text-align: right;
+	font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 1.8em;
+	text-transform: uppercase;
+	margin: 80px 0px 20px;
+	padding-right: 20px;
+	border-right: 60px solid orange;
+}
+
+.introText li, .subSection li {
+	font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+	font-style: italic;
+	color: #444;
+	list-style-type: disc;
+}
+
+.industryText ul li i, .categoryText ul li i {
+	font-size: 2.5em;
+}
+
+.industryText ul li h4, .categoryText ul li h4 {
+	color: #333;
+	font-size: 1.3em;
+	text-align: center;
+	text-transform: none;
+	font-weight: lighter;
+}
+
+.indnCatImg h4 {
+	margin: 0;
+	align-self: center;
+	color: white;
+	text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+.competencyText ul li {
+	margin-left: 20px;
+	padding-bottom: 5px;
+	list-style:disc;
+	text-align: left;
+	font-size: 5vw;
+}
+
+.competencyImg h4 {
+	max-width: 80%;
+	color: white;
+	text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.5em;
+	text-transform: none;
+	margin: 0;
+}
+
+.newsText h3 {
+      font-size: 2.5vw;
+      margin-bottom: 0px;
+}
+
+.newsFeatured li a {
+      color: rgba(31, 170, 235, 1);
+      text-decoration: none;
+}
+
+.newsText p.newsPara {
+      font-size: 3vw;
+      margin: 0px;
+}
+
+.linkBox h4 {
+      margin:0;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: white;
+	text-align: center;
+	text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -287,14 +611,7 @@ label#navButton:hover{
       margin-bottom: 200px;
 }
 
-#nav li a{
-      text-align: left;
-      font-size: 0.9em;
-      padding: 17px 0px 20px 17px;
-      margin-bottom: 2px;
-      /*border-left: 6px solid cyan;*/
-      background: #444;
-}
+
 
 /*#nav ul ul li {
 	list-style: disc;
@@ -329,12 +646,6 @@ label#navButton:hover{
 #nav li a:hover{
       background: #555;
 }
-
-
-
-
-
-
 
 
 
@@ -430,30 +741,7 @@ Hero Image Section - All pages
       color: white;
 }
 
-.ctaText {
-      font-family: 'Dancing Script', cursive;
-      font-weight:700;
-      font-size: 2.5em;
-      margin-bottom: 20px;
-}
 
-.ctaButton {
-	margin: 0 auto;
-	display: block;
-	width: 170px;
-	height: 50px;
-      text-decoration: none;
-      border: 1px solid white;
-	color: #fff;
-	background: none;
-	color: inherit;
-	/*vertical-align: middle;*/
-      font-family:'Lato', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 1.2em;
-	position: relative;
-}
 
 .ctaButton:focus {
 	outline: none;
@@ -481,6 +769,7 @@ Hero Image Section - All pages
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
+
 .buttonEffect::after {
 	position: absolute;
 	width: 100%;
@@ -533,7 +822,7 @@ Hero Image Section - All pages
 Why Us Secion - Home page only
 ---------------------------------------------------------------------------*/
 
-.whyUsSection{
+.whyUsSection {
 	-webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.5);
 	box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.5);
@@ -556,21 +845,6 @@ Why Us Secion - Home page only
       position: relative;
 }
 
-.whyUsHead h2 {
-      position: absolute;
-      margin: 0;
-      margin-top: 30px;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      color: rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
-      font-size: 2.5em;/*1.8em*/
-      text-transform: uppercase;
-}
-
 .whyUsText {
       background: white;
       text-align: center;
@@ -588,17 +862,7 @@ Why Us Secion - Home page only
 	border-left: 1px solid #ddd;
 }
 
-.whyUsText p {
-      padding: 20px 20px;
-      margin: 0 auto;
-      max-width: 600px;
-      text-align: center;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      font-size: 1.2rem;    /*1.5em*/
-      line-height: 1.7rem;     /*1.3em*/
-      color:#444;
-}
+
 
 .whyUsButton {
 	display: none;
@@ -608,23 +872,7 @@ Why Us Secion - Home page only
       padding-bottom: 150px;
 }
 
-.whyUsButton .whyUsBtn {
-      display: block;
-      padding: 10px 35px;
-      margin: 0 auto 30px;
-      max-width: 600px;
-      border: 1px solid rgba(31, 170, 235, 1);
-      background: none;
-      color:rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 1em;
-      line-height: 1em;
-	position: relative;
-	text-align: center;
-	transition: all .25s ease-in-out;
-}
+
 
 .whyUsButton br {
       display: none;
@@ -675,21 +923,7 @@ what we offer Section - For home page only
       position: relative;
 }
 
-.featureTitle h2 {
-      position: absolute;
-      margin: 0px;
-      text-align: right;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
-      font-size: 2.2rem;
-      text-transform: uppercase;
-      white-space: nowrap;
-}
+
 
 .tileEffect {
 	margin: 0px;
@@ -718,29 +952,13 @@ what we offer Section - For home page only
 	transform: translate3d(0,50%,0);
 }
 
-.tileEffect h4 {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-      text-decoration: none;
-	text-transform: none;
-      color: white;
-	text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-	transition: transform 0.35s, color 0.35s;
-}
+
 
 .homePage .tileEffect h4 {
 	white-space: pre;
 }
 
-.featureBox h4 {
-	font-size: 1.2rem;
-	transition: all 0.35s;
-}
+
 
 .tileEffect p {
 	color: white;
@@ -766,15 +984,6 @@ what we offer Section - For home page only
 	opacity: 0;
 	transform: translate3d(0,10px,0);
 	text-align: center;
-}
-
-.tileEffect:hover h4 {
-	color: #fff;
-	transform: translate3d(-50%,-50%,0);/*translate3d(0,-50%,0) translate3d(0,-40px,0)*/
-}
-
-.homePage .tileEffect:hover h4 {
-	font-size: 160%;
 }
 
 .tileEffect:hover figcaption::before,
@@ -874,7 +1083,7 @@ h2.testimonialTitle{
       top: -70px;
 }
 
-.quoteBox{
+.quoteBox {
       position: absolute;
       top:50%;
       left:50%;
@@ -883,13 +1092,6 @@ h2.testimonialTitle{
       background: none;
       border: none;
       color: white;
-}
-
-.quoteBox p {
-      margin: 0 auto;
-      text-align: center;
-      max-width: 90%;
-	font-size: 1.4em;
 }
 
 .quoteBox p span{
@@ -941,6 +1143,7 @@ h2.testimonialTitle{
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
+
 .quoteBox .flex-control-paging li a:hover {
   background: #333;
   border: 2px solid rgba(255,255,255,0.7);
@@ -1038,6 +1241,7 @@ h2.clientTitle{
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .clientBox .flex-direction-nav a:before {
   font-family: "Ionicons";
   font-size: 40px;
@@ -1333,15 +1537,7 @@ Contact Section - Only for page
 	display: none;
 }
 
-.homePage .contactForm p {
-      margin-left: 1%;
-      color:white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 1em;
-      line-height: 1em;
-}
+
 
 /*styling of placeholder text*/
 ::-webkit-input-placeholder {
@@ -1411,7 +1607,7 @@ Footer Section
 ---------------------------------------------------------------------------*/
 
 
-.footerSection{
+.footerSection {
       background: #333;
       color:white;
 	-webkit-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
@@ -1419,16 +1615,7 @@ Footer Section
 	box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
 }
 
-.footerSection h3 {
-	color: rgba(31, 170, 235, 1);
-	font-style: italic;
-	font-size: 1.4em;
-	text-transform: none;
-}
 
-.footerSection p {
-      font-size: 16px;
-}
 
 .footerSection hr {
 	margin: 0;
@@ -1440,24 +1627,19 @@ Footer Section
       display:none;
 }
 
-.siteInfo p, .siteInfo li {
-      display: block;
-	font-size: 0.9em;
-}
 
 
-
-.info{
+.info {
       text-align: center;
       float:left;
       width:100%;
 }
 
-.adventLogo{
+.adventLogo {
       padding: 20px
 }
 
-.adventLogo a{
+.adventLogo a {
       display: block;
       margin: 0 auto;
       background: url("../images/adventLogoWhite.png") no-repeat top center;
@@ -1467,14 +1649,14 @@ Footer Section
       text-indent: -999%;
 }
 
-.corpHQ{
+.corpHQ {
       text-align: center;
 }
 
-.footerCol2{
+.footerCol2 {
       text-align: center;
 }
-.footerCol1{
+.footerCol1 {
       padding: 30px;
 }
 
@@ -1519,21 +1701,21 @@ Footer Section
 
 
 
-.info ul{
+.info ul {
       padding: 0px;
 }
 
-.info li{
+.info li {
       display: inline-block;
       padding:10px;
 }
 
-.info li a{
+.info li a {
       color: white;
       text-decoration: none;
 }
 
-.copyright{
+.copyright {
       text-align: center;
       float: left;
       width: 100%;
@@ -1552,7 +1734,7 @@ Scroll to top Section
 
 
 
-.scrollToTop{
+.scrollToTop {
 	width:60px;
 	height:60px;
 	padding:10px;
@@ -1778,28 +1960,7 @@ Intro Section - except home page, all pages
 	background: rgba(46,204,113,1);
 }
 
-.introHead h2 {
-      margin: 12px auto;
-	display: block;
-      color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
-      font-size: 2.5em;
-      text-align: center;
-      text-transform: uppercase;
-}
 
-.csr .introHead h2, .ourHiringMethodology .introHead h2,
-.diversityAndInclusion .introHead h2,
-.coreCompetencies .introHead h2, .industriesAndCategories .introHead h2,
-.ourBusinessModel .introHead h2, .adventCulture .introHead h2,
-.submitResume .introHead h2, .lookingForAJob .introHead h2,
-.ourServices .introHead h2, .enterprisemobility .introHead h2,
-.applicationmanagementservices .introHead h2
-{
-      font-size: 1.7em;
-}
 
 .textHigh {
       display: block;
@@ -1821,21 +1982,9 @@ Intro Section - except home page, all pages
       /*height: 400px;*/
 }
 
-.textHigh h5 {
-      position: absolute;
-      margin: 0;
-      padding: 10px 70px 0 20px;
-      color: rgba(31, 170, 235, 1);
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      font-size: 6.5vw;
-      text-align: left;
-}
 
 .introText {
 	padding: 100px 20px 20px;
-
 }
 
 .subSection {
@@ -1859,19 +2008,7 @@ Intro Section - except home page, all pages
 	padding: 0px 20px 0px;
 }
 
-.introText p, .subSection p {
-	padding-top: 0px;
-      margin: 0;
-      margin: 0 auto;
-      text-align: center;
-      text-align: justify;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 1.2rem;    /*1.5em*/
-      line-height: 1.7rem;     /*1.3em*/
-      color: #444;
-	padding-bottom: 20px;
-}
+
 
 .introText p:last-child, .subSection p:last-child {
 	padding-bottom: 0px;
@@ -1883,46 +2020,10 @@ Intro Section - except home page, all pages
 	padding-bottom: 20px;
 }
 
-/*.introText h3, .subSectionText h3 {
-	font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 1.7rem;
-	color: rgba(31, 170, 235, 1);
-	padding-left: 5px;
-	margin-top: 40px;
-	margin-bottom: 10px;
-}*/
-
-.introText h3, .subSectionText h3 {
-	text-align: right;
-	font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
-      font-size: 1.8em;
-	margin: 80px 0px 20px;
-      text-transform: uppercase;
-	padding-right: 20px;
-	border-right: 60px solid orange;
-}
-
 .introText ul, .subSectionText ul {
 	margin: 0px 0;
 	margin-bottom: 30px;
 }
-
-.introText li, .subSection li {
-	font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-      font-size: 1.2rem;    /*1.5em*/
-      line-height: 1.7rem;     /*1.3em*/
-      color: #444;
-	font-style: italic;
-	list-style-type: disc;
-}
-
-
-
 
 
 
@@ -2119,18 +2220,6 @@ industries And Categories Section - industries And Categories page
 	align-items: center;
 }
 
-.industryText ul li i, .categoryText ul li i {
-	font-size: 2.5em;
-}
-
-.industryText ul li h4, .categoryText ul li h4 {
-	color: #333;
-	font-size: 1.3em;
-	text-align: center;
-	text-transform: none;
-	font-weight: lighter;
-}
-
 .indnCatImg {
 	width:100%;
 	height:50vw;
@@ -2139,18 +2228,7 @@ industries And Categories Section - industries And Categories page
 	justify-content: center;
 }
 
-.indnCatImg h4 {
-	/*max-width: 80%;*/
-	margin: 0;
-	align-self: center;
-	text-align: center;
-	color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
-      font-size: 2.5em;
-	text-transform: uppercase;
-}
+
 
 .industryText h4, .categoryText h4 {
 	margin: 5px;
@@ -2190,125 +2268,6 @@ industries And Categories Section - industries And Categories page
 }
 
 
-
-
-/*
-.indTechnology {
-	background: url("../images/industriesicon/technology.png") no-repeat;
-	background-size: cover;
-}
-
-.indBanking {
-	background: url("../images/industriesicon/bankingnfinance.png") no-repeat;
-	background-size: cover;
-}
-
-.indInsurance {
-	background: url("../images/industriesicon/insurance.png") no-repeat;
-	background-size: cover;
-}
-
-.indHealthcare {
-	background: url("../images/industriesicon/healthcare.png") no-repeat;
-	background-size: cover;
-}
-
-.indTelecom {
-	background: url("../images/industriesicon/telecom.png") no-repeat;
-	background-size: cover;
-}
-
-.indDistribution {
-	background: url("../images/industriesicon/distribution.png") no-repeat;
-	background-size: cover;
-}
-
-.indTransportation {
-	background: url("../images/industriesicon/transportation.png") no-repeat;
-	background-size: cover;
-}
-
-.indAutomotive {
-	background: url("../images/industriesicon/automotive.png") no-repeat;
-	background-size: cover;
-}
-
-.indEnergy {
-	background: url("../images/industriesicon/energynutilities.png") no-repeat;
-	background-size: cover;
-}
-
-.indRetail {
-	background: url("../images/industriesicon/retail.png") no-repeat;
-	background-size: cover;
-}
-
-.indManufacturing {
-	background: url("../images/industriesicon/manufacturing.png") no-repeat;
-	background-size: cover;
-}
-
-.indMedia {
-	background: url("../images/industriesicon/media.png") no-repeat;
-	background-size: cover;
-}
-
-
-.catIT {
-	background: url("../images/categoriesicon/it.png") no-repeat;
-	background-size: cover;
-}
-
-.catFinance {
-	background: url("../images/categoriesicon/financenaccounting.png") no-repeat;
-	background-size: cover;
-}
-
-.catMedical {
-	background: url("../images/categoriesicon/medicalnclinicalnscientific.png") no-repeat;
-	background-size: cover;
-}
-
-.catAdmin {
-	background: url("../images/categoriesicon/adminnclerical.png") no-repeat;
-	background-size: cover;
-}
-
-.catEngineering {
-	background: url("../images/categoriesicon/engineering.png") no-repeat;
-	background-size: cover;
-}
-
-.catCreative {
-	background: url("../images/categoriesicon/creative.png") no-repeat;
-	background-size: cover;
-}
-
-.catCallCenter {
-	background: url("../images/categoriesicon/callcenter.png") no-repeat;
-	background-size: cover;
-}
-
-.catSales {
-	background: url("../images/categoriesicon/salesnmarketing.png") no-repeat;
-	background-size: cover;
-}
-
-.catTechSupport {
-	background: url("../images/categoriesicon/technicalsupport.png") no-repeat;
-	background-size: cover;
-}
-
-.catHR {
-	background: url("../images/categoriesicon/hrnothers.png") no-repeat;
-	background-size: cover;
-}
-
-*/
-
-
-
-
 /*-------------------------------------------------------------------------
 Core Competencies  Section - core Competencies page
 ---------------------------------------------------------------------------*/
@@ -2338,14 +2297,6 @@ Core Competencies  Section - core Competencies page
 	padding: 0;
 }
 
-.competencyText ul li {
-	text-align: left;
-	margin-left: 20px;
-	padding-bottom: 5px;
-	list-style:disc;
-	font-size: 5vw;
-}
-
 .competencyImg {
 	width:100%;
 	height: 60vw;
@@ -2356,17 +2307,7 @@ Core Competencies  Section - core Competencies page
 	justify-content: center;
 }
 
-.competencyImg h4 {
-	max-width: 80%;
-	text-align: center;
-	color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
-      font-size: 2.5em;
-	text-transform: none;
-	margin: 0;
-}
+
 
 
 
@@ -2419,10 +2360,7 @@ input.newsSearch {
       border-bottom: none;
 }
 
-.newsFeatured li a {
-      color: rgba(31, 170, 235, 1);
-      text-decoration: none;
-}
+
 
 .news .socialMediaIcons {
 	width:100%;
@@ -2494,19 +2432,13 @@ input.newsSearch {
       justify-content: space-around;
 }
 
-.newsText h3 {
-      font-size: 2.5vw;
-      margin-bottom: 0px;
-}
+
 
 .newsText p.date {
       margin:5px;
 }
 
-.newsText p.newsPara {
-      font-size: 3vw;
-      margin: 0px;
-}
+
 
 .newsText p span {
       display: block;
@@ -2562,94 +2494,6 @@ input.newsSearch {
 CSR Section - CSR page
 ---------------------------------------------------------------------------*/
 
-/*.csrGallerySection {
-      margin-top: 100px;
-      position: relative;
-}
-
-h2.csrTitle{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: -70px;
-}
-
-.csrGallery{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center;
-}
-
-.csrImgBox{
-      height:50vw;
-      width:50%;
-      background: purple;
-      border: 1px solid white;
-      box-sizing: border-box;
-}
-
-.csrImg1{
-	background: url('../images/ngo01.jpg') center right no-repeat;
-	background-size: cover;
-}
-
-.csrImg2{
-	background: url('../images/ngo19.jpg') center center no-repeat;
-	background-size: cover;
-}
-
-.csrImg3{
-	background: url('../images/ngo03.jpg') center center no-repeat;
-	background-size: cover;
-}
-
-.csrImg4{
-	background: url('../images/ngo17.jpg') center center no-repeat;
-	background-size: cover;
-}
-
-.csrImg5{
-	background: url('../images/ngo05.jpg') center right no-repeat;
-	background-size: cover;
-}
-
-.csrImg6{
-	background: url('../images/ngo06.jpg') center right no-repeat;
-	background-size: cover;
-}
-
-.csrImg7{
-	background: url('../images/ngo08.jpg') center left no-repeat;
-	background-size: cover;
-}
-
-.csrImg8{
-	background: url('../images/ngo09.jpg') center center no-repeat;
-	background-size: cover;
-}
-
-.csrImg9{
-	background: url('../images/ngo14.jpg') center center no-repeat;
-	background-size: cover;
-}
-
-.csrImg10{
-	background: url('../images/ngo10.jpg') center center no-repeat;
-	background-size: cover;
-}
-
-.csrImg11{
-	background: url('../images/ngo16.jpg') center center no-repeat;
-	background-size: cover;
-}
-
-.csrImg12{
-	background: url('../images/ngo12.jpg') center right no-repeat;
-	background-size: cover;
-}
-*/
-
 
 
 
@@ -2669,8 +2513,6 @@ Client and Testimonial Section - clients page
       height:100vw;
       background: white;
       padding: 0px;
-      /*border-top: 0.5px solid rgba(0, 0, 0, 0.3);
-      border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);*/
 }
 
 .clientGridBox {
@@ -2945,19 +2787,7 @@ h2.alsoSeeTitle {
       height:100%;
 }
 
-.linkBox h4 {
-      margin:0;
-      position: absolute;
-      text-align: center;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      text-decoration: none;
-      color: white;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-size: 1.3rem;
-}
+
 
 
 
@@ -3029,12 +2859,12 @@ h2.contactTitle {
 	justify-content: center;
 	align-content: center;
 	padding: 20px 20px 50px 20px;
-	color:white;
+	color: white;
 }
 
 .contactForm p {
-	width:100%;
-	margin:5px 1%;
+	width: 100%;
+	margin: 5px 1%;
 	text-align: center;
 }
 
@@ -3166,6 +2996,62 @@ Tablet Styles Section
 
 
 /*-------------------------------------------------------------------------
+Font styles
+---------------------------------------------------------------------------*/
+
+.featureBox a h4{
+      font-size: 1.4rem;
+}
+
+.featureTitle h2{
+      font-size: 3rem;
+}
+
+.featureBox h4 {
+	font-size: 1.4rem;
+}
+
+.textHigh h5 {
+      font-size: 4.0vw;
+}
+
+.industryText ul li i, .categoryText ul li i {
+	font-size: 3.5em;
+}
+
+.industryText ul li h4, .categoryText ul li h4 {
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.competencyText ul li {
+	font-size: 2.7vw;
+	padding-bottom: 10px;
+}
+
+.competencyImg h4 {
+	font-size: 2em;
+}
+
+.newsText p.newsPara {
+      font-size: 2.5vw;
+}
+
+.linkBox h4 {
+	font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
 Header Section
 ---------------------------------------------------------------------------*/
 
@@ -3201,23 +3087,17 @@ What we Offer  Section - only home page
       height:30vw;
 }
 
-.featureBox a h4{
-      font-size: 1.4rem;
-}
+
 
 .featureBox a h4 span {
       white-space: nowrap;
 }
 
-.featureTitle h2{
-      font-size: 3rem;
-}
 
 
 
-.featureBox h4 {
-	font-size: 1.4rem;
-}
+
+
 
 
 
@@ -3390,11 +3270,6 @@ Intro Section -except home page - all pages
       height:30vw;
 }
 
-.textHigh h5 {
-      font-size: 4.0vw;
-}
-
-
 
 
 
@@ -3480,7 +3355,6 @@ industries And Categories Section - industries And Categories
 
 .industryText, .categoryText {
 	width:60%;
-	/*height: 80vw;*/
 }
 
 .industryText ul li, .categoryText ul li {
@@ -3492,14 +3366,7 @@ industries And Categories Section - industries And Categories
 	justify-content: flex-start;
 }
 
-.industryText ul li i, .categoryText ul li i {
-	font-size: 3.5em;
-}
 
-.industryText ul li h4, .categoryText ul li h4 {
-	font-size: 0.9em;
-	text-align: center;
-}
 
 .indnCatImg {
 	width:40%;
@@ -3536,19 +3403,14 @@ Core Competencies  Section - core Competencies
 	margin: 0;
 }
 
-.competencyText ul li {
-	font-size: 2.7vw;
-	padding-bottom: 10px;
-}
+
 
 .competencyImg {
 	width:40%;
 	height: auto;
 }
 
-.competencyImg h4 {
-	font-size: 2em;
-}
+
 
 
 
@@ -3570,9 +3432,7 @@ News Section
       padding: 10px 20px 10px 60px;
 }
 
-.newsText p.newsPara {
-      font-size: 2.5vw;
-}
+
 
 
 .newsImg {
@@ -3620,9 +3480,7 @@ Also see section Section
       height:25vw;
 }
 
-.linkBox h4 {
-	font-size: 1.4rem;
-}
+
 
 
 
@@ -3654,20 +3512,17 @@ Desktop Styles Section
 
 
 @media only screen and (min-width: 1000px) {
-      /* For tablets: */
-
-
+      /* For desktops and wide screens */
 
 
 
 /*-------------------------------------------------------------------------
-Header Styling
+Font styles
 ---------------------------------------------------------------------------*/
 
-
 .whyUsHead h2 {
-      margin: 0;
-      font-size: 3.5em;
+	margin: 0;
+	font-size: 3.5em;
 }
 
 .indnCatImg h4 {
@@ -3680,8 +3535,122 @@ Header Styling
 	top: -70px;
 }
 
+.whyUsButton .whyUsBtn {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      padding: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border: 1px solid rgba(31, 170, 235, 1);
+      background: none;
+      color:rgba(31, 170, 235, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.03em;
+      line-height: 1.1em;
+}
+
+.featureBox a h4 {
+      font-size: 1.4rem;
+}
+
+.featureTitle h2 {
+      font-size: 3.3rem;
+}
+
+.homePage .socialBox i {
+	font-size: 2em;
+	line-height: 1.4em;
+}
+
+.socialText h3 {
+	color: white;
+	text-transform: none;
+	font-size: 1.3em;
+	margin-bottom: 2px;
+}
+
+.socialText p {
+	font-size: 0.9em;
+}
+
+.introHead h2 {
+      position: absolute;
+      margin: 0;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      font-size: 3.5em;
+      text-align: right;
+}
+
+.ourHiringMethodology .introHead h2
+ {
+      font-size: 2.8vw;
+}
+
+.meetTheTeam .introHead h2, .ourServices .introHead h2,
+.adventCulture .introHead h2, .submitResume .introHead h2
+ {
+	font-size: 3.8vw;
+}
+
+.diversityAndInclusion .introHead h2,
+.ourBusinessModel .introHead h2,
+.lookingForAJob .introHead h2
+ {
+	font-size: 3.5vw;
+}
+
+.coreCompetencies .introHead h2,
+.industriesAndCategories .introHead h2,
+.enterprisemobility .introHead h2,
+.applicationmanagementservices .introHead h2
+ {
+	font-size: 3.2vw;
+}
+
+.csr .introHead h2 {
+	font-size: 3vw;
+}
+
+.textHigh h5 {
+	padding: 20px 70px 0 20px;
+	font-size: 2.4vw;
+}
+
+.competencyText h3 {
+	font-size: 2vw;
+}
+
+.competencyText ul li {
+	font-size: 1.5vw;
+	padding-bottom: 10px;
+}
+
+.newsText p.newsPara {
+      font-size: 1.5vw;
+}
+
+.linkBox h4 {
+      font-size: 1.9rem;
+}
 
 
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Header Styling
+---------------------------------------------------------------------------*/
 
 
 
@@ -3697,8 +3666,8 @@ Header Section
 #navSpread {
       display: none;    /*change this*/
       position: absolute;
-      top:10px;
-      right:17px;
+      top: 10px;
+      right: 17px;
 }
 
 #navSpread a {
@@ -3767,23 +3736,7 @@ Why Us Section - only for home page
       text-align: center;
 }
 
-.whyUsButton .whyUsBtn {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      padding: 0;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      border: 1px solid rgba(31, 170, 235, 1);
-      background: none;
-      color:rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 1.03em;
-      line-height: 1.1em;
-}
+
 
 .whyUsButton br {
       display: block;
@@ -3808,13 +3761,7 @@ What we Offer  Section
       height:25vw;
 }
 
-.featureBox a h4 {
-      font-size: 1.4rem;
-}
 
-.featureTitle h2 {
-      font-size: 3.3rem;
-}
 
 
 
@@ -3939,10 +3886,7 @@ What we Offer  Section
       color : rgba(39,90,133,1);
 }
 
-.homePage .socialBox i {
-	font-size: 2em;
-	line-height: 1.4em;
-}
+
 
 .homePage .socialImg1,.homePage .socialImg2,
 .homePage .socialImg3,.homePage .socialImg4 {
@@ -4001,17 +3945,6 @@ What we Offer  Section
 .socialText h3, .socialText p {
 	width: 100%;
 	margin: 5px 0;
-}
-
-.socialText h3 {
-	color: white;
-	text-transform: none;
-	font-size: 1.3em;
-	margin-bottom: 2px;
-}
-
-.socialText p {
-	font-size: 0.9em;
 }
 
 .socialBox a {
@@ -4169,54 +4102,11 @@ Intro Section
 
 
 
-.introHead h2 {
-      position: absolute;
-      margin: 0;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      font-size: 3.5em;
-      text-align: right;
-}
 
-.ourHiringMethodology .introHead h2
- {
-      font-size: 2.8vw;
-}
-
-.meetTheTeam .introHead h2, .ourServices .introHead h2,
-.adventCulture .introHead h2, .submitResume .introHead h2
- {
-	font-size: 3.8vw;
-}
-
-.diversityAndInclusion .introHead h2,
-.ourBusinessModel .introHead h2,
-.lookingForAJob .introHead h2
- {
-	font-size: 3.5vw;
-}
-
-.coreCompetencies .introHead h2,
-.industriesAndCategories .introHead h2,
-.enterprisemobility .introHead h2,
-.applicationmanagementservices .introHead h2
- {
-	font-size: 3.2vw;
-}
-
-.csr .introHead h2 {
-	font-size: 3vw;
-}
 
 .textHigh {
       width:25%;
       height:25vw;
-}
-
-.textHigh h5 {
-      padding: 20px 70px 0 20px;
-      font-size: 2.4vw;
 }
 
 .introText {
@@ -4328,14 +4218,9 @@ Core Competencies  Section - core Competencies
 
 }
 
-.competencyText h3 {
-	font-size: 2vw;
-}
 
-.competencyText ul li {
-	font-size: 1.5vw;
-	padding-bottom: 10px;
-}
+
+
 
 
 
@@ -4370,9 +4255,7 @@ NEWS Section - NEWS page
       width:75%;
 }
 
-.newsText p.newsPara {
-      font-size: 1.5vw;
-}
+
 
 .newsImg {
 	height:25vw;
@@ -4443,9 +4326,7 @@ h2.alsoSeeTitle {
       height:25vw;
 }
 
-.linkBox h4 {
-      font-size: 1.9rem;
-}
+
 
 
 
