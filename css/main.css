@@ -999,7 +999,7 @@ what we offer Section - For home page only
 }
 
 .feature2 .img {
-      background: linear-gradient(  rgba(129,212,250, 0.75), rgba(129,212,250, 0.75) ),url("../images/feature2.jpg") center top no-repeat;
+      background: linear-gradient(  rgba(129,212,250, 0.85), rgba(129,212,250, 0.85) ),url("../images/feature2.1.jpg") center top no-repeat;
       background-size: cover;
 }
 
@@ -1009,17 +1009,17 @@ what we offer Section - For home page only
 }
 
 .feature4 .img {
-      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature4.png") center top no-repeat;
+      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature4.1.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature5 .img {
-      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature5.jpg") center top no-repeat;
+      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature5.1.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature6 .img {
-      background: linear-gradient( rgba(245,152,157,0.75), rgba(245,152,157,0.75) ),url("../images/feature6.jpg") center top no-repeat;
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature6.1.jpeg") center top no-repeat;
       background-size: cover;
 }
 
@@ -1044,7 +1044,7 @@ what we offer Section - For home page only
 }
 
 .feature11 .img {
-      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature11.jpg") center top no-repeat;
+      background: linear-gradient( rgba(255,140,170,0.75), rgba(255,140,170,0.75) ),url("../images/feature11.jpg") center top no-repeat;
       background-size: cover;
 }
 
@@ -1066,7 +1066,7 @@ Testimonial section - For home page only
 
 .homePage .testimonialSection {
       position:relative;
-      background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testiBG.jpg") center top no-repeat;
+      background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testibg1.jpg") center center no-repeat;
       background-size: cover;
       width:100%;
       height:50vh;
@@ -1801,7 +1801,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .csr .heroImage {
-	background:url("../images/csrbg1.jpeg") top center no-repeat;
+	background:url("../images/csrbg3.jpg") center -30px no-repeat;
       background-size: cover;
 }
 
@@ -1826,7 +1826,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .ourServices .heroImage {
-	background:url("../images/ourservicesbg.jpg") center -60px no-repeat;
+	background:url("../images/ourservicesbg.jpg") center 0px no-repeat;
       background-size: cover;
 }
 
@@ -1836,17 +1836,17 @@ Hero Image Section - except home page, all [ages]
 }
 
 .adventCulture .heroImage {
-	background:url("../images/adventculturebg.jpg") center -130px no-repeat;
+	background:url("../images/adventculturebg.jpg") center 0px no-repeat;
       background-size: cover;
 }
 
 .career .heroImage {
-	background:url("../images/careerbg.jpeg") center -190px no-repeat;
+	background:url("../images/careerbg.jpeg") center -60px no-repeat;
       background-size: cover;
 }
 
 .news .heroImage {
-	background:url("../images/newsbg.jpg") center -400px no-repeat;
+	background:url("../images/newsbg.jpg") center 0px no-repeat;
       background-size: cover;
 }
 
@@ -2243,12 +2243,12 @@ industries And Categories Section - industries And Categories page
 }
 
 .industryImg {
-	background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url('../images/feature11.jpg') top right no-repeat;
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url('../images/industriesbg.jpg') top right no-repeat;
 	background-size: cover;
 }
 
 .categoryImg {
-	background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url('../images/feature12.jpg') top right no-repeat;
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url('../images/categoriesbg.jpg') top right no-repeat;
 	background-size: cover;
 }
 
@@ -2266,6 +2266,99 @@ industries And Categories Section - industries And Categories page
 .categorySection svg {
 	fill: rgba(31, 170, 235, 1);
 }
+
+.indTechnology svg {
+	fill: rgba(66,165,245,1);
+}
+
+.indBanking svg {
+	fill: rgba(46,204,113,1);
+}
+
+.indInsurance svg {
+	fill: rgba(71,90,204,0.75);
+}
+
+.indHealthcare svg {
+	fill: salmon;
+}
+
+.indTelecom svg {
+	fill: MediumTurquoise;
+}
+
+.indDistribution svg {
+	fill: salmon;
+}
+
+.indTransportation svg {
+	fill: rgba(46,204,113,1);
+}
+
+.indAutomotive svg {
+	fill: rgba(242,101,34,1);
+}
+
+.indEnergy svg {
+	fill: rgba(255,214,0,1);
+}
+
+.indRetail svg {
+	fill: rgba(0,191,165,1);
+}
+
+.indManufacturing svg {
+	fill: slateblue;
+}
+
+.indMedia svg {
+	fill: rgba(66,165,245,1);
+}
+
+.catIT svg {
+	fill: teal;
+}
+
+.catFinance svg {
+	fill: rgba(71,90,204,0.75);
+}
+
+.catMedical svg {
+	fill: salmon;
+}
+
+.catAdmin svg {
+	fill: rgba(66,165,245,1);
+}
+
+.catEngineering svg {
+	fill: rgba(242,101,34,1);
+}
+
+.catCreative svg {
+	fill: MediumTurquoise;
+}
+
+.catCallCenter svg {
+	fill: rgba(0,191,165,1);
+}
+
+.catSales svg {
+	fill: rgba(255,214,0,1);
+}
+
+.catTechSupport svg {
+	fill: rgba(46,204,113,1);
+}
+
+.catHR svg {
+	fill: slateblue;
+}
+
+
+
+
+
 
 
 /*-------------------------------------------------------------------------
