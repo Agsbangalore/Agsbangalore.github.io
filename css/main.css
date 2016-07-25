@@ -325,11 +325,14 @@ Font styles
 	text-align: center;
 	text-transform: none;
 	font-weight: lighter;
+	max-width: 120px;
+	white-space: pre-wrap;
 }
 
 .indnCatImg h4 {
 	margin: 0;
 	align-self: center;
+		 -ms-flex-item-align: center;
 	color: white;
 	text-align: center;
       font-family: 'Lato', sans-serif;
