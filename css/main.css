@@ -4171,6 +4171,7 @@ What we Offer  Section
 
 .homePage .socialColor {
 	padding: 2% 10%;
+	width: 100%;
 }
 
 .homePage .social1 {
@@ -4275,6 +4276,7 @@ What we Offer  Section
 
 .socialText h3, .socialText p {
 	width: 100%;
+	/*max-width: 300px;*/
 	margin: 5px 0;
 }
 
