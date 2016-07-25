@@ -2185,7 +2185,9 @@ industries And Categories Section - industries And Categories page
 
 .industrySection, .categorySection {
 	display: flex;
+	display: -ms-flexbox;
 	flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
 	/*margin-bottom: 60px;*/
 	border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
 	/*background: rgba(230, 230, 230, 0.5);*/
@@ -2210,9 +2212,13 @@ industries And Categories Section - industries And Categories page
 	padding: 10px;
 	margin: 0;
 	display: flex;
+	display: -ms-flexbox;
 	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	align-content: center;
+	-ms-flex-align: center;
 	justify-content: center;
+	-ms-flex-pack: center;
 }
 
 .industryText ul li, .categoryText ul li {
@@ -2221,9 +2227,13 @@ industries And Categories Section - industries And Categories page
 	/*border: 0.5px solid rgba(0, 0, 0, 0.3);*/
 	width:40%;/*100%*/
 	display: flex;
+	display: -ms-flexbox;
 	flex-direction: column;/*row-reverse*/
+	-ms-flex-direction: column;
 	justify-content: flex-start;/*space-between*/
+	-ms-flex-pack: start;
 	align-items: center;
+	-ms-flex-align: center;
 }
 
 .indnCatImg {
@@ -2231,7 +2241,9 @@ industries And Categories Section - industries And Categories page
 	height:50vw;
 	display: flex;
 	align-items: center;
+	-ms-flex-align: center;
 	justify-content: center;
+	-ms-flex-pack: center;
 }
 
 
