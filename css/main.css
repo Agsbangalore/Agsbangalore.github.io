@@ -568,10 +568,20 @@ label#navButton:hover{
 	height:70px;
 	padding-left:20px;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
 	flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
 	justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
 	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
 	position: relative;
 	background: #444;
 	margin-bottom: 2px;
@@ -2049,25 +2059,41 @@ Submit Resume Form - Submit Resume page
 
 .formSet {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
 }
 
 .formSet h4 {
 	width:100%;
 	flex-shrink: 0;
+		-webkit-flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
 	padding-left: 10px;
 }
 
 .formSet .inputBox {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 	width: 100%;
 }
 
 .formSet .inputSet {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
 	width:100%;
 	margin: 1%;
 }
@@ -2082,7 +2108,11 @@ Submit Resume Form - Submit Resume page
 
 .pLocation .inputSet {
 	flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
 	justify-content:  flex-end;
+		-webkit-justify-content: flex-end;
+		-ms-flex-pack: end;
 	width:48%;
 }
 
@@ -2131,13 +2161,19 @@ Our Hiring Method Section - Our Hiring Methodology page
 
 .hiringMethodSection {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 	padding: 0px;
 }
 
 .hiringProgressBar {
 	width:30%;
 	align-items: stretch;
+		-webkit-align-items: stretch;
+		-ms-flex-align: stretch;
 	background: pink url('../images/news1.jpg') no-repeat;
 	background-size: cover;
 }
@@ -2147,6 +2183,8 @@ Our Hiring Method Section - Our Hiring Methodology page
 	width: 70%;
  	display: flex;
 	flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 	border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 	border-top: 0.5px solid rgba(0, 0, 0, 0.3);
 }
@@ -2155,8 +2193,14 @@ Our Hiring Method Section - Our Hiring Methodology page
 	height: 100%;
 	display: flex;
 	flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 	flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	justify-content: space-between;
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
 	margin: 0;
 	padding: 0;
 }
@@ -2226,7 +2270,7 @@ industries And Categories Section - industries And Categories page
 		-webkit-flex-wrap: wrap;
 	align-content: center;
 		-ms-flex-line-pack: center;
-		 -webkit-align-content: center;
+		-webkit-align-content: center;
 	justify-content: center;
 		-ms-flex-pack: center;
 		-webkit-justify-content: center;
@@ -2433,8 +2477,14 @@ Core Competencies  Section - core Competencies page
 	background: linear-gradient( rgba(0,0,0,0.20), rgba(0,0,0,0.20) ),url('../images/feature6.jpg') top right no-repeat;
 	background-size: cover;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 }
 
 
@@ -2450,14 +2500,23 @@ News Section - News page
       margin-top: 120px;
       width: 100%;
       display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
 }
 
 .newsSidebar {
       width: 100%;
       padding: 0px 20px;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+
 }
 
 /*news sidebar styling*/
@@ -2496,10 +2555,20 @@ input.newsSearch {
 	width:100%;
 	height:25%;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 	flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 }
 
 .news .socialMediaIcons p {
@@ -2514,9 +2583,17 @@ input.newsSearch {
 	width: 100%;
       border: 2px solid rgba(31, 170, 235, 1);
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 }
 
 .news .socialMediaIcons .mediaBox li a i {
@@ -2527,8 +2604,14 @@ input.newsSearch {
 	height:53px;
 	width:53px;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 }
 
 
@@ -2537,15 +2620,25 @@ input.newsSearch {
 .newsContent {
       width: 100%;
       display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
       margin-bottom: 50px;
 }
 
 .newsBox {
       background: white;
       display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
       flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
       margin-bottom: 2px;
       -webkit-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
       -moz-box-shadow: -3px 3px 4px 0px rgba(179,179,179,0.89);
@@ -2557,9 +2650,17 @@ input.newsSearch {
       height: 100%;
       text-align: right;
       display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
       justify-content: space-around;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
 }
 
 
@@ -2577,6 +2678,8 @@ input.newsSearch {
 
 .newsImg {
       flex-shrink: 0;
+		-webkit-flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
       width:40%;
       height:60vw;
       background: pink;
@@ -2634,7 +2737,11 @@ Client and Testimonial Section - clients page
 
 .clientNTestSection {
       display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
       margin-top: 60px;
 }
 
@@ -2658,9 +2765,17 @@ Client and Testimonial Section - clients page
       height:100%;
       padding: 20px;
       display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-wrap: wrap;
-      justify-content: space-between;;
-      align-content: space-between;;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+      justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+      align-content: space-between;
+		-webkit-align-content: space-between;
+		-ms-flex-line-pack: justify;
 }
 
 .clientGridBox ul li {
@@ -2669,8 +2784,14 @@ Client and Testimonial Section - clients page
       background: white;
       border: 0.5px solid rgba(0, 0, 0, 0.3);
       display: flex;
-      align-items: center;
-      justify-content: center;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 }
 
 .clients .testimonialSection {
@@ -2974,7 +3095,11 @@ h2.contactTitle {
 
 .contactFlex {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 	height: 100%;
 }
 
@@ -2985,9 +3110,17 @@ h2.contactTitle {
 .contactForm {
 	flex-grow: 1;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 	align-content: center;
+		-ms-flex-line-pack: center;
+		-webkit-align-content: center;
 	padding: 20px 20px 50px 20px;
 	color: white;
 }
@@ -3023,10 +3156,20 @@ h2.contactTitle {
 	width:100%;
 	height:25%;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 	flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 }
 
 .socialMediaIcons p {
@@ -3043,15 +3186,25 @@ h2.contactTitle {
 	width: 300px;
 	border: 2px solid white;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 }
 
 .socialLogo {
 	height:73px;
 	width:73px;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
 }
 
 .socialLogo a i {
@@ -3414,11 +3567,15 @@ Submit Resume Form - Submit Resume page
 
 .formSet {
 	flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 }
 
 .formSet h4{
 	width:25%;
 	flex-shrink: 0;
+		-webkit-flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
 	padding-left: 50px;
 }
 
@@ -3429,7 +3586,11 @@ Submit Resume Form - Submit Resume page
 
 .formSet .inputSet {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
 	width:23%;
 	margin: 1%;
 }
@@ -3527,6 +3688,8 @@ Core Competencies  Section - core Competencies
 .competencySection {
 	margin-top: 0px;
 	flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 }
 
 .competencyText {
@@ -3565,7 +3728,11 @@ News Section
 .newsContent {
       width:100%;
       display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 }
 
 .newsText {
@@ -3962,15 +4129,25 @@ What we Offer  Section
 
 .homePage .socialContainer {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	justify-content: space-around;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
 }
 
 .homePage .socialBox {
       width:24%;
 	position: relative;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 	background: white;
 	-webkit-box-shadow: 3px 3px 4px 0px rgba(179,179,179,0.89);
       -moz-box-shadow: 3px 3px 4px 0px rgba(179,179,179,0.89);
@@ -3981,8 +4158,14 @@ What we Offer  Section
 	/*padding: 2% 2% 3% 2%;*/
 	width: 100%;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 	background: white;
 }
 
@@ -4077,9 +4260,17 @@ What we Offer  Section
 	padding: 20px 0 60px 0;
 	color: white;
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 	flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
 }
 
 .socialText h3, .socialText p {
@@ -4319,7 +4510,7 @@ industries And Categories Section - industries And Categories
 	height: 25vw;
 	flex-grow: 1;
 		-ms-flex: 1 0 auto;
-		 -webkit-flex: 1 0 auto;
+		-webkit-flex: 1 0 auto;
 }
 
 .industryText ul li, .categoryText ul li {
@@ -4379,20 +4570,34 @@ NEWS Section - NEWS page
 
 .newsSection {
       flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 }
 
 .newsSidebar {
 	width:25%;
 	flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 }
 
 
 .news .socialMediaIcons {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
       flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 	flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
 	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
 }
 
 .newsContent {
@@ -4437,6 +4642,8 @@ Client and Testimonial Section - clients
 
 .clientNTestSection {
       flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
 }
 
 .clientGridSection {
@@ -4489,6 +4696,8 @@ h2.alsoSeeTitle {
 
 .contactFlex {
       flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
 }
 
 .contactForm {
