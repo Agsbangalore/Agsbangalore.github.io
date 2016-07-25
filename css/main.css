@@ -570,6 +570,7 @@ label#navButton:hover{
 	position: relative;
 	background: #444;
 	margin-bottom: 2px;
+	overflow-x: hidden;
 }
 
 .navLogo:hover {
@@ -599,6 +600,7 @@ label#navButton:hover{
 /*menu styling*/
 
 .navList{
+	width: 100%;
       margin-top: 0px;
       padding: 0px;
 }
@@ -610,8 +612,6 @@ label#navButton:hover{
 .navList:last-child{
       margin-bottom: 200px;
 }
-
-
 
 /*#nav ul ul li {
 	list-style: disc;
@@ -704,6 +704,8 @@ Hero Image Section - All pages
 .homePage .heroImage {
       display: block;
       position: relative;
+	background:url("../images/In-And-Out.jpg") top right no-repeat;
+      background-size: cover;
       width:100%;
       height:100vh;
       width:100%;
@@ -723,11 +725,15 @@ Hero Image Section - All pages
 
 .videoOverlay {
       position: absolute;
-      background: rgba(0,0,0,0.1);
+      background: rgba(0,0,0,0.1) url("../images/In-And-Out.jpg") top right no-repeat;
       top:0;
       bottom:0;
       left:0;
       right:0;
+}
+
+video {
+
 }
 
 
@@ -999,7 +1005,7 @@ what we offer Section - For home page only
 }
 
 .feature2 .img {
-      background: linear-gradient(  rgba(129,212,250, 0.85), rgba(129,212,250, 0.85) ),url("../images/feature2.1.jpg") center top no-repeat;
+      background: linear-gradient(  rgba(129,212,250, 0.85), rgba(129,212,250, 0.85) ),url("../images/feature2.jpg") center top no-repeat;
       background-size: cover;
 }
 
@@ -1009,22 +1015,22 @@ what we offer Section - For home page only
 }
 
 .feature4 .img {
-      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature4.1.jpg") center top no-repeat;
+      background: linear-gradient( rgba(149,117,205,0.75), rgba(149,117,205,0.75) ),url("../images/feature4.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature5 .img {
-      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature5.1.jpg") center top no-repeat;
+      background: linear-gradient( rgba(0,191,165,0.75), rgba(0,191,165,0.75) ),url("../images/feature5.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature6 .img {
-      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature6.1.jpeg") center top no-repeat;
+      background: linear-gradient( rgba(255,214,0,0.75), rgba(255,214,0,0.75) ),url("../images/feature6.jpg") center top no-repeat;
       background-size: cover;
 }
 
 .feature7 .img {
-      background: linear-gradient( rgba(2,136,209,0.75), rgba(2,136,209,0.75) ),url("../images/feature7.jpeg") center top no-repeat;
+      background: linear-gradient( rgba(2,136,209,0.75), rgba(2,136,209,0.75) ),url("../images/feature7.jpg") center top no-repeat;
       background-size: cover;
 }
 
@@ -1801,7 +1807,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .csr .heroImage {
-	background:url("../images/csrbg3.jpg") center -30px no-repeat;
+	background:linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0.3) 90%), url("../images/csrbg3.jpg") center -30px no-repeat;
       background-size: cover;
 }
 
@@ -1841,7 +1847,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .career .heroImage {
-	background:url("../images/careerbg.jpeg") center -60px no-repeat;
+	background:url("../images/careerbg.jpg") center -60px no-repeat;
       background-size: cover;
 }
 

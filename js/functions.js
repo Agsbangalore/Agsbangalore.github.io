@@ -9,6 +9,24 @@
 $(function() {
 
 
+//show video
+
+
+
+setTimeout(
+  function()
+  {
+    $(".videoOverlay").animate({
+          "opacity": "0"
+   });
+  }, 500);
+
+
+
+
+
+//Flexslider scripts
+
       (function() {
 
          // store the slider in a local variable
