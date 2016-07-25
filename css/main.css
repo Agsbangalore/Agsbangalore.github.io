@@ -2185,9 +2185,9 @@ industries And Categories Section - industries And Categories page
 
 .industrySection, .categorySection {
 	display: flex;
-	display: -ms-flexbox;
+		display: -ms-flexbox;
 	flex-direction: column-reverse;
-	-ms-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
 	/*margin-bottom: 60px;*/
 	border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
 	/*background: rgba(230, 230, 230, 0.5);*/
@@ -2212,13 +2212,13 @@ industries And Categories Section - industries And Categories page
 	padding: 10px;
 	margin: 0;
 	display: flex;
-	display: -ms-flexbox;
+		display: -ms-flexbox;
 	flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
 	align-content: center;
-	-ms-flex-align: center;
+		-ms-flex-line-pack: center;
 	justify-content: center;
-	-ms-flex-pack: center;
+		-ms-flex-pack: center;
 }
 
 .industryText ul li, .categoryText ul li {
@@ -2227,23 +2227,24 @@ industries And Categories Section - industries And Categories page
 	/*border: 0.5px solid rgba(0, 0, 0, 0.3);*/
 	width:40%;/*100%*/
 	display: flex;
-	display: -ms-flexbox;
+		display: -ms-flexbox;
 	flex-direction: column;/*row-reverse*/
-	-ms-flex-direction: column;
+		-ms-flex-direction: column;
 	justify-content: flex-start;/*space-between*/
-	-ms-flex-pack: start;
+		-ms-flex-pack: start;
 	align-items: center;
-	-ms-flex-align: center;
+		-ms-flex-align: center;
 }
 
 .indnCatImg {
 	width:100%;
 	height:50vw;
 	display: flex;
+		display: -ms-flexbox;
 	align-items: center;
-	-ms-flex-align: center;
+		-ms-flex-align: center;
 	justify-content: center;
-	-ms-flex-pack: center;
+		-ms-flex-pack: center;
 }
 
 
@@ -3457,11 +3458,13 @@ industries And Categories Section - industries And Categories
 
 .industrySection {
 	flex-direction: row;
+		-ms-flex-direction: row;
 	margin-bottom: 0px;
 }
 
 .categorySection {
 	flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
 }
 
 .industryText, .categoryText {
@@ -3472,9 +3475,11 @@ industries And Categories Section - industries And Categories
 	padding: 1px 5px 5px;
 	margin: 5px;
 	flex-direction: column;
+		-ms-flex-direction: column;
 	width: 30%;
 	height: 23%;
 	justify-content: flex-start;
+		-ms-flex-pack: start;
 }
 
 
@@ -3483,6 +3488,7 @@ industries And Categories Section - industries And Categories
 	width:40%;
 	height:auto;
 	align-items: stretch;
+		-ms-flex-align: stretch;
 }
 
 
@@ -4289,10 +4295,12 @@ industries And Categories Section - industries And Categories
 	width:60%;
 	height: 25vw;
 	flex-grow: 1;
+		-ms-flex: 1 0 auto;
 }
 
 .industryText ul li, .categoryText ul li {
 	flex-direction: column;
+		-ms-flex-direction: column;
 	width: 10vw;
 	height: 10vw;
 }
