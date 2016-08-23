@@ -63,10 +63,10 @@
 <!-- <div class="se-pre-con"></div> -->
 
 
-<input type="checkbox" id="navToggle">           <!--checkbox used to toggle-->
+<!-- <input type="checkbox" id="navToggle">   -->        <!--checkbox used to toggle-->
 
 
-<label for="navToggle" id="navButton"><span class="hamIcon show">≡</span><span class="closeIcon">×</span></label>    <!--label containing the menu icon-->
+<label id="navButton"><span class="hamIcon show">≡</span><span class="closeIcon">×</span></label>    <!--label containing the menu icon-->
 
 
 <main class="pageContent">
@@ -1228,8 +1228,6 @@
             </div>
       </section>
 
-
-
       <section class="socialSection container">
             <h2 class="socialTitle">Connect With Us</h2>
             <div class="socialContainer">
@@ -1336,18 +1334,18 @@
             </div>
       </section>
 
-      <!-- Shit not working (placeholder and value name )-->
-
       <section class="contactSection">
             <h2 class="contactTitle">Do you have a query?</h2>
-            <form action="" class="contactForm row">
-                  <p>Drop us a line..</p>
-                  <input type="text" id="name" class="inputFloat" name="name" placeholder="Name" required>
-                  <input type="text" id="email" class="inputFloat" name="email" placeholder="Email" required>
-                  <textarea name="message" id="message" class="inputFloat" class="message" placeholder="Message" ></textarea>
-                  <button id="formSubmit" type="submit" value="Submit">Submit</button>
-            </form>
+            <div class="contactFlex">
+                  <form action="" class="wpcf7-form grow">
+                        <input type="text" id="name" name="name" class="inputFlex" placeholder="Name">
+                        <input type="email" id="email" name="email" class="inputFlex" placeholder="Email">
+                        <textarea name="name" id="message" name="message" class="inputFlex" placeholder="Message"></textarea>
+                        <input type="submit" id="formSubmit" name="formSubmit" value="Submit" class="inputFlex">
+                  </form>
+            </div>
       </section>
+
 
       <footer class="footerSection container">
             <h2 class="hideHeader">footer Section</h2>

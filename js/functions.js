@@ -88,7 +88,9 @@ setTimeout(
 
       	//Click event to scroll to top
       	$('.scrollToTop').click(function(){
-      		$('html, body').animate({scrollTop : 0},800);
+      		// $('html, body').animate({scrollTop: 0},800);
+                  $('.pageContent').animate({scrollLeft:-50},500);
+                  $('.pageContent').animate({scrollTop:-50},500);
       		return false;
       	});
 
@@ -114,14 +116,20 @@ if($(window).width()<700){
 });
 
 
-
 $('#navButton').click(function(){
       $('.hamIcon').toggleClass('show');
       $('.closeIcon').toggleClass('show');
-      console.log('hahahaha');
 });
 
 
+(function() {
+      var body = $('pageContent');
+      $("#navButton").bind("click", function(){
+            $('.pageContent').toggleClass("pageOpen");
+            $('#navButton').toggleClass("navOpen");
+            return false;
+      })
+}());
 
 
 
