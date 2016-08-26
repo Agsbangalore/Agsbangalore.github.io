@@ -74,6 +74,16 @@ setTimeout(
             });
       });
 
+      (function() {
+            $(".navBoxLeft").bind("click", function(){
+                  $('.flex-prev').click();
+            })
+            $(".navBoxRight").bind("click", function(){
+                  $('.flex-next').click();                  
+            })
+      }());
+
+
 
 
 	//Check to see if the window is top if not then display button
@@ -89,7 +99,7 @@ setTimeout(
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop: 0},800);
-		return false;            
+		return false;
 	});
 
 
