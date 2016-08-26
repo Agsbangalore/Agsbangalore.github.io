@@ -20,7 +20,6 @@ if it's not present, don't show loader */
 	background: url(../images/Preloader_1.gif) center no-repeat #fff;
 }
 
-
 .container {
       position:relative;
       width: 100%;
@@ -219,7 +218,11 @@ Font styles
 	font-size: 160%;
 }
 
-.featureBox h4 {
+.linkBox .tileEffect:hover h4 {
+	font-size: 160%;
+}
+
+.tileEffect h4 {
 	font-size: 1.2rem;
 	transition: all 0.35s;
 		-webkit-transition: all 0.35s;
@@ -277,7 +280,9 @@ Font styles
 .ourBusinessModel .introHead h2, .advent-culture .introHead h2,
 .submitResume .introHead h2, .lookingForAJob .introHead h2,
 .ourServices .introHead h2, .enterprisemobility .introHead h2,
-.applicationmanagementservices .introHead h2
+.applicationmanagementservices .introHead h2,
+.disclaimer .introHead h2, .privacy-policy .introHead h2,
+.terms-n-conditions .introHead h2,
 {
       font-size: 1.7em;
 }
@@ -534,6 +539,10 @@ menu Section
       text-decoration: none;
 }
 
+.pageContent{
+	overflow: hidden;
+}
+
 .pageContent {
       background: rgba(235,235,235,1);
 	display: block;
@@ -707,7 +716,6 @@ hgroup {
       display: none;
 }
 
-
 .headerSection #navBurger{
       display: none;                  /*change this*/
       position: absolute;
@@ -734,7 +742,6 @@ Hero Image Section - All pages
       width:100%;
       overflow: hidden;
 }
-
 
 .heroVideoBG {
       display: block;
@@ -777,8 +784,6 @@ video {
       z-index: 1;
       color: white;
 }
-
-
 
 .ctaButton:focus {
 	outline: none;
@@ -937,18 +942,6 @@ Why Us Secion - Home page only
       background: rgba(31, 170, 235, 1);
       color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-------------------------------------------------------------------------
 what we offer Section - For home page only
@@ -1441,6 +1434,13 @@ div.clientBox{
       width:80%;
 }
 
+.airlounge {
+      background: url("../images/airlounge.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
 .bectonDickson {
       background: url("../images/bectonDickson.png") center center no-repeat;
       background-size: contain;
@@ -1483,6 +1483,34 @@ div.clientBox{
       width:90%;
 }
 
+.delta {
+      background: url("../images/delta.png") center center no-repeat;
+      background-size: contain;
+      height:90%;
+      width:90%;
+}
+
+.discovery {
+      background: url("../images/discovery.png") center center no-repeat;
+      background-size: contain;
+      height:90%;
+      width:90%;
+}
+
+.disney {
+      background: url("../images/disney.png") center center no-repeat;
+      background-size: contain;
+      height:90%;
+      width:90%;
+}
+
+.fpl {
+      background: url("../images/fpl.png") center center no-repeat;
+      background-size: contain;
+      height:60%;
+      width:60%;
+}
+
 .henkel {
       background: url("../images/henkel.png") center center no-repeat;
       background-size: contain;
@@ -1511,6 +1539,20 @@ div.clientBox{
       width:80%;
 }
 
+.novartis {
+      background: url("../images/novartis.png") center center no-repeat;
+      background-size: contain;
+      height:80%;
+      width:80%;
+}
+
+.pgne {
+      background: url("../images/pgne.png") center center no-repeat;
+      background-size: contain;
+      height:50%;
+      width:50%;
+}
+
 .philips {
       background: url("../images/philips.png") center center no-repeat;
       background-size: contain;
@@ -1532,11 +1574,25 @@ div.clientBox{
       width:80%;
 }
 
+.total {
+      background: url("../images/total.png") center center no-repeat;
+      background-size: contain;
+      height:60%;
+      width:60%;
+}
+
 .unisys {
       background: url("../images/unisys.png") center center no-repeat;
       background-size: contain;
       height:80%;
       width:80%;
+}
+
+.ups {
+      background: url("../images/ups.png") center center no-repeat;
+      background-size: contain;
+      height:55%;
+      width:55%;
 }
 
 
@@ -2195,6 +2251,12 @@ Hero Image Section - except home page, all [ages]
       background-size: cover;
 }
 
+.disclaimer .heroImage, .privacy-policy .heroImage,
+.terms-n-conditions .heroImage {
+	background:url("../images/newsbg.jpg") center 0px no-repeat;
+      background-size: cover;
+}
+
 
 /*-------------------------------------------------------------------------
 Intro Section - except home page, all pages
@@ -2229,7 +2291,7 @@ Intro Section - except home page, all pages
       background: salmon;
 }
 
-.clients .introHead {
+.disclaimer .introHead {
       background: teal;
 }
 
@@ -2237,15 +2299,11 @@ Intro Section - except home page, all pages
       background: rgba(60,184,120,1);
 }
 
-.news .introHead {
-      background: teal;
-}
-
 .ourHiringMethodology .introHead {
 	background: rgba(71,90,204,1);/*152,100,217  rgba(50,50,50,1) */
 }
 
-.meetTheTeam .introHead {
+.privacy-policy .introHead {
 	background: rgba(52,151,217,1);
 }
 
@@ -2257,16 +2315,12 @@ Intro Section - except home page, all pages
 	background: rgba(231,76,60,1);
 }
 
-.industriesAndCategories .introHead {
-	background: rgba(52,151,217,1);
-}
-
 .ourBusinessModel .introHead {
 	background: rgba(46,204,113,1);
 }
 
-.whyUs .introHead {
-	background: turquoise;
+.terms-n-conditions .introHead {
+	background: rgba(254,194,0,1);
 }
 
 .career .introHead {
@@ -2277,16 +2331,8 @@ Intro Section - except home page, all pages
 	background: rgba(0,178,90,1);
 }
 
-.submitResume .introHead {
-	background: MediumTurquoise;
-}
-
 .lookingForAJob .introHead {
 	background: teal;
-}
-
-.contactUs .introHead {
-	background: rgba(254,194,0,1)  ;
 }
 
 .company .introHead {
@@ -2296,16 +2342,6 @@ Intro Section - except home page, all pages
 .ourServices .introHead {
 	background: RebeccaPurple;
 }
-
-.applicationmanagementservices .introHead {
-	background: rgba(52,151,217,1);
-}
-
-.enterprisemobility .introHead {
-	background: rgba(46,204,113,1);
-}
-
-
 
 .textHigh {
       display: block;
@@ -2352,8 +2388,6 @@ Intro Section - except home page, all pages
 .subSectionText {
 	padding: 0px 20px 0px;
 }
-
-
 
 .introText p:last-child, .subSection p:last-child {
 	padding-bottom: 0px;
@@ -3374,10 +3408,6 @@ h2.alsoSeeTitle {
       height:100%;
 }
 
-
-
-
-
 .link1 {
       background: linear-gradient( rgba(66,165,245,0.75), rgba(66,165,245,0.75) ),url("../images/feature2.jpg") center top no-repeat;
       background-size: cover;
@@ -3397,18 +3427,6 @@ h2.alsoSeeTitle {
       background: linear-gradient( rgba(242,101,34,0.75), rgba(242,101,34,0.75) ),url("../images/feature8.jpg") center top no-repeat;
       background-size: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*-------------------------------------------------------------------------
@@ -3432,15 +3450,11 @@ Tablet Styles Section
 Font styles
 ---------------------------------------------------------------------------*/
 
-.featureBox a h4{
-      font-size: 1.4rem;
-}
-
 .featureTitle h2{
       font-size: 3rem;
 }
 
-.featureBox h4 {
+.tileEffect h4 {
 	font-size: 1.4rem;
 }
 
@@ -3470,19 +3484,9 @@ Font styles
       font-size: 2.5vw;
 }
 
-.linkBox h4 {
-	font-size: 1.4rem;
+.linkBox .tileEffect h4 {
+	font-size: 1.8rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*-------------------------------------------------------------------------
 Header Section
@@ -3520,21 +3524,6 @@ What we Offer  Section - only home page
       height:30vw;
 }
 
-
-
-.featureBox a h4 span {
-      white-space: nowrap;
-}
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------
  Testimonial Section - only home page
 ---------------------------------------------------------------------------*/
@@ -3548,17 +3537,6 @@ What we Offer  Section - only home page
 .quoteBox .flex-direction-nav{
       display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*-------------------------------------------------------------------------
  Client Section -Only home page
@@ -3579,9 +3557,6 @@ What we Offer  Section - only home page
 .clientBox{
       margin:0 12.5%;
 }
-
-
-
 
 /*-------------------------------------------------------------------------
  Testimonial Section
@@ -3760,18 +3735,6 @@ Our Hiring Method Section - Our Hiring Methodology
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------
 industries And Categories Section - industries And Categories
 ---------------------------------------------------------------------------*/
@@ -3806,8 +3769,6 @@ industries And Categories Section - industries And Categories
 		-webkit-justify-content: flex-start;
 }
 
-
-
 .indnCatImg {
 	width:40%;
 	height:auto;
@@ -3815,11 +3776,6 @@ industries And Categories Section - industries And Categories
 		-ms-flex-align: stretch;
 		-webkit-align-items: stretch;
 }
-
-
-
-
-
 
 
 /*-------------------------------------------------------------------------
@@ -3838,16 +3794,10 @@ Core Competencies  Section - core Competencies
 	padding: 10px 5% 20px;
 }
 
-
-
-
-
 .competencySection .competencyText ul {
 	padding-left: 30px;
 	margin: 0;
 }
-
-
 
 .competencyImg {
 	width:40%;
@@ -3856,15 +3806,9 @@ Core Competencies  Section - core Competencies
 
 
 
-
-
-
 /*-------------------------------------------------------------------------
 News Section
 ---------------------------------------------------------------------------*/
-
-
-
 
 .newsContent {
       width:100%;
@@ -3880,15 +3824,10 @@ News Section
       padding: 10px 20px 10px 60px;
 }
 
-
-
-
 .newsImg {
 	width:33.3333333333%;
 	height:33.3333333333vw;
 }
-
-
 
 /*-------------------------------------------------------------------------
 CSR Section - CSR
@@ -3900,22 +3839,13 @@ CSR Section - CSR
       width:33.333333333333%;
 }
 
-
-
-
-
 /*-------------------------------------------------------------------------
 Client and Testimonial Section - clients page
 ---------------------------------------------------------------------------*/
 
-
-
 .quoteBox .flex-direction-nav{
       display: block;
 }
-
-
-
 
 
 /*-------------------------------------------------------------------------
@@ -3927,18 +3857,6 @@ Also see section Section
       width:25%;
       height:25vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4005,10 +3923,6 @@ Font styles
       line-height: 1.1em;
 }
 
-.featureBox a h4 {
-      font-size: 1.4rem;
-}
-
 .featureTitle h2 {
       font-size: 3.3rem;
 }
@@ -4039,9 +3953,11 @@ Font styles
 		-webkit-transform: translate(-50%,-50%);
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
-      font-size: 3.5em;
+      /*font-size: 3.5em;*/
       text-align: right;
 }
+
+
 
 .ourHiringMethodology .introHead h2
  {
@@ -4056,7 +3972,8 @@ Font styles
 
 .diversityAndInclusion .introHead h2,
 .ourBusinessModel .introHead h2,
-.lookingForAJob .introHead h2
+.lookingForAJob .introHead h2,
+.disclaimer .introHead h2
  {
 	font-size: 3.5vw;
 }
@@ -4064,7 +3981,9 @@ Font styles
 .coreCompetencies .introHead h2,
 .industriesAndCategories .introHead h2,
 .enterprisemobility .introHead h2,
-.applicationmanagementservices .introHead h2
+.applicationmanagementservices .introHead h2,
+.terms-n-conditions .introHead h2,
+.privacy-policy .introHead h2
  {
 	font-size: 3.2vw;
 }
@@ -4092,7 +4011,7 @@ Font styles
 }
 
 .linkBox h4 {
-      font-size: 1.9rem;
+      font-size: 1.8rem;
 }
 
 
@@ -4243,13 +4162,9 @@ What we Offer  Section
       margin-top: 120px;
 }
 
-
-
 .quoteBox p {
 	max-width: 70%;
 }
-
-
 
 
 /*-------------------------------------------------------------------------
@@ -4517,22 +4432,6 @@ What we Offer  Section
 	width: 48%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contactSection {
       height: 360px;
 }
@@ -4577,23 +4476,9 @@ What we Offer  Section
 }
 
 
-
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------
  Footer Section
 ---------------------------------------------------------------------------*/
-
-.adventLogo {
-
-}
-
 
 .footerCol1 {
       width:25%;
@@ -4609,7 +4494,6 @@ What we Offer  Section
       width:25%;
       float:left;
 }
-
 
 .info {
       text-align: left;
@@ -4628,12 +4512,9 @@ What we Offer  Section
       padding: 10px 30px;
 }
 
-
 .AboutUs {
       display:block;
 }
-
-
 
 
 
@@ -4650,9 +4531,6 @@ What we Offer  Section
 Intro Section
 ---------------------------------------------------------------------------*/
 
-
-
-
 .introHeadFloat {
       width:25%;
       height:25vw;
@@ -4664,10 +4542,6 @@ Intro Section
       top: -150px;
 	height: 100%;
 }
-
-
-
-
 
 .textHigh {
       width:25%;
@@ -4699,10 +4573,6 @@ Intro Section
 }
 
 
-
-
-
-
 /*-------------------------------------------------------------------------
 Our Hiring Method Section - Our Hiring Methodology
 ---------------------------------------------------------------------------*/
@@ -4719,25 +4589,9 @@ Our Hiring Method Section - Our Hiring Methodology
 	width: 80%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------
 industries And Categories Section - industries And Categories
 ---------------------------------------------------------------------------*/
-
-
 
 .industryText, .categoryText {
 	width:60%;
@@ -4760,18 +4614,6 @@ industries And Categories Section - industries And Categories
 	height:auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------
 Core Competencies  Section - core Competencies
 ---------------------------------------------------------------------------*/
@@ -4786,17 +4628,6 @@ Core Competencies  Section - core Competencies
     width: 33%;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*-------------------------------------------------------------------------
 NEWS Section - NEWS page
@@ -4814,7 +4645,6 @@ NEWS Section - NEWS page
 		-ms-flex-direction: column;
 		-webkit-flex-direction: column;
 }
-
 
 .news .socialMediaIcons {
 	display: flex;
@@ -4838,41 +4668,22 @@ NEWS Section - NEWS page
       width:75%;
 }
 
-
-
 .newsImg {
 	height:25vw;
 }
 
-
 /*-------------------------------------------------------------------------
 CSR Section - CSR
 ---------------------------------------------------------------------------*/
-
 
 .csrImgBox {
       height:25vw;
       width:25%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------
 Client and Testimonial Section - clients
 ---------------------------------------------------------------------------*/
-
 
 .clientNTestSection {
       flex-direction: row;
@@ -4885,22 +4696,14 @@ Client and Testimonial Section - clients
       height:50vw;
 }
 
-
 .clients .testimonialSection {
       width:50%;
       height:50vw;
 }
 
-
-
-
 /*-------------------------------------------------------------------------
 Also See Section
 ---------------------------------------------------------------------------*/
-
-
-
-
 
 h2.alsoSeeTitle {
       white-space: normal;
@@ -4910,27 +4713,6 @@ h2.alsoSeeTitle {
       width:25%;
       height:25vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
