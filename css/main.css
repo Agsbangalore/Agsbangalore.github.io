@@ -2211,7 +2211,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .core-competencies .heroImage {
-	background:url("../images/core-competenciesbg.jpg") center center no-repeat;
+	background:url("../images/corecompetenciesbg.jpg") center center no-repeat;
       background-size: cover;
 }
 
@@ -2226,7 +2226,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .our-hiring-methodology .heroImage {
-	background:url("../images/hiringmethodologybg1.jpg") center bottom no-repeat;
+	background:url("../images/hiringmethodologybg1.jpg") right bottom no-repeat;
       background-size: cover;
 }
 
