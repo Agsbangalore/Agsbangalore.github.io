@@ -465,7 +465,7 @@ menu Section
 }
 
 #navButton.navOpen {
-	right: 300px;
+	right: 230px;
 }
 
 #navButton span.hamIcon,
@@ -588,7 +588,7 @@ menu Section
 	width: 100%;
 	height: 70px;
 	overflow: hidden;
-	padding-left:20px;
+	padding-left:80px;
 	display: flex;
 		display: -ms-flexbox;
 		display: -webkit-flex;
