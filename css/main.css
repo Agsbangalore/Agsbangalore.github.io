@@ -369,7 +369,7 @@ Font styles
 	padding-bottom: 5px;
 	list-style:disc;
 	text-align: left;
-	font-size: 5vw;
+	font-size: 1.5em;
 }
 
 .competencyImg h4 {
@@ -379,7 +379,7 @@ Font styles
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
-      font-size: 2.5em;
+      font-size: 1.8em;
 	text-transform: none;
 	margin: 0;
 }
@@ -1156,7 +1156,7 @@ Testimonial section - For home page only
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testibg1.jpg") center center no-repeat;
       background-size: cover;
       width:100%;
-      height:50vh;
+      height:80vh;
       margin-top:120px;
 	-webkit-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
 	-moz-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
@@ -1704,7 +1704,7 @@ h2.contactTitle {
 		-moz-transform: translateX(-50%);
 		-o-transform: translateX(-50%);
       top: -70px;
-	/*white-space: nowrap;*/
+	white-space: nowrap;
 	text-align: center;
 }
 
@@ -2590,6 +2590,10 @@ industries And Categories Section - industries And Categories page
 	margin-top: 120px;
 }
 
+.ourServices .indnCatSection {
+	margin-top: 20px;
+}
+
 .industrySection, .categorySection {
 	display: flex;
 		display: -ms-flexbox;
@@ -2822,7 +2826,7 @@ Core Competencies  Section - core Competencies page
 
 .competencyText {
 	width: 100%;
-	padding: 10px 5% 20px;
+	/*padding: 10px 5% 20px;*/
 }
 
 .competencyText h4 {
@@ -2835,7 +2839,7 @@ Core Competencies  Section - core Competencies page
 
 .competencyImg {
 	width:100%;
-	height: 60vw;
+	height: 200px;
 	background: linear-gradient( rgba(0,0,0,0.20), rgba(0,0,0,0.20) ),url('../images/feature6.jpg') top right no-repeat;
 	background-size: cover;
 	display: flex;
@@ -3791,7 +3795,7 @@ Core Competencies  Section - core Competencies
 
 .competencyText {
 	width: 60%;
-	padding: 10px 5% 20px;
+	padding: 10px 5% 0px;
 }
 
 .competencySection .competencyText ul {
