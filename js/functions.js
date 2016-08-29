@@ -13,13 +13,13 @@ $(function() {
 
 
 
-setTimeout(
-  function()
-  {
-    $(".videoOverlay").animate({
-          "opacity": "0"
-   });
-  }, 500);
+// setTimeout(
+//   function()
+//   {
+//     $(".videoOverlay").animate({
+//           "opacity": "0"
+//    });
+//   }, 500);
 
 
 
