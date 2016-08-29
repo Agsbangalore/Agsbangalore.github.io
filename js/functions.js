@@ -24,6 +24,25 @@ setTimeout(
 
 
 
+//enablr video only for desktop
+
+$(function(){
+
+if($(window).width()<750){
+
+      $('video').remove();
+
+}
+
+
+});
+
+
+
+
+
+
+
 
 //Flexslider scripts
 
@@ -79,7 +98,7 @@ setTimeout(
                   $('.flex-prev').click();
             })
             $(".navBoxRight").bind("click", function(){
-                  $('.flex-next').click();                  
+                  $('.flex-next').click();
             })
       }());
 
@@ -104,6 +123,18 @@ setTimeout(
 
 
 
+//Click event to scroll to core competencies section
+$('.menu-competencies').click(function(){
+
+	$('html, body').animate({scrollTop: 600},800);
+      var subheight = $('.subSectionTwo').height();
+      console.log(subheight);
+	return false;
+
+});
+
+
+
 /*ACcordian JavaScript*/
 
 $(function(){
@@ -114,7 +145,6 @@ if($(window).width()<700){
       $('.accord > h3').click(function(){
                   $(this).next().slideToggle(500);
                   $(this).toggleClass('active');
-                  console.log("hahaha");
       });
 
 }
