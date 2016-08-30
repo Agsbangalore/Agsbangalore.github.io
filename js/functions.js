@@ -123,17 +123,6 @@ if($(window).width()<750){
 
 
 
-//Click event to scroll to core competencies section
-$('.menu-competencies').click(function(){
-
-	$('html, body').animate({scrollTop: 600},800);
-      var subheight = $('.subSectionTwo').height();
-      console.log(subheight);
-	return false;
-
-});
-
-
 
 /*ACcordian JavaScript*/
 

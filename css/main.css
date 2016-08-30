@@ -20,6 +20,21 @@ if it's not present, don't show loader */
 	background: url(../images/Preloader_1.gif) center no-repeat #fff;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
       position:relative;
       width: 100%;
@@ -88,7 +103,7 @@ Font styles
 ---------------------------------------------------------------------------*/
 
 
-#nav li a {
+#navM li a {
       text-align: left;
       padding: 17px 0px 20px 17px;
       margin-bottom: 2px;
@@ -500,7 +515,7 @@ menu Section
 
 
 /* Slide out navigation */
-#nav {
+#navM {
 	position: fixed;
       text-align: center;
 	top: 0;
@@ -518,13 +533,13 @@ menu Section
 }
 
 /* Slide out navigation list items */
-#nav ul li {
+#navM ul li {
 	display: block;
 	clear: both;
       color: white;
 }
 
-#nav ul li a {
+#navM ul li a {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -642,17 +657,17 @@ menu Section
 	list-style: disc;
 }*/
 
-#nav ul ul li a {
+#navM ul ul li a {
       padding-left: 50px;
 	position: relative;
 }
 
-#nav ul ul ul li a {
+#navM ul ul ul li a {
       padding-left: 50px;
 	position: relative;
 }
 
-#nav ul ul li a::before {
+#navM ul ul li a::before {
 	content: '\f363';
 	font-family: "Ionicons";
 	font-size: 25px;
@@ -664,11 +679,11 @@ menu Section
 	left:24px;
 }
 
-#nav ul ul ul li a::before {
+#navM ul ul ul li a::before {
 	left:30px;
 }
 
-#nav li a:hover{
+#navM li a:hover{
       background: #555;
 }
 
@@ -2379,6 +2394,10 @@ Intro Section - except home page, all pages
 	margin-bottom: 10px;
 }
 
+.subSectionOne {
+	margin-top: 30px;
+}
+
 .subSection::after {
 	content: '';
 	display: block;
@@ -2815,14 +2834,44 @@ industries And Categories Section - industries And Categories page
 Core Competencies  Section - core Competencies page
 ---------------------------------------------------------------------------*/
 
-.menu-competencies {
-
+ul.menu-competencies {
+	padding: 0;
+	padding-bottom: 20px;
+	height: 200px;
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	justify-content: space-around;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
 }
 
 .menu-competencies li {
 	display: inline-block;
 	font-size: 1em;
-	padding: 0px 10px;
+	border: 1px solid grey;
+	background: white;
+	padding: 7px 12px;
+	text-align: center;
+}
+
+.menu-competencies li a {
+	display: block;
+	height: 100%;
+	width:100%;
+	text-decoration: none;
+	color: grey;
+}
+
+.menu-competencies li:hover {
+	background: rgba(31, 170, 235, 1);
+}
+
+.menu-competencies li:hover a {
+	color: white;
 }
 
 .competencySection {
@@ -3809,6 +3858,21 @@ industries And Categories Section - industries And Categories
 Core Competencies  Section - core Competencies
 ---------------------------------------------------------------------------*/
 
+ul.menu-competencies {
+	height: auto;
+	flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+	justify-content: space-around;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+}
+
+.menu-competencies li{
+	width: 170px;
+}
+
+
 .competencySection {
 	margin-top: 0px;
 	flex-direction: row;
@@ -4050,6 +4114,7 @@ Image Styling
 	background:url("../images/In-And-Out.jpg") top right no-repeat;
       background-size: cover;
 }
+
 
 
 
@@ -4470,6 +4535,7 @@ What we Offer  Section
 
 .contactSection {
       height: 360px;
+	padding: 0 200px;
 }
 
 .contactFlex {
@@ -4479,7 +4545,7 @@ What we Offer  Section
 }
 
 .wpcf7-form {
-	padding: 20px 20px 20px 50px;
+	padding: 20px 20px 20px 20px;
 }
 
 .contactForm p {
@@ -4605,6 +4671,10 @@ Intro Section
 	margin-bottom: 80px;
 }
 
+.subSectionOne {
+	margin-top: 40px;
+}
+
 .subSectionText {
 	padding: 0px 180px 0px;
 }
@@ -4667,6 +4737,10 @@ industries And Categories Section - industries And Categories
 Core Competencies  Section - core Competencies
 ---------------------------------------------------------------------------*/
 
+
+.menu-competencies li{
+	width: 220px;
+}
 
 .competencyText {
 	width: 67%;

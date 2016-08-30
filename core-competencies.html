@@ -43,6 +43,7 @@
       <script src="js/jquery.flexslider.js"></script>
       <script src="js/functions.js"></script>
       <script src="js/otherfunctions.js"></script>
+      <script src="js/jquery.nav.js"></script>
 
 
 
@@ -90,15 +91,15 @@
                   </div>
             </div>
             <div class="introText">
-                  <ul class="menu-competencies">
-                        <li><a href="">Contingent Workforce Services</a></li>
-                        <li><a href="">Enterprise Mobility</a></li>
-                        <li><a href="">Application Management Services</a></li>
+                  <ul id="nav" class="menu-competencies">
+                        <li><a href="#subSectionOne">Contingent Workforce Services</a></li>
+                        <li><a href="#subSectionTwo">Enterprise Mobility</a></li>
+                        <li><a href="#subSectionThree">Application Management Services</a></li>
                   </ul>
                   <hr>
             </div>
 
-            <div class="subSection subSectionOne">
+            <div id="subSectionOne" class="subSection subSectionOne">
                   <div class="subSectionText">
                         <h3>Contingent Workforce Services</h3>
                         <p>
@@ -134,7 +135,7 @@
                   </div>
 
             </div>
-            <div class="subSection subSectionTwo">
+            <div id="subSectionTwo" class="subSection subSectionTwo">
                   <div class="subSectionText">
                         <h3>Enterprise Mobility</h3>
                         <p>
@@ -160,7 +161,7 @@
                   </div>
 
             </div>
-            <div class="subSection subSectionThree">
+            <div id="subSectionThree" class="subSection subSectionThree">
                   <div class="subSectionText">
                         <h3>Application Management Services</h3>
                         <p>
@@ -262,7 +263,7 @@
       </section>
 
 
-
+<!-- 
       <section class="contactSection">
             <h2 class="contactTitle">Do you have a query?</h2>
             <div class="contactFlex">
@@ -282,6 +283,18 @@
                               <li class="socialLogo4 socialLogo"><a href=""><i class="ion-social-googleplus"></i></a></li>
                         </ul>
                   </div>
+            </div>
+      </section> -->
+
+      <section class="contactSection">
+            <h2 class="contactTitle">Do you have a query?</h2>
+            <div class="contactFlex">
+                  <form action="" class="wpcf7-form grow">
+                        <input type="text" id="name" name="name" class="inputFlex" placeholder="Name">
+                        <input type="email" id="email" name="email" class="inputFlex" placeholder="Email">
+                        <textarea name="name" id="message" name="message" class="inputFlex" placeholder="Message"></textarea>
+                        <input type="submit" id="formSubmit" name="formSubmit" value="Submit" class="inputFlex">
+                  </form>
             </div>
       </section>
 
@@ -367,7 +380,7 @@
 
 
 
-      <nav id="nav">
+      <nav id="navM">
             <div class="navLogo">
                   <a href="index.html" class="linkLogo">Advent Global</a>
                   <div class="nLogo">
