@@ -2279,12 +2279,14 @@ Intro Section - except home page, all pages
 .company .introHeadFloat, .our-services .introHeadFloat,
 .core-competencies .introHeadFloat, .career .introHeadFloat,
 .advent-culture .introHeadFloat,
-.looking-for-a-job .introHeadFloat {
+.looking-for-a-job .introHeadFloat, .disclaimer .introHeadFloat,
+.privacy-policy .introHeadFloat {
 	height: 80px;
 }
 
 .our-hiring-methodology .introHeadFloat, .our-business-model .introHeadFloat,
-.diversity-and-inclusion .introHeadFloat, .csr .introHeadFloat {
+.diversity-and-inclusion .introHeadFloat, .csr .introHeadFloat,
+.terms-n-conditions .introHeadFloat {
 	height: 120px;
 }
 
