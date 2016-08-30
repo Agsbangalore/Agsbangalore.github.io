@@ -45,8 +45,3 @@ if($(window).width()>1000){
 
 
 });
-
-
-$(document).ready(function() {
-	$('#nav').onePageNav();
-});
