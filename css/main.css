@@ -159,10 +159,10 @@ Font styles
       padding: 20px 20px;
       margin: 0 auto;
       max-width: 600px;
-      text-align: center;
+      text-align: justify;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 1.7rem;
       color:#444;
 }
@@ -238,7 +238,7 @@ Font styles
 }
 
 .tileEffect h4 {
-	font-size: 1.2rem;
+	font-size: 5vw;
 	transition: all 0.35s;
 		-webkit-transition: all 0.35s;
 		-moz-transition: all 0.35s;
@@ -359,7 +359,7 @@ Font styles
 
 .industryText ul li h4, .categoryText ul li h4 {
 	color: #333;
-	font-size: 1.3em;
+	font-size: 1.2rem;
 	text-align: center;
 	text-transform: none;
 	font-weight: lighter;
@@ -630,7 +630,7 @@ menu Section
 }
 
 .nLogo {
-	background: url("../images/adventLogoWhite.png") no-repeat;
+	background: url("../images/adventlogo.svg") no-repeat;
       background-size: contain;
       width: 200px;
       height: 48px;
@@ -713,7 +713,7 @@ hgroup {
 
 .logo{
       display: block;
-      background: url("../images/adventLogoWhite.png") no-repeat;
+	background: url("../images/adventlogo.svg") no-repeat;
       background-size: contain;
       width:220px;
       height:50px;
@@ -917,7 +917,13 @@ Why Us Secion - Home page only
       background: white;
       text-align: center;
 	position: relative;
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
+}
+
+.whyUsText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .whyUsText::after, .whyUsHead::after {
@@ -933,14 +939,49 @@ Why Us Secion - Home page only
 
 
 .whyUsButton {
-	display: block;
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+	justify-content: space-around;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
       height: 100vw;
-      background: url("../images/company-certificates.png");
-	background-size: contain;
+	background: white;
+      background-size: contain;
       position: relative;
-      padding-bottom: 150px;
+      /*padding-bottom: 150px;*/
+	padding: 50px 20px;
+	border-top: 1px solid #ddd;
 }
 
+.sticker {
+	display: block;
+	height: 45%;
+	width: 45%;
+	margin: 2%;
+	/*border: 1px solid blue;*/
+}
+
+.sticker1{
+	background: url("../images/HubZone.png") no-repeat center center;
+	background-size: contain;
+}
+
+.sticker2{
+	background: url("../images/mbe.png") no-repeat center center;
+	background-size: contain;
+}
+
+.sticker3{
+	background: url("../images/nmsdc.jpg") no-repeat center center;
+	background-size: contain;
+}
 
 
 .whyUsButton br {
@@ -1161,6 +1202,7 @@ what we offer Section - For home page only
 Testimonial section - For home page only
 ---------------------------------------------------------------------------*/
 
+/*
 .homePage .testimonialSection {
       position:relative;
       background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url("../images/testibg1.jpg") center center no-repeat;
@@ -1208,16 +1250,12 @@ h2.testimonialTitle{
       display: none;
 }
 
-
-/*
-.flex-direction-nav, .flex-control-nav{
-      color:white;
-}
 */
 
 
-/*changes in flexslider css....ionicons used instead of flexslider icons*/
 
+/*changes in flexslider css....ionicons used instead of flexslider icons*/
+/*
 .quoteBox .flex-direction-nav a:before {
   font-family: "Ionicons";
   font-size: 40px;
@@ -1259,7 +1297,7 @@ h2.testimonialTitle{
   border: 2px solid rgba(255,255,255,1);
   background: rgba(255,255,255, 1);
   cursor: default;
-}
+}*/
 
 /*-------------------------------------------------------------------------*/
 
@@ -2053,7 +2091,7 @@ Footer Section
 .adventLogo a {
       display: block;
       margin: 0 auto;
-      background: url("../images/adventLogoWhite.png") no-repeat top center;
+      background: url("../images/adventlogo.svg") no-repeat top center;
       background-size: contain;
       max-width: 300px;
       height:55px;
@@ -2650,7 +2688,7 @@ industries And Categories Section - industries And Categories page
 
 .industryText ul, .categoryText ul {
 	height: 100%;
-	padding: 10px;
+	padding: 0.5vw;
 	margin: 0;
 	display: flex;
 		display: -ms-flexbox;
@@ -2687,7 +2725,7 @@ industries And Categories Section - industries And Categories page
 
 .indnCatImg {
 	width:100%;
-	height:50vw;
+	height:40vw;
 	display: flex;
 		display: -ms-flexbox;
 		display: -webkit-flex;
@@ -2702,7 +2740,7 @@ industries And Categories Section - industries And Categories page
 
 
 .industryText h4, .categoryText h4 {
-	margin: 5px;
+	margin: 2px 1px;
 }
 
 .industryImg h4 {
@@ -2727,7 +2765,7 @@ industries And Categories Section - industries And Categories page
 	display: block;
 	height: 80px;
 	width: 80px;
-	margin-bottom: 8px;
+	/*margin-bottom: 8px;*/
 }
 
 .industrySection svg {
@@ -3168,7 +3206,7 @@ CSR Section - CSR page
 /*-------------------------------------------------------------------------
 Client and Testimonial Section - clients page
 ---------------------------------------------------------------------------*/
-
+/*
 .clientNTestSection {
       display: flex;
 		display: -ms-flexbox;
@@ -3250,11 +3288,12 @@ Client and Testimonial Section - clients page
       border: none;
       color: white;
 }
+*/
 
+/*
 .quoteBox p {
       margin: 0 auto;
       text-align: center;
-      /*max-width: 50%;*/
 }
 
 .quoteBox p span {
@@ -3265,11 +3304,12 @@ Client and Testimonial Section - clients page
 .quoteBox .flex-direction-nav {
       display: none;
 }
-
+*/
 
 
 /*changes in flexslider css....ionicons used instead of flexslider icons*/
 
+/*
 .quoteBox .flex-direction-nav a:before {
   font-family: "Ionicons";
   font-size: 40px;
@@ -3312,7 +3352,7 @@ Client and Testimonial Section - clients page
   border: 2px solid rgba(255,255,255,1);
   background: rgba(255,255,255, 1);
   cursor: default;
-}
+}*/
 
 /*-------------------------------------------------------------------------*/
 
@@ -3321,7 +3361,7 @@ Client and Testimonial Section - clients page
 
 
 
-
+/*
 
 .abb {
       background: url("../images/abb.png") center center no-repeat;
@@ -3435,7 +3475,7 @@ Client and Testimonial Section - clients page
       width:80%;
 }
 
-
+*/
 
 
 
@@ -3544,7 +3584,7 @@ Font styles
 }
 
 .industryText ul li h4, .categoryText ul li h4 {
-	font-size: 0.9em;
+	font-size: 0.82rem;
 	text-align: center;
 }
 
@@ -3583,6 +3623,15 @@ Why Us Section
 ---------------------------------------------------------------------------*/
 
 
+.whyUsButton {
+	height: 30vw;
+	padding: 0px 40px;
+
+	flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+}
+
 
 
 /*-------------------------------------------------------------------------
@@ -3604,7 +3653,7 @@ What we Offer  Section - only home page
 /*-------------------------------------------------------------------------
  Testimonial Section - only home page
 ---------------------------------------------------------------------------*/
-
+/*
 .homePage .testimonialSection {
       width:100%;
       height:50vw;
@@ -3613,7 +3662,7 @@ What we Offer  Section - only home page
 
 .quoteBox .flex-direction-nav{
       display: block;
-}
+}*/
 
 /*-------------------------------------------------------------------------
  Client Section -Only home page
@@ -3639,10 +3688,10 @@ What we Offer  Section - only home page
 /*-------------------------------------------------------------------------
  Testimonial Section
 ---------------------------------------------------------------------------*/
-
+/*
 .quoteBox p {
 	max-width: 80%;
-}
+}*/
 
 
 
@@ -3675,11 +3724,11 @@ What we Offer  Section - only home page
 ---------------------------------------------------------------------------*/
 
 .adventLogo {
-
+	padding: 0;
 }
 
 .footerCol2 {
-	padding: 30px;
+	padding: 1.3vw;
 }
 
 .accord {
@@ -3742,10 +3791,10 @@ What we Offer  Section - only home page
 Intro Section -except home page - all pages
 ---------------------------------------------------------------------------*/
 
-.textHigh {
+/*.textHigh {
       width:50%;
       height:30vw;
-}
+}*/
 
 
 
@@ -3753,7 +3802,7 @@ Intro Section -except home page - all pages
 /*-------------------------------------------------------------------------
 Submit Resume Form - Submit Resume page
 ---------------------------------------------------------------------------*/
-
+/*
 
 #resumeForm {
 	margin-right: 180px;
@@ -3797,7 +3846,7 @@ Submit Resume Form - Submit Resume page
 .cLetterClass .inputBox{
 	padding: 0;
 }
-
+*/
 
 
 
@@ -3835,7 +3884,7 @@ industries And Categories Section - industries And Categories
 }
 
 .industryText ul li, .categoryText ul li {
-	padding: 1px 5px 5px;
+	padding: 1px 0px 5px;
 	margin: 5px;
 	flex-direction: column;
 		-ms-flex-direction: column;
@@ -3853,6 +3902,11 @@ industries And Categories Section - industries And Categories
 	align-items: stretch;
 		-ms-flex-align: stretch;
 		-webkit-align-items: stretch;
+}
+
+.indnCatSection i {
+	height: 80px;
+	width: 80px;
 }
 
 
@@ -3981,18 +4035,18 @@ Font styles
 
 .whyUsHead h2 {
 	margin: 0;
-	font-size: 3.5em;
+	font-size: 4.5vw;
 }
 
 .indnCatImg h4 {
-	font-size: 3em;
+	font-size: 3.5vw;
 }
 
-.testimonialSection h2, .clientSection h2,
+/*.testimonialSection h2, .clientSection h2,
 .socialSection h2.socialTitle, .contactSection h2.contactTitle {
 	font-size: 1.5em;
 	top: -70px;
-}
+}*/
 
 .whyUsButton .whyUsBtn {
       position: absolute;
@@ -4046,29 +4100,20 @@ Font styles
 		-webkit-transform: translate(-50%,-50%);
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
-      font-size: 3.5em;
+      font-size: 4.1vw;
       text-align: right;
 }
 
 
 
-.our-hiring-methodology .introHead h2
- {
-      font-size: 2.8vw;
-}
-
 .meetTheTeam .introHead h2, .our-services .introHead h2,
-.advent-culture .introHead h2, .submit-resume .introHead h2
- {
-	font-size: 3.8vw;
-}
-
+.advent-culture .introHead h2, .submit-resume .introHead h2,
 .diversity-and-inclusion .introHead h2,
 .our-business-model .introHead h2,
 .looking-for-a-job .introHead h2,
 .disclaimer .introHead h2
  {
-	font-size: 3.5vw;
+	font-size: 4vw;
 }
 
 .core-competencies .introHead h2,
@@ -4076,14 +4121,13 @@ Font styles
 .enterprise-mobility .introHead h2,
 .application-management-services .introHead h2,
 .terms-n-conditions .introHead h2,
-.privacy-policy .introHead h2
+.privacy-policy .introHead h2,
+.our-hiring-methodology .introHead h2,
+.csr .introHead h2
  {
-	font-size: 3.2vw;
-}
-
-.csr .introHead h2 {
 	font-size: 3vw;
 }
+
 
 .textHigh h5 {
 	padding: 20px 70px 0 20px;
@@ -4204,7 +4248,7 @@ Why Us Section - only for home page
 }
 
 .whyUsText p {
-      padding: 80px 20px;
+      /*padding: 80px 20px;*/
 }
 
 .whyUsButton {
@@ -4214,6 +4258,12 @@ Why Us Section - only for home page
       text-align: center;
 }
 
+.whyUsButton {
+	padding: 50px 20px;
+	flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+}
 
 
 .whyUsButton br {
@@ -4259,7 +4309,7 @@ What we Offer  Section
  Testimonial Section - For home page only
 ---------------------------------------------------------------------------*/
 
-.homePage .testimonialSection {
+/*.homePage .testimonialSection {
       width: 100%;
       height: 25vw;
       margin-top: 120px;
@@ -4267,7 +4317,7 @@ What we Offer  Section
 
 .quoteBox p {
 	max-width: 70%;
-}
+}*/
 
 
 /*-------------------------------------------------------------------------
@@ -4523,7 +4573,7 @@ What we Offer  Section
 }*/
 
 .homePage .contactSection {
-	padding: 0 200px;
+	padding: 0 12vw;
 }
 
 .wpcf7-form textarea {
@@ -4537,7 +4587,7 @@ What we Offer  Section
 
 .contactSection {
       height: 360px;
-	padding: 0 200px;
+	padding: 0 12vw;
 }
 
 .contactFlex {
@@ -4666,7 +4716,7 @@ Intro Section
 }
 
 .introText {
-	padding: 80px 180px 5px;
+	padding: 80px 12vw 5px;
 }
 
 .subSection {
@@ -4678,7 +4728,7 @@ Intro Section
 }
 
 .subSectionText {
-	padding: 0px 180px 0px;
+	padding: 0px 13vw 0px;
 }
 
 .introText p, .subSectionText p {
@@ -4698,17 +4748,7 @@ Intro Section
 Our Hiring Method Section - Our Hiring Methodology
 ---------------------------------------------------------------------------*/
 
-.hiringMethodSection {
-	padding: 0px 180px;
-}
 
-.hiringProgressBar {
-	width: 20%;
-}
-
-.hiringText {
-	width: 80%;
-}
 
 /*-------------------------------------------------------------------------
 industries And Categories Section - industries And Categories
@@ -4735,18 +4775,24 @@ industries And Categories Section - industries And Categories
 	height:auto;
 }
 
+.indnCatSection i {
+	height: 6.1vw;
+	width: 6.1vw;
+}
+
+
 /*-------------------------------------------------------------------------
 Core Competencies  Section - core Competencies
 ---------------------------------------------------------------------------*/
 
 
 .menu-competencies li{
-	width: 220px;
+	width: 16vw;
 }
 
 .competencyText {
 	width: 67%;
-	/*padding: 40px 15% 20px;*/
+
 }
 
 .competencyImg {
@@ -4757,7 +4803,7 @@ Core Competencies  Section - core Competencies
 /*-------------------------------------------------------------------------
 NEWS Section - NEWS page
 ---------------------------------------------------------------------------*/
-
+/*
 .newsSection {
       flex-direction: row;
 		-ms-flex-direction: row;
@@ -4795,22 +4841,22 @@ NEWS Section - NEWS page
 
 .newsImg {
 	height:25vw;
-}
+}*/
 
 /*-------------------------------------------------------------------------
 CSR Section - CSR
 ---------------------------------------------------------------------------*/
-
+/*
 .csrImgBox {
       height:25vw;
       width:25%;
-}
+}*/
 
 /*-------------------------------------------------------------------------
 Client and Testimonial Section - clients
 ---------------------------------------------------------------------------*/
 
-.clientNTestSection {
+/*.clientNTestSection {
       flex-direction: row;
 		-ms-flex-direction: row;
 		-webkit-flex-direction: row;
@@ -4824,7 +4870,7 @@ Client and Testimonial Section - clients
 .clients .testimonialSection {
       width:50%;
       height:50vw;
-}
+}*/
 
 /*-------------------------------------------------------------------------
 Also See Section
