@@ -21,8 +21,16 @@ if it's not present, don't show loader */
 }
 
 
-.white{
-	display: block;
+.loadingPage {
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -34,6 +42,12 @@ if it's not present, don't show loader */
 	z-index: 2000;
 }
 
+.loadingImage {
+	width:100px;
+	height: 100px;
+	background: url("../images/ring.svg") no-repeat;
+	background-size: contain;
+}
 
 
 

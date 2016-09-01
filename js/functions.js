@@ -172,8 +172,8 @@ if (imgPath) {
          $(this).remove();
 
          // [do something here...]
-         $(".white").css({"display": "none"});
-         console.log("hahahah");
+         $(".loadingPage").css({"display": "none"});
+         
    });
 
 
