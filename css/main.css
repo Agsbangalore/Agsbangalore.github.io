@@ -21,7 +21,18 @@ if it's not present, don't show loader */
 }
 
 
-
+.white{
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	background: white;
+	opacity: 1;
+	pointer-events: none;
+	z-index: 2000;
+}
 
 
 

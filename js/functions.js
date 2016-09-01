@@ -164,13 +164,20 @@ $('#navButton').click(function(){
 
 
 
+var imgPath = $('.bg-img').css('background-image');
+imgPath = imgPath && imgPath.match(/url\((['"])?(.*?)\1\)/);
+imgPath = imgPath && imgPath[2];
+if (imgPath) {
+   $('<img>').attr('src', imgPath).on('load',function(){
+         $(this).remove();
+
+         // [do something here...]
+         $(".white").css({"display": "none"});
+         console.log("hahahah");
+   });
 
 
-
-
-
-
-
+}
 
 
 
