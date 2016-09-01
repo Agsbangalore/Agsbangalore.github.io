@@ -164,7 +164,7 @@ $('#navButton').click(function(){
 
 
 
-var imgPath = $('.bg-img').css('background-image');
+var imgPath = $('.contactSection').css('background-image');
 imgPath = imgPath && imgPath.match(/url\((['"])?(.*?)\1\)/);
 imgPath = imgPath && imgPath[2];
 if (imgPath) {
