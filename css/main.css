@@ -1331,6 +1331,7 @@ Client Section - For home page only
       margin-top: 120px;
       border-top: 0.5px solid #999;
       border-bottom: 0.5px solid #999;
+	overflow: hidden;
 }
 
 h2.clientTitle{
