@@ -164,7 +164,7 @@ $('#navButton').click(function(){
 
 
 
-var imgPath = $('.heroImage').css('background-image');
+var imgPath = $('.contactsection').css('background-image');
 imgPath = imgPath && imgPath.match(/url\((['"])?(.*?)\1\)/);
 imgPath = imgPath && imgPath[2];
 if (imgPath) {
@@ -178,6 +178,8 @@ if (imgPath) {
 
 
 }
+
+
 
 
 
