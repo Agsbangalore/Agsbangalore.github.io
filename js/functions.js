@@ -173,7 +173,7 @@ if (imgPath) {
 
          // [do something here...]
          $(".loadingPage").css({"display": "none"});
-         
+         console.log(imgPath);
    });
 
 
