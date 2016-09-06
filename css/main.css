@@ -791,11 +791,13 @@ Hero Image Section - All pages
 
 .videoOverlay {
       position: absolute;
-      background: rgba(0,0,0,0.1) url("../images/In-And-Out.jpg") top right no-repeat;
+      background: url("../images/black-dots.png") repeat;
       top:0;
       bottom:0;
       left:0;
       right:0;
+	pointer-events: none;
+	opacity: 0.5;
 }
 
 video {
@@ -1070,7 +1072,7 @@ what we offer Section - For home page only
 	width:100%;
 }
 
-.tileEffect figcaption{
+.tileEffect figcaption {
 	position:absolute;
 	top:0;
 	display: block;
@@ -1153,7 +1155,6 @@ what we offer Section - For home page only
 		-moz-transform: translate3d(0,0,0);
 		-o-transform: translate3d(0,0,0);
 }
-
 
 .feature1 .img {
       background: linear-gradient( rgba(239,83,80,0.75), rgba(239,83,80,0.75) ), url("../images/feature1.jpg") center top no-repeat;
