@@ -232,10 +232,9 @@ Font styles
       white-space: nowrap;
 }
 
-
 .tileEffect h4 {
 	margin: 0;
-	/*z-index: 1;*/
+	z-index: 1;
 	text-decoration: none;
 	text-transform: none;
       color: white;
@@ -1064,6 +1063,18 @@ what we offer Section - For home page only
 .tileEffect img {
 	height: 100%;
 	width: 100%;
+}
+
+.tileEffect div::before {
+	position: absolute;
+	top:0;
+	left:0;
+	content: '';
+	bottom:0;
+	right:0;
+	display: block;
+	background: url("../images/black-dots.png");
+	opacity: 0.2;
 }
 
 .tileEffect, .tileEffect .img {
@@ -2770,8 +2781,6 @@ industries And Categories Section - industries And Categories page
 		-ms-flex-pack: center;
 		-webkit-justify-content: center;
 }
-
-
 
 .industryText h4, .categoryText h4 {
 	margin: 2px 1px;
