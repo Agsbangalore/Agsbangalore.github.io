@@ -1517,7 +1517,7 @@ div.clientBox{
 }
 
 .abbott {
-      background: url("../images/abbott.jpg") center center no-repeat;
+      background: url("../images/abbott.png") center center no-repeat;
       background-size: contain;
       height:80%;
       width:80%;
@@ -1566,7 +1566,7 @@ div.clientBox{
 }
 
 .datalogic {
-      background: url("../images/datalogic.jpg") center center no-repeat;
+      background: url("../images/datalogic.png") center center no-repeat;
       background-size: contain;
       height:90%;
       width:90%;
@@ -1608,21 +1608,21 @@ div.clientBox{
 }
 
 .humana {
-      background: url("../images/humana.jpg") center center no-repeat;
+      background: url("../images/humana.png") center center no-repeat;
       background-size: contain;
       height:80%;
       width:80%;
 }
 
 .mercedes {
-      background: url("../images/mercedes.jpg") center center no-repeat;
+      background: url("../images/mercedes.png") center center no-repeat;
       background-size: contain;
       height:80%;
       width:80%;
 }
 
 .mtbank {
-      background: url("../images/mtBank.jpg") center center no-repeat;
+      background: url("../images/mtBank.png") center center no-repeat;
       background-size: contain;
       height:80%;
       width:80%;
