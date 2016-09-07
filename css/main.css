@@ -1792,6 +1792,7 @@ Contact Section - For Home page and others
 	height: 100%;
 	content:'';
 	background: url("../images/black-dots.png") repeat;
+	opacity: 0.3;
 }
 
 h2.contactTitle {
