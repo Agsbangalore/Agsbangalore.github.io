@@ -241,6 +241,7 @@ Font styles
 	text-align: center;
       font-family: 'Lato', sans-serif;
       font-weight: 900;
+	pointer-events: none;
 	transition: transform 0.35s, color 0.35s;
 		-webkit-transition: -webkit-transform 0.35s, color 0.35s;
 		transition: -webkit-transform 0.35s, color 0.35s;
@@ -252,13 +253,13 @@ Font styles
 	color: #fff;
 }
 
-/*.homePage*/ .tileEffect:hover h4 {
-	font-size: 160%;
-}
+/*.tileEffect:hover h4 {
+	font-size: 120%;
+}*/
 
-.linkBox .tileEffect:hover h4 {
+/*.linkBox .tileEffect:hover h4 {
 	font-size: 160%;
-}
+}*/
 
 .tileEffect h4 {
 	font-size: 5vw;
@@ -2146,7 +2147,7 @@ Footer Section
       text-align: center;
 }
 .footerCol1 {
-      padding: 30px;
+      padding: 30px 10px;
 }
 
 
@@ -2281,8 +2282,8 @@ Hero Image Section - except home page, all [ages]
 .heroImage{
       display: block;
       position: relative;
-      background:url("../images/bg.jpg") top right no-repeat;
-      background-size: cover;
+      /*background:url("../images/bg.jpg") top right no-repeat;
+      background-size: cover;*/
       width:100%;
       height:60vh;
       width:100%;
@@ -2315,7 +2316,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .diversity-and-inclusion .heroImage {
-	background:url("../images/diversity-n-inclusion3.jpg") center -250px no-repeat;
+	background:url("../images/diversity-n-inclusion3.jpg") center no-repeat;
       background-size: cover;
 }
 
@@ -2325,12 +2326,12 @@ Hero Image Section - except home page, all [ages]
 }
 
 .our-hiring-methodology .heroImage {
-	background:url("../images/our-hiring-methodology.jpg") center -270px no-repeat;
+	background:url("../images/our-hiring-methodology.jpg") center no-repeat;
       background-size: cover;
 }
 
 .advent-culture .heroImage {
-	background:url("../images/adventculturebg.jpg") center 0px no-repeat;
+	background:url("../images/adventculturebg.jpg") center no-repeat;
       background-size: cover;
 }
 
@@ -2340,13 +2341,13 @@ Hero Image Section - except home page, all [ages]
 }
 
 .news .heroImage {
-	background:url("../images/newsbg.jpg") center 0px no-repeat;
+	background:url("../images/newsbg.jpg") center no-repeat;
       background-size: cover;
 }
 
 .disclaimer .heroImage, .privacy-policy .heroImage,
 .terms-n-conditions .heroImage {
-	background:url("../images/newsbg.jpg") center 0px no-repeat;
+	background:url("../images/newsbg.jpg") center no-repeat;
       background-size: cover;
 }
 
@@ -3660,7 +3661,11 @@ Font styles
 }
 
 .tileEffect h4 {
-	font-size: 1.4rem;
+	font-size: 1.4rem;/*1.4rem*/
+}
+
+.tileEffect:hover h4 {
+	font-size: 160%;
 }
 
 .textHigh h5 {
@@ -3691,6 +3696,10 @@ Font styles
 
 .linkBox .tileEffect h4 {
 	font-size: 1.8rem;
+}
+
+.linkBox .tileEffect:hover h4 {
+	font-size: 160%;
 }
 
 /*-------------------------------------------------------------------------
