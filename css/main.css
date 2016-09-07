@@ -1519,8 +1519,8 @@ div.clientBox{
 .abbott {
       background: url("../images/abbott.png") center center no-repeat;
       background-size: contain;
-      height:80%;
-      width:80%;
+      height:90%;
+      width:90%;
 }
 
 .airlounge {
@@ -1589,8 +1589,8 @@ div.clientBox{
 .disney {
       background: url("../images/disney.png") center center no-repeat;
       background-size: contain;
-      height:90%;
-      width:90%;
+      height:80%;
+      width:80%;
 }
 
 .fpl {
@@ -2294,8 +2294,8 @@ Hero Image Section - except home page, all [ages]
 .heroImage{
       display: block;
       position: relative;
-      /*background:url("../images/bg.jpg") top right no-repeat;
-      background-size: cover;*/
+	background:url("../images/In-And-Out.jpg") top right no-repeat;
+      background-size: cover;
       width:100%;
       height:60vh;
       width:100%;
