@@ -62,8 +62,8 @@ if($(window).width()<750){
          $(window).on('load',function() {
          $('.flexslider.clientBox').flexslider({
         animation: "slide",
-        animationSpeed: 400,
-        animationLoop: false,
+        animationSpeed: 200,
+        animationLoop: true,
         itemWidth: 210,
         itemMargin: 0,                          //default itemMargin: 5 ******
         minItems: getGridSize(), // use function to pull in initial value
