@@ -767,7 +767,7 @@ Hero Image Section - All pages
 .homePage .heroImage {
       display: block;
       position: relative;
-	background:url("../images/mobile/In-And-Out.jpg") top right no-repeat;
+	background:url("../images/In-And-Out.jpg") top right no-repeat;
       background-size: cover;
       width:100%;
       height:100vh;
@@ -1005,7 +1005,7 @@ Why Us Secion - Home page only
 }
 
 .sticker3{
-	background: url("../images/nmsdc.jpg") no-repeat center center;
+	background: url("../images/nmsdc.png") no-repeat center center;
 	background-size: contain;
 }
 
@@ -1784,6 +1784,16 @@ Contact Section - For Home page and others
 	box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
 }
 
+.contactSection::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content:'';
+	background: url("../images/black-dots.png") repeat;
+}
+
 h2.contactTitle {
       position: absolute;
       left: 50%;
@@ -1844,6 +1854,7 @@ h2.contactTitle {
 		-webkit-align-content: center;
 	padding: 20px 20px 20px 20px;
 	color: white;
+	z-index: 100;
 }
 
 .wpcf7-form p {
