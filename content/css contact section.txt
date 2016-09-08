@@ -1,0 +1,488 @@
+
+/*-------------------------------------------------------------------------
+Contact Section - For Home page and others
+---------------------------------------------------------------------------*/
+
+.homePage .contactSection {
+	padding: 0 10px;
+}
+
+.contactSection {
+      position: relative;
+      background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      margin-top: 120px;
+	-webkit-box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
+	-moz-box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
+	box-shadow: inset 0px 12px 11px -9px rgba(0,0,0,0.7);
+}
+
+.contactSection::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content:'';
+	background: url("../images/black-dots.png") repeat;
+	opacity: 0.3;
+}
+
+h2.contactTitle {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+      top: -70px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.contactFlex {
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+      flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	height: 100%;
+}
+
+.widget_text {
+	list-style: none;
+	list-style-type: none;
+}
+
+.contactFlex p {
+	color: white;
+}
+
+#name, #email {
+	margin: 5px 1%;
+}
+
+#message {
+	margin: 5px 1%;
+}
+
+.inputFlex {
+	padding: 10px;
+	background: none;
+	border: 2px solid white;
+	outline: none !important;
+	transition: all 0.15s ease-in-out;
+		-webkit-transition: all 0.15s ease-in-out;
+		-moz-transition: all 0.15s ease-in-out;
+		-o-transition: all 0.15s ease-in-out;
+}
+
+.inputFlex:focus {
+	border-color: transparent;
+	border-bottom: 4px solid white;
+}
+
+.wpcf7-form {
+	flex-grow: 1;
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+      flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+	align-content: center;
+		-ms-flex-line-pack: center;
+		-webkit-align-content: center;
+	padding: 20px 20px 20px 20px;
+	color: white;
+	z-index: 100;
+}
+
+.wpcf7-form p {
+	margin: 0;
+}
+
+.wpcf7-form p {
+	width: 100%;
+}
+
+.wpcf7-form p:nth-child(5) {
+	text-align: center;
+}
+
+.wpcf7-form p span {
+	width: 100%;
+}
+
+/*.wpcf7 input[type=text],
+.wpcf7 input[type=email] {
+	width: 98%;
+}*/
+
+.wpcf7-form input[type=text],
+.wpcf7-form input[type=email] {
+	width: 98%;
+}
+
+.wpcf7-form textarea {
+	width: 98%;
+	resize: none;
+	height: 180px;
+}
+
+.wpcf7-form input[type=submit] {
+	width: 35%;
+}
+
+.socialMediaIcons {
+	width:100%;
+	height:25%;
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+      flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+	align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+}
+
+.socialMediaIcons p {
+	margin:0px;
+	margin-bottom:10px;
+}
+
+.mediaBox {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 36px;
+	height: 80px;
+	width: 300px;
+	border: 2px solid white;
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+      flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+}
+
+.socialLogo {
+	height:73px;
+	width:73px;
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+      align-items: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+	justify-content: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+}
+
+.socialLogo a i {
+	font-size: 2em;
+	color: white;
+}
+
+
+/*styling of placeholder text*/
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+/*-----------------------------------------*/
+
+#adventform {
+	height:100%;
+	display: flex;
+	align-items: center;
+}
+
+
+
+/*.homePage .contactSection {
+      position: relative;
+      background: linear-gradient( rgba(31,170,235, 0.3), rgba(31,170,235, 0.5) ), url("../images/contactBG.jpg") center top no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 360px;
+      margin-top: 120px;
+	-webkit-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 15px 11px -9px rgba(0,0,0,0.5);
+}
+
+
+
+.homePage h2.contactTitle {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+      top: -70px;
+	white-space: nowrap;
+}
+
+
+.homePage .contactForm {
+      background: none;
+      position: absolute;
+      width: 80%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+}
+
+.contactForm p {
+	display: none;
+}
+
+*/
+
+
+
+/*-----------------------------------------*/
+
+/*
+.homePage .inputFloat {
+      float: left;
+      padding: 10px;
+	border: 2px solid white;
+	background: none;
+	outline: none !important;
+	transition: all 0.15s ease-in-out;
+		-webkit-transition: all 0.15s ease-in-out;
+		-moz-transition: all 0.15s ease-in-out;
+		-o-transition: all 0.15s ease-in-out;
+}
+
+#name, #email {
+      width: 98%;
+      margin:5px 1%;
+      color: white;
+}
+
+.homePage .contactForm textarea {
+      width: 98%;
+      height: 100px;
+      margin: 5px 1% 10px;
+	color: white;
+      resize: none;
+}
+
+#formSubmit {
+      display: block;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 15px;
+      padding: 10px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+}
+
+.homePage .inputFloat:focus {
+	border-color: transparent;
+	border-bottom: 4px solid white;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Contact Section - For Home page and others
+---------------------------------------------------------------------------*/
+
+.homePage .contactSection {
+	padding: 0 100px;
+}
+
+.wpcf7-form textarea {
+	height: 120px;
+}
+
+.wpcf7-form input[type=submit] {
+	width:25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+ Contact Section - For Home page and others
+---------------------------------------------------------------------------*/
+
+/*#name, #email {
+      width: 48%;
+      margin:5px 1%;
+      background: none;
+      color: white;
+}*/
+
+#message {
+	margin:5px 0.5%;
+}
+
+.homePage .contactSection {
+	padding: 0 12vw;
+}
+
+.wpcf7-form textarea {
+	width: 99%;
+	height: 80px;
+}
+
+.wpcf7-form p:nth-child(2),
+.wpcf7-form p:nth-child(3) {
+	width: 50%;
+}
+
+/*.wpcf7-form p span {
+	width: 100%;
+}*/
+
+.wpcf7-form input[type=text],
+.wpcf7-form input[type=email] {
+	width: 98%;
+}
+
+.contactSection {
+      height: 360px;
+}
+
+/*.widget_text {
+	list-style: none;
+	list-style-type: none;
+}*/
+
+.contactFlex {
+      flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+.wpcf7-form {
+	padding: 20px 20px 20px 50px;
+}
+
+.homePage .wpcf7-form {
+	padding: 20px 20px 20px 20px;
+}
+
+.wpcf7-form input[type=submit] {
+	width: 15%;
+}
+
+.contactForm p {
+	margin:5px 1%;
+      text-align: left;
+}
+
+/*.wpcf7-form button {
+	width: 5%;
+}*/
+
+.socialMediaIcons {
+	width:20%;
+	height:100%;
+}
+
+.socialMediaIcons p {
+	margin-right: 40px;
+}
+
+.mediaBox {
+	margin-top: 5px;
+	margin-right: 40px;
+	height: 150px;
+	width: 150px;
+}
+
+
+
+
+
+
+

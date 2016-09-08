@@ -253,14 +253,6 @@ Font styles
 	color: #fff;
 }
 
-/*.tileEffect:hover h4 {
-	font-size: 120%;
-}*/
-
-/*.linkBox .tileEffect:hover h4 {
-	font-size: 160%;
-}*/
-
 .tileEffect h4 {
 	font-size: 5vw;
 	transition: all 0.35s;
@@ -1939,15 +1931,6 @@ h2.contactTitle {
 }
 
 
-
-
-
-
-
-
-
-
-
 /*styling of placeholder text*/
 ::-webkit-input-placeholder {
    color: white;
@@ -1966,30 +1949,6 @@ h2.contactTitle {
 }
 
 /*-----------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*.homePage .contactSection {
@@ -2347,7 +2306,7 @@ Hero Image Section - except home page, all [ages]
       background-size: cover;
 }
 
-.career .heroImage {
+.careers .heroImage {
 	background:url("../images/careerbg.jpg") center no-repeat;
       background-size: cover;
 }
@@ -2373,7 +2332,7 @@ Intro Section - except home page, all pages
 }
 
 .company .introHeadFloat, .our-services .introHeadFloat,
-.core-competencies .introHeadFloat, .career .introHeadFloat,
+.core-competencies .introHeadFloat, .careers .introHeadFloat,
 .advent-culture .introHeadFloat,
 .looking-for-a-job .introHeadFloat, .disclaimer .introHeadFloat,
 .privacy-policy .introHeadFloat {
@@ -2443,7 +2402,7 @@ Intro Section - except home page, all pages
 	background: rgba(254,194,0,1);
 }
 
-.career .introHead {
+.careers .introHead {
 	background: slateblue;
 }
 
@@ -4796,7 +4755,7 @@ Intro Section
 
 
 .company .introHeadFloat, .our-services .introHeadFloat,
-.core-competencies .introHeadFloat, .career .introHeadFloat,
+.core-competencies .introHeadFloat, .careers .introHeadFloat,
 .advent-culture .introHeadFloat,.looking-for-a-job .introHeadFloat,
 .our-hiring-methodology .introHeadFloat, .our-business-model .introHeadFloat,
 .diversity-and-inclusion .introHeadFloat, .csr .introHeadFloat,
