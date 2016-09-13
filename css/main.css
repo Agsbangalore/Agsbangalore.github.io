@@ -936,8 +936,14 @@ Why Us Secion - Home page only
 
 .whyUsText {
 	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 	justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
 	align-items: center;
+		-webkit-align-content: stretch;
+		-ms-flex-line-pack: stretch;
 }
 
 .whyUsText::after, .whyUsHead::after {
