@@ -6,6 +6,7 @@ global styles
 ---------------------------------------------------------------------------*/
 
 
+
 /* This only works with JavaScript,
 if it's not present, don't show loader */
 .no-js #loader { display: none;  }
@@ -88,7 +89,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 	-webkit-font-smoothing: antialiased;
 }
 
-
+h1, h2, h3, h4, h5, h6, li, ul, ol, a {
+	-webkit-font-smoothing: antialiased;
+}
 
 
 
