@@ -13,22 +13,25 @@ if($(window).width()>1000){
                   introHead = $('.introHead').offset().top,
                   introHeadBottom = $('.introHeadFloat').offset().top + $('.introHeadFloat').height();
 
-                  /*console.log('windowHeight' + windowHeight);
-                  console.log('introHeadBottom' + introHeadBottom);
-                  console.log(wScroll+windowHeight);*/
+                  // console.log("wScroll "+wScroll);
+                  // console.log("introTop "+introTop);
+                  // console.log("windowHeight "+windowHeight);
+                  // console.log("introHeadHeight "+introHeadHeight);
+                  // console.log("introHead "+introHead);
+                  // console.log("introHeadBottom "+introHeadBottom);
+                  // console.log("==================");
 
-
-                  if(((wScroll+windowHeight)>=introHeadBottom)&&
-                  ((wScroll+windowHeight)<=introHeadBottom+($('.introHeadFloat').height()-145))){
+                  if(((wScroll+windowHeight)>=introHeadBottom+1)&&
+                  ((wScroll+windowHeight)<=introHeadBottom+((introHeadHeight)/3))){
 
                         $('.introHead').css({
-                        'transform' : 'translate(0px, '+ (-50+((wScroll+windowHeight)-introHeadBottom)) +'px)'
+                        'transform' : 'translate(0px, '+ (-12.5+((wScroll+windowHeight)-introHeadBottom))/8 +'vw)'
                         });
 
                   }else if ((wScroll+windowHeight)>introHeadBottom) {
 
                         $('.introHead').css({
-                        'transform' : 'translate(0px, 150px)'
+                        'transform' : 'translate(0px, 12.5vw)'
                         });
                   }
 

@@ -4769,11 +4769,11 @@ Intro Section
 	float: left;
       width:25%;
 	margin-right: 70px;
-      margin-bottom: 60px;
+      margin-bottom: 60px;	
 }
 
 .introSection .introHead {
-      top: -150px;
+      top: -12.5vw;
 	height: 100%;
 }
 
