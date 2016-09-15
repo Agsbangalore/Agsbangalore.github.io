@@ -2599,7 +2599,7 @@ Map Section - Contact Us page
 Our Hiring Method Section - Our Hiring Methodology page
 ---------------------------------------------------------------------------*/
 
-.hiringMethodSection {
+/*.hiringMethodSection {
 	display: flex;
 		display: -ms-flexbox;
 		display: -webkit-flex;
@@ -2658,7 +2658,7 @@ Our Hiring Method Section - Our Hiring Methodology page
 .hiringProcess h2 {
 	margin: 0;
 }
-
+*/
 
 
 
@@ -4769,7 +4769,7 @@ Intro Section
 	float: left;
       width:25%;
 	margin-right: 70px;
-      margin-bottom: 60px;	
+      margin-bottom: 60px;
 }
 
 .introSection .introHead {
