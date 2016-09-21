@@ -2296,7 +2296,7 @@ Hero Image Section - except home page, all [ages]
 }
 
 .our-hiring-methodology .heroImage {
-	background:url("../images/our-hiring-methodology.jpg") center no-repeat;
+	background:url("../images/our-hiring-methodology.jpg") center -260px no-repeat;
       background-size: cover;
 }
 
