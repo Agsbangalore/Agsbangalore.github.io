@@ -3958,9 +3958,9 @@ industries And Categories Section - industries And Categories
 		-webkit-flex-direction: column;
 	width: 30%;
 	height: 23%;
-	justify-content: flex-start;
-		-ms-flex-pack: start;
-		-webkit-justify-content: flex-start;
+	justify-content: center; /*flex-start*/
+		-ms-flex-pack: center; /*start*/
+		-webkit-justify-content: center; /*flex-start*/
 }
 
 .indnCatImg {
