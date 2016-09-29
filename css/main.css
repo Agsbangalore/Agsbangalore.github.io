@@ -77,11 +77,17 @@ h1.hideHeader, h2.hideHeader{
 
 h2, h3, h4 {
 	color: rgba(31, 170, 235, 1);
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	font-style: italic;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	/*font-style: italic;
 	font-size: 1.6em;
-	text-transform: uppercase;
+	text-transform: uppercase;*/
+}
+
+p{
+	font-family:"Raleway", sans-serif;
+	font-weight: 400;
+	line-weight: 1.2;
 }
 
 h1,h2,h3,h4,h5,h6,li,ul,ol,a,p {
@@ -108,6 +114,9 @@ Fonts used   ----------------remove later
       font-family: 'Dancing Script', cursive;
       font-family: 'Muli', sans-serif;
       font-family: 'Open Sans', sans-serif;
+
+	font-family: 'Playfair Display', serif;
+	font-family: 'Raleway', sans-serif;
 */
 
 
@@ -133,6 +142,7 @@ Font styles
       font-weight:700;
       font-size: 2.5em;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .ctaButton {
@@ -164,11 +174,11 @@ Font styles
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
       color: rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
+      font-family: 'Playfair Display', sans-serif;
       font-weight: 900;
-      font-style: italic;
+      font-style: normal;
       font-size: 2.5em;
-      text-transform: uppercase;
+      text-transform: none;
 }
 
 .whyUsText p {
@@ -176,11 +186,11 @@ Font styles
       margin: 0 auto;
       max-width: 600px;
       text-align: justify;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
       font-size: 1.1rem;
       line-height: 1.7rem;
-      color:#777;
+      color:rgba(0,0,0,0.8);
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -232,8 +242,9 @@ Font styles
 	text-transform: none;
       color: white;
 	text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+	font-style: italic;
 	pointer-events: none;
 	transition: transform 0.35s, color 0.35s;
 		-webkit-transition: -webkit-transform 0.35s, color 0.35s;
@@ -272,6 +283,8 @@ Font styles
 }
 
 .footerSection h3 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
 	color: rgba(31, 170, 235, 1);
 	font-style: italic;
 	font-size: 1.4em;
@@ -280,6 +293,7 @@ Font styles
 
 .footerSection p {
       font-size: 16px;
+	line-height: 1.3;
 }
 
 .siteInfo p, .siteInfo li {
@@ -290,12 +304,13 @@ Font styles
 	margin: 12px auto;
 	display: block;
       color: white;
-	font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
+	font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      /*font-style: italic;*/
       font-size: 1.8em;
       text-align: center;
-      text-transform: uppercase;
+	line-height: 1;
+      /*text-transform: uppercase;*/
 }
 
 .csr .introHead h2, .our-hiring-methodology .introHead h2,
@@ -327,9 +342,9 @@ Font styles
 	padding-top: 0px;
       margin: 0;
       margin: 0 auto;
-      text-align: left;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
+      text-align: justify;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
       font-size: 1.2em;
       line-height: 1.7em;
       color: #444;
@@ -338,14 +353,14 @@ Font styles
 
 .introText h3, .subSectionText h3 {
 	text-align: right;
-	font-family: 'Lato', sans-serif;
-      font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+      font-weight: 700;
       font-style: italic;
       font-size: 1.8em;
 	text-transform: uppercase;
 	margin: 80px 0px 20px;
 	padding-right: 20px;
-	border-right: 60px solid orange;
+	border-right: 10px solid orange;
 }
 
 .subSectionOne .subSectionText h3 {
@@ -353,8 +368,8 @@ Font styles
 }
 
 .introText li, .subSection li {
-	font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+      font-weight: 500;
       font-size: 1.2rem;
       line-height: 1.7rem;
 	font-style: italic;
@@ -366,12 +381,12 @@ Font styles
 	font-size: 2.5em;
 }
 
-.industryText ul li h4, .categoryText ul li h4 {
+.industryText ul li p, .categoryText ul li p {
 	color: #333;
 	font-size: 1.2rem;
 	text-align: center;
 	text-transform: none;
-	font-weight: lighter;
+	/*font-weight: lighter;*/
 	max-width: 120px;
 	white-space: pre-wrap;
 }
@@ -384,11 +399,11 @@ Font styles
 	max-width: 300px;
 	color: white;
 	text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
+      font-family: 'Playfair Display', sans-serif;
+      font-weight: 700;
+      font-style: normal;
       font-size: 2.5em;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 .competencyText ul li {
@@ -399,14 +414,14 @@ Font styles
 	font-size: 1.2em;
 }
 
-.competencyImg h4 {
+/*.competencySection */.competencyImg h4 {
 	max-width: 80%;
 	color: white;
 	text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
       font-style: italic;
-      font-size: 1.8em;
+      font-size: 2em;
 	text-transform: none;
 	margin: 0;
 }
@@ -442,6 +457,13 @@ Font styles
       font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-size: 1.3rem;
+}
+
+h2.contactTitle, h2.clientTitle{
+	font-family: "Raleway", sans-serif;
+	font-size: 1.7em;
+	font-weight: 700;
+	font-style: italic;
 }
 
 
@@ -792,14 +814,24 @@ video {
 
 .heroImage .banner {
       position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-		-ms-transform: translate(-50%,-50%);
-		-webkit-transform: translate(-50%,-50%);
-		-moz-transform: translate(-50%,-50%);
-		-o-transform: translate(-50%,-50%);
-      text-align: center;
+	height: 100%;
+	width: 100%;
+	diplay: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+	flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+	justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+	align-items: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	padding: 30px;
       z-index: 1;
       color: white;
 }
@@ -820,7 +852,6 @@ video {
 .ctaButton::after {
 	content: attr(data-text);
 }
-
 
 .buttonEffect {
 	overflow: hidden;
@@ -2465,6 +2496,10 @@ Intro Section - except home page, all pages
 .introText h4, .subSection  h4 {
 	margin: 10px 0px 10px;
 	text-transform: none;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 1.6em;
+	font-style: italic;
 }
 
 .subSectionText {
@@ -2704,7 +2739,7 @@ industries And Categories Section - industries And Categories page
 
 .industryText ul, .categoryText ul {
 	height: 100%;
-	padding: 0.5vw;
+	padding: 2vw 0.5vw 1vw;
 	margin: 0;
 	display: flex;
 		display: -ms-flexbox;
@@ -2753,8 +2788,11 @@ industries And Categories Section - industries And Categories page
 		-webkit-justify-content: center;
 }
 
-.industryText h4, .categoryText h4 {
-	margin: 2px 1px;
+.industryText p, .categoryText p {
+	margin: 0.5vw 1px 2px;
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	font-weight: 400;
 }
 
 .industryImg h4 {
@@ -2903,8 +2941,13 @@ ul.menu-competencies {
 		-ms-flex-pack: distribute;
 }
 
-.menu-competencies li {
-	display: inline-block;
+#nav li {
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
 	font-size: 1em;
 	border: 1px solid grey;
 	background: white;
@@ -2912,19 +2955,19 @@ ul.menu-competencies {
 	text-align: center;
 }
 
-.menu-competencies li a {
+#nav li a {
 	display: block;
-	height: 100%;
+	/*height: 100%;*/
 	width:100%;
 	text-decoration: none;
 	color: grey;
 }
 
-.menu-competencies li:hover {
+#nav li:hover {
 	background: rgba(31, 170, 235, 1);
 }
 
-.menu-competencies li:hover a {
+#nav li:hover a {
 	color: white;
 }
 
@@ -3646,8 +3689,8 @@ Font styles
 	font-size: 3.5em;
 }
 
-.industryText ul li h4, .categoryText ul li h4 {
-	font-size: 0.82rem;
+.industryText ul li p, .categoryText ul li p {
+	font-size: 0.77rem;
 	text-align: center;
 }
 
@@ -3958,9 +4001,9 @@ industries And Categories Section - industries And Categories
 		-webkit-flex-direction: column;
 	width: 30%;
 	height: 23%;
-	justify-content: center; /*flex-start*/
-		-ms-flex-pack: center; /*start*/
-		-webkit-justify-content: center; /*flex-start*/
+	justify-content: flex-start
+		-ms-flex-pack: start
+		-webkit-justify-content: flex-start
 }
 
 .indnCatImg {
@@ -4168,19 +4211,23 @@ Font styles
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
       font-size: 4.1vw;
-      text-align: right;
+      text-align: left;
 }
 
 
 
 .meetTheTeam .introHead h2, .our-services .introHead h2,
 .advent-culture .introHead h2, .submit-resume .introHead h2,
-.diversity-and-inclusion .introHead h2,
-.our-business-model .introHead h2,
 .looking-for-a-job .introHead h2,
 .disclaimer .introHead h2
  {
-	font-size: 4vw;
+	font-size: 4.5vw;
+}
+
+.diversity-and-inclusion .introHead h2,
+.our-business-model .introHead h2{
+	font-size: 3.8vw;
+	line-height: 1.2;
 }
 
 .core-competencies .introHead h2,
@@ -4193,6 +4240,7 @@ Font styles
 .csr .introHead h2
  {
 	font-size: 3vw;
+	line-height: 1.2;
 }
 
 
