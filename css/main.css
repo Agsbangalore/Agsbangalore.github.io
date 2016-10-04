@@ -77,11 +77,17 @@ h1.hideHeader, h2.hideHeader{
 
 h2, h3, h4 {
 	color: rgba(31, 170, 235, 1);
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	font-style: italic;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	/*font-style: italic;
 	font-size: 1.6em;
-	text-transform: uppercase;
+	text-transform: uppercase;*/
+}
+
+p{
+	font-family:"Raleway", sans-serif;
+	font-weight: 400;
+	line-weight: 1.2;
 }
 
 h1,h2,h3,h4,h5,h6,li,ul,ol,a,p {
@@ -108,6 +114,9 @@ Fonts used   ----------------remove later
       font-family: 'Dancing Script', cursive;
       font-family: 'Muli', sans-serif;
       font-family: 'Open Sans', sans-serif;
+
+	font-family: 'Playfair Display', serif;
+	font-family: 'Raleway', sans-serif;
 */
 
 
@@ -133,6 +142,7 @@ Font styles
       font-weight:700;
       font-size: 2.5em;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .ctaButton {
@@ -164,11 +174,11 @@ Font styles
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
       color: rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
+      font-family: 'Playfair Display', sans-serif;
       font-weight: 900;
-      font-style: italic;
+      font-style: normal;
       font-size: 2.5em;
-      text-transform: uppercase;
+      text-transform: none;
 }
 
 .whyUsText p {
@@ -176,11 +186,11 @@ Font styles
       margin: 0 auto;
       max-width: 600px;
       text-align: justify;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
       font-size: 1.1rem;
       line-height: 1.7rem;
-      color:#777;
+      color:rgba(0,0,0,0.8);
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -232,8 +242,9 @@ Font styles
 	text-transform: none;
       color: white;
 	text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+	font-style: italic;
 	pointer-events: none;
 	transition: transform 0.35s, color 0.35s;
 		-webkit-transition: -webkit-transform 0.35s, color 0.35s;
@@ -272,30 +283,41 @@ Font styles
 }
 
 .footerSection h3 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
 	color: rgba(31, 170, 235, 1);
 	font-style: italic;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	text-transform: none;
 }
 
 .footerSection p {
-      font-size: 16px;
+      font-size: 14px;
+	line-height: 1.3;
+	font-weight: 300;
+	color: #d2d2d2;
 }
 
-.siteInfo p, .siteInfo li {
-      font-size: 0.9em;
+.siteInfo p, .siteInfo li a{
+	font-family: "Raleway", sans-serif;
+      font-size: 0.8em;
+	font-weight: 300;
+	color: #999;
+	font-style: italic;
+	text-decoration: none;
 }
 
 .introHead h2 {
 	margin: 12px auto;
 	display: block;
       color: white;
-	font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
+	font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      /*font-style: italic;*/
       font-size: 1.8em;
       text-align: center;
-      text-transform: uppercase;
+	line-height: 1;
+      /*text-transform: uppercase;*/
 }
 
 .csr .introHead h2, .our-hiring-methodology .introHead h2,
@@ -327,9 +349,9 @@ Font styles
 	padding-top: 0px;
       margin: 0;
       margin: 0 auto;
-      text-align: left;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
+      text-align: justify;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
       font-size: 1.2em;
       line-height: 1.7em;
       color: #444;
@@ -338,14 +360,14 @@ Font styles
 
 .introText h3, .subSectionText h3 {
 	text-align: right;
-	font-family: 'Lato', sans-serif;
-      font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+      font-weight: 700;
       font-style: italic;
       font-size: 1.8em;
 	text-transform: uppercase;
 	margin: 80px 0px 20px;
 	padding-right: 20px;
-	border-right: 60px solid orange;
+	border-right: 10px solid orange;
 }
 
 .subSectionOne .subSectionText h3 {
@@ -353,8 +375,8 @@ Font styles
 }
 
 .introText li, .subSection li {
-	font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+      font-weight: 500;
       font-size: 1.2rem;
       line-height: 1.7rem;
 	font-style: italic;
@@ -366,12 +388,12 @@ Font styles
 	font-size: 2.5em;
 }
 
-.industryText ul li h4, .categoryText ul li h4 {
+.industryText ul li p, .categoryText ul li p {
 	color: #333;
 	font-size: 1.2rem;
 	text-align: center;
 	text-transform: none;
-	font-weight: lighter;
+	/*font-weight: lighter;*/
 	max-width: 120px;
 	white-space: pre-wrap;
 }
@@ -384,11 +406,11 @@ Font styles
 	max-width: 300px;
 	color: white;
 	text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      font-style: italic;
+      font-family: 'Playfair Display', sans-serif;
+      font-weight: 700;
+      font-style: normal;
       font-size: 2.5em;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 .competencyText ul li {
@@ -399,14 +421,14 @@ Font styles
 	font-size: 1.2em;
 }
 
-.competencyImg h4 {
+/*.competencySection */.competencyImg h4 {
 	max-width: 80%;
 	color: white;
 	text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
       font-style: italic;
-      font-size: 1.8em;
+      font-size: 2em;
 	text-transform: none;
 	margin: 0;
 }
@@ -439,9 +461,16 @@ Font styles
       color: white;
 	text-align: center;
 	text-decoration: none;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
       font-size: 1.3rem;
+}
+
+h2.contactTitle, h2.clientTitle{
+	font-family: "Raleway", sans-serif;
+	font-size: 1.7em;
+	font-weight: 700;
+	font-style: italic;
 }
 
 
@@ -587,6 +616,10 @@ menu Section
       background: white;
 }
 
+.whiteCover{
+	background: white;
+}
+
 #content-container {
 	position: absolute;
 	top: 0;
@@ -595,7 +628,7 @@ menu Section
 	height: 100%;
 	padding: 75px 0 0 0; /* Top padding must be same as header height*/
 	overflow-y: scroll;
-		-webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
 	background: #fff;
 	z-index: -1;
 }
@@ -704,7 +737,7 @@ menu Section
 Head Section
 ---------------------------------------------------------------------------*/
 .headerSection{
-      /*background:transparent;*/
+      /*background: transparent;*/
 	background:rgba(0,0,0,0.8);
       color:white;
       /*position: fixed;*/
@@ -743,8 +776,6 @@ hgroup {
 
 
 
-
-
 /*-------------------------------------------------------------------------
 Hero Image Section - All pages
 ---------------------------------------------------------------------------*/
@@ -752,11 +783,10 @@ Hero Image Section - All pages
 .homePage .heroImage {
       display: block;
       position: relative;
-	background:url("../images/In-And-Out.jpg") top right no-repeat;
+	background:url("../imag es/In-And-Out.jpg") top right no-repeat;
       background-size: cover;
       width:100%;
-      height:100vh;
-      width:100%;
+      height: auto;
       overflow: hidden;
 }
 
@@ -776,7 +806,7 @@ Hero Image Section - All pages
 
 .videoOverlay {
       position: absolute;
-      background: url("../images/black-dots.png") repeat;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/black-dots.png") center repeat;
       top:0;
       bottom:0;
       left:0;
@@ -789,17 +819,36 @@ video {
 
 }
 
+.heroBGImage{
+	position: fixed;
+	background:url("../images/In-And-Out.jpg") top right no-repeat;
+      background-size: cover;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: -2;
+}
 
 .heroImage .banner {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-		-ms-transform: translate(-50%,-50%);
-		-webkit-transform: translate(-50%,-50%);
-		-moz-transform: translate(-50%,-50%);
-		-o-transform: translate(-50%,-50%);
-      text-align: center;
+      position: relative;
+	min-height: 100vh;
+	width: 100%;
+	diplay: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+	justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+	align-items: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	padding: 40px 20px;
       z-index: 1;
       color: white;
 }
@@ -820,7 +869,6 @@ video {
 .ctaButton::after {
 	content: attr(data-text);
 }
-
 
 .buttonEffect {
 	overflow: hidden;
@@ -871,7 +919,6 @@ video {
 		-o-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-
 .buttonEffect:hover::after {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
@@ -880,6 +927,7 @@ video {
 		-ms-transform: translate3d(0, 0, 0);
 		-o-transform: translate3d(0, 0, 0);
 }
+
 .buttonEffect:hover > span {
 	opacity: 0;
 	transform: translate3d(0, -25%, 0);
@@ -889,8 +937,103 @@ video {
 		-o-transform: translate3d(0, -25%, 0);
 }
 
+.servicesSection {
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+}
 
+.servicesSection p {
+	font-weight: 500;
+	text-shadow: 1px 1px rgba(51,51,51,0.5);
+	max-width: 130px;
+	padding-right: 20px;
+}
 
+.servicesBox {
+	position: relative;
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+	justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+	max-width: 300px;
+	height: 150px;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.servicesBox::after {
+	display: none;
+}
+
+.serviceLogo {
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	/*flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;*/
+	justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+}
+
+.serviceLogo div{
+	display: block;
+	height: 50px;
+	width: 50px;
+	transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+}
+
+.contingentBox .serviceLogo div{
+	background: url("../images/contingent_workforce_services.gif") center center no-repeat;
+	background-size: contain;
+}
+
+.enterpriseBox .serviceLogo div{
+	background: url("../images/enterprise_mobility.gif") center center no-repeat;
+	background-size: contain;
+}
+
+.applicationBox .serviceLogo div{
+	background: url("../images/application_management_service.gif") center center no-repeat;
+	background-size: contain;
+}
+
+.ctaSection {
+	margin: 30px 0 30px;
+}
 
 
 
@@ -2087,12 +2230,37 @@ Footer Section
       display:none;
 }
 
+.siteInfo{
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+}
 
+.info, .info ul, .info ul li, .copyright {
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+	flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+}
 
-.info {
-      text-align: center;
-      float:left;
-      width:100%;
+.info, .copyright{
+	justify-content: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
 }
 
 .adventLogo {
@@ -2170,10 +2338,6 @@ Footer Section
       padding:10px;
 }
 
-.info li a {
-      color: white;
-      text-decoration: none;
-}
 
 .copyright {
       text-align: center;
@@ -2252,7 +2416,7 @@ Hero Image Section - except home page, all [ages]
 .heroImage{
       display: block;
       position: relative;
-	background:url("../images/In-And-Out.jpg") top right no-repeat;
+	background:rgba(0,0,0,0.5), url("../images/In-And-Out.jpg") top right no-repeat;
       background-size: cover;
       width:100%;
       height:60vh;
@@ -2465,6 +2629,10 @@ Intro Section - except home page, all pages
 .introText h4, .subSection  h4 {
 	margin: 10px 0px 10px;
 	text-transform: none;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 1.6em;
+	font-style: italic;
 }
 
 .subSectionText {
@@ -2483,7 +2651,7 @@ Intro Section - except home page, all pages
 
 .introText ul, .subSectionText ul {
 	margin: 0px 0;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 
@@ -2704,7 +2872,7 @@ industries And Categories Section - industries And Categories page
 
 .industryText ul, .categoryText ul {
 	height: 100%;
-	padding: 0.5vw;
+	padding: 2vw 0.5vw 1vw;
 	margin: 0;
 	display: flex;
 		display: -ms-flexbox;
@@ -2753,8 +2921,11 @@ industries And Categories Section - industries And Categories page
 		-webkit-justify-content: center;
 }
 
-.industryText h4, .categoryText h4 {
-	margin: 2px 1px;
+.industryText p, .categoryText p {
+	margin: 0.5vw 1px 2px;
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	font-weight: 400;
 }
 
 .industryImg h4 {
@@ -2903,8 +3074,13 @@ ul.menu-competencies {
 		-ms-flex-pack: distribute;
 }
 
-.menu-competencies li {
-	display: inline-block;
+#nav li {
+	display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	align-items: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
 	font-size: 1em;
 	border: 1px solid grey;
 	background: white;
@@ -2912,19 +3088,19 @@ ul.menu-competencies {
 	text-align: center;
 }
 
-.menu-competencies li a {
+#nav li a {
 	display: block;
-	height: 100%;
+	/*height: 100%;*/
 	width:100%;
 	text-decoration: none;
 	color: grey;
 }
 
-.menu-competencies li:hover {
+#nav li:hover {
 	background: rgba(31, 170, 235, 1);
 }
 
-.menu-competencies li:hover a {
+#nav li:hover a {
 	color: white;
 }
 
@@ -3632,6 +3808,7 @@ Font styles
 
 .tileEffect h4 {
 	font-size: 1.4rem;/*1.4rem*/
+	text-shadow: 1px 1px rgba(51,51,51,0.5);
 }
 
 .tileEffect:hover h4 {
@@ -3646,8 +3823,8 @@ Font styles
 	font-size: 3.5em;
 }
 
-.industryText ul li h4, .categoryText ul li h4 {
-	font-size: 0.82rem;
+.industryText ul li p, .categoryText ul li p {
+	font-size: 0.77rem;
 	text-align: center;
 }
 
@@ -3683,6 +3860,58 @@ Header Section
 Hero Image Section
 ---------------------------------------------------------------------------*/
 
+.heroImage .banner {
+	height: 100%;
+	padding: 60px;
+}
+
+
+.servicesSection{
+	flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+}
+
+.servicesBox{
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	padding: 0 40px;
+	height: 200px;
+}
+
+.servicesBox:hover .serviceLogo{
+	background: rgba(66,165,245,0.5);
+}
+
+.servicesBox:hover .serviceLogo div{
+	transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-o-transform: scale(1.2);
+}
+
+.servicesBox::after {
+	display: block;
+	content:"";
+	position: absolute;
+	top: 5%;
+	right: 0;
+	height: 60%;
+	width: 5%;
+	border-right: 2px dotted white;
+}
+
+.servicesBox:last-child::after {
+	display: none;
+}
+
+
+.servicesSection p {
+	max-width: 300px;
+	padding: 0;
+}
 
 
 /*-------------------------------------------------------------------------
@@ -3693,7 +3922,6 @@ Why Us Section
 .whyUsButton {
 	height: 30vw;
 	padding: 0px 40px;
-
 	flex-wrap: nowrap;
 		-webkit-flex-wrap: nowrap;
 		-ms-flex-wrap: nowrap;
@@ -3795,7 +4023,7 @@ What we Offer  Section - only home page
 }
 
 .footerCol2 {
-	padding: 1.3vw;
+	padding: 1.3vw 3.5vw 1.3vw 1.3vw;
 }
 
 .accord {
@@ -3958,9 +4186,9 @@ industries And Categories Section - industries And Categories
 		-webkit-flex-direction: column;
 	width: 30%;
 	height: 23%;
-	justify-content: center; /*flex-start*/
-		-ms-flex-pack: center; /*start*/
-		-webkit-justify-content: center; /*flex-start*/
+	justify-content: flex-start
+		-ms-flex-pack: start
+		-webkit-justify-content: flex-start
 }
 
 .indnCatImg {
@@ -4168,19 +4396,25 @@ Font styles
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
       font-size: 4.1vw;
-      text-align: right;
+      text-align: center;
 }
 
-
+.looking-for-a-job .introHead h2 span{
+	white-space: nowrap;
+}
 
 .meetTheTeam .introHead h2, .our-services .introHead h2,
 .advent-culture .introHead h2, .submit-resume .introHead h2,
-.diversity-and-inclusion .introHead h2,
-.our-business-model .introHead h2,
-.looking-for-a-job .introHead h2,
 .disclaimer .introHead h2
  {
-	font-size: 4vw;
+	font-size: 4.4vw;
+}
+
+.diversity-and-inclusion .introHead h2,
+.looking-for-a-job .introHead h2,
+.our-business-model .introHead h2{
+	font-size: 3.8vw;
+	line-height: 1.2;
 }
 
 .core-competencies .introHead h2,
@@ -4193,6 +4427,7 @@ Font styles
 .csr .introHead h2
  {
 	font-size: 3vw;
+	line-height: 1.2;
 }
 
 
@@ -4716,21 +4951,26 @@ What we Offer  Section
       float:left;
 }
 
-.info {
-      text-align: left;
-      float:left;
+.siteInfo{
+	flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+}
+
+.info{
+	justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+
+}
+.copyright{
+	justify-content: flex-end;
+		-webkit-justify-content: flex-end;
+		-ms-flex-pack: end;
+}
+
+.info, .copyright {
       width:50%;
-}
-
-.info li {
-	padding:10px 30px;
-}
-
-.copyright {
-      text-align: right;
-      float: left;
-      width: 50%;
-      padding: 10px 30px;
 }
 
 .AboutUs {
@@ -4760,20 +5000,20 @@ Intro Section
 .diversity-and-inclusion .introHeadFloat, .csr .introHeadFloat,
 .disclaimer .introHeadFloat, .privacy-policy .introHeadFloat,
 .terms-n-conditions .introHeadFloat {
-	height:25vw;
+	height:25vw;/*25*/
 }
 
 
 
 .introHeadFloat {
 	float: left;
-      width:25%;
+      width:25%;/*25*/
 	margin-right: 70px;
       margin-bottom: 60px;
 }
 
 .introSection .introHead {
-      top: -12.5vw;
+      top: 0;
 	height: 100%;
 }
 
@@ -4783,7 +5023,7 @@ Intro Section
 }
 
 .introText {
-	padding: 80px 12vw 5px;
+	padding: 70px 12vw 5px;
 }
 
 .subSection {
@@ -4795,7 +5035,7 @@ Intro Section
 }
 
 .subSectionText {
-	padding: 0px 13vw 0px;
+	padding: 0px 12vw 0px;
 }
 
 .introText p, .subSectionText p {
