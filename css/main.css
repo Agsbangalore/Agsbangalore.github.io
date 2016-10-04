@@ -616,6 +616,10 @@ menu Section
       background: white;
 }
 
+.whiteCover{
+	background: white;
+}
+
 #content-container {
 	position: absolute;
 	top: 0;
@@ -779,11 +783,10 @@ Hero Image Section - All pages
 .homePage .heroImage {
       display: block;
       position: relative;
-	background:url("../images/In-And-Out.jpg") top right no-repeat;
+	background:url("../imag es/In-And-Out.jpg") top right no-repeat;
       background-size: cover;
       width:100%;
-      min-height:100vh;
-      width:100%;
+      height: auto;
       overflow: hidden;
 }
 
@@ -816,10 +819,19 @@ video {
 
 }
 
+.heroBGImage{
+	position: fixed;
+	background:url("../images/In-And-Out.jpg") top right no-repeat;
+      background-size: cover;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: -2;
+}
 
 .heroImage .banner {
-      position: absolute;
-	height: 100%;
+      position: relative;
+	min-height: 100vh;
 	width: 100%;
 	diplay: flex;
 		display: -ms-flexbox;
@@ -836,7 +848,7 @@ video {
 	align-items: center;
 	    -webkit-align-items: center;
 	    -ms-flex-align: center;
-	padding: 30px;
+	padding: 40px 20px;
       z-index: 1;
       color: white;
 }
@@ -940,6 +952,8 @@ video {
 .servicesSection p {
 	font-weight: 500;
 	text-shadow: 1px 1px rgba(51,51,51,0.5);
+	max-width: 130px;
+	padding-right: 20px;
 }
 
 .servicesBox {
@@ -947,9 +961,9 @@ video {
 	display: flex;
 		display: -ms-flexbox;
 		display: -webkit-flex;
-	flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
+	flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
 	justify-content: flex-start;
 		-webkit-justify-content: flex-start;
 		-ms-flex-pack: start;
@@ -957,23 +971,12 @@ video {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 	max-width: 300px;
-	height: 200px;
-	padding: 0 40px;
-	/*border-right: 1px dashed white;*/
+	height: 150px;
+	padding: 0 10px;
 	text-align: center;
 }
 
 .servicesBox::after {
-	content:"";
-	position: absolute;
-	top: 5%;
-	right: 0;
-	height: 60%;
-	width: 5%;
-	border-right: 2px dotted white;
-}
-
-.servicesBox:last-child::after {
 	display: none;
 }
 
@@ -984,9 +987,9 @@ video {
 	flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;*/
 	justify-content: center;
 		-webkit-justify-content: center;
 		-ms-flex-pack: center;
@@ -997,12 +1000,20 @@ video {
 	height: 100px;
 	border: 2px solid white;
 	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
 }
 
 .serviceLogo div{
 	display: block;
 	height: 50px;
 	width: 50px;
+	transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
 }
 
 .contingentBox .serviceLogo div{
@@ -2640,7 +2651,7 @@ Intro Section - except home page, all pages
 
 .introText ul, .subSectionText ul {
 	margin: 0px 0;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 
@@ -3851,6 +3862,7 @@ Hero Image Section
 
 .heroImage .banner {
 	height: 100%;
+	padding: 60px;
 }
 
 
@@ -3860,6 +3872,46 @@ Hero Image Section
 		-ms-flex-direction: row;
 }
 
+.servicesBox{
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	padding: 0 40px;
+	height: 200px;
+}
+
+.servicesBox:hover .serviceLogo{
+	background: rgba(66,165,245,0.5);
+}
+
+.servicesBox:hover .serviceLogo div{
+	transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-o-transform: scale(1.2);
+}
+
+.servicesBox::after {
+	display: block;
+	content:"";
+	position: absolute;
+	top: 5%;
+	right: 0;
+	height: 60%;
+	width: 5%;
+	border-right: 2px dotted white;
+}
+
+.servicesBox:last-child::after {
+	display: none;
+}
+
+
+.servicesSection p {
+	max-width: 300px;
+	padding: 0;
+}
 
 
 /*-------------------------------------------------------------------------
@@ -3870,7 +3922,6 @@ Why Us Section
 .whyUsButton {
 	height: 30vw;
 	padding: 0px 40px;
-
 	flex-wrap: nowrap;
 		-webkit-flex-wrap: nowrap;
 		-ms-flex-wrap: nowrap;
@@ -4345,20 +4396,22 @@ Font styles
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
       font-size: 4.1vw;
-      text-align: left;
+      text-align: center;
 }
 
-
+.looking-for-a-job .introHead h2 span{
+	white-space: nowrap;
+}
 
 .meetTheTeam .introHead h2, .our-services .introHead h2,
 .advent-culture .introHead h2, .submit-resume .introHead h2,
-.looking-for-a-job .introHead h2,
 .disclaimer .introHead h2
  {
-	font-size: 4.5vw;
+	font-size: 4.4vw;
 }
 
 .diversity-and-inclusion .introHead h2,
+.looking-for-a-job .introHead h2,
 .our-business-model .introHead h2{
 	font-size: 3.8vw;
 	line-height: 1.2;
@@ -4947,14 +5000,14 @@ Intro Section
 .diversity-and-inclusion .introHeadFloat, .csr .introHeadFloat,
 .disclaimer .introHeadFloat, .privacy-policy .introHeadFloat,
 .terms-n-conditions .introHeadFloat {
-	height:25vw;
+	height:25vw;/*25*/
 }
 
 
 
 .introHeadFloat {
 	float: left;
-      width:25%;
+      width:25%;/*25*/
 	margin-right: 70px;
       margin-bottom: 60px;
 }
@@ -4982,7 +5035,7 @@ Intro Section
 }
 
 .subSectionText {
-	padding: 0px 13vw 0px;
+	padding: 0px 12vw 0px;
 }
 
 .introText p, .subSectionText p {
