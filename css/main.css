@@ -77,7 +77,6 @@ h1.hideHeader, h2.hideHeader{
 
 h2, h3, h4 {
 	color: rgba(31, 170, 235, 1);
-	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	/*font-style: italic;
 	font-size: 1.6em;
@@ -85,7 +84,6 @@ h2, h3, h4 {
 }
 
 p{
-	font-family:"Raleway", sans-serif;
 	font-weight: 400;
 	line-weight: 1.2;
 }
@@ -119,6 +117,39 @@ Fonts used   ----------------remove later
 	font-family: 'Raleway', sans-serif;
 */
 
+/*-------------------------------------------------------------------------
+Font family used
+---------------------------------------------------------------------------*/
+
+.whyUsHead h2,
+.introHead h2,
+.indnCatImg h4,
+.competencyImg h4 {
+	font-family: 'Playfair Display', sans-serif;
+}
+
+h2, h3, h4,p,
+.ctaButton,
+.whyUsText p,
+.whyUsButton .whyUsBtn,
+.featureTitle h2,
+.tileEffect h4,
+.homePage .contactForm p,
+.footerSection h3,
+.siteInfo p, .siteInfo li a,
+.textHigh h5,
+.introText p, .subSection p,
+.introText h3, .subSectionText h3,
+.introText li, .subSection li,
+.linkBox h4,
+h2.contactTitle, h2.clientTitle,
+.introText h4, .subSection  h4,
+.industryText p, .categoryText p {
+	font-family:'Raleway', sans-serif;
+}
+
+
+
 
 
 
@@ -143,6 +174,7 @@ Font styles
       font-size: 2.5em;
 	margin-bottom: 20px;
 	text-align: center;
+	text-shadow: 2px 2px rgba(25, 24, 24, 0.5);
 }
 
 .ctaButton {
@@ -151,12 +183,13 @@ Font styles
 	width: 170px;
 	height: 50px;
       text-decoration: none;
+	font-family:'Raleway', sans-serif;
+	white-space: nowrap;
       border: 1px solid white;
 	color: #fff;
 	background: none;
 	color: inherit;
-	font-family:'Lato', sans-serif;
-      font-weight: 700;
+	font-weight: 700;
       font-style: italic;
       font-size: 1.2em;
 	position: relative;
@@ -174,7 +207,6 @@ Font styles
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
       color: rgba(31, 170, 235, 1);
-      font-family: 'Playfair Display', sans-serif;
       font-weight: 900;
       font-style: normal;
       font-size: 2.5em;
@@ -186,7 +218,6 @@ Font styles
       margin: 0 auto;
       max-width: 600px;
       text-align: justify;
-      font-family: 'Raleway', sans-serif;
       font-weight: 300;
       font-size: 1.1rem;
       line-height: 1.7rem;
@@ -202,7 +233,6 @@ Font styles
       border: 1px solid rgba(31, 170, 235, 1);
       background: none;
       color:rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-style: italic;
       font-size: 1em;
@@ -227,7 +257,6 @@ Font styles
 		-moz-transform: translate(-50%,-50%);
 		-o-transform: translate(-50%,-50%);
       color: white;
-      font-family: 'Lato', sans-serif;
       font-weight: 900;
       font-style: italic;
       font-size: 2.2rem;
@@ -242,7 +271,6 @@ Font styles
 	text-transform: none;
       color: white;
 	text-align: center;
-      font-family: 'Raleway', sans-serif;
       font-weight: 700;
 	font-style: italic;
 	pointer-events: none;
@@ -275,7 +303,6 @@ Font styles
 .homePage .contactForm p {
       margin-left: 1%;
       color:white;
-      font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-style: italic;
       font-size: 1em;
@@ -283,7 +310,6 @@ Font styles
 }
 
 .footerSection h3 {
-	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	color: rgba(31, 170, 235, 1);
 	font-style: italic;
@@ -299,8 +325,7 @@ Font styles
 }
 
 .siteInfo p, .siteInfo li a{
-	font-family: "Raleway", sans-serif;
-      font-size: 0.8em;
+	font-size: 0.8em;
 	font-weight: 300;
 	color: #999;
 	font-style: italic;
@@ -311,8 +336,7 @@ Font styles
 	margin: 12px auto;
 	display: block;
       color: white;
-	font-family: 'Playfair Display', serif;
-      font-weight: 700;
+	font-weight: 700;
       /*font-style: italic;*/
       font-size: 1.8em;
       text-align: center;
@@ -338,8 +362,7 @@ Font styles
       margin: 0;
       padding: 10px 70px 0 20px;
       color: rgba(31, 170, 235, 1);
-	font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
+	font-weight: 400;
       font-style: italic;
       font-size: 6.5vw;
       text-align: left;
@@ -350,7 +373,6 @@ Font styles
       margin: 0;
       margin: 0 auto;
       text-align: justify;
-      font-family: 'Raleway', sans-serif;
       font-weight: 300;
       font-size: 1.2em;
       line-height: 1.7em;
@@ -360,8 +382,7 @@ Font styles
 
 .introText h3, .subSectionText h3 {
 	text-align: right;
-	font-family: 'Raleway', sans-serif;
-      font-weight: 700;
+	font-weight: 700;
       font-style: italic;
       font-size: 1.8em;
 	text-transform: uppercase;
@@ -375,8 +396,7 @@ Font styles
 }
 
 .introText li, .subSection li {
-	font-family: 'Raleway', sans-serif;
-      font-weight: 500;
+	font-weight: 500;
       font-size: 1.2rem;
       line-height: 1.7rem;
 	font-style: italic;
@@ -406,7 +426,6 @@ Font styles
 	max-width: 300px;
 	color: white;
 	text-align: center;
-      font-family: 'Playfair Display', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 2.5em;
@@ -421,11 +440,10 @@ Font styles
 	font-size: 1.2em;
 }
 
-/*.competencySection */.competencyImg h4 {
+.competencyImg h4 {
 	max-width: 80%;
 	color: white;
 	text-align: center;
-      font-family: 'Playfair Display', serif;
       font-weight: 700;
       font-style: italic;
       font-size: 2em;
@@ -461,13 +479,11 @@ Font styles
       color: white;
 	text-align: center;
 	text-decoration: none;
-      font-family: 'Raleway', sans-serif;
       font-weight: 700;
       font-size: 1.3rem;
 }
 
 h2.contactTitle, h2.clientTitle{
-	font-family: "Raleway", sans-serif;
 	font-size: 1.7em;
 	font-weight: 700;
 	font-style: italic;
@@ -950,14 +966,18 @@ video {
 }
 
 .servicesSection p {
-	font-weight: 500;
+	font-weight: 400;
+	line-height: 1.5;
 	text-shadow: 1px 1px rgba(51,51,51,0.5);
 	max-width: 130px;
 	padding-right: 20px;
+	margin: 12px 0;
 }
 
 .servicesBox {
 	position: relative;
+	background: rgba(0,0,0,0.2);
+	border-radius: 10px;
 	display: flex;
 		display: -ms-flexbox;
 		display: -webkit-flex;
@@ -970,9 +990,10 @@ video {
 	align-items: center;
 		-webkit-align-items: center;
 		-ms-flex-align: center;
-	max-width: 300px;
+	/*max-width: 300px;*/
 	height: 150px;
 	padding: 0 10px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -996,8 +1017,8 @@ video {
 	align-items: center;
 		-webkit-align-items: center;
 		-ms-flex-align: center;
-	width: 100px;
-	height: 100px;
+	min-width: 100px;
+	min-height: 100px;
 	border: 2px solid white;
 	border-radius: 50%;
 	transition: all 0.3s ease-in-out;
@@ -2629,7 +2650,6 @@ Intro Section - except home page, all pages
 .introText h4, .subSection  h4 {
 	margin: 10px 0px 10px;
 	text-transform: none;
-	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	font-size: 1.6em;
 	font-style: italic;
@@ -2923,7 +2943,6 @@ industries And Categories Section - industries And Categories page
 
 .industryText p, .categoryText p {
 	margin: 0.5vw 1px 2px;
-	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: 400;
 }
@@ -3876,15 +3895,18 @@ Hero Image Section
 	flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
-	padding: 0 40px;
+	/*padding: 0 40px;*/
+	margin: 0 1.3vw;
+	width: 200px;
 	height: 200px;
+	padding-top: 25px;
 }
 
 .servicesBox:hover .serviceLogo{
 	background: rgba(66,165,245,0.5);
 }
 
-.servicesBox:hover .serviceLogo div{
+.servicesBox:hover .serviceLogo div {
 	transform: scale(1.2);
 		-ms-transform: scale(1.2);
 		-webkit-transform: scale(1.2);
@@ -3893,7 +3915,8 @@ Hero Image Section
 }
 
 .servicesBox::after {
-	display: block;
+	/*display: block;*/
+	displar: none;
 	content:"";
 	position: absolute;
 	top: 5%;
@@ -4358,7 +4381,6 @@ Font styles
       border: 1px solid rgba(31, 170, 235, 1);
       background: none;
       color:rgba(31, 170, 235, 1);
-      font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-style: italic;
       font-size: 1.03em;
