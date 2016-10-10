@@ -115,6 +115,16 @@ Fonts used   ----------------remove later
 
 	font-family: 'Playfair Display', serif;
 	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Droid Serif', serif;
+	font-family: 'Muli', sans-serif;
+	font-family: 'Oxygen', sans-serif;
+	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-family: 'Rubik', sans-serif;
 */
 
 /*-------------------------------------------------------------------------
@@ -124,28 +134,33 @@ Font family used
 .whyUsHead h2,
 .introHead h2,
 .indnCatImg h4,
-.competencyImg h4 {
-	font-family: 'Playfair Display', sans-serif;
+.competencyImg h4,
+.tileEffect h4,
+.linkBox h4,
+h2.contactTitle, h2.clientTitle,
+.footerSection h3{
+	font-family: 'Roboto Slab', sans-serif;
 }
 
-h2, h3, h4,p,
+h2, h3, h4, p, input, textarea,
 .ctaButton,
 .whyUsText p,
 .whyUsButton .whyUsBtn,
 .featureTitle h2,
-.tileEffect h4,
 .homePage .contactForm p,
-.footerSection h3,
 .siteInfo p, .siteInfo li a,
 .textHigh h5,
 .introText p, .subSection p,
 .introText h3, .subSectionText h3,
 .introText li, .subSection li,
-.linkBox h4,
-h2.contactTitle, h2.clientTitle,
 .introText h4, .subSection  h4,
 .industryText p, .categoryText p {
 	font-family:'Raleway', sans-serif;
+	-webkit-font-feature-settings: "lnum";
+       -moz-font-feature-settings: "lnum";
+        -ms-font-feature-settings: "lnum";
+         -o-font-feature-settings: "lnum";
+            font-feature-settings: "lnum";
 }
 
 
@@ -272,7 +287,7 @@ Font styles
       color: white;
 	text-align: center;
       font-weight: 700;
-	font-style: italic;
+	font-style: normal;
 	pointer-events: none;
 	transition: transform 0.35s, color 0.35s;
 		-webkit-transition: -webkit-transform 0.35s, color 0.35s;
@@ -300,6 +315,7 @@ Font styles
 	font-size: 1.4em;
 }
 
+
 .homePage .contactForm p {
       margin-left: 1%;
       color:white;
@@ -309,10 +325,14 @@ Font styles
       line-height: 1em;
 }
 
+input,textarea{
+	font-style: italic;
+}
+
 .footerSection h3 {
 	font-weight: 700;
 	color: rgba(31, 170, 235, 1);
-	font-style: italic;
+	font-style: normal;
 	font-size: 1.2em;
 	text-transform: none;
 }
@@ -343,6 +363,8 @@ Font styles
 	line-height: 1;
       /*text-transform: uppercase;*/
 }
+
+
 
 .csr .introHead h2, .our-hiring-methodology .introHead h2,
 .diversity-and-inclusion .introHead h2,
@@ -485,8 +507,8 @@ Font styles
 
 h2.contactTitle, h2.clientTitle{
 	font-size: 1.7em;
-	font-weight: 700;
-	font-style: italic;
+	font-weight: 500;
+	font-style: normal;
 }
 
 
@@ -997,6 +1019,8 @@ video {
 	text-align: center;
 }
 
+
+
 .contingentBox{
 	background: rgba(220,69,50,0.5);
 }
@@ -1068,9 +1092,35 @@ video {
 	margin: 30px 0 30px;
 }
 
+/*
+.arrow i{
+	color: white;
+	text-decoration: none;
+	font-size:2em;
+}
 
+.arrow{
+	text-align: center;
+	margin: 8% 0;
+}
 
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
 
+@keyframes bounce{
+	0%, 20%,50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40%{
+		transform: translateY(-30px);
+	}
+	60%{
+		transform: translateY(-15px);
+	}
+}*/
 
 
 /*-------------------------------------------------------------------------
@@ -4433,22 +4483,34 @@ Font styles
       text-align: center;
 }
 
-.looking-for-a-job .introHead h2 span{
-	white-space: nowrap;
-}
+
 
 .meetTheTeam .introHead h2, .our-services .introHead h2,
-.advent-culture .introHead h2, .submit-resume .introHead h2,
+.submit-resume .introHead h2,
 .disclaimer .introHead h2
  {
 	font-size: 4.4vw;
 }
 
-.diversity-and-inclusion .introHead h2,
-.looking-for-a-job .introHead h2,
-.our-business-model .introHead h2{
+.advent-culture .introHead h2,
+.looking-for-a-job .introHead h2
+{
 	font-size: 3.8vw;
 	line-height: 1.2;
+}
+
+.looking-for-a-job .introHead h2 span{
+	white-space: nowrap;
+}
+
+.our-business-model .introHead h2,
+.diversity-and-inclusion .introHead h2{
+	font-size: 3.6vw;
+}
+
+.diversity-and-inclusion .introHead h2 span {
+	font-size: 3vw;
+	line-height: 0.5;
 }
 
 .core-competencies .introHead h2,
