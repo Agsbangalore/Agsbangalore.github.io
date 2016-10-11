@@ -136,21 +136,19 @@ $(function(){
       }
 });
 
-// $('#navButton').click(function(){
-//       $('.hamIcon').toggleClass('show');
-//       $('.closeIcon').toggleClass('show');
-// });
 
 
 
 
-
+//opening and closing of navigation menu
 (function() {
       $("#navButton").on("click", function(){
             $('.pageContent').toggleClass("pageOpen");
             $('#navButton').toggleClass("navOpen");
             $('.hamIcon').toggleClass('show');
             $('.closeIcon').toggleClass('show');
+
+            //closing menu by clicking on the page
             $(".pageContent.pageOpen").on("click", function(){
                   $('.pageContent').removeClass("pageOpen");
                   $('#navButton').removeClass("navOpen");
@@ -160,12 +158,6 @@ $(function(){
             })
             return false;
       })
-
-      // $(".pageContent").on("click", function(){
-      //       $('.pageContent').toggleClass("pageOpen");
-      //       $('#navButton').toggleClass("navOpen");
-      //       return false;
-      // })
 }());
 
 

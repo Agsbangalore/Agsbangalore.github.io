@@ -1101,35 +1101,6 @@ video {
 	margin: 30px 0 30px;
 }
 
-/*
-.arrow i{
-	color: white;
-	text-decoration: none;
-	font-size:2em;
-}
-
-.arrow{
-	text-align: center;
-	margin: 8% 0;
-}
-
-.bounce {
-	-moz-animation: bounce 2s infinite;
-	-webkit-animation: bounce 2s infinite;
-	animation: bounce 2s infinite;
-}
-
-@keyframes bounce{
-	0%, 20%,50%, 80%, 100% {
-		transform: translateY(0);
-	}
-	40%{
-		transform: translateY(-30px);
-	}
-	60%{
-		transform: translateY(-15px);
-	}
-}*/
 
 
 /*-------------------------------------------------------------------------
@@ -3974,7 +3945,7 @@ Hero Image Section
 }
 
 .servicesBox:hover .serviceLogo{
-	background: rgba(66,165,245,0.5);
+	background: rgba(1,1,1,0.2);/*rgba(66,165,245,0.5)*/
 }
 
 .servicesBox:hover .serviceLogo div {
