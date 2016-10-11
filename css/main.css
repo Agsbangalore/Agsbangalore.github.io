@@ -998,9 +998,8 @@ video {
 .servicesBox {
 	position: absolute;
 	top: 0;
-	left: -50px;
+	transform: translateY(-20px);
 	opacity: 0;
-	/*background: rgba(0,0,0,0.2);*/
 	border-radius: 10px;
 	display: flex;
 		display: -ms-flexbox;
@@ -1028,7 +1027,7 @@ video {
 
 .servicesShow .contingentBox, .servicesShow .enterpriseBox,
 .servicesShow .applicationBox{
-	left: 0;
+	transform: translateY(0px);
 	opacity: 1;
 }
 
