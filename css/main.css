@@ -43,13 +43,6 @@ if it's not present, don't show loader */
 	z-index: 2000;
 }
 
-.loadingImage {
-	width:100px;
-	height: 100px;
-	background: url("../images/ring.gif") no-repeat;
-	background-size: contain;
-}
-
 .container {
       position:relative;
       width: 100%;
@@ -138,7 +131,8 @@ Font family used
 .tileEffect h4,
 .linkBox h4,
 h2.contactTitle, h2.clientTitle,
-.footerSection h3{
+.footerSection h3,
+.servicesSection p {
 	font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -988,16 +982,24 @@ video {
 }
 
 .servicesSection p {
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.5;
-	text-shadow: 1px 1px rgba(51,51,51,0.5);
+	text-shadow: 1px 1px rgba(51,51,51,0.2);
 	max-width: 130px;
 	padding-right: 20px;
 	margin: 12px 0;
+	pointer-events: none;
+}
+
+.servicesSection div{
+	position: relative;
 }
 
 .servicesBox {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: -50px;
+	opacity: 0;
 	/*background: rgba(0,0,0,0.2);*/
 	border-radius: 10px;
 	display: flex;
@@ -1019,18 +1021,25 @@ video {
 	text-align: center;
 }
 
-
-
 .contingentBox{
 	background: rgba(220,69,50,0.5);
+	transition: all 500ms ease-in-out;
+}
+
+.servicesShow .contingentBox, .servicesShow .enterpriseBox,
+.servicesShow .applicationBox{
+	left: 0;
+	opacity: 1;
 }
 
 .enterpriseBox{
 	background: rgba(76,148,75,0.5);
+	transition: all 500ms ease-in-out 200ms;
 }
 
 .applicationBox{
 	background: rgba(31, 170, 235, 0.5);
+	transition: all 500ms ease-in-out 400ms;
 }
 
 .servicesBox::after {

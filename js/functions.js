@@ -167,6 +167,10 @@ if (imgPath) {
          // [do something here...]
          $(".loadingPage").css({"display": "none"});
          console.log(imgPath);
+
+      //animation on servicesBox section
+         $(".servicesSection div").addClass("servicesShow");
+
    });
 
 
