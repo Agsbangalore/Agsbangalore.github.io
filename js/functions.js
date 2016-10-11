@@ -136,22 +136,36 @@ $(function(){
       }
 });
 
-$('#navButton').click(function(){
-      $('.hamIcon').toggleClass('show');
-      $('.closeIcon').toggleClass('show');
-});
+// $('#navButton').click(function(){
+//       $('.hamIcon').toggleClass('show');
+//       $('.closeIcon').toggleClass('show');
+// });
 
 
 
 
 
 (function() {
-      var body = $('pageContent');
-      $("#navButton").bind("click", function(){
+      $("#navButton").on("click", function(){
             $('.pageContent').toggleClass("pageOpen");
             $('#navButton').toggleClass("navOpen");
+            $('.hamIcon').toggleClass('show');
+            $('.closeIcon').toggleClass('show');
+            $(".pageContent.pageOpen").on("click", function(){
+                  $('.pageContent').removeClass("pageOpen");
+                  $('#navButton').removeClass("navOpen");
+                  $('.hamIcon').addClass('show');
+                  $('.closeIcon').removeClass('show');
+                  return false;
+            })
             return false;
       })
+
+      // $(".pageContent").on("click", function(){
+      //       $('.pageContent').toggleClass("pageOpen");
+      //       $('#navButton').toggleClass("navOpen");
+      //       return false;
+      // })
 }());
 
 
