@@ -388,7 +388,7 @@ input,textarea{
 	padding-top: 0px;
       margin: 0;
       margin: 0 auto;
-      text-align: justify;
+      text-align: left;
       font-weight: 300;
       font-size: 1.2em;
       line-height: 1.7em;
@@ -998,7 +998,7 @@ video {
 .servicesBox {
 	position: absolute;
 	top: 0;
-	transform: translateY(-20px);
+	transform: translateY(-40px);
 	opacity: 0;
 	border-radius: 10px;
 	display: flex;
@@ -5115,6 +5115,7 @@ Intro Section
 
 .introText p, .subSectionText p {
 	padding-top: 0px;
+	text-align: justify;
 }
 
 .introText ul, .subSectionText ul {
@@ -5174,7 +5175,6 @@ Core Competencies  Section - core Competencies
 
 .competencyText {
 	width: 67%;
-
 }
 
 .competencyImg {
