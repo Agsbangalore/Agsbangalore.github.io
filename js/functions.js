@@ -175,7 +175,7 @@ if (imgPath) {
          console.log(imgPath);
 
       //animation on servicesBox section
-         $(".servicesSection div").addClass("servicesShow");
+         $(".servicesSection > div").addClass("servicesShow");
 
    });
 
