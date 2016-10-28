@@ -31,6 +31,7 @@ $(function(){
 if($(window).width()<750){
 
       $('video').remove();
+      $('.homePage .indnCatSection').remove();
 
 }
 
