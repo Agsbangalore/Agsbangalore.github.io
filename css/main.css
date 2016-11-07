@@ -1048,7 +1048,13 @@ video {
 	text-align: center;
 }
 
-.servicesBox a{
+.servicesSection .servicesBox p {
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+
+.servicesBox a {
 	position: absolute;
 	top: 0;
 	height: 100%;
@@ -1056,10 +1062,7 @@ video {
 	padding: 0;
 }
 
-.contingentBox{
-	background: rgba(220,69,50,0.5);
-	transition: all 500ms ease-in-out;
-}
+
 
 .servicesShow .contingentBox, .servicesShow .enterpriseBox,
 .servicesShow .applicationBox{
@@ -1067,13 +1070,46 @@ video {
 	opacity: 1;
 }
 
+.banner .contingentBox{
+	background: rgba(94,53,177,0.75); /*rgba(220,69,50,0.8)*/
+	transition: all 500ms ease-in-out;
+}
+
+.banner .enterpriseBox{
+	background: rgba(0,191,165,0.75);/*rgba(76,148,75,0.8)*/
+	transition: all 500ms ease-in-out 200ms;
+}
+
+.banner .applicationBox{
+	background: rgba(66,165,245,0.75);/*rgba(31, 170, 235, 0.8)*/
+	transition: all 500ms ease-in-out 400ms;
+}
+
+.coreFlexWrapper{
+	diplay: flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+}
+
+/*.core-competencies .servicesBox {
+	max-width: 300px;
+}*/
+
+.contingentBox{
+	background: rgba(66,165,245,0.75); /*rgba(255,214,0,0.75)*/
+	transition: all 500ms ease-in-out;
+}
+
 .enterpriseBox{
-	background: rgba(76,148,75,0.5);
+	background: rgba(0,191,165,0.75);/*rgba(76,148,75,0.8)*/
 	transition: all 500ms ease-in-out 200ms;
 }
 
 .applicationBox{
-	background: rgba(31, 170, 235, 0.5);
+	background: rgba(94,53,177,0.75);/*rgba(31, 170, 235, 0.8)*/
 	transition: all 500ms ease-in-out 400ms;
 }
 
@@ -2705,6 +2741,10 @@ Intro Section - except home page, all pages
 	padding: 10px 20px 20px;
 }
 
+.core-competencies .introText{
+	padding: 10px 60px 20px;
+}
+
 .subSection {
 	margin-bottom: 10px;
 }
@@ -2733,6 +2773,17 @@ Intro Section - except home page, all pages
 	padding: 0px 20px 0px;
 }
 
+.subSectionOne h3{
+	color: rgba(66,165,245,1);
+}
+
+.subSectionTwo h3{
+	color: rgba(0,191,165,1);
+}
+
+.subSectionThree h3{
+	color: rgba(94,53,177,1);
+}
 .introText p:last-child, .subSection p:last-child {
 	padding-bottom: 0px;
 }
@@ -3971,7 +4022,7 @@ Hero Image Section
 
 .heroImage .banner {
 	height: 100%;
-	padding: 60px;
+	padding: 120px;
 }
 
 
@@ -3993,7 +4044,7 @@ Hero Image Section
 }
 
 .servicesBox:hover .serviceLogo{
-	background: rgba(1,1,1,0.2);/*rgba(66,165,245,0.5)*/
+	background: rgba(1,1,1,0.1);/*rgba(66,165,245,0.5)*/
 }
 
 .servicesBox:hover .serviceLogo div {
@@ -5145,9 +5196,14 @@ Intro Section
       height:25vw;
 }
 
-.introText {
+.introText{
 	padding: 60px 12vw 5px;
 }
+
+.core-competencies .introText {
+	padding: 60px 12vw 25px;
+}
+
 
 .subSection {
 	margin-bottom: 80px;
@@ -5160,6 +5216,7 @@ Intro Section
 .subSectionText {
 	padding: 0px 12vw 0px;
 }
+
 
 .introText p, .subSectionText p {
 	padding-top: 0px;
